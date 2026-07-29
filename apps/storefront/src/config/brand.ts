@@ -15,39 +15,39 @@ export const BRAND = {
     logoWhite: "/assets/branding/ata-logo-white.png",
   },
 
-  // Brand Colors - Professional athletic brand
+  // Brand Colors - Professional athletic brand with black, white, and blue CTA
   colors: {
-    // Primary Colors
+    // Primary Colors - Neutral palette for professional athletic brand
     primary: {
       50: "#f9fafb",   // Lightest
       100: "#f3f4f6",
       200: "#e5e7eb",
       300: "#d1d5db",
       400: "#9ca3af",
-      500: "#6b7280",  // Main brand gray
+      500: "#6b7280",  // Medium gray
       600: "#4b5563",
       700: "#374151",
       800: "#1f2937",
-      900: "#111827",  // Darkest
+      900: "#111827",  // Dark gray
     },
 
-    // Accent Colors - Professional athletic feel
+    // Core brand colors
+    black: "#000000",
+    white: "#ffffff",
+
+    // Call-to-action and accent colors
     accent: {
-      orange: "#ef6f3c",    // Energetic orange
-      red: "#e63946",       // Safety red for important actions
-      green: "#2ecc71",     // Success
-      blue: "#1e40af",      // Trust/Professional
+      blue: "#1e40af",      // Primary CTA blue - trust and professional
+      lightBlue: "#3b82f6", // Secondary blue for hover states
+      darkBlue: "#1e3a8a",  // Dark blue for active states
+      orange: "#f97316",    // Alternative CTA (secondary)
     },
 
     // Semantic Colors
-    success: "#2ecc71",
-    error: "#e63946",
-    warning: "#f59e0b",
+    success: "#22c55e",
+    error: "#ef4444",
+    warning: "#eab308",
     info: "#1e40af",
-
-    // Neutral
-    white: "#ffffff",
-    black: "#000000",
   },
 
   // Typography
