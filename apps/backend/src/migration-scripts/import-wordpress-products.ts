@@ -31,9 +31,9 @@ interface WordPressExport {
 
 async function importProducts(container: MedusaContainer) {
   const logger = container.resolve("logger")
-  const productService = container.resolve("productModuleService")
-  const categoryService = container.resolve("categoryModuleService")
-  const collectionService = container.resolve("collectionModuleService")
+  const productService = container.resolve("productModuleService") as any
+  const categoryService = container.resolve("categoryModuleService") as any
+  const collectionService = container.resolve("collectionModuleService") as any
 
   try {
     // Load WordPress export
