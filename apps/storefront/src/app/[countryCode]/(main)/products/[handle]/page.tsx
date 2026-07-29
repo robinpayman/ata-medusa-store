@@ -1,131 +1,71 @@
-import { Metadata } from "next"
-import { notFound } from "next/navigation"
-import { listProducts } from "@lib/data/products"
-import { getRegion, listRegions } from "@lib/data/regions"
-import ProductTemplate from "@modules/products/templates"
-import { HttpTypes } from "@medusajs/types"
+import { Suspense } from "react"
+import { getProductByHandle } from "@/lib/api/products"
+import ProductDetail from "@/components/ProductDetail"
 
-type Props = {
-  params: Promise<{ countryCode: string; handle: string }>
-  searchParams: Promise<{ v_id?: string }>
+interface ProductPageProps {
+  params: {
+    handle: string
+  }
 }
 
-export async function generateStaticParams() {
-  try {
-    const countryCodes = await listRegions().then((regions) =>
-      regions?.map((r) => r.countries?.map((c) => c.iso_2)).flat()
-    )
+export const metadata = {
+  title: "Product | ata treningsutstyr",
+  description: "View detailed product information",
+}
 
-    if (!countryCodes) {
-      return []
+async function ProductContent({ handle }: { handle: string }) {
+  try {
+    const response = await getProductByHandle(handle)
+    const product = response.product || response
+
+    if (!product) {
+      return (
+        <div className="text-center py-12">
+          <p className="text-gray-500 text-lg">Product not found</p>
+        </div>
+      )
     }
 
-    const promises = countryCodes.map(async (country) => {
-      const { response } = await listProducts({
-        countryCode: country,
-        queryParams: { limit: 100, fields: "handle" },
-      })
-
-      return {
-        country,
-        products: response.products,
-      }
-    })
-
-    const countryProducts = await Promise.all(promises)
-
-    return countryProducts
-      .flatMap((countryData) =>
-        countryData.products.map((product) => ({
-          countryCode: countryData.country,
-          handle: product.handle,
-        }))
-      )
-      .filter((param) => param.handle)
+    return <ProductDetail product={product} />
   } catch (error) {
-    console.error(
-      `Failed to generate static paths for product pages: ${
-        error instanceof Error ? error.message : "Unknown error"
-      }.`
+    console.error("Error loading product:", error)
+    return (
+      <div className="text-center py-12">
+        <p className="text-red-500 text-lg">Failed to load product</p>
+      </div>
     )
-    return []
   }
 }
 
-function getImagesForVariant(
-  product: HttpTypes.StoreProduct,
-  selectedVariantId?: string
-) {
-  if (!selectedVariantId || !product.variants) {
-    return product.images
-  }
-
-  const variant = product.variants!.find((v) => v.id === selectedVariantId)
-  if (!variant || !variant.images?.length) {
-    return product.images
-  }
-
-  const imageIdsMap = new Map(variant.images!.map((i) => [i.id, true]))
-  return product.images?.filter((i) => imageIdsMap.has(i.id)) ?? null
-}
-
-export async function generateMetadata(props: Props): Promise<Metadata> {
-  const params = await props.params
-  const { handle } = params
-  const region = await getRegion(params.countryCode)
-
-  if (!region) {
-    notFound()
-  }
-
-  const product = await listProducts({
-    countryCode: params.countryCode,
-    queryParams: { handle },
-  }).then(({ response }) => response.products[0])
-
-  if (!product) {
-    notFound()
-  }
-
-  return {
-    title: `${product.title} | Medusa Store`,
-    description: `${product.title}`,
-    openGraph: {
-      title: `${product.title} | Medusa Store`,
-      description: `${product.title}`,
-      images: product.thumbnail ? [product.thumbnail] : [],
-    },
-  }
-}
-
-export default async function ProductPage(props: Props) {
-  const params = await props.params
-  const region = await getRegion(params.countryCode)
-  const searchParams = await props.searchParams
-
-  const selectedVariantId = searchParams.v_id
-
-  if (!region) {
-    notFound()
-  }
-
-  const pricedProduct = await listProducts({
-    countryCode: params.countryCode,
-    queryParams: { handle: params.handle },
-  }).then(({ response }) => response.products[0])
-
-  const images = getImagesForVariant(pricedProduct, selectedVariantId)
-
-  if (!pricedProduct) {
-    notFound()
-  }
-
+export default function ProductPage({ params }: ProductPageProps) {
   return (
-    <ProductTemplate
-      product={pricedProduct}
-      region={region}
-      countryCode={params.countryCode}
-      images={images ?? []}
-    />
+    <div className="w-full">
+      <Suspense fallback={<ProductDetailLoading />}>
+        <ProductContent handle={params.handle} />
+      </Suspense>
+    </div>
+  )
+}
+
+function ProductDetailLoading() {
+  return (
+    <div className="max-w-7xl mx-auto px-6 py-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="animate-pulse">
+          <div className="bg-gray-200 h-96 rounded-lg mb-4" />
+          <div className="flex gap-2">
+            {[...Array(4)].map((_, i) => (
+              <div key={i} className="bg-gray-200 h-20 w-20 rounded" />
+            ))}
+          </div>
+        </div>
+        <div className="animate-pulse space-y-4">
+          <div className="bg-gray-200 h-8 rounded w-3/4" />
+          <div className="bg-gray-200 h-6 rounded w-1/4" />
+          <div className="bg-gray-200 h-20 rounded" />
+          <div className="bg-gray-200 h-10 rounded w-1/3" />
+        </div>
+      </div>
+    </div>
   )
 }
