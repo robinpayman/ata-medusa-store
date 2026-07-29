@@ -4,12 +4,13 @@ import ProductGrid from "@/components/ProductGrid"
 import ProductFilters from "@/components/ProductFilters"
 
 interface ProductsPageProps {
-  searchParams: {
+  params: Promise<{ countryCode: string }>
+  searchParams: Promise<{
     search?: string
     category?: string
     page?: string
     sort?: string
-  }
+  }>
 }
 
 export const metadata = {
@@ -17,8 +18,9 @@ export const metadata = {
   description: "Browse our complete range of training equipment",
 }
 
-async function ProductsContent({ searchParams }: ProductsPageProps) {
-  const page = parseInt(searchParams.page || "1")
+async function ProductsContent({ searchParams }: { searchParams: Promise<{ search?: string; category?: string; page?: string; sort?: string }> }) {
+  const params = await searchParams
+  const page = parseInt(params.page || "1")
   const limit = 12
   const offset = (page - 1) * limit
 
@@ -27,12 +29,12 @@ async function ProductsContent({ searchParams }: ProductsPageProps) {
     offset,
   }
 
-  if (searchParams.search) {
-    filters.search = searchParams.search
+  if (params.search) {
+    filters.search = params.search
   }
 
-  if (searchParams.category) {
-    filters.categoryId = searchParams.category
+  if (params.category) {
+    filters.categoryId = params.category
   }
 
   try {
@@ -50,7 +52,7 @@ async function ProductsContent({ searchParams }: ProductsPageProps) {
       <div className="flex gap-8 px-6 py-12 max-w-7xl mx-auto">
         <ProductFilters
           categories={categories}
-          selectedCategory={searchParams.category}
+          selectedCategory={params.category}
         />
         <div className="flex-1">
           {products.length === 0 ? (
@@ -75,12 +77,12 @@ async function ProductsContent({ searchParams }: ProductsPageProps) {
                       <a
                         key={pageNum}
                         href={`/products?page=${pageNum}${
-                          searchParams.category
-                            ? `&category=${searchParams.category}`
+                          params.category
+                            ? `&category=${params.category}`
                             : ""
                         }${
-                          searchParams.search
-                            ? `&search=${searchParams.search}`
+                          params.search
+                            ? `&search=${params.search}`
                             : ""
                         }`}
                         className={`px-4 py-2 rounded ${
@@ -112,7 +114,7 @@ async function ProductsContent({ searchParams }: ProductsPageProps) {
   }
 }
 
-export default function ProductsPage(props: ProductsPageProps) {
+export default async function ProductsPage(props: ProductsPageProps) {
   return (
     <div className="w-full">
       <div className="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-12">
