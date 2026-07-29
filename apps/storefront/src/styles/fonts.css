@@ -1,0 +1,65 @@
+/* ata Streetvertising Font - Light */
+@font-face {
+  font-family: "Streetvertising";
+  src: url("/assets/fonts/Streetvertising-Light-Norsk.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ata Streetvertising Font - Medium */
+@font-face {
+  font-family: "Streetvertising";
+  src: url("/assets/fonts/Streetvertising-Medium-Norsk.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ata Streetvertising Font - Bold */
+@font-face {
+  font-family: "Streetvertising";
+  src: url("/assets/fonts/Streetvertising-Bold-Norsk.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Import Inter for body text */
+@import url("https://rsms.me/inter/inter.css");
+
+html {
+  font-family: "Inter", "Inter fallback", sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", "Inter var fallback", sans-serif;
+  }
+}
+
+/* Utility classes for brand typography */
+.font-display {
+  font-family: "Streetvertising", sans-serif;
+}
+
+.font-body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Ubuntu, sans-serif;
+}
+
+/* Display font weights */
+.font-display-light {
+  font-family: "Streetvertising", sans-serif;
+  font-weight: 300;
+}
+
+.font-display-medium {
+  font-family: "Streetvertising", sans-serif;
+  font-weight: 500;
+}
+
+.font-display-bold {
+  font-family: "Streetvertising", sans-serif;
+  font-weight: 700;
+}

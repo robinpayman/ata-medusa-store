@@ -20,6 +20,26 @@ module.exports = {
         padding: "padding-top padding-right padding-bottom padding-left",
       },
       colors: {
+        // ata brand colors
+        primary: {
+          50: "#f9fafb",
+          100: "#f3f4f6",
+          200: "#e5e7eb",
+          300: "#d1d5db",
+          400: "#9ca3af",
+          500: "#6b7280",
+          600: "#4b5563",
+          700: "#374151",
+          800: "#1f2937",
+          900: "#111827",
+        },
+        accent: {
+          orange: "#ef6f3c",
+          red: "#e63946",
+          green: "#2ecc71",
+          blue: "#1e40af",
+        },
+        // Legacy grey for backward compatibility
         grey: {
           0: "#FFFFFF",
           5: "#F9FAFB",
@@ -58,6 +78,7 @@ module.exports = {
         "3xl": "2rem",
       },
       fontFamily: {
+        display: ["Streetvertising", "sans-serif"],
         sans: [
           "Inter",
           "-apple-system",
@@ -159,3 +180,6 @@ module.exports = {
   },
   plugins: [require("tailwindcss-radix")()],
 }
+
+// Import Streetvertising font
+require("./src/styles/fonts.css")
