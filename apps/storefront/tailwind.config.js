@@ -78,9 +78,7 @@ module.exports = {
         "3xl": "2rem",
       },
       fontFamily: {
-        display: ["Streetvertising", "sans-serif"],
         sans: [
-          "Inter",
           "-apple-system",
           "BlinkMacSystemFont",
           "Segoe UI",

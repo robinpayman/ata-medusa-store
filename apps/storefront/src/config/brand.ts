@@ -53,8 +53,8 @@ export const BRAND = {
   // Typography
   typography: {
     fontFamily: {
-      display: "'Streetvertising', sans-serif",  // Brand font for headings
-      body: "Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+      display: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif",  // System fonts for headings
+      body: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif",  // System fonts for body
     },
 
     sizes: {
