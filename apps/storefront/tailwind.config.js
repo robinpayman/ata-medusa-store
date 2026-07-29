@@ -180,6 +180,3 @@ module.exports = {
   },
   plugins: [require("tailwindcss-radix")()],
 }
-
-// Import Streetvertising font
-require("./src/styles/fonts.css")
