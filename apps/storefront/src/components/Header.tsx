@@ -28,7 +28,7 @@ export default function Header() {
           <nav className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
               <Link
-                key={item.href}
+                key={item.label}
                 href={item.href}
                 className="text-gray-600 hover:text-gray-900 transition-colors duration-200 text-sm font-medium"
               >
@@ -89,7 +89,7 @@ export default function Header() {
           <nav className="md:hidden pb-4 border-t border-gray-200">
             {navItems.map((item) => (
               <Link
-                key={item.href}
+                key={item.label}
                 href={item.href}
                 className="block px-4 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 transition-colors duration-200"
                 onClick={() => setMobileMenuOpen(false)}
