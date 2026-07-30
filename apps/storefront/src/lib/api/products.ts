@@ -13,12 +13,12 @@ export interface ProductFilters {
 
 export async function getProducts(filters: ProductFilters = {}) {
   try {
-    const response = await medusaClient.store.product.list({
+    const response = await medusaClient.store.products.list({
       limit: filters.limit || 12,
       offset: filters.offset || 0,
       ...(filters.search && { q: filters.search }),
-      ...(filters.categoryId && { category_id: [filters.categoryId] }),
-      ...(filters.collection_id && { collection_id: [filters.collection_id] }),
+      ...(filters.categoryId && { category_id: filters.categoryId }),
+      ...(filters.collection_id && { collection_id: filters.collection_id }),
     })
 
     return response
@@ -30,7 +30,7 @@ export async function getProducts(filters: ProductFilters = {}) {
 
 export async function getProductByHandle(handle: string) {
   try {
-    const response = await medusaClient.store.product.retrieve(handle)
+    const response = await medusaClient.store.products.retrieve(handle)
     return response
   } catch (error) {
     console.error(`Error fetching product ${handle}:`, error)
@@ -40,7 +40,7 @@ export async function getProductByHandle(handle: string) {
 
 export async function searchProducts(query: string, limit = 20) {
   try {
-    const response = await medusaClient.store.product.list({
+    const response = await medusaClient.store.products.list({
       q: query,
       limit,
     })
@@ -57,8 +57,8 @@ export async function getProductsByCollection(
   offset = 0
 ) {
   try {
-    const response = await medusaClient.store.product.list({
-      collection_id: [collectionId],
+    const response = await medusaClient.store.products.list({
+      collection_id: collectionId,
       limit,
       offset,
     })
@@ -78,8 +78,8 @@ export async function getProductsByCategory(
   offset = 0
 ) {
   try {
-    const response = await medusaClient.store.product.list({
-      category_id: [categoryId],
+    const response = await medusaClient.store.products.list({
+      category_id: categoryId,
       limit,
       offset,
     })
