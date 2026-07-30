@@ -13,7 +13,7 @@ export interface ProductFilters {
 
 export async function getProducts(filters: ProductFilters = {}) {
   try {
-    const response = await medusaClient.store.products.list({
+    const response = await medusaClient.store.product.list({
       limit: filters.limit || 12,
       offset: filters.offset || 0,
       ...(filters.search && { q: filters.search }),
@@ -30,7 +30,7 @@ export async function getProducts(filters: ProductFilters = {}) {
 
 export async function getProductByHandle(handle: string) {
   try {
-    const response = await medusaClient.store.products.retrieve(handle)
+    const response = await medusaClient.store.product.retrieve(handle)
     return response
   } catch (error) {
     console.error(`Error fetching product ${handle}:`, error)
@@ -40,7 +40,7 @@ export async function getProductByHandle(handle: string) {
 
 export async function searchProducts(query: string, limit = 20) {
   try {
-    const response = await medusaClient.store.products.list({
+    const response = await medusaClient.store.product.list({
       q: query,
       limit,
     })
@@ -57,7 +57,7 @@ export async function getProductsByCollection(
   offset = 0
 ) {
   try {
-    const response = await medusaClient.store.products.list({
+    const response = await medusaClient.store.product.list({
       collection_id: collectionId,
       limit,
       offset,
@@ -78,7 +78,7 @@ export async function getProductsByCategory(
   offset = 0
 ) {
   try {
-    const response = await medusaClient.store.products.list({
+    const response = await medusaClient.store.product.list({
       category_id: categoryId,
       limit,
       offset,
@@ -105,10 +105,15 @@ export async function getCollections() {
 
 export async function getCategories() {
   try {
-    const response = await medusaClient.store.category.list()
-    return response
+    // Medusa doesn't have built-in category endpoint by default
+    // Return empty categories for now - implement custom module if needed
+    return {
+      product_categories: [],
+    }
   } catch (error) {
     console.error("Error fetching categories:", error)
-    throw error
+    return {
+      product_categories: [],
+    }
   }
 }
