@@ -11,6 +11,8 @@ export async function getOrCreateCart(regionId?: string) {
         const cart = await medusaClient.store.cart.retrieve(cartId)
         return cart
       } catch (error) {
+        // Cart not found or expired - this is normal on first load
+        console.debug("Debug: Existing cart not found, creating new cart", error)
         localStorage?.removeItem(CART_ID_STORAGE_KEY)
         cartId = null
       }
@@ -26,17 +28,21 @@ export async function getOrCreateCart(regionId?: string) {
 
     return cart
   } catch (error) {
-    console.error("Error creating cart:", error)
+    console.debug("Debug: Error creating cart:", error)
     throw error
   }
 }
 
 export async function getCart(cartId: string) {
+  if (!cartId) {
+    console.debug("Cart ID is empty, skipping retrieve")
+    return null
+  }
   try {
     const cart = await medusaClient.store.cart.retrieve(cartId)
     return cart
   } catch (error) {
-    console.error(`Error fetching cart ${cartId}:`, error)
+    console.debug(`Debug: Error fetching cart ${cartId}:`, error)
     throw error
   }
 }
@@ -46,6 +52,9 @@ export async function addToCart(
   variantId: string,
   quantity: number
 ) {
+  if (!cartId) {
+    throw new Error("Cart ID is required to add items")
+  }
   try {
     const cart = await medusaClient.store.cart.createLineItems(cartId, {
       items: [
@@ -57,7 +66,7 @@ export async function addToCart(
     })
     return cart
   } catch (error) {
-    console.error("Error adding to cart:", error)
+    console.debug("Debug: Error adding to cart:", error)
     throw error
   }
 }
@@ -67,6 +76,9 @@ export async function updateLineItem(
   lineItemId: string,
   quantity: number
 ) {
+  if (!cartId) {
+    throw new Error("Cart ID is required to update items")
+  }
   try {
     const cart = await medusaClient.store.cart.updateLineItems(cartId, {
       items: [
@@ -78,12 +90,15 @@ export async function updateLineItem(
     })
     return cart
   } catch (error) {
-    console.error("Error updating line item:", error)
+    console.debug("Debug: Error updating line item:", error)
     throw error
   }
 }
 
 export async function removeFromCart(cartId: string, lineItemId: string) {
+  if (!cartId) {
+    throw new Error("Cart ID is required to remove items")
+  }
   try {
     const cart = await medusaClient.store.cart.deleteLineItems(
       cartId,
@@ -91,29 +106,36 @@ export async function removeFromCart(cartId: string, lineItemId: string) {
     )
     return cart
   } catch (error) {
-    console.error("Error removing from cart:", error)
+    console.debug("Debug: Error removing from cart:", error)
     throw error
   }
 }
 
 export async function updateCart(cartId: string, data: any) {
+  if (!cartId) {
+    throw new Error("Cart ID is required to update cart")
+  }
   try {
     const cart = await medusaClient.store.cart.update(cartId, data)
     return cart
   } catch (error) {
-    console.error("Error updating cart:", error)
+    console.debug("Debug: Error updating cart:", error)
     throw error
   }
 }
 
 export async function getShippingMethods(cartId: string) {
+  if (!cartId) {
+    console.debug("Cart ID is empty, skipping shipping methods fetch")
+    return null
+  }
   try {
     const methods = await medusaClient.store.fulfillment.listCartOptions(
       cartId
     )
     return methods
   } catch (error) {
-    console.error("Error fetching shipping methods:", error)
+    console.debug("Debug: Error fetching shipping methods:", error)
     throw error
   }
 }
