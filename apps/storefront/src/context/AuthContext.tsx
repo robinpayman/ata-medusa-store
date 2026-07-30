@@ -34,7 +34,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         const currentCustomer = await getCurrentCustomer()
         setCustomer(currentCustomer)
       } catch (error) {
-        console.error("Failed to initialize auth:", error)
+        // Silently handle init errors - 401 is expected for unauthenticated visitors
+        console.debug("Auth initialization debug:", error)
         setCustomer(null)
       } finally {
         setIsLoading(false)

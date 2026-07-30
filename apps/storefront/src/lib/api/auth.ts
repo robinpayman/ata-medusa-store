@@ -47,7 +47,8 @@ export async function getCurrentCustomer() {
     const response = await medusaClient.store.customer.retrieve()
     return response.customer
   } catch (error) {
-    console.error("Get current customer error:", error)
+    // 401 errors are expected for unauthenticated visitors - use debug level
+    console.debug("Get current customer debug:", error)
     return null
   }
 }
