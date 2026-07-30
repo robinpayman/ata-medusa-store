@@ -1,0 +1,45 @@
+apiVersion: 2021-09-01
+type: Microsoft.ContainerInstance/containerGroups
+name: ata-medusa-backend
+location: westeurope
+properties:
+  containers:
+  - name: backend
+    properties:
+      image: atatreningsutstyr.azurecr.io/medusa-backend:latest
+      resources:
+        requests:
+          cpu: 1.0
+          memoryInGb: 1.5
+      ports:
+      - port: 9000
+        protocol: TCP
+      environmentVariables:
+      - name: NODE_ENV
+        value: production
+      - name: DATABASE_URL
+        secureValue: postgresql://user:password@medusa-db.postgres.database.azure.com:5432/medusa_db?sslmode=require
+      - name: REDIS_URL
+        value: redis://medusa-redis.redis.cache.windows.net:6379
+      - name: STORE_CORS
+        value: https://atatreningsutstyr.no,https://www.atatreningsutstyr.no
+      - name: ADMIN_CORS
+        value: https://admin.atatreningsutstyr.no
+      - name: AUTH_CORS
+        value: https://atatreningsutstyr.no,https://www.atatreningsutstyr.no,https://admin.atatreningsutstyr.no
+      - name: JWT_SECRET
+        secureValue: <your-jwt-secret>
+      - name: COOKIE_SECRET
+        secureValue: <your-cookie-secret>
+  osType: Linux
+  restartPolicy: Always
+  ipAddress:
+    type: Public
+    ports:
+    - port: 9000
+      protocol: TCP
+    dnsNameLabel: ata-medusa-backend
+  imageRegistryCredentials:
+  - server: atatreningsutstyr.azurecr.io
+    username: <registry-username>
+    password: <registry-password>

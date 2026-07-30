@@ -1,0 +1,22 @@
+FROM node:20-alpine
+
+WORKDIR /app
+
+# Copy root package files
+COPY package.json package-lock.json ./
+
+# Copy backend and storefront source
+COPY apps/backend ./apps/backend
+COPY apps/storefront ./apps/storefront
+
+# Install dependencies
+RUN npm ci
+
+# Build backend
+RUN cd apps/backend && npm run build
+
+EXPOSE 9000
+
+WORKDIR /app/apps/backend
+
+CMD ["npm", "run", "start"]

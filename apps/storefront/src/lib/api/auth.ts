@@ -1,8 +1,13 @@
-import { medusaClient } from "./medusa-client"
+import medusaClient from "@/lib/medusa-client"
 
-export async function registerCustomer(email: string, password: string, firstName: string, lastName: string) {
+export async function registerCustomer(
+  email: string,
+  password: string,
+  firstName: string,
+  lastName: string
+) {
   try {
-    const response = await medusaClient.customers.create({
+    const response = await medusaClient.store.customer.create({
       email,
       password,
       first_name: firstName,
@@ -17,7 +22,7 @@ export async function registerCustomer(email: string, password: string, firstNam
 
 export async function loginCustomer(email: string, password: string) {
   try {
-    const response = await medusaClient.auth.authenticate({
+    const response = await medusaClient.store.auth.login({
       email,
       password,
     })
@@ -30,7 +35,7 @@ export async function loginCustomer(email: string, password: string) {
 
 export async function logoutCustomer() {
   try {
-    await medusaClient.auth.logout()
+    await medusaClient.store.auth.logout()
   } catch (error) {
     console.error("Logout error:", error)
     throw error
@@ -39,7 +44,7 @@ export async function logoutCustomer() {
 
 export async function getCurrentCustomer() {
   try {
-    const response = await medusaClient.customers.retrieve()
+    const response = await medusaClient.store.customer.retrieve()
     return response.customer
   } catch (error) {
     console.error("Get current customer error:", error)
@@ -55,7 +60,7 @@ export async function updateCustomer(data: {
   phone?: string
 }) {
   try {
-    const response = await medusaClient.customers.update(data)
+    const response = await medusaClient.store.customer.update(data)
     return response.customer
   } catch (error) {
     console.error("Update customer error:", error)
@@ -65,7 +70,7 @@ export async function updateCustomer(data: {
 
 export async function requestPasswordReset(email: string) {
   try {
-    await medusaClient.customers.generatePasswordToken({
+    await medusaClient.store.auth.generateToken({
       email,
     })
   } catch (error) {
@@ -74,9 +79,13 @@ export async function requestPasswordReset(email: string) {
   }
 }
 
-export async function resetPassword(email: string, token: string, password: string) {
+export async function resetPassword(
+  email: string,
+  token: string,
+  password: string
+) {
   try {
-    const response = await medusaClient.customers.resetPassword({
+    const response = await medusaClient.store.auth.reset({
       email,
       token,
       password,
