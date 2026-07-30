@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { Button } from "@/components/Button"
 import { useAuth } from "@/context/AuthContext"
-import { getOrders } from "@/lib/api/orders"
+import { listOrders } from "@/lib/api/orders"
 import { useState, useEffect } from "react"
 
 interface Order {
@@ -16,16 +16,16 @@ interface Order {
 }
 
 export default function OrdersPage() {
-  const { isAuthenticated, isLoading } = useAuth()
+  const { customer, isAuthenticated, isLoading } = useAuth()
   const [orders, setOrders] = useState<Order[]>([])
   const [ordersLoading, setOrdersLoading] = useState(true)
 
   useEffect(() => {
-    if (isAuthenticated && !isLoading) {
+    if (isAuthenticated && !isLoading && customer?.email) {
       const loadOrders = async () => {
         try {
-          const fetchedOrders = await getOrders()
-          setOrders(fetchedOrders)
+          const response = await listOrders(customer.email)
+          setOrders(response.orders || [])
         } catch (error) {
           console.error("Failed to load orders:", error)
         } finally {
