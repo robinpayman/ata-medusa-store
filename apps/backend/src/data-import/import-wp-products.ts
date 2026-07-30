@@ -1,5 +1,6 @@
 import * as fs from "fs"
 import { parseArgs } from "util"
+import { randomUUID } from "crypto"
 
 // DTO Interfaces
 interface ImportProduct {
@@ -103,12 +104,14 @@ async function importProducts(inputFile: string): Promise<ImportResult> {
           continue
         }
 
-        // Insert product
+        // Insert product with generated UUID
+        const productId = randomUUID()
         const productResult = await client.query(
-          `INSERT INTO product (title, description, handle, is_giftcard, discountable, thumbnail, external_id, created_at, updated_at)
-           VALUES ($1, $2, $3, $4, $5, $6, $7, NOW(), NOW())
+          `INSERT INTO product (id, title, description, handle, is_giftcard, discountable, thumbnail, external_id, created_at, updated_at)
+           VALUES ($1, $2, $3, $4, $5, $6, $7, $8, NOW(), NOW())
            RETURNING id`,
           [
+            productId,
             product.title,
             product.description,
             product.handle,
@@ -119,41 +122,40 @@ async function importProducts(inputFile: string): Promise<ImportResult> {
           ]
         )
 
-        const productId = productResult.rows[0].id
-
         // Insert variant
         const variant = product.variants[0]
+        const variantId = randomUUID()
         const variantResult = await client.query(
-          `INSERT INTO product_variant (product_id, title, sku, inventory_quantity, track_inventory, created_at, updated_at)
+          `INSERT INTO product_variant (id, product_id, title, sku, manage_inventory, created_at, updated_at)
            VALUES ($1, $2, $3, $4, $5, NOW(), NOW())
            RETURNING id`,
           [
+            variantId,
             productId,
             variant.title,
             variant.sku,
-            variant.inventory_quantity,
-            variant.track_inventory,
+            true,
           ]
         )
 
-        const variantId = variantResult.rows[0].id
-
         // Insert price
         const price = variant.prices[0]
+        const priceId = randomUUID()
         await client.query(
-          `INSERT INTO product_variant_price (variant_id, currency_code, amount, created_at, updated_at)
-           VALUES ($1, $2, $3, NOW(), NOW())`,
-          [variantId, price.currency_code, price.amount]
+          `INSERT INTO product_variant_price (id, variant_id, currency_code, amount, created_at, updated_at)
+           VALUES ($1, $2, $3, $4, NOW(), NOW())`,
+          [priceId, variantId, price.currency_code, price.amount]
         )
 
         // Insert images if available
         if (product.images && product.images.length > 0) {
           for (let idx = 0; idx < product.images.length; idx++) {
             const image = product.images[idx]
+            const imageId = randomUUID()
             await client.query(
-              `INSERT INTO product_image (product_id, url, alt_text, rank, created_at, updated_at)
-               VALUES ($1, $2, $3, $4, NOW(), NOW())`,
-              [productId, image.url, product.title, idx]
+              `INSERT INTO product_image (id, product_id, url, alt_text, rank, created_at, updated_at)
+               VALUES ($1, $2, $3, $4, $5, NOW(), NOW())`,
+              [imageId, productId, image.url, product.title, idx]
             )
           }
         }
