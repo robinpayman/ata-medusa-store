@@ -1,6 +1,18 @@
 import * as fs from "fs"
-import { MedusaContainer } from "@medusajs/types"
+import { MedusaContainer } from "@medusajs/framework"
+import {
+  ContainerRegistrationKeys,
+  ProductStatus,
+} from "@medusajs/framework/utils"
+import { createProductsWorkflow } from "@medusajs/medusa/core-flows"
 
+/**
+ * Shape produced by `src/data-import/transform-wp-products.ts`.
+ *
+ * `amount` is expected in MAJOR currency units (e.g. 499 means 499 NOK).
+ * Medusa v2 does not use minor units, so a value in øre/cents here would
+ * inflate every price by 100x.
+ */
 interface ImportProduct {
   title: string
   description: string
@@ -24,9 +36,18 @@ interface ImportProduct {
   }>
 }
 
-export default async function importProducts({ container }: { container: MedusaContainer }) {
-  const logger = container.resolve("logger")
-  
+// Products are created in batches so one failure doesn't abort the whole run
+// and memory stays bounded for large catalogues.
+const BATCH_SIZE = 50
+
+export default async function importProducts({
+  container,
+}: {
+  container: MedusaContainer
+}) {
+  const logger = container.resolve(ContainerRegistrationKeys.LOGGER)
+  const query = container.resolve(ContainerRegistrationKeys.QUERY)
+
   logger.info("Starting WordPress product import...")
 
   const inputFile = "/tmp/medusa_products.json"
@@ -40,56 +61,70 @@ export default async function importProducts({ container }: { container: MedusaC
 
   logger.info(`Loaded ${productsToImport.length} products for import`)
 
+  // Every product must belong to a shipping profile in Medusa v2.
+  const { data: shippingProfiles } = await query.graph({
+    entity: "shipping_profile",
+    fields: ["id"],
+  })
+
+  const shippingProfile = shippingProfiles[0]
+
+  if (!shippingProfile) {
+    logger.error(
+      "No shipping profile found. Run the initial data seed before importing."
+    )
+    return
+  }
+
   let imported = 0
   let failed = 0
 
-  // Get the product module service
-  try {
-    const productModule = container.resolve("productModule")
-    
-    for (const product of productsToImport) {
-      try {
-        const variant = product.variants[0]
-        const price = variant.prices[0]
+  for (let i = 0; i < productsToImport.length; i += BATCH_SIZE) {
+    const batch = productsToImport.slice(i, i + BATCH_SIZE)
 
-        // Create product with variants and prices using the module service
-        const createdProduct = await productModule.create({
-          title: product.title,
-          description: product.description,
-          handle: product.handle,
-          is_giftcard: product.is_giftcard,
-          discountable: product.discountable,
-          thumbnail: product.thumbnail || undefined,
-          external_id: product.external_id,
-          variants: [
-            {
-              title: variant.title,
-              sku: variant.sku,
-              inventory_quantity: variant.inventory_quantity,
-              track_inventory: variant.track_inventory,
-              prices: [
-                {
-                  currency_code: price.currency_code,
-                  amount: price.amount,
-                },
-              ],
-            },
-          ],
-        })
+    const products = batch.map((product) => {
+      const variant = product.variants[0]
 
-        imported++
-        if (imported % 50 === 0) {
-          logger.info(`Imported ${imported}/${productsToImport.length} products...`)
-        }
-      } catch (err) {
-        logger.error(`Failed to import product ${product.handle}: ${String(err)}`)
-        failed++
+      return {
+        title: product.title,
+        description: product.description,
+        handle: product.handle,
+        is_giftcard: product.is_giftcard,
+        discountable: product.discountable,
+        external_id: product.external_id,
+        status: ProductStatus.PUBLISHED,
+        shipping_profile_id: shippingProfile.id,
+        ...(product.thumbnail && { thumbnail: product.thumbnail }),
+        ...(product.images?.length && { images: product.images }),
+        // Medusa requires at least one option; single-variant WooCommerce
+        // products get a synthetic default so the variant can be created.
+        options: [{ title: "Default", values: ["Default"] }],
+        variants: [
+          {
+            title: variant.title,
+            sku: variant.sku,
+            manage_inventory: variant.track_inventory,
+            options: { Default: "Default" },
+            prices: variant.prices.map((price) => ({
+              amount: price.amount,
+              currency_code: price.currency_code.toLowerCase(),
+            })),
+          },
+        ],
       }
-    }
+    })
 
-    logger.info(`✅ Import completed: ${imported} succeeded, ${failed} failed`)
-  } catch (err) {
-    logger.error(`Failed to resolve product module: ${String(err)}`)
-    logger.info("Skipping product import - module service not available")
+    try {
+      await createProductsWorkflow(container).run({ input: { products } })
+      imported += batch.length
+      logger.info(`Imported ${imported}/${productsToImport.length} products...`)
+    } catch (err) {
+      failed += batch.length
+      logger.error(
+        `Failed to import batch starting at index ${i}: ${String(err)}`
+      )
+    }
   }
+
+  logger.info(`Import completed: ${imported} succeeded, ${failed} failed`)
 }

@@ -2,36 +2,40 @@
 
 import React, { useState } from "react"
 import Image from "next/image"
+import { HttpTypes } from "@medusajs/types"
 import { Button } from "./Button"
 import { useCart } from "@/context/CartContext"
 
-interface Image {
-  id: string
-  url: string
-}
-
-interface Variant {
-  id: string
-  title?: string
-  price?: number
-  manage_inventory?: boolean
-  inventory_quantity?: number
-}
-
-interface Product {
-  id: string
-  title: string
-  description?: string
-  thumbnail?: string | null
-  images?: Image[]
-  variants?: Variant[]
-}
+type Variant = HttpTypes.StoreProductVariant
+type CalculatedPrice = Variant["calculated_price"]
 
 interface ProductDetailProps {
-  product: Product
+  product: HttpTypes.StoreProduct
+  countryCode: string
 }
 
-export default function ProductDetail({ product }: ProductDetailProps) {
+/**
+ * Medusa v2 returns prices in major units (e.g. `10` means 10 EUR), so the
+ * amount must never be divided by 100. The currency comes from the region the
+ * price was calculated in rather than being hard coded.
+ */
+function formatPrice(price?: CalculatedPrice | null): string | null {
+  const amount = price?.calculated_amount
+
+  if (typeof amount !== "number") {
+    return null
+  }
+
+  return new Intl.NumberFormat("nb-NO", {
+    style: "currency",
+    currency: (price?.currency_code ?? "nok").toUpperCase(),
+  }).format(amount)
+}
+
+export default function ProductDetail({
+  product,
+  countryCode,
+}: ProductDetailProps) {
   const { addToCart, loading: cartLoading } = useCart()
   const [selectedVariant, setSelectedVariant] = useState<Variant | null>(
     product.variants?.[0] || null
@@ -63,19 +67,23 @@ export default function ProductDetail({ product }: ProductDetailProps) {
     }
   }
 
-  const price = selectedVariant?.price || 0
-  const displayPrice = price / 100
+  const displayPrice = formatPrice(selectedVariant?.calculated_price)
+
+  // `inventory_quantity` is null when Medusa doesn't track/return it, which is
+  // not the same as zero — treat only an explicit 0 as sold out.
+  const inventoryQuantity = selectedVariant?.inventory_quantity
   const isInStock =
     !selectedVariant?.manage_inventory ||
-    (selectedVariant?.inventory_quantity || 0) > 0
+    inventoryQuantity == null ||
+    inventoryQuantity > 0
 
   return (
     <div className="w-full bg-white">
       <div className="max-w-7xl mx-auto px-6 py-12">
         {/* Breadcrumb */}
         <div className="mb-8 text-sm text-gray-600">
-          <a href="/products" className="hover:text-gray-900">
-            Products
+          <a href={`/${countryCode}/products`} className="hover:text-gray-900">
+            Produkter
           </a>
           <span className="mx-2">/</span>
           <span>{product.title}</span>
@@ -135,19 +143,27 @@ export default function ProductDetail({ product }: ProductDetailProps) {
             {/* Price */}
             <div className="mb-6 pb-6 border-b">
               <div className="flex items-baseline gap-2">
-                <p className="text-3xl font-bold text-gray-900">
-                  kr {displayPrice.toLocaleString("no-NO")}
-                </p>
-                <p className="text-sm text-gray-500">Ex VAT</p>
+                {displayPrice ? (
+                  <>
+                    <p className="text-3xl font-bold text-gray-900">
+                      {displayPrice}
+                    </p>
+                    <p className="text-sm text-gray-500">Eks. mva</p>
+                  </>
+                ) : (
+                  <p className="text-lg text-gray-500">
+                    Pris ikke tilgjengelig
+                  </p>
+                )}
               </div>
             </div>
 
             {/* Stock Status */}
             <div className="mb-6">
               {isInStock ? (
-                <p className="text-green-600 font-medium">In Stock</p>
+                <p className="text-success-700 font-medium">På lager</p>
               ) : (
-                <p className="text-red-600 font-medium">Out of Stock</p>
+                <p className="text-error-700 font-medium">Utsolgt</p>
               )}
             </div>
 
@@ -155,7 +171,7 @@ export default function ProductDetail({ product }: ProductDetailProps) {
             {product.description && (
               <div className="mb-8">
                 <h2 className="text-lg font-semibold text-gray-900 mb-3">
-                  Description
+                  Beskrivelse
                 </h2>
                 <p className="text-gray-700 leading-relaxed">
                   {product.description}
@@ -167,7 +183,7 @@ export default function ProductDetail({ product }: ProductDetailProps) {
             {product.variants && product.variants.length > 1 && (
               <div className="mb-8">
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                  Options
+                  Varianter
                 </h3>
                 <div className="space-y-2">
                   {product.variants.map((variant) => (
@@ -183,7 +199,7 @@ export default function ProductDetail({ product }: ProductDetailProps) {
                       <div className="flex justify-between items-center">
                         <span className="font-medium">{variant.title}</span>
                         <span className="text-gray-600">
-                          kr {((variant.price || 0) / 100).toLocaleString("no-NO")}
+                          {formatPrice(variant.calculated_price) ?? "—"}
                         </span>
                       </div>
                     </button>
@@ -195,7 +211,7 @@ export default function ProductDetail({ product }: ProductDetailProps) {
             {/* Quantity */}
             <div className="mb-8">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                Quantity
+                Antall
               </h3>
               <div className="flex items-center gap-4">
                 <button
@@ -233,11 +249,11 @@ export default function ProductDetail({ product }: ProductDetailProps) {
                 onClick={handleAddToCart}
                 size="lg"
               >
-                {isAdding ? "Adding to Cart..." : "Add to Cart"}
+                {isAdding ? "Legger i kurv..." : "Legg i kurv"}
               </Button>
               {successMessage && (
                 <div className="absolute inset-0 flex items-center justify-center bg-green-100 text-green-800 rounded font-medium">
-                  Added to cart!
+                  Lagt i kurv!
                 </div>
               )}
             </div>

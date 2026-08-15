@@ -121,9 +121,12 @@ async function transformProducts(inputFile: string, outputFile: string): Promise
         continue
       }
 
-      // Price validation
-      const priceInCents = Math.round(wpProduct.price_inc_vat * 100)
-      if (priceInCents <= 0) {
+      // Price validation.
+      // Medusa v2 stores prices in MAJOR units (499 means 499 NOK), unlike
+      // Medusa v1 which used minor units. Rounding to 2 decimals keeps
+      // floating point noise out of the imported amounts.
+      const priceAmount = Math.round(wpProduct.price_inc_vat * 100) / 100
+      if (priceAmount <= 0) {
         result.errors.push({
           product_id: wpProduct.id,
           sku: wpProduct.sku,
@@ -174,8 +177,8 @@ async function transformProducts(inputFile: string, outputFile: string): Promise
             sku: wpProduct.sku,
             prices: [
               {
-                amount: priceInCents,
-                currency_code: "NOK", // Norwegian Krone
+                amount: priceAmount,
+                currency_code: "nok", // Norwegian Krone
               },
             ],
             inventory_quantity: inventory,

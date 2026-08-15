@@ -1,6 +1,5 @@
 "use client"
 
-import Link from "next/link"
 import ProductCard from "./ProductCard"
 
 interface Product {
@@ -29,9 +28,7 @@ export default function ProductGrid({ products }: ProductGridProps) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
       {products.map((product) => (
-        <Link key={product.id} href={`/products/${product.handle}`}>
-          <ProductCard product={product} />
-        </Link>
+        <ProductCard key={product.id} product={product} />
       ))}
     </div>
   )

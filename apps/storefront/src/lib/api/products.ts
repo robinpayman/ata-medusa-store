@@ -1,4 +1,12 @@
 import medusaClient from "@/lib/medusa-client"
+import { listProducts } from "@lib/data/products"
+
+/**
+ * Medusa omits `variants.inventory_quantity` from store responses unless it is
+ * explicitly requested. The leading `+` adds the field to the default set
+ * instead of replacing it, so thumbnails, images and prices are preserved.
+ */
+const INVENTORY_FIELDS = "+variants.inventory_quantity"
 
 export interface ProductFilters {
   limit?: number
@@ -16,6 +24,7 @@ export async function getProducts(filters: ProductFilters = {}) {
     const response = await medusaClient.store.product.list({
       limit: filters.limit || 12,
       offset: filters.offset || 0,
+      fields: INVENTORY_FIELDS,
       ...(filters.search && { q: filters.search }),
       ...(filters.categoryId && { category_id: filters.categoryId }),
       ...(filters.collection_id && { collection_id: filters.collection_id }),
@@ -28,10 +37,24 @@ export async function getProducts(filters: ProductFilters = {}) {
   }
 }
 
-export async function getProductByHandle(handle: string) {
+/**
+ * Medusa's `/store/products/:id` endpoint only accepts a product ID, so a
+ * handle must be resolved through a filtered list query instead. Going through
+ * `listProducts` also applies the region, which is required for Medusa to
+ * return `variants.calculated_price` — without a region every variant comes
+ * back with no price at all.
+ *
+ * Returns `null` when no product matches so callers can render a 404 rather
+ * than an error state.
+ */
+export async function getProductByHandle(handle: string, countryCode: string) {
   try {
-    const response = await medusaClient.store.product.retrieve(handle)
-    return response
+    const { response } = await listProducts({
+      countryCode,
+      queryParams: { handle, limit: 1 },
+    })
+
+    return response.products[0] ?? null
   } catch (error) {
     console.error(`Error fetching product ${handle}:`, error)
     throw error
@@ -43,6 +66,7 @@ export async function searchProducts(query: string, limit = 20) {
     const response = await medusaClient.store.product.list({
       q: query,
       limit,
+      fields: INVENTORY_FIELDS,
     })
     return response
   } catch (error) {
