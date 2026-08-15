@@ -4,7 +4,10 @@ import {
   ContainerRegistrationKeys,
   ProductStatus,
 } from "@medusajs/framework/utils"
-import { createProductsWorkflow } from "@medusajs/medusa/core-flows"
+import {
+  createInventoryLevelsWorkflow,
+  createProductsWorkflow,
+} from "@medusajs/medusa/core-flows"
 
 /**
  * Shape produced by `src/data-import/transform-wp-products.ts`.
@@ -57,9 +60,9 @@ export default async function importProducts({
   }
 
   const fileContent = fs.readFileSync(inputFile, "utf-8")
-  const productsToImport: ImportProduct[] = JSON.parse(fileContent)
+  const allProducts: ImportProduct[] = JSON.parse(fileContent)
 
-  logger.info(`Loaded ${productsToImport.length} products for import`)
+  logger.info(`Loaded ${allProducts.length} products for import`)
 
   // Every product must belong to a shipping profile in Medusa v2.
   const { data: shippingProfiles } = await query.graph({
@@ -74,6 +77,60 @@ export default async function importProducts({
       "No shipping profile found. Run the initial data seed before importing."
     )
     return
+  }
+
+  // Products that aren't linked to the sales channel bound to the publishable
+  // API key exist in the database but are invisible to the storefront.
+  const { data: salesChannels } = await query.graph({
+    entity: "sales_channel",
+    fields: ["id", "name"],
+  })
+
+  const salesChannel = salesChannels[0]
+
+  if (!salesChannel) {
+    logger.error(
+      "No sales channel found. Run the initial data seed before importing."
+    )
+    return
+  }
+
+  // Inventory levels are created against a stock location; without a level the
+  // variant is treated as out of stock even when quantity was imported.
+  const { data: stockLocations } = await query.graph({
+    entity: "stock_location",
+    fields: ["id", "name"],
+  })
+
+  const stockLocation = stockLocations[0]
+
+  if (!stockLocation) {
+    logger.error(
+      "No stock location found. Run the initial data seed before importing."
+    )
+    return
+  }
+
+  logger.info(
+    `Using sales channel "${salesChannel.name}" and stock location "${stockLocation.name}".`
+  )
+
+  // Skip anything already present so a partially completed run can be resumed.
+  const { data: existingProducts } = await query.graph({
+    entity: "product",
+    fields: ["handle"],
+  })
+  const existingHandles = new Set(
+    existingProducts.map((p: { handle: string }) => p.handle)
+  )
+
+  const productsToImport = allProducts.filter(
+    (p) => !existingHandles.has(p.handle)
+  )
+
+  const skipped = allProducts.length - productsToImport.length
+  if (skipped > 0) {
+    logger.info(`Skipping ${skipped} product(s) that already exist.`)
   }
 
   let imported = 0
@@ -111,12 +168,16 @@ export default async function importProducts({
             })),
           },
         ],
+        sales_channels: [{ id: salesChannel.id }],
       }
     })
 
     try {
       await createProductsWorkflow(container).run({ input: { products } })
       imported += batch.length
+
+      await createInventoryLevelsForBatch(container, batch, stockLocation.id)
+
       logger.info(`Imported ${imported}/${productsToImport.length} products...`)
     } catch (err) {
       failed += batch.length
@@ -127,4 +188,58 @@ export default async function importProducts({
   }
 
   logger.info(`Import completed: ${imported} succeeded, ${failed} failed`)
+}
+
+/**
+ * Stocks the freshly created variants at the given location.
+ *
+ * Medusa creates an inventory item per variant when `manage_inventory` is set,
+ * but leaves it with no level anywhere. A variant with no level resolves to a
+ * quantity of zero and renders as sold out, so the WooCommerce quantity has to
+ * be written as an explicit level.
+ */
+async function createInventoryLevelsForBatch(
+  container: MedusaContainer,
+  batch: ImportProduct[],
+  locationId: string
+) {
+  const query = container.resolve(ContainerRegistrationKeys.QUERY)
+
+  const quantityBySku = new Map<string, number>()
+  for (const product of batch) {
+    const variant = product.variants[0]
+    if (variant?.sku) {
+      quantityBySku.set(variant.sku, variant.inventory_quantity ?? 0)
+    }
+  }
+
+  const { data: variants } = await query.graph({
+    entity: "product_variant",
+    fields: ["sku", "inventory_items.inventory_item_id"],
+    filters: { sku: Array.from(quantityBySku.keys()) },
+  })
+
+  const inventory_levels = variants.flatMap((variant) => {
+    const stocked_quantity = variant.sku
+      ? quantityBySku.get(variant.sku) ?? 0
+      : 0
+
+    return (variant.inventory_items ?? []).flatMap((item) =>
+      item?.inventory_item_id
+        ? [
+            {
+              location_id: locationId,
+              inventory_item_id: item.inventory_item_id,
+              stocked_quantity,
+            },
+          ]
+        : []
+    )
+  })
+
+  if (inventory_levels.length) {
+    await createInventoryLevelsWorkflow(container).run({
+      input: { inventory_levels },
+    })
+  }
 }
