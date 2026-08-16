@@ -4,6 +4,7 @@ import Link from "next/link"
 import { Button } from "@/components/Button"
 import { useAuth } from "@/context/AuthContext"
 import { listOrders } from "@/lib/api/orders"
+import { formatPrice } from "@/lib/util/format-price"
 import { useState, useEffect } from "react"
 
 interface Order {
@@ -127,7 +128,10 @@ export default function OrdersPage() {
                   </div>
                   <div className="mt-4 md:mt-0 md:text-right">
                     <p className="text-2xl font-bold text-gray-900">
-                      {(order.total / 100).toFixed(2)} {order.currency_code?.toUpperCase()}
+                      {formatPrice({
+                        calculated_amount: order.total,
+                        currency_code: order.currency_code,
+                      })}
                     </p>
                     <Link href={`/account/orders/${order.id}`}>
                       <Button variant="outline" size="sm" className="mt-2">

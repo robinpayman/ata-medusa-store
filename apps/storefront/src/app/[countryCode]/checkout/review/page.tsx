@@ -5,6 +5,12 @@ import { useRouter } from "next/navigation"
 import { useCart } from "@/context/CartContext"
 import { completeCart } from "@/lib/api/orders"
 import { Button } from "@/components/Button"
+import { formatPrice } from "@/lib/util/format-price"
+
+// Medusa v2 amounts are already in major units (e.g. 595 means 595 kr), so
+// they must never be divided by 100. The store is NOK-only today, hence the
+// hardcoded currency.
+const CURRENCY_CODE = "nok"
 
 export default function ReviewPage() {
   const router = useRouter()
@@ -118,7 +124,10 @@ export default function ReviewPage() {
                       </p>
                     </div>
                     <p className="font-medium text-gray-900">
-                      kr {((item.subtotal || 0) / 100).toLocaleString("no-NO")}
+                      {formatPrice({
+                        calculated_amount: item.subtotal,
+                        currency_code: CURRENCY_CODE,
+                      })}
                     </p>
                   </div>
                 ))}
@@ -134,20 +143,33 @@ export default function ReviewPage() {
             <div className="space-y-4 mb-6 border-b pb-6">
               <div className="flex justify-between text-gray-700">
                 <span>Delsum</span>
-                <span>kr {(subtotal / 100).toLocaleString("no-NO")}</span>
+                <span>
+                  {formatPrice({
+                    calculated_amount: subtotal,
+                    currency_code: CURRENCY_CODE,
+                  })}
+                </span>
               </div>
               {cart?.shipping_total ? (
                 <div className="flex justify-between text-gray-700">
                   <span>Frakt</span>
                   <span>
-                    kr {(cart.shipping_total / 100).toLocaleString("no-NO")}
+                    {formatPrice({
+                      calculated_amount: cart.shipping_total,
+                      currency_code: CURRENCY_CODE,
+                    })}
                   </span>
                 </div>
               ) : null}
               {cart?.tax_total ? (
                 <div className="flex justify-between text-gray-700">
-                  <span>MVA</span>
-                  <span>kr {(cart.tax_total / 100).toLocaleString("no-NO")}</span>
+                  <span>MVA (25%)</span>
+                  <span>
+                    {formatPrice({
+                      calculated_amount: cart.tax_total,
+                      currency_code: CURRENCY_CODE,
+                    })}
+                  </span>
                 </div>
               ) : null}
             </div>
@@ -156,7 +178,10 @@ export default function ReviewPage() {
               <div className="flex justify-between items-center">
                 <span className="text-lg font-semibold text-gray-900">Totalt</span>
                 <span className="text-2xl font-bold text-gray-900">
-                  kr {(total / 100).toLocaleString("no-NO")}
+                  {formatPrice({
+                    calculated_amount: total,
+                    currency_code: CURRENCY_CODE,
+                  })}
                 </span>
               </div>
             </div>

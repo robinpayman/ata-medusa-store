@@ -4,6 +4,7 @@ import React, { useState } from "react"
 import Image from "next/image"
 import { useCart } from "@/context/CartContext"
 import { Button } from "./Button"
+import { formatPrice } from "@/lib/util/format-price"
 
 interface CartLineItem {
   id: string
@@ -27,10 +28,17 @@ export default function CartItem({ item }: CartItemProps) {
   const { updateLineItem, removeFromCart } = useCart()
   const [isUpdating, setIsUpdating] = useState(false)
 
-  const price = item.unit_price || 0
-  const displayPrice = price / 100
-  const subtotal = item.subtotal || 0
-  const displaySubtotal = subtotal / 100
+  // Medusa v2 amounts are already in major units (e.g. 595 means 595 kr),
+  // so they must never be divided by 100 the way Medusa v1's minor-unit
+  // amounts were. The store is NOK-only today, hence the hardcoded currency.
+  const displayPrice = formatPrice({
+    calculated_amount: item.unit_price,
+    currency_code: "nok",
+  })
+  const displaySubtotal = formatPrice({
+    calculated_amount: item.subtotal,
+    currency_code: "nok",
+  })
 
   const handleQuantityChange = async (newQuantity: number) => {
     if (newQuantity < 1) return
@@ -80,12 +88,8 @@ export default function CartItem({ item }: CartItemProps) {
           <p className="text-sm text-gray-600 mt-1">{item.variant.title}</p>
         )}
         <div className="flex items-center justify-between mt-2">
-          <p className="text-sm font-medium text-gray-900">
-            kr {displayPrice.toLocaleString("no-NO")}
-          </p>
-          <p className="text-sm text-gray-600">
-            Delsum: kr {displaySubtotal.toLocaleString("no-NO")}
-          </p>
+          <p className="text-sm font-medium text-gray-900">{displayPrice}</p>
+          <p className="text-sm text-gray-600">Delsum: {displaySubtotal}</p>
         </div>
       </div>
 
