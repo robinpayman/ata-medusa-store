@@ -1,8 +1,9 @@
 import { Suspense } from "react"
-import { getProducts } from "@/lib/api/products"
+import { getProducts, getCategories } from "@/lib/api/products"
 import ProductGrid from "@/components/ProductGrid"
 import ProductFilters from "@/components/ProductFilters"
 import Pagination from "@/components/Pagination"
+import SortSelect from "@/components/SortSelect"
 
 interface SearchPageProps {
   params: Promise<{ countryCode: string }>
@@ -10,6 +11,7 @@ interface SearchPageProps {
     q?: string
     page?: string
     category?: string
+    sort?: string
   }>
 }
 
@@ -22,7 +24,12 @@ async function SearchContent({
   searchParams,
   countryCode,
 }: {
-  searchParams: Promise<{ q?: string; page?: string; category?: string }>
+  searchParams: Promise<{
+    q?: string
+    page?: string
+    category?: string
+    sort?: string
+  }>
   countryCode: string
 }) {
   const params = await searchParams
@@ -45,29 +52,34 @@ async function SearchContent({
   }
 
   try {
-    const productsData = await getProducts(
-      {
-        limit,
-        offset,
-        search: query,
-        ...(params.category && { categoryId: params.category }),
-      },
-      countryCode
-    )
+    const [productsData, categoriesData] = await Promise.all([
+      getProducts(
+        {
+          limit,
+          offset,
+          search: query,
+          ...(params.category && { categoryId: params.category }),
+          ...(params.sort && { sort: params.sort as any }),
+        },
+        countryCode
+      ),
+      getCategories(),
+    ])
 
     const products = productsData.products || []
     const count = productsData.count || 0
+    const categories = categoriesData.product_categories || []
     const totalPages = Math.ceil(count / limit)
 
     return (
       <div className="flex gap-8 px-6 py-12 max-w-7xl mx-auto">
         <ProductFilters
-          categories={[]}
+          categories={categories}
           selectedCategory={params.category}
         />
 
         <div className="flex-1 min-w-0">
-          <div className="mb-6">
+          <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
             <p className="text-gray-600">
               {count === 0 ? (
                 <>
@@ -80,6 +92,7 @@ async function SearchContent({
                 </>
               )}
             </p>
+            {products.length > 0 && <SortSelect currentSort={params.sort} />}
           </div>
 
           {products.length === 0 ? (
@@ -120,7 +133,7 @@ async function SearchContent({
                 buildHref={(pageNum) =>
                   `/search?q=${encodeURIComponent(query)}&page=${pageNum}${
                     params.category ? `&category=${params.category}` : ""
-                  }`
+                  }${params.sort ? `&sort=${params.sort}` : ""}`
                 }
               />
             </>

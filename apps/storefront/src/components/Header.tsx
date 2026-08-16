@@ -3,11 +3,19 @@
 import React, { useState } from "react"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
+import { useCart } from "@/context/CartContext"
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [searchQuery, setSearchQuery] = useState("")
   const router = useRouter()
+  const { cart } = useCart()
+
+  const itemCount =
+    cart?.items?.reduce(
+      (sum: number, item: { quantity: number }) => sum + item.quantity,
+      0
+    ) ?? 0
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault()
@@ -84,7 +92,7 @@ export default function Header() {
             <Link
               href="/cart"
               className="relative p-2 text-gray-600 hover:text-gray-900 transition-colors duration-200"
-              aria-label="Handlekurv"
+              aria-label={`Handlekurv, ${itemCount} varer`}
             >
               <svg
                 className="w-6 h-6"
@@ -96,10 +104,14 @@ export default function Header() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={2}
-                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2 9m10-9l2 9m-2-9l4-8M17 13l2 9"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
                 />
               </svg>
-              <span className="absolute top-1 right-1 w-4 h-4 bg-blue-600 text-white text-xs rounded-full flex items-center justify-center">0</span>
+              {itemCount > 0 && (
+                <span className="absolute top-0 right-0 w-4 h-4 bg-accent-600 text-white text-xs rounded-full flex items-center justify-center">
+                  {itemCount}
+                </span>
+              )}
             </Link>
 
             {/* Mobile Menu Button */}

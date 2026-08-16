@@ -6,10 +6,12 @@ import {
   addToCart as addToCartAPI,
   removeFromCart as removeFromCartAPI,
   updateLineItem as updateLineItemAPI,
+  updateCart as updateCartAPI,
   getCart as getCartAPI,
   getCartId,
   clearCartId,
 } from "@/lib/api/cart"
+import { getStoreRegionId } from "@/lib/api/regions"
 
 export interface CartContextType {
   cartId: string | null
@@ -36,22 +38,38 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
     const initializeCart = async () => {
       try {
         setLoading(true)
+        // Carts created without a region_id silently default to whatever
+        // region Medusa returns first, which is not necessarily the region
+        // the customer is actually shopping in. Every real product here
+        // only has a price in the storefront's own region, so a cart stuck
+        // in the wrong region fails to accept any line item.
+        const regionId = await getStoreRegionId()
         const existingCartId = getCartId()
 
         if (existingCartId) {
           try {
-            const cartData = await getCartAPI(existingCartId)
+            let cartData = await getCartAPI(existingCartId)
+
+            // Self-heal carts created before this fix, or carts left over
+            // from a different region, instead of leaving them permanently
+            // unable to accept new items.
+            if (regionId && cartData?.region_id !== regionId) {
+              cartData = await updateCartAPI(existingCartId, {
+                region_id: regionId,
+              })
+            }
+
             setCartId(existingCartId)
             setCart(cartData)
           } catch (err) {
             // If existing cart not found, create a new one
             // This is normal behavior on first load or after cart expiry
-            const newCart = await getOrCreateCart()
+            const newCart = await getOrCreateCart(regionId ?? undefined)
             setCartId(newCart.id)
             setCart(newCart)
           }
         } else {
-          const newCart = await getOrCreateCart()
+          const newCart = await getOrCreateCart(regionId ?? undefined)
           setCartId(newCart.id)
           setCart(newCart)
         }

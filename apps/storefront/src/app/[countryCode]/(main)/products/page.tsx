@@ -3,6 +3,7 @@ import { getProducts, getCategories } from "@/lib/api/products"
 import ProductGrid from "@/components/ProductGrid"
 import ProductFilters from "@/components/ProductFilters"
 import Pagination from "@/components/Pagination"
+import SortSelect from "@/components/SortSelect"
 
 interface ProductsPageProps {
   params: Promise<{ countryCode: string }>
@@ -44,6 +45,10 @@ async function ProductsContent({
     filters.categoryId = params.category
   }
 
+  if (params.sort) {
+    filters.sort = params.sort
+  }
+
   try {
     const [productsData, categoriesData] = await Promise.all([
       getProducts(filters, countryCode),
@@ -70,11 +75,12 @@ async function ProductsContent({
             </div>
           ) : (
             <>
-              <div className="mb-6">
+              <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
                 <p className="text-gray-600">
                   Viser {offset + 1} til {Math.min(offset + limit, count)} av{" "}
                   {count} produkter
                 </p>
+                <SortSelect currentSort={params.sort} />
               </div>
               <ProductGrid products={products} />
               <Pagination
@@ -83,7 +89,9 @@ async function ProductsContent({
                 buildHref={(pageNum) =>
                   `/products?page=${pageNum}${
                     params.category ? `&category=${params.category}` : ""
-                  }${params.search ? `&search=${params.search}` : ""}`
+                  }${params.search ? `&search=${params.search}` : ""}${
+                    params.sort ? `&sort=${params.sort}` : ""
+                  }`
                 }
               />
             </>

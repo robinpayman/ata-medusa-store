@@ -25,6 +25,7 @@ export default function ProductDetail({
   const [quantity, setQuantity] = useState(1)
   const [isAdding, setIsAdding] = useState(false)
   const [successMessage, setSuccessMessage] = useState(false)
+  const [addError, setAddError] = useState(false)
 
   const images = product.images || []
   const mainImage = images[0]?.url || product.thumbnail
@@ -38,12 +39,15 @@ export default function ProductDetail({
 
     try {
       setIsAdding(true)
+      setAddError(false)
       await addToCart(selectedVariant.id, quantity)
       setSuccessMessage(true)
       setTimeout(() => setSuccessMessage(false), 2000)
       setQuantity(1)
     } catch (error) {
       console.error("Failed to add to cart:", error)
+      setAddError(true)
+      setTimeout(() => setAddError(false), 4000)
     } finally {
       setIsAdding(false)
     }
@@ -81,7 +85,7 @@ export default function ProductDetail({
                   alt={product.title}
                   width={600}
                   height={600}
-                  className="w-full h-auto object-cover"
+                  className="w-full h-full object-contain aspect-square"
                   priority
                 />
               ) : (
@@ -108,7 +112,7 @@ export default function ProductDetail({
                       src={img.url}
                       alt={product.title}
                       fill
-                      className="object-cover"
+                      className="object-contain p-1"
                     />
                   </button>
                 ))}
@@ -141,11 +145,16 @@ export default function ProductDetail({
             </div>
 
             {/* Stock Status */}
-            <div className="mb-6">
+            <div className="mb-6 flex items-center gap-4">
               {isInStock ? (
                 <p className="text-success-700 font-medium">På lager</p>
               ) : (
                 <p className="text-error-700 font-medium">Utsolgt</p>
+              )}
+              {selectedVariant?.sku && (
+                <p className="text-sm text-gray-500">
+                  Artikkelnr: {selectedVariant.sku}
+                </p>
               )}
             </div>
 
@@ -236,6 +245,11 @@ export default function ProductDetail({
               {successMessage && (
                 <div className="absolute inset-0 flex items-center justify-center bg-green-100 text-green-800 rounded font-medium">
                   Lagt i kurv!
+                </div>
+              )}
+              {addError && (
+                <div className="absolute inset-0 flex items-center justify-center bg-error-100 text-error-700 rounded font-medium px-4 text-center">
+                  Kunne ikke legge i handlekurven. Prøv igjen.
                 </div>
               )}
             </div>

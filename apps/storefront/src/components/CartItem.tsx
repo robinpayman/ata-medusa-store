@@ -72,7 +72,7 @@ export default function CartItem({ item }: CartItemProps) {
             src={item.thumbnail}
             alt={item.title || "Product"}
             fill
-            className="object-cover"
+            className="object-contain p-1"
           />
         ) : (
           <div className="w-full h-full flex items-center justify-center">

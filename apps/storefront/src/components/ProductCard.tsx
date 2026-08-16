@@ -33,6 +33,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
   const { addToCart, loading: cartLoading } = useCart()
   const [isAdding, setIsAdding] = useState(false)
   const [showAdded, setShowAdded] = useState(false)
+  const [addError, setAddError] = useState(false)
 
   const image = product.thumbnail || product.images?.[0]?.url
   const variant = product.variants?.[0]
@@ -54,11 +55,14 @@ const ProductCard = ({ product }: ProductCardProps) => {
 
     try {
       setIsAdding(true)
+      setAddError(false)
       await addToCart(variant.id, 1)
       setShowAdded(true)
       setTimeout(() => setShowAdded(false), 2000)
     } catch (error) {
       console.error("Failed to add to cart:", error)
+      setAddError(true)
+      setTimeout(() => setAddError(false), 3000)
     } finally {
       setIsAdding(false)
     }
@@ -73,7 +77,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
             src={image}
             alt={product.title}
             fill
-            className="object-cover transition-transform duration-300 group-hover:scale-105"
+            className="object-contain p-4 transition-transform duration-300 group-hover:scale-105"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
           />
         ) : (
@@ -145,6 +149,12 @@ const ProductCard = ({ product }: ProductCardProps) => {
           {showAdded && (
             <div className="pointer-events-none absolute inset-0 flex items-center justify-center rounded bg-success-700 text-sm font-medium text-white">
               Lagt til
+            </div>
+          )}
+
+          {addError && (
+            <div className="pointer-events-none absolute inset-0 flex items-center justify-center rounded bg-error-700 px-2 text-center text-sm font-medium text-white">
+              Kunne ikke legge i kurv
             </div>
           )}
         </div>
