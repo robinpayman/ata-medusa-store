@@ -25,7 +25,7 @@ export default function LoginPage() {
       await refreshCustomer()
       router.push("/account")
     } catch (err: any) {
-      setError(err.message || "Login failed. Please try again.")
+      setError(err.message || "Innlogging feilet. Prøv igjen.")
     } finally {
       setIsLoading(false)
     }

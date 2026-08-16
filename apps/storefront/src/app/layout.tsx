@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout(props: { children: React.ReactNode }) {
   return (
-    <html lang="en" data-mode="light">
+    <html lang="no" data-mode="light">
       <body>
         <AuthProvider>
           <CartProvider>

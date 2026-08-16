@@ -30,63 +30,63 @@ export default function ConfirmationPage() {
         </div>
 
         <h1 className="text-4xl font-bold text-gray-900 mb-2">
-          Order Confirmed!
+          Bestilling bekreftet!
         </h1>
         <p className="text-xl text-gray-600 mb-8">
-          Thank you for your purchase. We're preparing your order.
+          Takk for kjøpet. Vi gjør klar bestillingen din.
         </p>
 
         {/* Order Details */}
         <div className="bg-gray-50 rounded-lg p-8 mb-8 text-left">
           <div className="space-y-4">
             <div className="flex justify-between items-center pb-4 border-b">
-              <span className="text-gray-700">Order Number</span>
+              <span className="text-gray-700">Ordrenummer</span>
               <span className="font-medium text-gray-900">{orderId || "---"}</span>
             </div>
             <div className="flex justify-between items-center pb-4 border-b">
-              <span className="text-gray-700">Order Status</span>
+              <span className="text-gray-700">Ordrestatus</span>
               <span className="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
-                Confirmed
+                Bekreftet
               </span>
             </div>
             <div className="flex justify-between items-center">
-              <span className="text-gray-700">Estimated Delivery</span>
-              <span className="text-gray-900">3-5 business days</span>
+              <span className="text-gray-700">Forventet levering</span>
+              <span className="text-gray-900">3-5 virkedager</span>
             </div>
           </div>
         </div>
 
         {/* Next Steps */}
         <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8 text-left">
-          <h3 className="font-semibold text-gray-900 mb-4">What's Next?</h3>
+          <h3 className="font-semibold text-gray-900 mb-4">Hva skjer nå?</h3>
           <ol className="space-y-3 text-gray-700">
             <li className="flex gap-3">
               <span className="flex-shrink-0 inline-flex items-center justify-center h-6 w-6 rounded-full bg-blue-600 text-white text-sm font-bold">
                 1
               </span>
-              <span>Confirmation email will be sent to your inbox shortly</span>
+              <span>Bekreftelses-e-post sendes til innboksen din innen kort tid</span>
             </li>
             <li className="flex gap-3">
               <span className="flex-shrink-0 inline-flex items-center justify-center h-6 w-6 rounded-full bg-blue-600 text-white text-sm font-bold">
                 2
               </span>
-              <span>We'll process your payment and prepare your order</span>
+              <span>Vi behandler betalingen og gjør klar bestillingen din</span>
             </li>
             <li className="flex gap-3">
               <span className="flex-shrink-0 inline-flex items-center justify-center h-6 w-6 rounded-full bg-blue-600 text-white text-sm font-bold">
                 3
               </span>
-              <span>You'll receive a shipping confirmation with tracking</span>
+              <span>Du får en fraktbekreftelse med sporingsnummer</span>
             </li>
           </ol>
         </div>
 
         {/* Contact Information */}
         <div className="mb-8 text-center text-gray-600">
-          <p className="mb-2">Questions about your order?</p>
+          <p className="mb-2">Spørsmål om bestillingen din?</p>
           <p>
             <a href="mailto:support@atatreningsutstyr.no" className="text-blue-600 hover:text-blue-700 font-medium">
-              Contact our support team
+              Kontakt kundeservice
             </a>
           </p>
         </div>
@@ -95,12 +95,12 @@ export default function ConfirmationPage() {
         <div className="flex flex-col sm:flex-row gap-4">
           <a href="/products" className="flex-1">
             <Button variant="outline" className="w-full">
-              Continue Shopping
+              Fortsett å handle
             </Button>
           </a>
           <a href="/" className="flex-1">
             <Button variant="primary" className="w-full">
-              Back to Home
+              Tilbake til forsiden
             </Button>
           </a>
         </div>

@@ -21,7 +21,7 @@ export default function ReviewPage() {
 
   const handlePlaceOrder = async () => {
     if (!cart?.id) {
-      setError("Cart information missing")
+      setError("Handlekurvinformasjon mangler")
       return
     }
 
@@ -38,7 +38,7 @@ export default function ReviewPage() {
       clearCart()
       router.push(`/checkout/confirmation?orderId=${order.id}`)
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Failed to place order")
+      setError(err instanceof Error ? err.message : "Kunne ikke fullføre bestillingen")
     } finally {
       setIsSubmitting(false)
     }
@@ -62,8 +62,8 @@ export default function ReviewPage() {
   return (
     <div className="w-full bg-white">
       <div className="max-w-4xl mx-auto px-6 py-12">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">Order Review</h1>
-        <p className="text-gray-600 mb-8">Step 3 of 3</p>
+        <h1 className="text-3xl font-bold text-gray-900 mb-2">Gjennomgå bestilling</h1>
+        <p className="text-gray-600 mb-8">Steg 3 av 3</p>
 
         {error && (
           <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg text-red-700">
@@ -77,7 +77,7 @@ export default function ReviewPage() {
             {/* Shipping Information */}
             <div className="bg-gray-50 rounded-lg p-6">
               <h2 className="text-lg font-semibold text-gray-900 mb-4">
-                Shipping Address
+                Leveringsadresse
               </h2>
               <div className="text-gray-700 space-y-1">
                 <p>{shippingData.firstName} {shippingData.lastName}</p>
@@ -91,19 +91,19 @@ export default function ReviewPage() {
             {/* Payment Method */}
             <div className="bg-gray-50 rounded-lg p-6">
               <h2 className="text-lg font-semibold text-gray-900 mb-4">
-                Payment Method
+                Betalingsmetode
               </h2>
               <div className="text-gray-700">
-                {paymentMethod === "card" && "Credit Card"}
-                {paymentMethod === "bank" && "Bank Transfer"}
-                {paymentMethod === "invoice" && "Invoice"}
+                {paymentMethod === "card" && "Kredittkort"}
+                {paymentMethod === "bank" && "Bankoverføring"}
+                {paymentMethod === "invoice" && "Faktura"}
               </div>
             </div>
 
             {/* Order Items */}
             <div className="bg-gray-50 rounded-lg p-6">
               <h2 className="text-lg font-semibold text-gray-900 mb-4">
-                Order Items
+                Varer i bestillingen
               </h2>
               <div className="space-y-4">
                 {items.map((item) => (
@@ -114,7 +114,7 @@ export default function ReviewPage() {
                     <div>
                       <p className="font-medium text-gray-900">{item.title}</p>
                       <p className="text-sm text-gray-600">
-                        Quantity: {item.quantity}
+                        Antall: {item.quantity}
                       </p>
                     </div>
                     <p className="font-medium text-gray-900">
@@ -129,16 +129,16 @@ export default function ReviewPage() {
           {/* Order Summary */}
           <div className="bg-gray-50 rounded-lg p-6 h-fit">
             <h2 className="text-lg font-semibold text-gray-900 mb-6">
-              Order Summary
+              Ordresammendrag
             </h2>
             <div className="space-y-4 mb-6 border-b pb-6">
               <div className="flex justify-between text-gray-700">
-                <span>Subtotal</span>
+                <span>Delsum</span>
                 <span>kr {(subtotal / 100).toLocaleString("no-NO")}</span>
               </div>
               {cart?.shipping_total ? (
                 <div className="flex justify-between text-gray-700">
-                  <span>Shipping</span>
+                  <span>Frakt</span>
                   <span>
                     kr {(cart.shipping_total / 100).toLocaleString("no-NO")}
                   </span>
@@ -146,7 +146,7 @@ export default function ReviewPage() {
               ) : null}
               {cart?.tax_total ? (
                 <div className="flex justify-between text-gray-700">
-                  <span>Tax</span>
+                  <span>MVA</span>
                   <span>kr {(cart.tax_total / 100).toLocaleString("no-NO")}</span>
                 </div>
               ) : null}
@@ -154,7 +154,7 @@ export default function ReviewPage() {
 
             <div className="mb-6 pb-6 border-b">
               <div className="flex justify-between items-center">
-                <span className="text-lg font-semibold text-gray-900">Total</span>
+                <span className="text-lg font-semibold text-gray-900">Totalt</span>
                 <span className="text-2xl font-bold text-gray-900">
                   kr {(total / 100).toLocaleString("no-NO")}
                 </span>
@@ -167,18 +167,18 @@ export default function ReviewPage() {
                 disabled={isSubmitting}
                 className="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 text-white font-medium py-3 px-4 rounded-lg transition-colors"
               >
-                {isSubmitting ? "Placing Order..." : "Place Order"}
+                {isSubmitting ? "Sender bestilling..." : "Bekreft bestilling"}
               </button>
               <a href="/checkout/payment" className="block">
                 <Button variant="outline" className="w-full">
-                  Back to Payment
+                  Tilbake til betaling
                 </Button>
               </a>
             </div>
 
             <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg text-sm text-gray-700 space-y-2">
-              <p className="font-medium text-gray-900">Order Protection</p>
-              <p>Your order is protected by our secure checkout process.</p>
+              <p className="font-medium text-gray-900">Ordrebeskyttelse</p>
+              <p>Bestillingen din er beskyttet av vår sikre kasseprosess.</p>
             </div>
           </div>
         </div>

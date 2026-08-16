@@ -3,7 +3,6 @@
 import React, { useState } from "react"
 import { useRouter } from "next/navigation"
 import { useCart } from "@/context/CartContext"
-import CheckoutForm from "@/components/CheckoutForm"
 import { Button } from "@/components/Button"
 
 interface ShippingFormData {
@@ -55,7 +54,7 @@ export default function ShippingPage() {
       !formData.city ||
       !formData.postalCode
     ) {
-      setError("Please fill in all required fields")
+      setError("Fyll ut alle påkrevde felt")
       return
     }
 
@@ -65,7 +64,7 @@ export default function ShippingPage() {
       sessionStorage.setItem("shippingData", JSON.stringify(formData))
       router.push("/checkout/payment")
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Failed to proceed")
+      setError(err instanceof Error ? err.message : "Kunne ikke fortsette")
     } finally {
       setIsSubmitting(false)
     }
@@ -87,9 +86,9 @@ export default function ShippingPage() {
   if (isEmpty) {
     return (
       <div className="max-w-2xl mx-auto px-6 py-12 text-center">
-        <p className="text-gray-500 text-lg mb-6">Your cart is empty</p>
+        <p className="text-gray-500 text-lg mb-6">Handlekurven din er tom</p>
         <a href="/products">
-          <Button variant="primary">Continue Shopping</Button>
+          <Button variant="primary">Fortsett å handle</Button>
         </a>
       </div>
     )
@@ -98,8 +97,8 @@ export default function ShippingPage() {
   return (
     <div className="w-full bg-white">
       <div className="max-w-2xl mx-auto px-6 py-12">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">Shipping Address</h1>
-        <p className="text-gray-600 mb-8">Step 1 of 3</p>
+        <h1 className="text-3xl font-bold text-gray-900 mb-2">Leveringsadresse</h1>
+        <p className="text-gray-600 mb-8">Steg 1 av 3</p>
 
         {error && (
           <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg text-red-700">
@@ -111,7 +110,7 @@ export default function ShippingPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
-                First Name *
+                Fornavn *
               </label>
               <input
                 type="text"
@@ -124,7 +123,7 @@ export default function ShippingPage() {
             </div>
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
-                Last Name *
+                Etternavn *
               </label>
               <input
                 type="text"
@@ -139,7 +138,7 @@ export default function ShippingPage() {
 
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">
-              Email *
+              E-post *
             </label>
             <input
               type="email"
@@ -153,7 +152,7 @@ export default function ShippingPage() {
 
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">
-              Phone
+              Telefon
             </label>
             <input
               type="tel"
@@ -166,14 +165,14 @@ export default function ShippingPage() {
 
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">
-              Address *
+              Adresse *
             </label>
             <input
               type="text"
               name="address1"
               value={formData.address1}
               onChange={handleInputChange}
-              placeholder="Street address"
+              placeholder="Gateadresse"
               required
               className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
@@ -181,14 +180,14 @@ export default function ShippingPage() {
 
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">
-              Address Line 2
+              Adresselinje 2
             </label>
             <input
               type="text"
               name="address2"
               value={formData.address2}
               onChange={handleInputChange}
-              placeholder="Apartment, suite, etc."
+              placeholder="Leilighet, etasje osv."
               className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
@@ -196,7 +195,7 @@ export default function ShippingPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
-                City *
+                Poststed *
               </label>
               <input
                 type="text"
@@ -209,7 +208,7 @@ export default function ShippingPage() {
             </div>
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
-                Postal Code *
+                Postnummer *
               </label>
               <input
                 type="text"
@@ -222,7 +221,7 @@ export default function ShippingPage() {
             </div>
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
-                Country *
+                Land *
               </label>
               <select
                 name="country"
@@ -230,9 +229,9 @@ export default function ShippingPage() {
                 onChange={handleInputChange}
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
-                <option value="NO">Norway</option>
-                <option value="SE">Sweden</option>
-                <option value="DK">Denmark</option>
+                <option value="NO">Norge</option>
+                <option value="SE">Sverige</option>
+                <option value="DK">Danmark</option>
                 <option value="FI">Finland</option>
               </select>
             </div>
@@ -241,7 +240,7 @@ export default function ShippingPage() {
           <div className="flex gap-4 pt-6">
             <a href="/cart" className="flex-1">
               <Button variant="outline" className="w-full">
-                Back to Cart
+                Tilbake til handlekurv
               </Button>
             </a>
             <button
@@ -249,7 +248,7 @@ export default function ShippingPage() {
               disabled={isSubmitting}
               className="flex-1 bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 text-white font-medium py-2 px-4 rounded-lg transition-colors"
             >
-              {isSubmitting ? "Processing..." : "Continue to Shipping Method"}
+              {isSubmitting ? "Behandler..." : "Fortsett til leveringsmetode"}
             </button>
           </div>
         </form>

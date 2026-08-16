@@ -33,31 +33,31 @@ export default function CartSummary({ cart }: CartSummaryProps) {
 
   return (
     <div className="h-fit sticky top-24 bg-gray-50 rounded-lg p-6">
-      <h2 className="text-lg font-semibold text-gray-900 mb-6">Order Summary</h2>
+      <h2 className="text-lg font-semibold text-gray-900 mb-6">Ordresammendrag</h2>
 
       <div className="space-y-4 mb-6 border-b border-gray-200 pb-6">
         <div className="flex justify-between text-gray-700">
-          <span>Subtotal</span>
+          <span>Delsum</span>
           <span>kr {displaySubtotal.toLocaleString("no-NO")}</span>
         </div>
 
         {displayShipping > 0 && (
           <div className="flex justify-between text-gray-700">
-            <span>Shipping</span>
+            <span>Frakt</span>
             <span>kr {displayShipping.toLocaleString("no-NO")}</span>
           </div>
         )}
 
         {displayDiscount > 0 && (
           <div className="flex justify-between text-green-600">
-            <span>Discount</span>
+            <span>Rabatt</span>
             <span>-kr {displayDiscount.toLocaleString("no-NO")}</span>
           </div>
         )}
 
         {displayTax > 0 && (
           <div className="flex justify-between text-gray-700">
-            <span>VAT (25%)</span>
+            <span>MVA (25%)</span>
             <span>kr {displayTax.toLocaleString("no-NO")}</span>
           </div>
         )}
@@ -65,7 +65,7 @@ export default function CartSummary({ cart }: CartSummaryProps) {
 
       <div className="mb-6 pb-6 border-b border-gray-200">
         <div className="flex justify-between items-center">
-          <span className="text-lg font-semibold text-gray-900">Total</span>
+          <span className="text-lg font-semibold text-gray-900">Totalt</span>
           <span className="text-2xl font-bold text-gray-900">
             kr {displayTotal.toLocaleString("no-NO")}
           </span>
@@ -74,28 +74,28 @@ export default function CartSummary({ cart }: CartSummaryProps) {
 
       <Link href="/checkout/shipping" className="block mb-3">
         <Button variant="primary" className="w-full">
-          Proceed to Checkout
+          Gå til kassen
         </Button>
       </Link>
 
       <Link href="/products" className="block">
         <Button variant="outline" className="w-full">
-          Continue Shopping
+          Fortsett å handle
         </Button>
       </Link>
 
       <div className="mt-6 text-xs text-gray-600 space-y-2">
         <div className="flex items-start gap-2">
           <span>✓</span>
-          <span>Free shipping on orders over kr 500</span>
+          <span>Fri frakt på bestillinger over kr 500</span>
         </div>
         <div className="flex items-start gap-2">
           <span>✓</span>
-          <span>30-day return policy</span>
+          <span>30 dagers returrett</span>
         </div>
         <div className="flex items-start gap-2">
           <span>✓</span>
-          <span>Secure checkout</span>
+          <span>Sikker betaling</span>
         </div>
       </div>
     </div>

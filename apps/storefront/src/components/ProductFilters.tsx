@@ -22,11 +22,11 @@ export default function ProductFilters({
   return (
     <div className="w-64 flex-shrink-0">
       <div className="bg-white rounded-lg shadow p-6 sticky top-20">
-        <h3 className="text-lg font-semibold mb-4">Filters</h3>
+        <h3 className="text-lg font-semibold mb-4">Filtre</h3>
 
         <div className="mb-6">
           <h4 className="font-medium text-sm uppercase text-gray-700 mb-3">
-            Categories
+            Kategorier
           </h4>
           <div className="space-y-2">
             <Link
@@ -37,7 +37,7 @@ export default function ProductFilters({
                   : "text-gray-700 hover:bg-gray-100"
               }`}
             >
-              All Products
+              Alle produkter
             </Link>
             {categories.map((category) => (
               <Link
@@ -57,18 +57,18 @@ export default function ProductFilters({
 
         <div className="border-t pt-4">
           <h4 className="font-medium text-sm uppercase text-gray-700 mb-3">
-            Price Range
+            Prisintervall
           </h4>
-          <p className="text-xs text-gray-500">Coming soon</p>
+          <p className="text-xs text-gray-500">Kommer snart</p>
         </div>
 
         <div className="border-t pt-4 mt-6">
           <h4 className="font-medium text-sm uppercase text-gray-700 mb-3">
-            Availability
+            Tilgjengelighet
           </h4>
           <label className="flex items-center text-sm text-gray-700">
             <input type="checkbox" className="mr-2 rounded" />
-            In Stock Only
+            Kun på lager
           </label>
         </div>
       </div>

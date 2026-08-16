@@ -14,8 +14,8 @@ interface ProductsPageProps {
 }
 
 export const metadata = {
-  title: "Products | ata treningsutstyr",
-  description: "Browse our complete range of training equipment",
+  title: "Produkter | ata treningsutstyr",
+  description: "Bla gjennom hele vareutvalget vårt av treningsutstyr",
 }
 
 async function ProductsContent({
@@ -64,15 +64,15 @@ async function ProductsContent({
           {products.length === 0 ? (
             <div className="text-center py-12">
               <p className="text-gray-500 text-lg">
-                No products found. Try adjusting your filters.
+                Ingen produkter funnet. Prøv å justere filtrene dine.
               </p>
             </div>
           ) : (
             <>
               <div className="mb-6">
                 <p className="text-gray-600">
-                  Showing {offset + 1} to {Math.min(offset + limit, count)} of{" "}
-                  {count} products
+                  Viser {offset + 1} til {Math.min(offset + limit, count)} av{" "}
+                  {count} produkter
                 </p>
               </div>
               <ProductGrid products={products} />
@@ -113,7 +113,7 @@ async function ProductsContent({
     return (
       <div className="text-center py-12">
         <p className="text-red-500 text-lg">
-          Failed to load products. Please try again later.
+          Kunne ikke laste produkter. Prøv igjen senere.
         </p>
       </div>
     )
@@ -127,9 +127,9 @@ export default async function ProductsPage(props: ProductsPageProps) {
     <div className="w-full">
       <div className="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-12">
         <div className="max-w-7xl mx-auto px-6">
-          <h1 className="text-4xl font-bold mb-2">Our Products</h1>
+          <h1 className="text-4xl font-bold mb-2">Våre produkter</h1>
           <p className="text-gray-300">
-            Quality training equipment for every athlete
+            Kvalitetsutstyr for enhver utholdenhet
           </p>
         </div>
       </div>
@@ -146,7 +146,7 @@ export default async function ProductsPage(props: ProductsPageProps) {
 function ProductsLoadingState() {
   return (
     <div className="max-w-7xl mx-auto px-6 py-12">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-6">
         {[...Array(12)].map((_, i) => (
           <div key={i} className="animate-pulse">
             <div className="bg-gray-200 h-64 rounded-lg mb-4" />

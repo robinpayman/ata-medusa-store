@@ -13,8 +13,8 @@ interface SearchPageProps {
 }
 
 export const metadata = {
-  title: "Search Results | ata treningsutstyr",
-  description: "Search results for training equipment",
+  title: "Søkeresultater | ata treningsutstyr",
+  description: "Søkeresultater for treningsutstyr",
 }
 
 async function SearchContent({
@@ -34,10 +34,10 @@ async function SearchContent({
     return (
       <div className="max-w-7xl mx-auto px-6 py-12 text-center">
         <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-          Search the catalog
+          Søk i katalogen
         </h2>
         <p className="text-gray-600">
-          Enter a search term to find products
+          Skriv inn et søkeord for å finne produkter
         </p>
       </div>
     )
@@ -70,12 +70,12 @@ async function SearchContent({
             <p className="text-gray-600">
               {count === 0 ? (
                 <>
-                  No results found for "<strong>{query}</strong>"
+                  Ingen resultater funnet for «<strong>{query}</strong>»
                 </>
               ) : (
                 <>
-                  {count} result{count !== 1 ? "s" : ""} found for "
-                  <strong>{query}</strong>"
+                  {count} {count !== 1 ? "treff" : "treff"} funnet for «
+                  <strong>{query}</strong>»
                 </>
               )}
             </p>
@@ -97,16 +97,16 @@ async function SearchContent({
                 />
               </svg>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                No products found
+                Ingen produkter funnet
               </h3>
               <p className="text-gray-600 mb-6">
-                Try different search terms or browse our full catalog
+                Prøv andre søkeord eller bla gjennom hele katalogen vår
               </p>
               <a
                 href="/products"
                 className="inline-block px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
               >
-                Browse All Products
+                Se alle produkter
               </a>
             </div>
           ) : (
@@ -144,7 +144,7 @@ async function SearchContent({
     return (
       <div className="text-center py-12">
         <p className="text-red-500 text-lg">
-          Failed to search products. Please try again later.
+          Kunne ikke søke etter produkter. Prøv igjen senere.
         </p>
       </div>
     )
@@ -158,8 +158,8 @@ export default async function SearchPage(props: SearchPageProps) {
     <div className="w-full">
       <div className="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-8">
         <div className="max-w-7xl mx-auto px-6">
-          <h1 className="text-3xl font-bold mb-2">Search Products</h1>
-          <p className="text-gray-300">Find the equipment you need</p>
+          <h1 className="text-3xl font-bold mb-2">Søk etter produkter</h1>
+          <p className="text-gray-300">Finn utstyret du trenger</p>
         </div>
       </div>
       <Suspense fallback={<SearchLoadingState />}>
@@ -175,7 +175,7 @@ export default async function SearchPage(props: SearchPageProps) {
 function SearchLoadingState() {
   return (
     <div className="max-w-7xl mx-auto px-6 py-12">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-6">
         {[...Array(12)].map((_, i) => (
           <div key={i} className="animate-pulse">
             <div className="bg-gray-200 h-64 rounded-lg mb-4" />

@@ -39,7 +39,7 @@ export default function Header() {
           <form onSubmit={handleSearch} className="hidden sm:flex items-center gap-2 flex-1 mx-8 max-w-md">
             <input
               type="text"
-              placeholder="Search products..."
+              placeholder="Søk etter produkter..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full px-4 py-2 bg-gray-100 rounded-lg text-sm text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-900"
@@ -47,7 +47,7 @@ export default function Header() {
             <button
               type="submit"
               className="p-2 text-gray-600 hover:text-gray-900 transition-colors duration-200"
-              aria-label="Search"
+              aria-label="Søk"
             >
               <svg
                 className="w-5 h-5"
@@ -84,7 +84,7 @@ export default function Header() {
             <Link
               href="/cart"
               className="relative p-2 text-gray-600 hover:text-gray-900 transition-colors duration-200"
-              aria-label="Shopping cart"
+              aria-label="Handlekurv"
             >
               <svg
                 className="w-6 h-6"
@@ -106,7 +106,7 @@ export default function Header() {
             <button
               className="md:hidden p-2 text-gray-600 hover:text-gray-900"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              aria-label="Toggle mobile menu"
+              aria-label="Åpne/lukk meny"
             >
               <svg
                 className="w-6 h-6"

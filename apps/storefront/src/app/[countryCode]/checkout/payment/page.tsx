@@ -38,8 +38,8 @@ export default function PaymentPage() {
   return (
     <div className="w-full bg-white">
       <div className="max-w-2xl mx-auto px-6 py-12">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">Payment Method</h1>
-        <p className="text-gray-600 mb-8">Step 2 of 3</p>
+        <h1 className="text-3xl font-bold text-gray-900 mb-2">Betalingsmetode</h1>
+        <p className="text-gray-600 mb-8">Steg 2 av 3</p>
 
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="space-y-3">
@@ -53,7 +53,7 @@ export default function PaymentPage() {
                 className="mt-1 mr-3"
               />
               <div className="flex-1">
-                <p className="font-semibold text-gray-900">Credit Card</p>
+                <p className="font-semibold text-gray-900">Kredittkort</p>
                 <p className="text-sm text-gray-600">Visa, Mastercard, American Express</p>
               </div>
             </label>
@@ -68,8 +68,8 @@ export default function PaymentPage() {
                 className="mt-1 mr-3"
               />
               <div className="flex-1">
-                <p className="font-semibold text-gray-900">Bank Transfer</p>
-                <p className="text-sm text-gray-600">Direct bank transfer (2-3 days)</p>
+                <p className="font-semibold text-gray-900">Bankoverføring</p>
+                <p className="text-sm text-gray-600">Direkte bankoverføring (2-3 dager)</p>
               </div>
             </label>
 
@@ -83,8 +83,8 @@ export default function PaymentPage() {
                 className="mt-1 mr-3"
               />
               <div className="flex-1">
-                <p className="font-semibold text-gray-900">Invoice</p>
-                <p className="text-sm text-gray-600">Pay by invoice (net 30 days)</p>
+                <p className="font-semibold text-gray-900">Faktura</p>
+                <p className="text-sm text-gray-600">Betal med faktura (netto 30 dager)</p>
               </div>
             </label>
           </div>
@@ -92,7 +92,7 @@ export default function PaymentPage() {
           {paymentMethod === "card" && (
             <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 space-y-4">
               <p className="text-sm text-gray-700">
-                Card payment securely processed through Stripe.
+                Kortbetaling behandles sikkert via Stripe.
               </p>
             </div>
           )}
@@ -100,7 +100,7 @@ export default function PaymentPage() {
           {paymentMethod === "bank" && (
             <div className="bg-green-50 border border-green-200 rounded-lg p-6">
               <p className="text-sm text-gray-700">
-                Bank transfer details will be sent after order confirmation.
+                Opplysninger for bankoverføring sendes etter ordrebekreftelse.
               </p>
             </div>
           )}
@@ -108,7 +108,7 @@ export default function PaymentPage() {
           {paymentMethod === "invoice" && (
             <div className="bg-amber-50 border border-amber-200 rounded-lg p-6">
               <p className="text-sm text-gray-700">
-                Invoice payment is available for business customers only.
+                Fakturabetaling er kun tilgjengelig for bedriftskunder.
               </p>
             </div>
           )}
@@ -116,7 +116,7 @@ export default function PaymentPage() {
           <div className="flex gap-4 pt-6">
             <a href="/checkout/shipping" className="flex-1">
               <Button variant="outline" className="w-full">
-                Back
+                Tilbake
               </Button>
             </a>
             <button
@@ -124,7 +124,7 @@ export default function PaymentPage() {
               disabled={isSubmitting}
               className="flex-1 bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 text-white font-medium py-2 px-4 rounded-lg transition-colors"
             >
-              {isSubmitting ? "Processing..." : "Review Order"}
+              {isSubmitting ? "Behandler..." : "Se gjennom bestilling"}
             </button>
           </div>
         </form>

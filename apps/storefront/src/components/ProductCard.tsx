@@ -29,8 +29,6 @@ interface ProductCardProps {
   product: Product
 }
 
-const LOW_STOCK_THRESHOLD = 5
-
 const ProductCard = ({ product }: ProductCardProps) => {
   const { addToCart, loading: cartLoading } = useCart()
   const [isAdding, setIsAdding] = useState(false)
@@ -48,11 +46,6 @@ const ProductCard = ({ product }: ProductCardProps) => {
   const rawQuantity = variant?.inventory_quantity
   const hasKnownQuantity = typeof rawQuantity === "number"
   const isInStock = !tracksInventory || !hasKnownQuantity || rawQuantity > 0
-  const isLowStock =
-    tracksInventory &&
-    hasKnownQuantity &&
-    rawQuantity > 0 &&
-    rawQuantity <= LOW_STOCK_THRESHOLD
 
   const handleAddToCart = async () => {
     if (!variant || !isInStock) {
@@ -101,14 +94,6 @@ const ProductCard = ({ product }: ProductCardProps) => {
             </span>
           )}
         </div>
-
-        {isLowStock && (
-          <div className="absolute left-3 top-3">
-            <span className="rounded-full bg-warning-50 px-3 py-1 text-xs font-semibold text-warning-700">
-              Kun {rawQuantity} igjen
-            </span>
-          </div>
-        )}
       </div>
 
       {/* Content */}

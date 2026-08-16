@@ -68,7 +68,7 @@ export default function CartItem({ item }: CartItemProps) {
           />
         ) : (
           <div className="w-full h-full flex items-center justify-center">
-            <span className="text-gray-400 text-xs">No image</span>
+            <span className="text-gray-400 text-xs">Ingen bilde</span>
           </div>
         )}
       </div>
@@ -84,7 +84,7 @@ export default function CartItem({ item }: CartItemProps) {
             kr {displayPrice.toLocaleString("no-NO")}
           </p>
           <p className="text-sm text-gray-600">
-            Subtotal: kr {displaySubtotal.toLocaleString("no-NO")}
+            Delsum: kr {displaySubtotal.toLocaleString("no-NO")}
           </p>
         </div>
       </div>
@@ -113,7 +113,7 @@ export default function CartItem({ item }: CartItemProps) {
           disabled={isUpdating}
           className="text-red-600 text-sm font-medium hover:text-red-700 disabled:opacity-50 disabled:cursor-not-allowed\"
         >
-          Remove
+          Fjern
         </button>
       </div>
     </div>

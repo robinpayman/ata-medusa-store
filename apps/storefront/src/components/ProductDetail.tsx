@@ -244,13 +244,13 @@ export default function ProductDetail({
             <div className="border-t pt-8 space-y-4">
               <div>
                 <h4 className="font-semibold text-gray-900 mb-2">
-                  About This Product
+                  Om dette produktet
                 </h4>
                 <ul className="text-gray-700 space-y-2 text-sm">
-                  <li>✓ High-quality training equipment</li>
-                  <li>✓ Durable and reliable</li>
-                  <li>✓ Fast shipping available</li>
-                  <li>✓ 30-day return policy</li>
+                  <li>✓ Høy kvalitet treningsutstyr</li>
+                  <li>✓ Solid og pålitelig</li>
+                  <li>✓ Rask levering tilgjengelig</li>
+                  <li>✓ 30 dagers returrett</li>
                 </ul>
               </div>
             </div>
@@ -263,8 +263,8 @@ export default function ProductDetail({
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
                   </svg>
                   <div>
-                    <p className="font-semibold text-gray-900 text-sm">Free Shipping</p>
-                    <p className="text-gray-600 text-xs">On orders over kr 500</p>
+                    <p className="font-semibold text-gray-900 text-sm">Fri frakt</p>
+                    <p className="text-gray-600 text-xs">På bestillinger over kr 500</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
@@ -272,8 +272,8 @@ export default function ProductDetail({
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                   <div>
-                    <p className="font-semibold text-gray-900 text-sm">Easy Returns</p>
-                    <p className="text-gray-600 text-xs">30-day return policy</p>
+                    <p className="font-semibold text-gray-900 text-sm">Enkel retur</p>
+                    <p className="text-gray-600 text-xs">30 dagers returrett</p>
                   </div>
                 </div>
               </div>

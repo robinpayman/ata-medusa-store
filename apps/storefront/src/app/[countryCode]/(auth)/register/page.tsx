@@ -39,7 +39,7 @@ export default function RegisterPage() {
       await refreshCustomer()
       router.push("/account")
     } catch (err: any) {
-      setError(err.message || "Registration failed. Please try again.")
+      setError(err.message || "Registrering feilet. Prøv igjen.")
     } finally {
       setIsLoading(false)
     }
