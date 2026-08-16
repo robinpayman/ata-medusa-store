@@ -122,7 +122,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
           <p className="text-lg font-bold text-primary-900">
             {displayPrice ?? "Pris ikke tilgjengelig"}
           </p>
-          {displayPrice && <p className="text-xs text-grey-50">Eks. mva</p>}
+          {displayPrice && <p className="text-xs text-grey-50">Inkl. mva</p>}
         </div>
 
         {/* z-10 lifts the button above the stretched-link overlay */}

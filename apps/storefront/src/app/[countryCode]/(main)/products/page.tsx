@@ -2,6 +2,7 @@ import { Suspense } from "react"
 import { getProducts, getCategories } from "@/lib/api/products"
 import ProductGrid from "@/components/ProductGrid"
 import ProductFilters from "@/components/ProductFilters"
+import Pagination from "@/components/Pagination"
 
 interface ProductsPageProps {
   params: Promise<{ countryCode: string }>
@@ -60,7 +61,7 @@ async function ProductsContent({
           categories={categories}
           selectedCategory={params.category}
         />
-        <div className="flex-1">
+        <div className="flex-1 min-w-0">
           {products.length === 0 ? (
             <div className="text-center py-12">
               <p className="text-gray-500 text-lg">
@@ -76,33 +77,15 @@ async function ProductsContent({
                 </p>
               </div>
               <ProductGrid products={products} />
-              {totalPages > 1 && (
-                <div className="mt-12 flex justify-center gap-2">
-                  {Array.from({ length: totalPages }, (_, i) => i + 1).map(
-                    (pageNum) => (
-                      <a
-                        key={pageNum}
-                        href={`/products?page=${pageNum}${
-                          params.category
-                            ? `&category=${params.category}`
-                            : ""
-                        }${
-                          params.search
-                            ? `&search=${params.search}`
-                            : ""
-                        }`}
-                        className={`px-4 py-2 rounded ${
-                          pageNum === page
-                            ? "bg-blue-600 text-white"
-                            : "bg-gray-200 text-gray-800 hover:bg-gray-300"
-                        }`}
-                      >
-                        {pageNum}
-                      </a>
-                    )
-                  )}
-                </div>
-              )}
+              <Pagination
+                currentPage={page}
+                totalPages={totalPages}
+                buildHref={(pageNum) =>
+                  `/products?page=${pageNum}${
+                    params.category ? `&category=${params.category}` : ""
+                  }${params.search ? `&search=${params.search}` : ""}`
+                }
+              />
             </>
           )}
         </div>

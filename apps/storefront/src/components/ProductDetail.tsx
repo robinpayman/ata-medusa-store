@@ -130,7 +130,7 @@ export default function ProductDetail({
                     <p className="text-3xl font-bold text-gray-900">
                       {displayPrice}
                     </p>
-                    <p className="text-sm text-gray-500">Eks. mva</p>
+                    <p className="text-sm text-gray-500">Inkl. mva</p>
                   </>
                 ) : (
                   <p className="text-lg text-gray-500">
