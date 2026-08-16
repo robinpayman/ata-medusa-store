@@ -18,7 +18,13 @@ export const metadata = {
   description: "Browse our complete range of training equipment",
 }
 
-async function ProductsContent({ searchParams }: { searchParams: Promise<{ search?: string; category?: string; page?: string; sort?: string }> }) {
+async function ProductsContent({
+  searchParams,
+  countryCode,
+}: {
+  searchParams: Promise<{ search?: string; category?: string; page?: string; sort?: string }>
+  countryCode: string
+}) {
   const params = await searchParams
   const page = parseInt(params.page || "1")
   const limit = 12
@@ -39,7 +45,7 @@ async function ProductsContent({ searchParams }: { searchParams: Promise<{ searc
 
   try {
     const [productsData, categoriesData] = await Promise.all([
-      getProducts(filters),
+      getProducts(filters, countryCode),
       getCategories(),
     ])
 
@@ -115,6 +121,8 @@ async function ProductsContent({ searchParams }: { searchParams: Promise<{ searc
 }
 
 export default async function ProductsPage(props: ProductsPageProps) {
+  const { countryCode } = await props.params
+
   return (
     <div className="w-full">
       <div className="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-12">
@@ -126,7 +134,10 @@ export default async function ProductsPage(props: ProductsPageProps) {
         </div>
       </div>
       <Suspense fallback={<ProductsLoadingState />}>
-        <ProductsContent searchParams={props.searchParams} />
+        <ProductsContent
+          searchParams={props.searchParams}
+          countryCode={countryCode}
+        />
       </Suspense>
     </div>
   )

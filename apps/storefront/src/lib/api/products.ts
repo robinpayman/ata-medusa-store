@@ -19,15 +19,31 @@ export interface ProductFilters {
   inStock?: boolean
 }
 
-export async function getProducts(filters: ProductFilters = {}) {
+/**
+ * Lists products for a given storefront region.
+ *
+ * `countryCode` is required so the underlying request can resolve a region
+ * and pass `region_id`. Without it, Medusa never populates
+ * `variants.calculated_price` and every product renders with no price at all.
+ */
+export async function getProducts(
+  filters: ProductFilters = {},
+  countryCode: string
+) {
   try {
-    const response = await medusaClient.store.product.list({
-      limit: filters.limit || 12,
-      offset: filters.offset || 0,
-      fields: INVENTORY_FIELDS,
-      ...(filters.search && { q: filters.search }),
-      ...(filters.categoryId && { category_id: filters.categoryId }),
-      ...(filters.collection_id && { collection_id: filters.collection_id }),
+    const { response } = await listProducts({
+      countryCode,
+      pageParam: filters.offset
+        ? Math.floor(filters.offset / (filters.limit || 12)) + 1
+        : 1,
+      queryParams: {
+        limit: filters.limit || 12,
+        ...(filters.search && { q: filters.search }),
+        ...(filters.categoryId && { category_id: filters.categoryId }),
+        ...(filters.collection_id && {
+          collection_id: filters.collection_id,
+        }),
+      },
     })
 
     return response

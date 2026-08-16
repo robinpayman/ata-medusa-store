@@ -5,13 +5,14 @@ import Image from "next/image"
 import { Button } from "./Button"
 import { useCart } from "@/context/CartContext"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
+import { formatPrice, type CalculatedPrice } from "@/lib/util/format-price"
 
 interface Variant {
   id: string
   title?: string
-  price?: number
   manage_inventory?: boolean
   inventory_quantity?: number | null
+  calculated_price?: CalculatedPrice | null
 }
 
 interface Product {
@@ -37,7 +38,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
 
   const image = product.thumbnail || product.images?.[0]?.url
   const variant = product.variants?.[0]
-  const displayPrice = (variant?.price || 0) / 100
+  const displayPrice = formatPrice(variant?.calculated_price)
 
   // Medusa returns `inventory_quantity: null` when the field was not requested,
   // which is "unknown" rather than "zero". Only mark a product as sold out when
@@ -134,9 +135,9 @@ const ProductCard = ({ product }: ProductCardProps) => {
 
         <div className="mb-4 mt-auto">
           <p className="text-lg font-bold text-primary-900">
-            kr {displayPrice.toLocaleString("no-NO")}
+            {displayPrice ?? "Pris ikke tilgjengelig"}
           </p>
-          <p className="text-xs text-grey-50">Eks. mva</p>
+          {displayPrice && <p className="text-xs text-grey-50">Eks. mva</p>}
         </div>
 
         {/* z-10 lifts the button above the stretched-link overlay */}

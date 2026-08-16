@@ -15,8 +15,9 @@ interface WPProduct {
   stock_quantity: number
   stock_status: string
   images: Array<{
-    id: number
-    src: string
+    id?: number
+    url: string
+    alt?: string
     local_path?: string
   }>
   categories: Array<{
@@ -71,6 +72,37 @@ interface TransformationResult {
   }>
   output_file: string
   timestamp: string
+}
+
+/**
+ * Strips HTML markup out of a product description and returns clean plain
+ * text, preserving paragraph breaks and list bullets.
+ *
+ * The WooCommerce export's `description` field contains raw HTML authored by
+ * an external AI tool, including Tailwind utility classes such as
+ * `font-claude-response-body` that only make sense inside that tool's own UI.
+ * Rendering that string as-is (`{product.description}` in React) does not
+ * execute it as markup — React escapes it — so the browser shows the literal
+ * `<p class="...">` tags as visible text instead of formatted content.
+ */
+function sanitizeDescription(html: string): string {
+  if (!html) return ""
+
+  return html
+    .replace(/<li[^>]*>/gi, "- ")
+    .replace(/<\/li>/gi, "\n")
+    .replace(/<\/p>/gi, "\n\n")
+    .replace(/<br\s*\/?>/gi, "\n")
+    .replace(/<[^>]+>/g, "")
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&#0?39;/g, "'")
+    .replace(/&nbsp;/g, " ")
+    .replace(/[ \t]+\n/g, "\n")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim()
 }
 
 async function transformProducts(inputFile: string, outputFile: string): Promise<TransformationResult> {
@@ -144,9 +176,13 @@ async function transformProducts(inputFile: string, outputFile: string): Promise
       const images: Array<{ url: string }> = []
 
       if (wpProduct.images && wpProduct.images.length > 0) {
-        // Use local path if available, otherwise use WordPress URL
+        // `local_path` is a relative filesystem path (e.g.
+        // "product_images/foo.webp") from the machine that ran the WooCommerce
+        // export. It means nothing to a browser, so the real hosted URL must
+        // be used instead.
         for (const img of wpProduct.images) {
-          const imageUrl = img.local_path || img.src
+          const imageUrl = img.url
+          if (!imageUrl) continue
           images.push({ url: imageUrl })
 
           // Use first image as thumbnail
@@ -165,7 +201,9 @@ async function transformProducts(inputFile: string, outputFile: string): Promise
       // Create Medusa product
       const medusaProduct: MedusaProduct = {
         title: wpProduct.name,
-        description: wpProduct.description || wpProduct.short_description || "",
+        description: sanitizeDescription(
+          wpProduct.description || wpProduct.short_description || ""
+        ),
         handle: wpProduct.slug,
         is_giftcard: false,
         discountable: true,

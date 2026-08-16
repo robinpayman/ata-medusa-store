@@ -19,8 +19,10 @@ export const metadata = {
 
 async function SearchContent({
   searchParams,
+  countryCode,
 }: {
   searchParams: Promise<{ q?: string; page?: string; category?: string }>
+  countryCode: string
 }) {
   const params = await searchParams
   const query = params.q || ""
@@ -42,12 +44,15 @@ async function SearchContent({
   }
 
   try {
-    const productsData = await getProducts({
-      limit,
-      offset,
-      search: query,
-      ...(params.category && { categoryId: params.category }),
-    })
+    const productsData = await getProducts(
+      {
+        limit,
+        offset,
+        search: query,
+        ...(params.category && { categoryId: params.category }),
+      },
+      countryCode
+    )
 
     const products = productsData.products || []
     const count = productsData.count || 0
@@ -147,6 +152,8 @@ async function SearchContent({
 }
 
 export default async function SearchPage(props: SearchPageProps) {
+  const { countryCode } = await props.params
+
   return (
     <div className="w-full">
       <div className="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-8">
@@ -156,7 +163,10 @@ export default async function SearchPage(props: SearchPageProps) {
         </div>
       </div>
       <Suspense fallback={<SearchLoadingState />}>
-        <SearchContent searchParams={props.searchParams} />
+        <SearchContent
+          searchParams={props.searchParams}
+          countryCode={countryCode}
+        />
       </Suspense>
     </div>
   )

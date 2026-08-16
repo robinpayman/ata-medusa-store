@@ -5,31 +5,13 @@ import Image from "next/image"
 import { HttpTypes } from "@medusajs/types"
 import { Button } from "./Button"
 import { useCart } from "@/context/CartContext"
+import { formatPrice } from "@/lib/util/format-price"
 
 type Variant = HttpTypes.StoreProductVariant
-type CalculatedPrice = Variant["calculated_price"]
 
 interface ProductDetailProps {
   product: HttpTypes.StoreProduct
   countryCode: string
-}
-
-/**
- * Medusa v2 returns prices in major units (e.g. `10` means 10 EUR), so the
- * amount must never be divided by 100. The currency comes from the region the
- * price was calculated in rather than being hard coded.
- */
-function formatPrice(price?: CalculatedPrice | null): string | null {
-  const amount = price?.calculated_amount
-
-  if (typeof amount !== "number") {
-    return null
-  }
-
-  return new Intl.NumberFormat("nb-NO", {
-    style: "currency",
-    currency: (price?.currency_code ?? "nok").toUpperCase(),
-  }).format(amount)
 }
 
 export default function ProductDetail({
