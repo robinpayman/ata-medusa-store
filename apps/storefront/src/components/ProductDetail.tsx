@@ -85,7 +85,7 @@ export default function ProductDetail({
                   alt={product.title}
                   width={600}
                   height={600}
-                  className="w-full h-full object-contain aspect-square"
+                  className="w-full h-auto object-cover"
                   priority
                 />
               ) : (
@@ -112,7 +112,7 @@ export default function ProductDetail({
                       src={img.url}
                       alt={product.title}
                       fill
-                      className="object-contain p-1"
+                      className="object-cover"
                     />
                   </button>
                 ))}

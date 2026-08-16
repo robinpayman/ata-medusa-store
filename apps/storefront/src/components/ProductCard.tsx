@@ -77,7 +77,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
             src={image}
             alt={product.title}
             fill
-            className="object-contain p-4 transition-transform duration-300 group-hover:scale-105"
+            className="object-cover transition-transform duration-300 group-hover:scale-105"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
           />
         ) : (

@@ -6,7 +6,21 @@ export async function completeCart(cartId: string) {
   }
   try {
     const response = await medusaClient.store.cart.complete(cartId)
-    return response
+
+    // Medusa resolves this call normally even when completion fails
+    // validation (e.g. missing shipping address, payment not authorized):
+    // the response is a discriminated union of
+    // `{ type: "order", order }` or `{ type: "cart", cart, error }`.
+    // Treating the response as if it were always the order directly meant
+    // a failed checkout would silently look successful and navigate to a
+    // confirmation page with no real order behind it.
+    if (response.type === "cart") {
+      throw new Error(
+        response.error?.message || "Kunne ikke fullføre bestillingen"
+      )
+    }
+
+    return response.order
   } catch (error) {
     console.debug("Debug: Error completing cart:", error)
     throw error

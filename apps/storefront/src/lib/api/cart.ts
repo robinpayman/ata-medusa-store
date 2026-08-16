@@ -2,13 +2,25 @@ import medusaClient from "@/lib/medusa-client"
 
 const CART_ID_STORAGE_KEY = "medusa_cart_id"
 
+/**
+ * Every `medusaClient.store.cart.*` method resolves to a response wrapped
+ * as `{ cart: StoreCart }`, not the cart itself (confirmed against the SDK's
+ * `StoreCartResponse` type). None of the functions below used to unwrap
+ * this, so every consumer reading `cart.id`, `cart.items`, `cart.total`,
+ * etc. was reading those properties one level too shallow and always
+ * getting `undefined` - the cart could never actually work correctly.
+ */
+function unwrapCart<T extends { cart: unknown }>(response: T): T["cart"] {
+  return response.cart
+}
+
 export async function getOrCreateCart(regionId?: string) {
   try {
     let cartId = localStorage?.getItem(CART_ID_STORAGE_KEY)
 
     if (cartId) {
       try {
-        const cart = await medusaClient.store.cart.retrieve(cartId)
+        const cart = unwrapCart(await medusaClient.store.cart.retrieve(cartId))
         return cart
       } catch (error) {
         // Cart not found or expired - this is normal on first load
@@ -18,9 +30,11 @@ export async function getOrCreateCart(regionId?: string) {
       }
     }
 
-    const cart = await medusaClient.store.cart.create({
-      ...(regionId && { region_id: regionId }),
-    })
+    const cart = unwrapCart(
+      await medusaClient.store.cart.create({
+        ...(regionId && { region_id: regionId }),
+      })
+    )
 
     if (localStorage) {
       localStorage.setItem(CART_ID_STORAGE_KEY, cart.id)
@@ -39,7 +53,7 @@ export async function getCart(cartId: string) {
     return null
   }
   try {
-    const cart = await medusaClient.store.cart.retrieve(cartId)
+    const cart = unwrapCart(await medusaClient.store.cart.retrieve(cartId))
     return cart
   } catch (error) {
     console.debug(`Debug: Error fetching cart ${cartId}:`, error)
@@ -56,14 +70,17 @@ export async function addToCart(
     throw new Error("Cart ID is required to add items")
   }
   try {
-    const cart = await medusaClient.store.cart.createLineItems(cartId, {
-      items: [
-        {
-          variant_id: variantId,
-          quantity,
-        },
-      ],
-    })
+    // The SDK's method (and request body) is singular: `createLineItem`
+    // taking `{ variant_id, quantity }` directly. The previous plural
+    // `createLineItems({ items: [...] })` call doesn't exist on the SDK at
+    // all, so it silently produced a rejected promise for every add-to-cart
+    // attempt that actually reached this function.
+    const cart = unwrapCart(
+      await medusaClient.store.cart.createLineItem(cartId, {
+        variant_id: variantId,
+        quantity,
+      })
+    )
     return cart
   } catch (error) {
     console.debug("Debug: Error adding to cart:", error)
@@ -80,14 +97,11 @@ export async function updateLineItem(
     throw new Error("Cart ID is required to update items")
   }
   try {
-    const cart = await medusaClient.store.cart.updateLineItems(cartId, {
-      items: [
-        {
-          id: lineItemId,
-          quantity,
-        },
-      ],
-    })
+    const cart = unwrapCart(
+      await medusaClient.store.cart.updateLineItem(cartId, lineItemId, {
+        quantity,
+      })
+    )
     return cart
   } catch (error) {
     console.debug("Debug: Error updating line item:", error)
@@ -100,11 +114,13 @@ export async function removeFromCart(cartId: string, lineItemId: string) {
     throw new Error("Cart ID is required to remove items")
   }
   try {
-    const cart = await medusaClient.store.cart.deleteLineItems(
+    // Deleting a line item responds with { deleted, id, object, parent },
+    // not { cart }: the updated cart is under `parent`.
+    const response = await medusaClient.store.cart.deleteLineItem(
       cartId,
       lineItemId
     )
-    return cart
+    return response.parent
   } catch (error) {
     console.debug("Debug: Error removing from cart:", error)
     throw error
@@ -116,7 +132,7 @@ export async function updateCart(cartId: string, data: any) {
     throw new Error("Cart ID is required to update cart")
   }
   try {
-    const cart = await medusaClient.store.cart.update(cartId, data)
+    const cart = unwrapCart(await medusaClient.store.cart.update(cartId, data))
     return cart
   } catch (error) {
     console.debug("Debug: Error updating cart:", error)
