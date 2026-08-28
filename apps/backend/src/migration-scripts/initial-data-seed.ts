@@ -303,19 +303,23 @@ export default async function initial_data_seed({
     input: {
       product_categories: [
         {
-          name: "Shirts",
+          name: "Apparel",
+          handle: "apparel",
           is_active: true,
         },
         {
-          name: "Sweatshirts",
+          name: "Strength Training",
+          handle: "strength-training",
           is_active: true,
         },
         {
-          name: "Pants",
+          name: "Cardio",
+          handle: "cardio",
           is_active: true,
         },
         {
-          name: "Merch",
+          name: "Accessories",
+          handle: "accessories",
           is_active: true,
         },
       ],
@@ -347,7 +351,7 @@ export default async function initial_data_seed({
         {
           title: "Medusa T-Shirt",
           category_ids: [
-            categoryResult.find((cat) => cat.name === "Shirts")!.id,
+            categoryResult.find((cat) => cat.name === "Apparel")!.id,
           ],
           description:
             "Reimagine the feeling of a classic T-shirt. With our cotton T-shirts, everyday essentials no longer have to be ordinary.",
@@ -528,7 +532,7 @@ export default async function initial_data_seed({
         {
           title: "Medusa Sweatshirt",
           category_ids: [
-            categoryResult.find((cat) => cat.name === "Sweatshirts")!.id,
+            categoryResult.find((cat) => cat.name === "Apparel")!.id,
           ],
           description:
             "Reimagine the feeling of a classic sweatshirt. With our cotton sweatshirt, everyday essentials no longer have to be ordinary.",
@@ -624,7 +628,7 @@ export default async function initial_data_seed({
         {
           title: "Medusa Sweatpants",
           category_ids: [
-            categoryResult.find((cat) => cat.name === "Pants")!.id,
+            categoryResult.find((cat) => cat.name === "Apparel")!.id,
           ],
           description:
             "Reimagine the feeling of classic sweatpants. With our cotton sweatpants, everyday essentials no longer have to be ordinary.",
@@ -720,7 +724,7 @@ export default async function initial_data_seed({
         {
           title: "Medusa Shorts",
           category_ids: [
-            categoryResult.find((cat) => cat.name === "Merch")!.id,
+            categoryResult.find((cat) => cat.name === "Apparel")!.id,
           ],
           description:
             "Reimagine the feeling of classic shorts. With our cotton shorts, everyday essentials no longer have to be ordinary.",

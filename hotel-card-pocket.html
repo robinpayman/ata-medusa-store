@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxury Hotel Key Card Prototype</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-dark: #121212;
+    --gold-light: #F9E596;
+    --gold-mid: #D4AF37;
+    --gold-dark: #997A15;
+    --paper-color: #1a1c23;
+  }
+
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at 50% 40%, #2a2a35 0%, #0a0a0c 100%);
+    font-family: 'Cinzel', serif;
+    overflow: hidden;
+  }
+
+  /* Lighting & 3D Perspective setup */
+  .scene {
+    perspective: 1200px;
+  }
+
+  .card-assembly {
+    position: relative;
+    width: 340px;
+    height: 500px;
+    transform-style: preserve-3d;
+    transform: rotateX(15deg) rotateY(-10deg) rotateZ(2deg);
+    transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+    cursor: pointer;
+  }
+
+  .card-assembly:hover {
+    transform: rotateX(5deg) rotateY(0deg) rotateZ(0deg) scale(1.05);
+  }
+
+  /* The actual key card */
+  .key-card {
+    position: absolute;
+    top: 50px;
+    left: 17px;
+    width: 306px;
+    height: 194px; /* Standard credit card ratio */
+    background: linear-gradient(135deg, #222 0%, #0a0a0a 100%);
+    border-radius: 12px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+    transition: top 0.7s cubic-bezier(0.34, 1.56, 0.64, 1); /* Bouncy pull-out effect */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  /* Brushed metal texture on the card */
+  .key-card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 2px,
+      rgba(255, 255, 255, 0.02) 2px,
+      rgba(255, 255, 255, 0.02) 4px
+    );
+    z-index: 0;
+  }
+
+  /* When hovering the entire assembly, the card slides out */
+  .card-assembly:hover .key-card {
+    top: -80px;
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.6);
+  }
+
+  .card-logo {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 4px;
+    opacity: 0.8;
+  }
+
+  .card-chip {
+    position: relative;
+    z-index: 1;
+    align-self: flex-end;
+    width: 45px;
+    height: 35px;
+    background: linear-gradient(135deg, var(--gold-light), var(--gold-dark));
+    border-radius: 6px;
+    border: 1px solid #5a4507;
+    opacity: 0.9;
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Details on the chip */
+  .card-chip::after {
+    content: '';
+    position: absolute;
+    top: 10px; bottom: 10px; left: 15px; right: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+  }
+
+  /* The Paper Pocket */
+  .pocket {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 420px;
+    background: var(--paper-color);
+    border-radius: 4px;
+    box-shadow: 
+      -15px 25px 40px rgba(0,0,0,0.7),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Thumb cutout at the top */
+    clip-path: polygon(
+      0% 0%, 
+      35% 0%, 
+      50% 8%, 
+      65% 0%, 
+      100% 0%, 
+      100% 100%, 
+      0% 100%
+    );
+  }
+
+  /* Paper texture overlay (SVG noise) */
+  .pocket::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.08'/%3E%3C/svg%3E");
+    z-index: 0;
+    pointer-events: none;
+    mix-blend-mode: overlay;
+  }
+
+  /* Gold Foil Hot Stamping Effect */
+  .pocket-logo {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    /* The Gold Gradient */
+    background: linear-gradient(
+      115deg, 
+      var(--gold-dark) 0%, 
+      var(--gold-mid) 25%, 
+      var(--gold-light) 50%, 
+      var(--gold-mid) 75%, 
+      var(--gold-dark) 100%
+    );
+    background-size: 200% auto;
+    color: #000;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: goldShine 6s infinite linear;
+    
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 6px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    
+    /* Debossed shadow effect */
+    filter: drop-shadow(0px 1px 1px rgba(255,255,255,0.1)) drop-shadow(0px -1px 2px rgba(0,0,0,0.8));
+  }
+
+  .pocket-logo span {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    letter-spacing: 8px;
+    margin-top: 15px;
+    font-weight: 400;
+  }
+
+  .pocket-divider {
+    width: 40px;
+    height: 1px;
+    background: var(--gold-mid);
+    margin: 20px auto;
+    opacity: 0.6;
+  }
+
+  /* Subtle ambient lighting sweep across the pocket */
+  .pocket-lighting {
+    position: absolute;
+    top: 0; left: -100%; width: 50%; height: 100%;
+    background: linear-gradient(to right, transparent, rgba(255,255,255,0.06), transparent);
+    transform: skewX(-20deg);
+    animation: lightSweep 8s infinite cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 4;
+    pointer-events: none;
+  }
+
+  @keyframes goldShine {
+    0% { background-position: 0% center; }
+    100% { background-position: 200% center; }
+  }
+
+  @keyframes lightSweep {
+    0% { left: -100%; }
+    20% { left: 200%; }
+    100% { left: 200%; }
+  }
+
+  /* Tooltip instruction */
+  .hint {
+    position: absolute;
+    bottom: 40px;
+    color: rgba(255, 255, 255, 0.4);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+
+  <div class="scene">
+    <div class="card-assembly">
+      
+      <!-- The inner key card -->
+      <div class="key-card">
+        <div class="card-logo">THE GRAND</div>
+        <div class="card-chip"></div>
+      </div>
+
+      <!-- The outer paper pocket sleeve -->
+      <div class="pocket">
+        <div class="pocket-lighting"></div>
+        
+        <div class="pocket-logo">
+          The Grand
+          <div class="pocket-divider"></div>
+          <span>Est. 1902</span>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="hint">Hover over the pocket to slide out the card</div>
+
+</body>
+</html>

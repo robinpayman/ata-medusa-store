@@ -1,0 +1,37 @@
+2026-08-28T11:02:57: npm warn Unknown project config "auto-install-peers". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-08-28T11:02:57: 
+2026-08-28T11:02:57: > @dtc/backend@0.0.1 dev
+2026-08-28T11:02:57: > medusa develop
+2026-08-28T11:02:57: 
+2026-08-28T11:02:59: [32minfo[39m:    redisUrl not found. A fake redis instance will be used.
+2026-08-28T11:02:59: [32minfo[39m:    Linting project...
+2026-08-28T11:02:59: [32minfo[39m:    [Watcher] Using standard dev server (restart on file change)
+2026-08-28T11:02:59: [32minfo[39m:    [Watcher] Watching filesystem to reload dev server on file change
+2026-08-28T11:03:00: [32minfo[39m:    redisUrl not found. A fake redis instance will be used.
+2026-08-28T11:03:00: - Creating server
+2026-08-28T11:03:00: [32minfo[39m:    redisUrl not found. A fake redis instance will be used.
+2026-08-28T11:03:00: [32minfo[39m:    Skipping instrumentation registration. No register function found.
+2026-08-28T11:03:00: [32minfo[39m:    redisUrl not found. A fake redis instance will be used.
+2026-08-28T11:03:00: [32minfo[39m:    No link to load from /Users/rp/ata-medusa-store/node_modules/@medusajs/draft-order/.medusa/server/src/links. skipped.
+2026-08-28T11:03:00: [32minfo[39m:    Locking module: Using "in-memory" as default.
+2026-08-28T11:03:00: [33mwarn[39m:    Local Event Bus installed. This is not recommended for production.
+2026-08-28T11:03:01: [32minfo[39m:    No workflow to load from /Users/rp/ata-medusa-store/node_modules/@medusajs/draft-order/.medusa/server/src/workflows. skipped.
+2026-08-28T11:03:01: [32minfo[39m:    No subscriber to load from /Users/rp/ata-medusa-store/node_modules/@medusajs/draft-order/.medusa/server/src/subscribers. skipped.
+2026-08-28T11:03:01: [32minfo[39m:    No job to load from /Users/rp/ata-medusa-store/node_modules/@medusajs/medusa/dist/jobs. skipped.
+2026-08-28T11:03:01: [32minfo[39m:    No job to load from /Users/rp/ata-medusa-store/node_modules/@medusajs/draft-order/.medusa/server/src/jobs. skipped.
+2026-08-28T11:03:02: ✔ Server is ready on port: 9000 – 2060ms
+2026-08-28T11:03:02: [32minfo[39m:    Admin URL → http://localhost:9000/app
+2026-08-28T11:03:20: [32mhttp[39m:    GET /store/regions ← - (200) - 84.741 ms
+2026-08-28T11:03:24: [32minfo[39m:    Publishable API key required in the request header: x-publishable-api-key. You can manage your keys in settings in the dashboard.
+2026-08-28T11:03:24: [32mhttp[39m:    GET /store/product-categories?limit=5 ← - (400) - 8.281 ms
+2026-08-28T11:03:42: [32minfo[39m:    A valid publishable key is required to proceed with the request
+2026-08-28T11:03:42: [32mhttp[39m:    GET /store/product-categories ← - (400) - 3.903 ms
+2026-08-28T11:03:45: [32mhttp[39m:    OPTIONS /store/regions ← http://localhost:8000/ (204) - 2.385 ms
+2026-08-28T11:03:45: [32mhttp[39m:    OPTIONS /store/customers/me ← http://localhost:8000/ (204) - 0.429 ms
+2026-08-28T11:03:45: [32mhttp[39m:    GET /store/customers/me ← http://localhost:8000/ (401) - 25.399 ms
+2026-08-28T11:03:45: [32mhttp[39m:    GET /store/regions ← http://localhost:8000/ (304) - 49.241 ms
+2026-08-28T11:03:45: [32mhttp[39m:    OPTIONS /store/carts/cart_01M05Y6ZG2809B5Z50QV0Q103Q ← http://localhost:8000/ (204) - 0.378 ms
+2026-08-28T11:03:45: [32mhttp[39m:    GET /store/carts/cart_01M05Y6ZG2809B5Z50QV0Q103Q ← http://localhost:8000/ (304) - 65.036 ms
+2026-08-28T11:03:46: [32mhttp[39m:    GET /store/product-categories?limit=100&fields=id%2Cname%2Chandle ← - (200) - 18.798 ms
+2026-08-28T11:03:47: [32minfo[39m:    Publishable API key required in the request header: x-publishable-api-key. You can manage your keys in settings in the dashboard.
+2026-08-28T11:03:47: [32mhttp[39m:    GET /store/product-categories ← - (400) - 1.122 ms
