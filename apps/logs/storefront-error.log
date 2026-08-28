@@ -1,1 +1,22 @@
 2026-08-28T11:02:57: npm warn Unknown project config "auto-install-peers". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-08-28T11:05:06: npm warn Unknown project config "auto-install-peers". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-08-28T11:06:33: npm warn Unknown project config "auto-install-peers". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-08-28T11:10:24:  ⚠ Fast Refresh had to perform a full reload when ./apps/storefront/src/lib/medusa-client.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+2026-08-28T11:10:24: Failed to fetch regions from backend. Using default regions.
+2026-08-28T11:10:24: Failed to fetch regions from backend. Using default regions.
+2026-08-28T11:10:24: Failed to fetch regions from backend. Using default regions.
+2026-08-28T11:10:27: npm warn Unknown project config "auto-install-peers". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-08-28T11:10:35: Failed to fetch regions from backend. Using default regions.
+2026-08-28T11:11:17: npm warn Unknown project config "auto-install-peers". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-08-28T11:11:18: Failed to fetch regions from backend. Using default regions.
+2026-08-28T11:11:23:  ⨯ [Error: aborted] { code: 'ECONNRESET', digest: '354757197' }
+2026-08-28T11:11:23:  ⨯ [Error: aborted] { code: 'ECONNRESET', digest: '354757197' }
+2026-08-28T11:11:24:  ⨯ [Error: aborted] { code: 'ECONNRESET', digest: '354757197' }
+2026-08-28T11:11:24:  ⨯ [Error: aborted] { code: 'ECONNRESET', digest: '354757197' }
+2026-08-28T11:11:24:  ⨯ [Error: aborted] { code: 'ECONNRESET', digest: '354757197' }
+2026-08-28T11:15:35: Failed to fetch regions from backend. Using default regions.
+2026-08-28T11:15:40: Failed to fetch regions from backend. Using default regions.
+2026-08-28T11:16:03: npm warn Unknown project config "auto-install-peers". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-08-28T11:16:09: Failed to fetch regions from backend. Using default regions.
+2026-08-28T11:26:01: npm warn Unknown project config "auto-install-peers". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-08-28T11:26:09: Failed to fetch regions from backend. Using default regions.

@@ -1,5 +1,5 @@
 import { Metadata } from "next"
-import Header from "@/components/Header"
+import HeaderWrapper from "@/components/HeaderWrapper"
 import Footer from "@/components/Footer"
 
 export const metadata: Metadata = {
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function PageLayout(props: { children: React.ReactNode }) {
   return (
     <>
-      <Header />
+      <HeaderWrapper />
       {props.children}
       <Footer />
     </>

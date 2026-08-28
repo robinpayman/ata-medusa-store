@@ -59,3 +59,1079 @@
 2026-08-28T11:03:46:  │ GET http://localhost:9000/store/product-categories?limit=100&fields=id%2Cname%2Chandle 200 in 26ms (cache skip)
 2026-08-28T11:03:46:  │ │ Cache skipped reason: (auto no cache)
 2026-08-28T11:03:47:  GET /no 200 in 60ms
+2026-08-28T11:04:52: Performing request to:
+2026-08-28T11:04:52:  URL: http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C
+2026-08-28T11:04:52:  Headers: {
+2026-08-28T11:04:52:   "accept": "application/json",
+2026-08-28T11:04:52:   "content-type": "application/json",
+2026-08-28T11:04:52:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:04:52:   "authorization": "<REDACTED>"
+2026-08-28T11:04:52: }
+2026-08-28T11:04:52: 
+2026-08-28T11:04:52: Received response with status 200
+2026-08-28T11:04:52: 
+2026-08-28T11:04:52:  GET /no/products 200 in 83ms
+2026-08-28T11:04:52:  │ GET http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C 200 in 0ms (cache hit)
+2026-08-28T11:04:52:  │ GET http://localhost:9000/store/product-categories?limit=100&fields=id%2Cname%2Chandle 200 in 25ms (cache skip)
+2026-08-28T11:04:52:  │ │ Cache skipped reason: (auto no cache)
+2026-08-28T11:04:52: Initiating Medusa client with default headers:
+2026-08-28T11:04:52:  {
+2026-08-28T11:04:52:   "accept": "application/json",
+2026-08-28T11:04:52:   "content-type": "application/json",
+2026-08-28T11:04:52:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:04:52:   "authorization": "<REDACTED>"
+2026-08-28T11:04:52: }
+2026-08-28T11:04:52: 
+2026-08-28T11:04:53: Performing request to:
+2026-08-28T11:04:53:  URL: http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id=pcat_01M05TBA3N5H98F8MG7T9222YX
+2026-08-28T11:04:53:  Headers: {
+2026-08-28T11:04:53:   "accept": "application/json",
+2026-08-28T11:04:53:   "content-type": "application/json",
+2026-08-28T11:04:53:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:04:53:   "authorization": "<REDACTED>"
+2026-08-28T11:04:53: }
+2026-08-28T11:04:53: 
+2026-08-28T11:04:54: Received response with status 200
+2026-08-28T11:04:54: 
+2026-08-28T11:04:54:  GET /no/products?category=pcat_01M05TBA3N5H98F8MG7T9222YX 200 in 228ms
+2026-08-28T11:04:54:  │ GET http://localhost:9000/store/product-categories?limit=100&fields=id%2Cname%2Chandle 200 in 28ms (cache skip)
+2026-08-28T11:04:54:  │ │ Cache skipped reason: (auto no cache)
+2026-08-28T11:04:54:  │ GET http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id=pcat_01M05TBA3N5H98F8MG7T9222YX 200 in 160ms (cache skip)
+2026-08-28T11:04:54:  │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+2026-08-28T11:04:54: Initiating Medusa client with default headers:
+2026-08-28T11:04:54:  {
+2026-08-28T11:04:54:   "accept": "application/json",
+2026-08-28T11:04:54:   "content-type": "application/json",
+2026-08-28T11:04:54:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:04:54:   "authorization": "<REDACTED>"
+2026-08-28T11:04:54: }
+2026-08-28T11:04:54: 
+2026-08-28T11:04:55: Performing request to:
+2026-08-28T11:04:55:  URL: http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id=pcat_01M05TBA3P3035WJ8FTN2A4HQ4
+2026-08-28T11:04:55:  Headers: {
+2026-08-28T11:04:55:   "accept": "application/json",
+2026-08-28T11:04:55:   "content-type": "application/json",
+2026-08-28T11:04:55:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:04:55:   "authorization": "<REDACTED>"
+2026-08-28T11:04:55: }
+2026-08-28T11:04:55: 
+2026-08-28T11:04:55: Received response with status 200
+2026-08-28T11:04:55: 
+2026-08-28T11:04:55:  GET /no/products?category=pcat_01M05TBA3P3035WJ8FTN2A4HQ4 200 in 148ms
+2026-08-28T11:04:55:  │ GET http://localhost:9000/store/product-categories?limit=100&fields=id%2Cname%2Chandle 200 in 14ms (cache skip)
+2026-08-28T11:04:55:  │ │ Cache skipped reason: (auto no cache)
+2026-08-28T11:04:55:  │ GET http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id=pcat_01M05TBA3P3035WJ8FTN2A4HQ4 200 in 82ms (cache skip)
+2026-08-28T11:04:55:  │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+2026-08-28T11:04:55: Initiating Medusa client with default headers:
+2026-08-28T11:04:55:  {
+2026-08-28T11:04:55:   "accept": "application/json",
+2026-08-28T11:04:55:   "content-type": "application/json",
+2026-08-28T11:04:55:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:04:55:   "authorization": "<REDACTED>"
+2026-08-28T11:04:55: }
+2026-08-28T11:04:55: 
+2026-08-28T11:04:59: Performing request to:
+2026-08-28T11:04:59:  URL: http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id=pcat_01M05TBA3N0G4NT5YA2P9YQ2Y6
+2026-08-28T11:04:59:  Headers: {
+2026-08-28T11:04:59:   "accept": "application/json",
+2026-08-28T11:04:59:   "content-type": "application/json",
+2026-08-28T11:04:59:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:04:59:   "authorization": "<REDACTED>"
+2026-08-28T11:04:59: }
+2026-08-28T11:04:59: 
+2026-08-28T11:04:59: Received response with status 200
+2026-08-28T11:04:59: 
+2026-08-28T11:04:59:  GET /no/products?category=pcat_01M05TBA3N0G4NT5YA2P9YQ2Y6 200 in 111ms
+2026-08-28T11:04:59:  │ GET http://localhost:9000/store/product-categories?limit=100&fields=id%2Cname%2Chandle 200 in 11ms (cache skip)
+2026-08-28T11:04:59:  │ │ Cache skipped reason: (auto no cache)
+2026-08-28T11:04:59:  │ GET http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id=pcat_01M05TBA3N0G4NT5YA2P9YQ2Y6 200 in 55ms (cache skip)
+2026-08-28T11:04:59:  │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+2026-08-28T11:05:00: Initiating Medusa client with default headers:
+2026-08-28T11:05:00:  {
+2026-08-28T11:05:00:   "accept": "application/json",
+2026-08-28T11:05:00:   "content-type": "application/json",
+2026-08-28T11:05:00:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:05:00:   "authorization": "<REDACTED>"
+2026-08-28T11:05:00: }
+2026-08-28T11:05:00: 
+2026-08-28T11:05:01:  ✓ Compiled in 130ms
+2026-08-28T11:05:01: Performing request to:
+2026-08-28T11:05:01:  URL: http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C
+2026-08-28T11:05:01:  Headers: {
+2026-08-28T11:05:01:   "accept": "application/json",
+2026-08-28T11:05:01:   "content-type": "application/json",
+2026-08-28T11:05:01:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:05:01:   "authorization": "<REDACTED>"
+2026-08-28T11:05:01: }
+2026-08-28T11:05:01: 
+2026-08-28T11:05:01: Received response with status 200
+2026-08-28T11:05:01: 
+2026-08-28T11:05:01:  GET /no/products 200 in 65ms
+2026-08-28T11:05:01:  │ GET http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C 200 in 0ms (cache hit)
+2026-08-28T11:05:01:  │ GET http://localhost:9000/store/product-categories?limit=100&fields=id%2Cname%2Chandle 200 in 10ms (cache skip)
+2026-08-28T11:05:01:  │ │ Cache skipped reason: (auto no cache)
+2026-08-28T11:05:01: Initiating Medusa client with default headers:
+2026-08-28T11:05:01:  {
+2026-08-28T11:05:01:   "accept": "application/json",
+2026-08-28T11:05:01:   "content-type": "application/json",
+2026-08-28T11:05:01:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:05:01:   "authorization": "<REDACTED>"
+2026-08-28T11:05:01: }
+2026-08-28T11:05:01: 
+2026-08-28T11:05:02: Performing request to:
+2026-08-28T11:05:02:  URL: http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id=pcat_01M05TBA3N0G4NT5YA2P9YQ2Y6
+2026-08-28T11:05:02:  Headers: {
+2026-08-28T11:05:02:   "accept": "application/json",
+2026-08-28T11:05:02:   "content-type": "application/json",
+2026-08-28T11:05:02:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:05:02:   "authorization": "<REDACTED>"
+2026-08-28T11:05:02: }
+2026-08-28T11:05:02: 
+2026-08-28T11:05:02: Received response with status 200
+2026-08-28T11:05:02: 
+2026-08-28T11:05:02:  GET /no/products?category=pcat_01M05TBA3N0G4NT5YA2P9YQ2Y6 200 in 65ms
+2026-08-28T11:05:02:  │ GET http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id=pcat_01M05TBA3N0G4NT5YA2P9YQ2Y6 200 in 1ms (cache hit)
+2026-08-28T11:05:02:  │ GET http://localhost:9000/store/product-categories?limit=100&fields=id%2Cname%2Chandle 200 in 9ms (cache skip)
+2026-08-28T11:05:02:  │ │ Cache skipped reason: (auto no cache)
+2026-08-28T11:05:02: Initiating Medusa client with default headers:
+2026-08-28T11:05:02:  {
+2026-08-28T11:05:02:   "accept": "application/json",
+2026-08-28T11:05:02:   "content-type": "application/json",
+2026-08-28T11:05:02:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:05:02:   "authorization": "<REDACTED>"
+2026-08-28T11:05:02: }
+2026-08-28T11:05:02: 
+2026-08-28T11:05:06: [?25h
+2026-08-28T11:05:06: 
+2026-08-28T11:05:06: npm warn Unknown project config "auto-install-peers". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-08-28T11:05:06: 
+2026-08-28T11:05:06: > @dtc/storefront@1.0.3 dev
+2026-08-28T11:05:06: > next dev --turbopack -p 8000
+2026-08-28T11:05:06: 
+2026-08-28T11:05:06:    ▲ Next.js 15.5.21 (Turbopack)
+2026-08-28T11:05:06:    - Local:        http://localhost:8000
+2026-08-28T11:05:06:    - Network:      http://10.90.90.197:8000
+2026-08-28T11:05:06:    - Environments: .env.local
+2026-08-28T11:05:06: 
+2026-08-28T11:05:06:  ✓ Starting...
+2026-08-28T11:05:07:  ✓ Compiled middleware in 107ms
+2026-08-28T11:05:07:  ✓ Ready in 930ms
+2026-08-28T11:05:08:  ○ Compiling /[countryCode]/products ...
+2026-08-28T11:05:09:  ✓ Compiled /[countryCode]/products in 2s
+2026-08-28T11:05:09: Initiating Medusa client with default headers:
+2026-08-28T11:05:09:  {
+2026-08-28T11:05:09:   "accept": "application/json",
+2026-08-28T11:05:09:   "content-type": "application/json",
+2026-08-28T11:05:09:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:05:09:   "authorization": "<REDACTED>"
+2026-08-28T11:05:09: }
+2026-08-28T11:05:09: 
+2026-08-28T11:05:10: Initiating Medusa client with default headers:
+2026-08-28T11:05:10:  {
+2026-08-28T11:05:10:   "accept": "application/json",
+2026-08-28T11:05:10:   "content-type": "application/json",
+2026-08-28T11:05:10:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:05:10:   "authorization": "<REDACTED>"
+2026-08-28T11:05:10: }
+2026-08-28T11:05:10: 
+2026-08-28T11:05:10: Performing request to:
+2026-08-28T11:05:10:  URL: http://localhost:9000/store/regions
+2026-08-28T11:05:10:  Headers: {
+2026-08-28T11:05:10:   "accept": "application/json",
+2026-08-28T11:05:10:   "content-type": "application/json",
+2026-08-28T11:05:10:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:05:10:   "authorization": "<REDACTED>"
+2026-08-28T11:05:10: }
+2026-08-28T11:05:10: 
+2026-08-28T11:05:10: Performing request to:
+2026-08-28T11:05:10:  URL: http://localhost:9000/store/regions
+2026-08-28T11:05:10:  Headers: {
+2026-08-28T11:05:10:   "accept": "application/json",
+2026-08-28T11:05:10:   "content-type": "application/json",
+2026-08-28T11:05:10:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:05:10:   "authorization": "<REDACTED>"
+2026-08-28T11:05:10: }
+2026-08-28T11:05:10: 
+2026-08-28T11:05:10: Received response with status 200
+2026-08-28T11:05:10: 
+2026-08-28T11:05:10: Performing request to:
+2026-08-28T11:05:10:  URL: http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id=pcat_01M05TBA3N0G4NT5YA2P9YQ2Y6
+2026-08-28T11:05:10:  Headers: {
+2026-08-28T11:05:10:   "accept": "application/json",
+2026-08-28T11:05:10:   "content-type": "application/json",
+2026-08-28T11:05:10:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:05:10:   "authorization": "<REDACTED>"
+2026-08-28T11:05:10: }
+2026-08-28T11:05:10: 
+2026-08-28T11:05:10: Received response with status 200
+2026-08-28T11:05:10: 
+2026-08-28T11:05:10: Performing request to:
+2026-08-28T11:05:10:  URL: http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id=pcat_01M05TBA3Z310Y6Q427NCY2XAN
+2026-08-28T11:05:10:  Headers: {
+2026-08-28T11:05:10:   "accept": "application/json",
+2026-08-28T11:05:10:   "content-type": "application/json",
+2026-08-28T11:05:10:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:05:10:   "authorization": "<REDACTED>"
+2026-08-28T11:05:10: }
+2026-08-28T11:05:10: 
+2026-08-28T11:05:10: Received response with status 200
+2026-08-28T11:05:10: 
+2026-08-28T11:05:10: Received response with status 200
+2026-08-28T11:05:10: 
+2026-08-28T11:05:10:  GET /no/products?category=pcat_01M05TBA3N0G4NT5YA2P9YQ2Y6 200 in 2568ms
+2026-08-28T11:05:10:  │ GET http://localhost:9000/store/regions 200 in 11ms (cache hit)
+2026-08-28T11:05:10:  │ GET http://localhost:9000/store/product-categories?limit=100&fields=id%2Cname%2Chandle 200 in 39ms (cache skip)
+2026-08-28T11:05:10:  │ │ Cache skipped reason: (auto no cache)
+2026-08-28T11:05:10:  │ GET http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id=pcat_01M05TBA3N0G4NT5YA2P9YQ2Y6 200 in 22ms (cache hit)
+2026-08-28T11:05:12: Performing request to:
+2026-08-28T11:05:12:  URL: http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id=pcat_01M05TBA3RHHDTC1NRQKJ8YKZZ
+2026-08-28T11:05:12:  Headers: {
+2026-08-28T11:05:12:   "accept": "application/json",
+2026-08-28T11:05:12:   "content-type": "application/json",
+2026-08-28T11:05:12:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:05:12:   "authorization": "<REDACTED>"
+2026-08-28T11:05:12: }
+2026-08-28T11:05:12: 
+2026-08-28T11:05:12: Received response with status 200
+2026-08-28T11:05:12: 
+2026-08-28T11:05:12:  GET /no/products?category=pcat_01M05TBA3RHHDTC1NRQKJ8YKZZ 200 in 113ms
+2026-08-28T11:05:12:  │ GET http://localhost:9000/store/product-categories?limit=100&fields=id%2Cname%2Chandle 200 in 11ms (cache skip)
+2026-08-28T11:05:12:  │ │ Cache skipped reason: (auto no cache)
+2026-08-28T11:05:12:  │ GET http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id=pcat_01M05TBA3RHHDTC1NRQKJ8YKZZ 200 in 49ms (cache skip)
+2026-08-28T11:05:12:  │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+2026-08-28T11:05:12: Initiating Medusa client with default headers:
+2026-08-28T11:05:12:  {
+2026-08-28T11:05:12:   "accept": "application/json",
+2026-08-28T11:05:12:   "content-type": "application/json",
+2026-08-28T11:05:12:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:05:12:   "authorization": "<REDACTED>"
+2026-08-28T11:05:12: }
+2026-08-28T11:05:12: 
+2026-08-28T11:05:14: Performing request to:
+2026-08-28T11:05:14:  URL: http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id=pcat_01M05TBA405BBZTDX5TB8JDXMK
+2026-08-28T11:05:14:  Headers: {
+2026-08-28T11:05:14:   "accept": "application/json",
+2026-08-28T11:05:14:   "content-type": "application/json",
+2026-08-28T11:05:14:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:05:14:   "authorization": "<REDACTED>"
+2026-08-28T11:05:14: }
+2026-08-28T11:05:14: 
+2026-08-28T11:05:14: Received response with status 200
+2026-08-28T11:05:14: 
+2026-08-28T11:05:14:  GET /no/products?category=pcat_01M05TBA405BBZTDX5TB8JDXMK 200 in 90ms
+2026-08-28T11:05:14:  │ GET http://localhost:9000/store/product-categories?limit=100&fields=id%2Cname%2Chandle 200 in 11ms (cache skip)
+2026-08-28T11:05:14:  │ │ Cache skipped reason: (auto no cache)
+2026-08-28T11:05:14:  │ GET http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id=pcat_01M05TBA405BBZTDX5TB8JDXMK 200 in 39ms (cache skip)
+2026-08-28T11:05:14:  │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+2026-08-28T11:05:14: Initiating Medusa client with default headers:
+2026-08-28T11:05:14:  {
+2026-08-28T11:05:14:   "accept": "application/json",
+2026-08-28T11:05:14:   "content-type": "application/json",
+2026-08-28T11:05:14:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:05:14:   "authorization": "<REDACTED>"
+2026-08-28T11:05:14: }
+2026-08-28T11:05:14: 
+2026-08-28T11:05:17: Performing request to:
+2026-08-28T11:05:17:  URL: http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id=pcat_01M05TBA3Q9CDSFQ1D3GRQ5ACC
+2026-08-28T11:05:17:  Headers: {
+2026-08-28T11:05:17:   "accept": "application/json",
+2026-08-28T11:05:17:   "content-type": "application/json",
+2026-08-28T11:05:17:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:05:17:   "authorization": "<REDACTED>"
+2026-08-28T11:05:17: }
+2026-08-28T11:05:17: 
+2026-08-28T11:05:17: Received response with status 200
+2026-08-28T11:05:17: 
+2026-08-28T11:05:17:  GET /no/products?category=pcat_01M05TBA3Q9CDSFQ1D3GRQ5ACC 200 in 121ms
+2026-08-28T11:05:17:  │ GET http://localhost:9000/store/product-categories?limit=100&fields=id%2Cname%2Chandle 200 in 15ms (cache skip)
+2026-08-28T11:05:17:  │ │ Cache skipped reason: (auto no cache)
+2026-08-28T11:05:17:  │ GET http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id=pcat_01M05TBA3Q9CDSFQ1D3GRQ5ACC 200 in 70ms (cache skip)
+2026-08-28T11:05:17:  │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+2026-08-28T11:05:17: Initiating Medusa client with default headers:
+2026-08-28T11:05:17:  {
+2026-08-28T11:05:17:   "accept": "application/json",
+2026-08-28T11:05:17:   "content-type": "application/json",
+2026-08-28T11:05:17:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:05:17:   "authorization": "<REDACTED>"
+2026-08-28T11:05:17: }
+2026-08-28T11:05:17: 
+2026-08-28T11:05:17: Performing request to:
+2026-08-28T11:05:17:  URL: http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id=pcat_01M05TBA3QP87KBCQG7JA35RPM
+2026-08-28T11:05:17:  Headers: {
+2026-08-28T11:05:17:   "accept": "application/json",
+2026-08-28T11:05:17:   "content-type": "application/json",
+2026-08-28T11:05:17:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:05:17:   "authorization": "<REDACTED>"
+2026-08-28T11:05:17: }
+2026-08-28T11:05:17: 
+2026-08-28T11:05:18: Received response with status 200
+2026-08-28T11:05:18: 
+2026-08-28T11:05:18:  GET /no/products?category=pcat_01M05TBA3QP87KBCQG7JA35RPM 200 in 145ms
+2026-08-28T11:05:18:  │ GET http://localhost:9000/store/product-categories?limit=100&fields=id%2Cname%2Chandle 200 in 12ms (cache skip)
+2026-08-28T11:05:18:  │ │ Cache skipped reason: (auto no cache)
+2026-08-28T11:05:18:  │ GET http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id=pcat_01M05TBA3QP87KBCQG7JA35RPM 200 in 94ms (cache skip)
+2026-08-28T11:05:18:  │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+2026-08-28T11:05:18: Initiating Medusa client with default headers:
+2026-08-28T11:05:18:  {
+2026-08-28T11:05:18:   "accept": "application/json",
+2026-08-28T11:05:18:   "content-type": "application/json",
+2026-08-28T11:05:18:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:05:18:   "authorization": "<REDACTED>"
+2026-08-28T11:05:18: }
+2026-08-28T11:05:18: 
+2026-08-28T11:05:19: Performing request to:
+2026-08-28T11:05:19:  URL: http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id=pcat_01M05TBA3RHHDTC1NRQKJ8YKZZ
+2026-08-28T11:05:19:  Headers: {
+2026-08-28T11:05:19:   "accept": "application/json",
+2026-08-28T11:05:19:   "content-type": "application/json",
+2026-08-28T11:05:19:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:05:19:   "authorization": "<REDACTED>"
+2026-08-28T11:05:19: }
+2026-08-28T11:05:19: 
+2026-08-28T11:05:19: Received response with status 200
+2026-08-28T11:05:19: 
+2026-08-28T11:05:19:  GET /no/products?category=pcat_01M05TBA3RHHDTC1NRQKJ8YKZZ 200 in 87ms
+2026-08-28T11:05:19:  │ GET http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id=pcat_01M05TBA3RHHDTC1NRQKJ8YKZZ 200 in 1ms (cache hit)
+2026-08-28T11:05:19:  │ GET http://localhost:9000/store/product-categories?limit=100&fields=id%2Cname%2Chandle 200 in 17ms (cache skip)
+2026-08-28T11:05:19:  │ │ Cache skipped reason: (auto no cache)
+2026-08-28T11:05:20: Initiating Medusa client with default headers:
+2026-08-28T11:05:20:  {
+2026-08-28T11:05:20:   "accept": "application/json",
+2026-08-28T11:05:20:   "content-type": "application/json",
+2026-08-28T11:05:20:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:05:20:   "authorization": "<REDACTED>"
+2026-08-28T11:05:20: }
+2026-08-28T11:05:20: 
+2026-08-28T11:05:21: Performing request to:
+2026-08-28T11:05:21:  URL: http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id=pcat_01M05TBA402ZHEXNGHGXG1QRDX
+2026-08-28T11:05:21:  Headers: {
+2026-08-28T11:05:21:   "accept": "application/json",
+2026-08-28T11:05:21:   "content-type": "application/json",
+2026-08-28T11:05:21:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:05:21:   "authorization": "<REDACTED>"
+2026-08-28T11:05:21: }
+2026-08-28T11:05:21: 
+2026-08-28T11:05:21: Received response with status 200
+2026-08-28T11:05:21: 
+2026-08-28T11:05:21:  GET /no/products?category=pcat_01M05TBA402ZHEXNGHGXG1QRDX 200 in 97ms
+2026-08-28T11:05:21:  │ GET http://localhost:9000/store/product-categories?limit=100&fields=id%2Cname%2Chandle 200 in 12ms (cache skip)
+2026-08-28T11:05:21:  │ │ Cache skipped reason: (auto no cache)
+2026-08-28T11:05:21:  │ GET http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id=pcat_01M05TBA402ZHEXNGHGXG1QRDX 200 in 48ms (cache skip)
+2026-08-28T11:05:21:  │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+2026-08-28T11:05:21: Initiating Medusa client with default headers:
+2026-08-28T11:05:21:  {
+2026-08-28T11:05:21:   "accept": "application/json",
+2026-08-28T11:05:21:   "content-type": "application/json",
+2026-08-28T11:05:21:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:05:21:   "authorization": "<REDACTED>"
+2026-08-28T11:05:21: }
+2026-08-28T11:05:21: 
+2026-08-28T11:05:24: Performing request to:
+2026-08-28T11:05:24:  URL: http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id=pcat_01M05TBA3Y7VK6WQRJB8XYHP1F
+2026-08-28T11:05:24:  Headers: {
+2026-08-28T11:05:24:   "accept": "application/json",
+2026-08-28T11:05:24:   "content-type": "application/json",
+2026-08-28T11:05:24:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:05:24:   "authorization": "<REDACTED>"
+2026-08-28T11:05:24: }
+2026-08-28T11:05:24: 
+2026-08-28T11:05:24: Received response with status 200
+2026-08-28T11:05:24: 
+2026-08-28T11:05:24:  GET /no/products?category=pcat_01M05TBA3Y7VK6WQRJB8XYHP1F 200 in 115ms
+2026-08-28T11:05:24:  │ GET http://localhost:9000/store/product-categories?limit=100&fields=id%2Cname%2Chandle 200 in 12ms (cache skip)
+2026-08-28T11:05:24:  │ │ Cache skipped reason: (auto no cache)
+2026-08-28T11:05:24:  │ GET http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id=pcat_01M05TBA3Y7VK6WQRJB8XYHP1F 200 in 60ms (cache skip)
+2026-08-28T11:05:24:  │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+2026-08-28T11:05:24: Initiating Medusa client with default headers:
+2026-08-28T11:05:24:  {
+2026-08-28T11:05:24:   "accept": "application/json",
+2026-08-28T11:05:24:   "content-type": "application/json",
+2026-08-28T11:05:24:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:05:24:   "authorization": "<REDACTED>"
+2026-08-28T11:05:24: }
+2026-08-28T11:05:24: 
+2026-08-28T11:05:26: Performing request to:
+2026-08-28T11:05:26:  URL: http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id=pcat_01M05TBA3PH5Y6J8H45SMSW732
+2026-08-28T11:05:26:  Headers: {
+2026-08-28T11:05:26:   "accept": "application/json",
+2026-08-28T11:05:26:   "content-type": "application/json",
+2026-08-28T11:05:26:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:05:26:   "authorization": "<REDACTED>"
+2026-08-28T11:05:26: }
+2026-08-28T11:05:26: 
+2026-08-28T11:05:26: Received response with status 200
+2026-08-28T11:05:26: 
+2026-08-28T11:05:26:  GET /no/products?category=pcat_01M05TBA3PH5Y6J8H45SMSW732 200 in 98ms
+2026-08-28T11:05:26:  │ GET http://localhost:9000/store/product-categories?limit=100&fields=id%2Cname%2Chandle 200 in 9ms (cache skip)
+2026-08-28T11:05:26:  │ │ Cache skipped reason: (auto no cache)
+2026-08-28T11:05:26:  │ GET http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id=pcat_01M05TBA3PH5Y6J8H45SMSW732 200 in 45ms (cache skip)
+2026-08-28T11:05:26:  │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+2026-08-28T11:05:26: Initiating Medusa client with default headers:
+2026-08-28T11:05:26:  {
+2026-08-28T11:05:26:   "accept": "application/json",
+2026-08-28T11:05:26:   "content-type": "application/json",
+2026-08-28T11:05:26:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:05:26:   "authorization": "<REDACTED>"
+2026-08-28T11:05:26: }
+2026-08-28T11:05:26: 
+2026-08-28T11:05:29: Performing request to:
+2026-08-28T11:05:29:  URL: http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id=pcat_01M05TBA3VBXTSBA0YDKZTFVK4
+2026-08-28T11:05:29:  Headers: {
+2026-08-28T11:05:29:   "accept": "application/json",
+2026-08-28T11:05:29:   "content-type": "application/json",
+2026-08-28T11:05:29:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:05:29:   "authorization": "<REDACTED>"
+2026-08-28T11:05:29: }
+2026-08-28T11:05:29: 
+2026-08-28T11:05:29: Received response with status 200
+2026-08-28T11:05:29: 
+2026-08-28T11:05:29:  GET /no/products?category=pcat_01M05TBA3VBXTSBA0YDKZTFVK4 200 in 86ms
+2026-08-28T11:05:29:  │ GET http://localhost:9000/store/product-categories?limit=100&fields=id%2Cname%2Chandle 200 in 12ms (cache skip)
+2026-08-28T11:05:29:  │ │ Cache skipped reason: (auto no cache)
+2026-08-28T11:05:29:  │ GET http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id=pcat_01M05TBA3VBXTSBA0YDKZTFVK4 200 in 42ms (cache skip)
+2026-08-28T11:05:29:  │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+2026-08-28T11:05:29: Initiating Medusa client with default headers:
+2026-08-28T11:05:29:  {
+2026-08-28T11:05:29:   "accept": "application/json",
+2026-08-28T11:05:29:   "content-type": "application/json",
+2026-08-28T11:05:29:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:05:29:   "authorization": "<REDACTED>"
+2026-08-28T11:05:29: }
+2026-08-28T11:05:29: 
+2026-08-28T11:05:31: Performing request to:
+2026-08-28T11:05:31:  URL: http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id=pcat_01M05TBA405BBZTDX5TB8JDXMK
+2026-08-28T11:05:31:  Headers: {
+2026-08-28T11:05:31:   "accept": "application/json",
+2026-08-28T11:05:31:   "content-type": "application/json",
+2026-08-28T11:05:31:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:05:31:   "authorization": "<REDACTED>"
+2026-08-28T11:05:31: }
+2026-08-28T11:05:31: 
+2026-08-28T11:05:31: Received response with status 200
+2026-08-28T11:05:31: 
+2026-08-28T11:05:31:  GET /no/products?category=pcat_01M05TBA405BBZTDX5TB8JDXMK 200 in 47ms
+2026-08-28T11:05:31:  │ GET http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id=pcat_01M05TBA405BBZTDX5TB8JDXMK 200 in 1ms (cache hit)
+2026-08-28T11:05:31:  │ GET http://localhost:9000/store/product-categories?limit=100&fields=id%2Cname%2Chandle 200 in 8ms (cache skip)
+2026-08-28T11:05:31:  │ │ Cache skipped reason: (auto no cache)
+2026-08-28T11:05:31: Initiating Medusa client with default headers:
+2026-08-28T11:05:31:  {
+2026-08-28T11:05:31:   "accept": "application/json",
+2026-08-28T11:05:31:   "content-type": "application/json",
+2026-08-28T11:05:31:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:05:31:   "authorization": "<REDACTED>"
+2026-08-28T11:05:31: }
+2026-08-28T11:05:31: 
+2026-08-28T11:05:41: Performing request to:
+2026-08-28T11:05:41:  URL: http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id=pcat_01M05TBA405BBZTDX5TB8JDXMK
+2026-08-28T11:05:41:  Headers: {
+2026-08-28T11:05:41:   "accept": "application/json",
+2026-08-28T11:05:41:   "content-type": "application/json",
+2026-08-28T11:05:41:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:05:41:   "authorization": "<REDACTED>"
+2026-08-28T11:05:41: }
+2026-08-28T11:05:41: 
+2026-08-28T11:05:41: Received response with status 200
+2026-08-28T11:05:41: 
+2026-08-28T11:05:41:  GET /no/products?category=pcat_01M05TBA405BBZTDX5TB8JDXMK 200 in 269ms
+2026-08-28T11:05:41:  │ GET http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id=pcat_01M05TBA405BBZTDX5TB8JDXMK 200 in 2ms (cache hit)
+2026-08-28T11:05:41:  │ GET http://localhost:9000/store/product-categories?limit=100&fields=id%2Cname%2Chandle 200 in 44ms (cache skip)
+2026-08-28T11:05:41:  │ │ Cache skipped reason: (auto no cache)
+2026-08-28T11:05:41: Initiating Medusa client with default headers:
+2026-08-28T11:05:41:  {
+2026-08-28T11:05:41:   "accept": "application/json",
+2026-08-28T11:05:41:   "content-type": "application/json",
+2026-08-28T11:05:41:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:05:41:   "authorization": "<REDACTED>"
+2026-08-28T11:05:41: }
+2026-08-28T11:05:41: 
+2026-08-28T11:05:42: Performing request to:
+2026-08-28T11:05:42:  URL: http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id=pcat_01M05TBA405BBZTDX5TB8JDXMK
+2026-08-28T11:05:42:  Headers: {
+2026-08-28T11:05:42:   "accept": "application/json",
+2026-08-28T11:05:42:   "content-type": "application/json",
+2026-08-28T11:05:42:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:05:42:   "authorization": "<REDACTED>"
+2026-08-28T11:05:42: }
+2026-08-28T11:05:42: 
+2026-08-28T11:05:42: Received response with status 200
+2026-08-28T11:05:42: 
+2026-08-28T11:05:42:  GET /no/products?category=pcat_01M05TBA405BBZTDX5TB8JDXMK 200 in 200ms
+2026-08-28T11:05:42:  │ GET http://localhost:9000/store/product-categories?limit=100&fields=id%2Cname%2Chandle 200 in 16ms (cache skip)
+2026-08-28T11:05:42:  │ │ Cache skipped reason: (auto no cache)
+2026-08-28T11:05:42:  │ GET http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id=pcat_01M05TBA405BBZTDX5TB8JDXMK 200 in 86ms (cache skip)
+2026-08-28T11:05:42:  │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+2026-08-28T11:05:42: Initiating Medusa client with default headers:
+2026-08-28T11:05:42:  {
+2026-08-28T11:05:42:   "accept": "application/json",
+2026-08-28T11:05:42:   "content-type": "application/json",
+2026-08-28T11:05:42:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:05:42:   "authorization": "<REDACTED>"
+2026-08-28T11:05:42: }
+2026-08-28T11:05:42: 
+2026-08-28T11:05:43:  ✓ Compiled /[countryCode] in 204ms
+2026-08-28T11:05:43:  GET /no 200 in 479ms
+2026-08-28T11:06:33: [?25h
+2026-08-28T11:06:33: 
+2026-08-28T11:06:33: npm warn Unknown project config "auto-install-peers". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-08-28T11:06:33: 
+2026-08-28T11:06:33: > @dtc/storefront@1.0.3 dev
+2026-08-28T11:06:33: > next dev --turbopack -p 8000
+2026-08-28T11:06:33: 
+2026-08-28T11:06:34:    ▲ Next.js 15.5.21 (Turbopack)
+2026-08-28T11:06:34:    - Local:        http://localhost:8000
+2026-08-28T11:06:34:    - Network:      http://10.90.90.197:8000
+2026-08-28T11:06:34:    - Environments: .env.local
+2026-08-28T11:06:34: 
+2026-08-28T11:06:34:  ✓ Starting...
+2026-08-28T11:06:34:  ✓ Compiled middleware in 148ms
+2026-08-28T11:06:34:  ✓ Ready in 996ms
+2026-08-28T11:06:48:  ○ Compiling /[countryCode] ...
+2026-08-28T11:06:50:  ✓ Compiled /[countryCode] in 2.1s
+2026-08-28T11:06:51:  GET /no 200 in 1687ms
+2026-08-28T11:07:31:  GET /no 200 in 94ms
+2026-08-28T11:07:38:  GET /no 200 in 147ms
+2026-08-28T11:07:39:  GET /no 200 in 145ms
+2026-08-28T11:07:40:  GET /no 200 in 50ms
+2026-08-28T11:07:41:  GET /no 200 in 123ms
+2026-08-28T11:08:01:  GET /no 200 in 93ms
+2026-08-28T11:08:03:  GET /no 200 in 148ms
+2026-08-28T11:08:04:  ✓ Compiled /[countryCode]/cart in 290ms
+2026-08-28T11:08:04:  GET /no/cart 200 in 590ms
+2026-08-28T11:08:04:  GET /no/cart 200 in 66ms
+2026-08-28T11:08:09:  GET /no 200 in 47ms
+2026-08-28T11:08:16:  ✓ Compiled /[countryCode]/products in 346ms
+2026-08-28T11:08:16: Initiating Medusa client with default headers:
+2026-08-28T11:08:16:  {
+2026-08-28T11:08:16:   "accept": "application/json",
+2026-08-28T11:08:16:   "content-type": "application/json",
+2026-08-28T11:08:16:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:08:16:   "authorization": "<REDACTED>"
+2026-08-28T11:08:16: }
+2026-08-28T11:08:16: 
+2026-08-28T11:08:16: Initiating Medusa client with default headers:
+2026-08-28T11:08:16:  {
+2026-08-28T11:08:16:   "accept": "application/json",
+2026-08-28T11:08:16:   "content-type": "application/json",
+2026-08-28T11:08:16:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:08:16:   "authorization": "<REDACTED>"
+2026-08-28T11:08:16: }
+2026-08-28T11:08:16: 
+2026-08-28T11:08:16: Performing request to:
+2026-08-28T11:08:16:  URL: http://localhost:9000/store/regions
+2026-08-28T11:08:16:  Headers: {
+2026-08-28T11:08:16:   "accept": "application/json",
+2026-08-28T11:08:16:   "content-type": "application/json",
+2026-08-28T11:08:16:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:08:16:   "authorization": "<REDACTED>"
+2026-08-28T11:08:16: }
+2026-08-28T11:08:16: 
+2026-08-28T11:08:16: Received response with status 200
+2026-08-28T11:08:16: 
+2026-08-28T11:08:16: Performing request to:
+2026-08-28T11:08:16:  URL: http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C
+2026-08-28T11:08:16:  Headers: {
+2026-08-28T11:08:16:   "accept": "application/json",
+2026-08-28T11:08:16:   "content-type": "application/json",
+2026-08-28T11:08:16:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:08:16:   "authorization": "<REDACTED>"
+2026-08-28T11:08:16: }
+2026-08-28T11:08:16: 
+2026-08-28T11:08:16: Received response with status 200
+2026-08-28T11:08:16: 
+2026-08-28T11:08:16:  GET /no/products 200 in 694ms
+2026-08-28T11:08:16:  │ GET http://localhost:9000/store/regions 200 in 3ms (cache hit)
+2026-08-28T11:08:16:  │ GET http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C 200 in 1ms (cache hit)
+2026-08-28T11:08:16:  │ GET http://localhost:9000/store/product-categories?limit=100&fields=id%2Cname%2Chandle 200 in 16ms (cache skip)
+2026-08-28T11:08:16:  │ │ Cache skipped reason: (auto no cache)
+2026-08-28T11:08:30:  GET /no 200 in 50ms
+2026-08-28T11:08:32:  GET /no 200 in 106ms
+2026-08-28T11:08:33:  GET /no 200 in 91ms
+2026-08-28T11:08:33:  GET /no 200 in 159ms
+2026-08-28T11:08:40:  GET /no 200 in 152ms
+2026-08-28T11:09:01:  GET /no 200 in 95ms
+2026-08-28T11:09:02: Performing request to:
+2026-08-28T11:09:02:  URL: http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C
+2026-08-28T11:09:02:  Headers: {
+2026-08-28T11:09:02:   "accept": "application/json",
+2026-08-28T11:09:02:   "content-type": "application/json",
+2026-08-28T11:09:02:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:09:02:   "authorization": "<REDACTED>"
+2026-08-28T11:09:02: }
+2026-08-28T11:09:02: 
+2026-08-28T11:09:02: Received response with status 200
+2026-08-28T11:09:02: 
+2026-08-28T11:09:02:  GET /no/products 200 in 89ms
+2026-08-28T11:09:02:  │ GET http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C 200 in 0ms (cache hit)
+2026-08-28T11:09:02:  │ GET http://localhost:9000/store/product-categories?limit=100&fields=id%2Cname%2Chandle 200 in 25ms (cache skip)
+2026-08-28T11:09:02:  │ │ Cache skipped reason: (auto no cache)
+2026-08-28T11:09:03: Initiating Medusa client with default headers:
+2026-08-28T11:09:03:  {
+2026-08-28T11:09:03:   "accept": "application/json",
+2026-08-28T11:09:03:   "content-type": "application/json",
+2026-08-28T11:09:03:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:09:03:   "authorization": "<REDACTED>"
+2026-08-28T11:09:03: }
+2026-08-28T11:09:03: 
+2026-08-28T11:09:04: Performing request to:
+2026-08-28T11:09:04:  URL: http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id=pcat_01M05TBA3N5H98F8MG7T9222YX
+2026-08-28T11:09:04:  Headers: {
+2026-08-28T11:09:04:   "accept": "application/json",
+2026-08-28T11:09:04:   "content-type": "application/json",
+2026-08-28T11:09:04:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:09:04:   "authorization": "<REDACTED>"
+2026-08-28T11:09:04: }
+2026-08-28T11:09:04: 
+2026-08-28T11:09:04: Received response with status 200
+2026-08-28T11:09:04: 
+2026-08-28T11:09:04:  GET /no/products?category=pcat_01M05TBA3N5H98F8MG7T9222YX 200 in 72ms
+2026-08-28T11:09:04:  │ GET http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id=pcat_01M05TBA3N5H98F8MG7T9222YX 200 in 3ms (cache hit)
+2026-08-28T11:09:04:  │ GET http://localhost:9000/store/product-categories?limit=100&fields=id%2Cname%2Chandle 200 in 17ms (cache skip)
+2026-08-28T11:09:04:  │ │ Cache skipped reason: (auto no cache)
+2026-08-28T11:09:05: Initiating Medusa client with default headers:
+2026-08-28T11:09:05:  {
+2026-08-28T11:09:05:   "accept": "application/json",
+2026-08-28T11:09:05:   "content-type": "application/json",
+2026-08-28T11:09:05:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:09:05:   "authorization": "<REDACTED>"
+2026-08-28T11:09:05: }
+2026-08-28T11:09:05: 
+2026-08-28T11:09:05:  GET /no 200 in 64ms
+2026-08-28T11:09:12:  GET /no 200 in 135ms
+2026-08-28T11:09:13: Performing request to:
+2026-08-28T11:09:13:  URL: http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C
+2026-08-28T11:09:13:  Headers: {
+2026-08-28T11:09:13:   "accept": "application/json",
+2026-08-28T11:09:13:   "content-type": "application/json",
+2026-08-28T11:09:13:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:09:13:   "authorization": "<REDACTED>"
+2026-08-28T11:09:13: }
+2026-08-28T11:09:13: 
+2026-08-28T11:09:13: Received response with status 200
+2026-08-28T11:09:13: 
+2026-08-28T11:09:13:  GET /no/products 200 in 81ms
+2026-08-28T11:09:13:  │ GET http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C 200 in 1ms (cache hit)
+2026-08-28T11:09:13:  │ GET http://localhost:9000/store/product-categories?limit=100&fields=id%2Cname%2Chandle 200 in 34ms (cache skip)
+2026-08-28T11:09:13:  │ │ Cache skipped reason: (auto no cache)
+2026-08-28T11:09:13: Initiating Medusa client with default headers:
+2026-08-28T11:09:13:  {
+2026-08-28T11:09:13:   "accept": "application/json",
+2026-08-28T11:09:13:   "content-type": "application/json",
+2026-08-28T11:09:13:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:09:13:   "authorization": "<REDACTED>"
+2026-08-28T11:09:13: }
+2026-08-28T11:09:13: 
+2026-08-28T11:09:38: Performing request to:
+2026-08-28T11:09:38:  URL: http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C
+2026-08-28T11:09:38:  Headers: {
+2026-08-28T11:09:38:   "accept": "application/json",
+2026-08-28T11:09:38:   "content-type": "application/json",
+2026-08-28T11:09:38:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:09:38:   "authorization": "<REDACTED>"
+2026-08-28T11:09:38: }
+2026-08-28T11:09:38: 
+2026-08-28T11:09:38: Received response with status 200
+2026-08-28T11:09:38: 
+2026-08-28T11:09:38:  GET /no/products 200 in 290ms
+2026-08-28T11:09:38:  │ GET http://localhost:9000/store/products?limit=12&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C 200 in 2ms (cache hit)
+2026-08-28T11:09:38:  │ GET http://localhost:9000/store/product-categories?limit=100&fields=id%2Cname%2Chandle 200 in 42ms (cache skip)
+2026-08-28T11:09:38:  │ │ Cache skipped reason: (auto no cache)
+2026-08-28T11:09:38: Initiating Medusa client with default headers:
+2026-08-28T11:09:38:  {
+2026-08-28T11:09:38:   "accept": "application/json",
+2026-08-28T11:09:38:   "content-type": "application/json",
+2026-08-28T11:09:38:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:09:38:   "authorization": "<REDACTED>"
+2026-08-28T11:09:38: }
+2026-08-28T11:09:38: 
+2026-08-28T11:09:39:  GET /no 200 in 106ms
+2026-08-28T11:09:40:  GET /no 200 in 40ms
+2026-08-28T11:09:41:  GET /no 200 in 115ms
+2026-08-28T11:09:42:  GET /no 200 in 127ms
+2026-08-28T11:10:24:    Reload env: .env.local
+2026-08-28T11:10:24:  ✓ Compiled middleware in 2ms
+2026-08-28T11:10:24:  ⚠ Fast Refresh had to perform a full reload when ./apps/storefront/src/lib/medusa-client.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+2026-08-28T11:10:24:  ✓ Compiled in 27ms
+2026-08-28T11:10:24: Failed to fetch regions from backend. Using default regions.
+2026-08-28T11:10:24: Failed to fetch regions from backend. Using default regions.
+2026-08-28T11:10:24: Failed to fetch regions from backend. Using default regions.
+2026-08-28T11:10:24:  GET /no 200 in 233ms
+2026-08-28T11:10:24:  GET /no 200 in 235ms
+2026-08-28T11:10:27: [?25h
+2026-08-28T11:10:27: 
+2026-08-28T11:10:27: npm warn Unknown project config "auto-install-peers". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-08-28T11:10:27: 
+2026-08-28T11:10:27: > @dtc/storefront@1.0.3 dev
+2026-08-28T11:10:27: > next dev --turbopack -p 8000
+2026-08-28T11:10:27: 
+2026-08-28T11:10:27:    ▲ Next.js 15.5.21 (Turbopack)
+2026-08-28T11:10:27:    - Local:        http://localhost:8000
+2026-08-28T11:10:27:    - Network:      http://10.90.90.197:8000
+2026-08-28T11:10:27:    - Environments: .env.local
+2026-08-28T11:10:27: 
+2026-08-28T11:10:27:  ✓ Starting...
+2026-08-28T11:10:28:  ✓ Compiled middleware in 97ms
+2026-08-28T11:10:28:  ✓ Ready in 900ms
+2026-08-28T11:10:35: Failed to fetch regions from backend. Using default regions.
+2026-08-28T11:10:36:  ○ Compiling /_not-found/page ...
+2026-08-28T11:10:37:  ✓ Compiled /_not-found/page in 1860ms
+2026-08-28T11:10:37:  GET /no/en 404 in 2112ms
+2026-08-28T11:10:40:  ✓ Compiled /[countryCode] in 219ms
+2026-08-28T11:10:40:  GET /no/en 404 in 50ms
+2026-08-28T11:10:41:  GET /no 200 in 686ms
+2026-08-28T11:10:42:  GET /no 200 in 125ms
+2026-08-28T11:10:43:  GET /no 200 in 101ms
+2026-08-28T11:10:48:  GET /no 200 in 65ms
+2026-08-28T11:10:54:  GET /no 200 in 65ms
+2026-08-28T11:11:07:  ✓ Compiled /[countryCode] in 44ms
+2026-08-28T11:11:07: Initiating Medusa client with default headers:
+2026-08-28T11:11:07:  {
+2026-08-28T11:11:07:   "accept": "application/json",
+2026-08-28T11:11:07:   "content-type": "application/json",
+2026-08-28T11:11:07:   "x-publishable-api-key": "pk_dd31e38530c0a1d97b912730a102a487ac92bc5fead6d627b708a58c2b36beb3",
+2026-08-28T11:11:07:   "authorization": "<REDACTED>"
+2026-08-28T11:11:07: }
+2026-08-28T11:11:07: 
+2026-08-28T11:11:07: Initiating Medusa client with default headers:
+2026-08-28T11:11:07:  {
+2026-08-28T11:11:07:   "accept": "application/json",
+2026-08-28T11:11:07:   "content-type": "application/json",
+2026-08-28T11:11:07:   "x-publishable-api-key": "pk_dd31e38530c0a1d97b912730a102a487ac92bc5fead6d627b708a58c2b36beb3",
+2026-08-28T11:11:07:   "authorization": "<REDACTED>"
+2026-08-28T11:11:07: }
+2026-08-28T11:11:07: 
+2026-08-28T11:11:07:  GET /no 200 in 276ms
+2026-08-28T11:11:07:  GET /no 200 in 266ms
+2026-08-28T11:11:08: Initiating Medusa client with default headers:
+2026-08-28T11:11:08:  {
+2026-08-28T11:11:08:   "accept": "application/json",
+2026-08-28T11:11:08:   "content-type": "application/json",
+2026-08-28T11:11:08:   "x-publishable-api-key": "pk_dd31e38530c0a1d97b912730a102a487ac92bc5fead6d627b708a58c2b36beb3",
+2026-08-28T11:11:08:   "authorization": "<REDACTED>"
+2026-08-28T11:11:08: }
+2026-08-28T11:11:08: 
+2026-08-28T11:11:08:  POST /no 200 in 40ms
+2026-08-28T11:11:08: Initiating Medusa client with default headers:
+2026-08-28T11:11:08:  {
+2026-08-28T11:11:08:   "accept": "application/json",
+2026-08-28T11:11:08:   "content-type": "application/json",
+2026-08-28T11:11:08:   "x-publishable-api-key": "pk_dd31e38530c0a1d97b912730a102a487ac92bc5fead6d627b708a58c2b36beb3",
+2026-08-28T11:11:08:   "authorization": "<REDACTED>"
+2026-08-28T11:11:08: }
+2026-08-28T11:11:08: 
+2026-08-28T11:11:10:  GET /no 200 in 137ms
+2026-08-28T11:11:10:  POST /no 200 in 39ms
+2026-08-28T11:11:10: Initiating Medusa client with default headers:
+2026-08-28T11:11:10:  {
+2026-08-28T11:11:10:   "accept": "application/json",
+2026-08-28T11:11:10:   "content-type": "application/json",
+2026-08-28T11:11:10:   "x-publishable-api-key": "pk_dd31e38530c0a1d97b912730a102a487ac92bc5fead6d627b708a58c2b36beb3",
+2026-08-28T11:11:10:   "authorization": "<REDACTED>"
+2026-08-28T11:11:10: }
+2026-08-28T11:11:10: 
+2026-08-28T11:11:11:  GET /no 200 in 137ms
+2026-08-28T11:11:11:  POST /no 200 in 31ms
+2026-08-28T11:11:11: Initiating Medusa client with default headers:
+2026-08-28T11:11:11:  {
+2026-08-28T11:11:11:   "accept": "application/json",
+2026-08-28T11:11:11:   "content-type": "application/json",
+2026-08-28T11:11:11:   "x-publishable-api-key": "pk_dd31e38530c0a1d97b912730a102a487ac92bc5fead6d627b708a58c2b36beb3",
+2026-08-28T11:11:11:   "authorization": "<REDACTED>"
+2026-08-28T11:11:11: }
+2026-08-28T11:11:11: 
+2026-08-28T11:11:12:  ✓ Compiled in 67ms
+2026-08-28T11:11:13: Initiating Medusa client with default headers:
+2026-08-28T11:11:13:  {
+2026-08-28T11:11:13:   "accept": "application/json",
+2026-08-28T11:11:13:   "content-type": "application/json",
+2026-08-28T11:11:13:   "x-publishable-api-key": "pk_dd31e38530c0a1d97b912730a102a487ac92bc5fead6d627b708a58c2b36beb3",
+2026-08-28T11:11:13:   "authorization": "<REDACTED>"
+2026-08-28T11:11:13: }
+2026-08-28T11:11:13: 
+2026-08-28T11:11:13: Initiating Medusa client with default headers:
+2026-08-28T11:11:13:  {
+2026-08-28T11:11:13:   "accept": "application/json",
+2026-08-28T11:11:13:   "content-type": "application/json",
+2026-08-28T11:11:13:   "x-publishable-api-key": "pk_dd31e38530c0a1d97b912730a102a487ac92bc5fead6d627b708a58c2b36beb3",
+2026-08-28T11:11:13:   "authorization": "<REDACTED>"
+2026-08-28T11:11:13: }
+2026-08-28T11:11:13: 
+2026-08-28T11:11:13:  GET /no 200 in 230ms
+2026-08-28T11:11:13:  POST /no 200 in 38ms
+2026-08-28T11:11:13: Initiating Medusa client with default headers:
+2026-08-28T11:11:13:  {
+2026-08-28T11:11:13:   "accept": "application/json",
+2026-08-28T11:11:13:   "content-type": "application/json",
+2026-08-28T11:11:13:   "x-publishable-api-key": "pk_dd31e38530c0a1d97b912730a102a487ac92bc5fead6d627b708a58c2b36beb3",
+2026-08-28T11:11:13:   "authorization": "<REDACTED>"
+2026-08-28T11:11:13: }
+2026-08-28T11:11:13: 
+2026-08-28T11:11:14:  GET /no 200 in 85ms
+2026-08-28T11:11:14:  POST /no 200 in 33ms
+2026-08-28T11:11:14: Initiating Medusa client with default headers:
+2026-08-28T11:11:14:  {
+2026-08-28T11:11:14:   "accept": "application/json",
+2026-08-28T11:11:14:   "content-type": "application/json",
+2026-08-28T11:11:14:   "x-publishable-api-key": "pk_dd31e38530c0a1d97b912730a102a487ac92bc5fead6d627b708a58c2b36beb3",
+2026-08-28T11:11:14:   "authorization": "<REDACTED>"
+2026-08-28T11:11:14: }
+2026-08-28T11:11:14: 
+2026-08-28T11:11:16:  GET /no 200 in 90ms
+2026-08-28T11:11:16:  POST /no 200 in 32ms
+2026-08-28T11:11:16: Initiating Medusa client with default headers:
+2026-08-28T11:11:16:  {
+2026-08-28T11:11:16:   "accept": "application/json",
+2026-08-28T11:11:16:   "content-type": "application/json",
+2026-08-28T11:11:16:   "x-publishable-api-key": "pk_dd31e38530c0a1d97b912730a102a487ac92bc5fead6d627b708a58c2b36beb3",
+2026-08-28T11:11:16:   "authorization": "<REDACTED>"
+2026-08-28T11:11:16: }
+2026-08-28T11:11:16: 
+2026-08-28T11:11:17: [?25h
+2026-08-28T11:11:17: 
+2026-08-28T11:11:17: npm warn Unknown project config "auto-install-peers". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-08-28T11:11:17: 
+2026-08-28T11:11:17: > @dtc/storefront@1.0.3 dev
+2026-08-28T11:11:17: > next dev --turbopack -p 8000
+2026-08-28T11:11:17: 
+2026-08-28T11:11:17:    ▲ Next.js 15.5.21 (Turbopack)
+2026-08-28T11:11:17:    - Local:        http://localhost:8000
+2026-08-28T11:11:17:    - Network:      http://10.90.90.197:8000
+2026-08-28T11:11:17:    - Environments: .env.local
+2026-08-28T11:11:17: 
+2026-08-28T11:11:17:  ✓ Starting...
+2026-08-28T11:11:18:  ✓ Compiled middleware in 99ms
+2026-08-28T11:11:18:  ✓ Ready in 907ms
+2026-08-28T11:11:18: Failed to fetch regions from backend. Using default regions.
+2026-08-28T11:11:19:  ○ Compiling /[countryCode] ...
+2026-08-28T11:11:20:  ✓ Compiled /[countryCode] in 1971ms
+2026-08-28T11:11:20: Initiating Medusa client with default headers:
+2026-08-28T11:11:20:  {
+2026-08-28T11:11:20:   "accept": "application/json",
+2026-08-28T11:11:20:   "content-type": "application/json",
+2026-08-28T11:11:20:   "x-publishable-api-key": "pk_dd31e38530c0a1d97b912730a102a487ac92bc5fead6d627b708a58c2b36beb3",
+2026-08-28T11:11:20:   "authorization": "<REDACTED>"
+2026-08-28T11:11:20: }
+2026-08-28T11:11:20: 
+2026-08-28T11:11:21: Initiating Medusa client with default headers:
+2026-08-28T11:11:21:  {
+2026-08-28T11:11:21:   "accept": "application/json",
+2026-08-28T11:11:21:   "content-type": "application/json",
+2026-08-28T11:11:21:   "x-publishable-api-key": "pk_dd31e38530c0a1d97b912730a102a487ac92bc5fead6d627b708a58c2b36beb3",
+2026-08-28T11:11:21:   "authorization": "<REDACTED>"
+2026-08-28T11:11:21: }
+2026-08-28T11:11:21: 
+2026-08-28T11:11:21: Initiating Medusa client with default headers:
+2026-08-28T11:11:21:  {
+2026-08-28T11:11:21:   "accept": "application/json",
+2026-08-28T11:11:21:   "content-type": "application/json",
+2026-08-28T11:11:21:   "x-publishable-api-key": "pk_dd31e38530c0a1d97b912730a102a487ac92bc5fead6d627b708a58c2b36beb3",
+2026-08-28T11:11:21:   "authorization": "<REDACTED>"
+2026-08-28T11:11:21: }
+2026-08-28T11:11:21: 
+2026-08-28T11:11:21:  GET /no 200 in 2560ms
+2026-08-28T11:11:21:  POST /no 200 in 59ms
+2026-08-28T11:11:21: Initiating Medusa client with default headers:
+2026-08-28T11:11:21:  {
+2026-08-28T11:11:21:   "accept": "application/json",
+2026-08-28T11:11:21:   "content-type": "application/json",
+2026-08-28T11:11:21:   "x-publishable-api-key": "pk_dd31e38530c0a1d97b912730a102a487ac92bc5fead6d627b708a58c2b36beb3",
+2026-08-28T11:11:21:   "authorization": "<REDACTED>"
+2026-08-28T11:11:21: }
+2026-08-28T11:11:21: 
+2026-08-28T11:11:22:  GET /no 200 in 151ms
+2026-08-28T11:11:22:  POST /no 200 in 35ms
+2026-08-28T11:11:22: Initiating Medusa client with default headers:
+2026-08-28T11:11:22:  {
+2026-08-28T11:11:22:   "accept": "application/json",
+2026-08-28T11:11:22:   "content-type": "application/json",
+2026-08-28T11:11:22:   "x-publishable-api-key": "pk_dd31e38530c0a1d97b912730a102a487ac92bc5fead6d627b708a58c2b36beb3",
+2026-08-28T11:11:22:   "authorization": "<REDACTED>"
+2026-08-28T11:11:22: }
+2026-08-28T11:11:22: 
+2026-08-28T11:11:23:  GET /no 200 in 116ms
+2026-08-28T11:11:23:  GET /no 200 in 160ms
+2026-08-28T11:11:23:  GET /no 200 in 204ms
+2026-08-28T11:11:23: Initiating Medusa client with default headers:
+2026-08-28T11:11:23:  {
+2026-08-28T11:11:23:   "accept": "application/json",
+2026-08-28T11:11:23:   "content-type": "application/json",
+2026-08-28T11:11:23:   "x-publishable-api-key": "pk_dd31e38530c0a1d97b912730a102a487ac92bc5fead6d627b708a58c2b36beb3",
+2026-08-28T11:11:23:   "authorization": "<REDACTED>"
+2026-08-28T11:11:23: }
+2026-08-28T11:11:23: 
+2026-08-28T11:11:23:  ⨯ [Error: aborted] { code: 'ECONNRESET', digest: '354757197' }
+2026-08-28T11:11:23:  GET /no 200 in 182ms
+2026-08-28T11:11:23:  ⨯ [Error: aborted] { code: 'ECONNRESET', digest: '354757197' }
+2026-08-28T11:11:24:  GET /no 200 in 248ms
+2026-08-28T11:11:24: Initiating Medusa client with default headers:
+2026-08-28T11:11:24:  {
+2026-08-28T11:11:24:   "accept": "application/json",
+2026-08-28T11:11:24:   "content-type": "application/json",
+2026-08-28T11:11:24:   "x-publishable-api-key": "pk_dd31e38530c0a1d97b912730a102a487ac92bc5fead6d627b708a58c2b36beb3",
+2026-08-28T11:11:24:   "authorization": "<REDACTED>"
+2026-08-28T11:11:24: }
+2026-08-28T11:11:24: 
+2026-08-28T11:11:24:  ⨯ [Error: aborted] { code: 'ECONNRESET', digest: '354757197' }
+2026-08-28T11:11:24:  GET /no 200 in 247ms
+2026-08-28T11:11:24:  ⨯ [Error: aborted] { code: 'ECONNRESET', digest: '354757197' }
+2026-08-28T11:11:24:  POST /no 200 in 39ms
+2026-08-28T11:11:24:  GET /no 200 in 100ms
+2026-08-28T11:11:24: Initiating Medusa client with default headers:
+2026-08-28T11:11:24:  {
+2026-08-28T11:11:24:   "accept": "application/json",
+2026-08-28T11:11:24:   "content-type": "application/json",
+2026-08-28T11:11:24:   "x-publishable-api-key": "pk_dd31e38530c0a1d97b912730a102a487ac92bc5fead6d627b708a58c2b36beb3",
+2026-08-28T11:11:24:   "authorization": "<REDACTED>"
+2026-08-28T11:11:24: }
+2026-08-28T11:11:24: 
+2026-08-28T11:11:24:  POST /no 200 in 79ms
+2026-08-28T11:11:24:  ⨯ [Error: aborted] { code: 'ECONNRESET', digest: '354757197' }
+2026-08-28T11:11:24:  GET /no 200 in 116ms
+2026-08-28T11:11:24:  POST /no 200 in 54ms
+2026-08-28T11:11:24:  GET /no 200 in 92ms
+2026-08-28T11:11:24: Initiating Medusa client with default headers:
+2026-08-28T11:11:24:  {
+2026-08-28T11:11:24:   "accept": "application/json",
+2026-08-28T11:11:24:   "content-type": "application/json",
+2026-08-28T11:11:24:   "x-publishable-api-key": "pk_dd31e38530c0a1d97b912730a102a487ac92bc5fead6d627b708a58c2b36beb3",
+2026-08-28T11:11:24:   "authorization": "<REDACTED>"
+2026-08-28T11:11:24: }
+2026-08-28T11:11:24: 
+2026-08-28T11:11:24:  POST /no 200 in 35ms
+2026-08-28T11:11:30:  GET /no 200 in 60ms
+2026-08-28T11:11:30: Initiating Medusa client with default headers:
+2026-08-28T11:11:30:  {
+2026-08-28T11:11:30:   "accept": "application/json",
+2026-08-28T11:11:30:   "content-type": "application/json",
+2026-08-28T11:11:30:   "x-publishable-api-key": "pk_dd31e38530c0a1d97b912730a102a487ac92bc5fead6d627b708a58c2b36beb3",
+2026-08-28T11:11:30:   "authorization": "<REDACTED>"
+2026-08-28T11:11:30: }
+2026-08-28T11:11:30: 
+2026-08-28T11:13:50:  GET /no 200 in 133ms
+2026-08-28T11:13:51:  POST /no 200 in 64ms
+2026-08-28T11:13:51: Initiating Medusa client with default headers:
+2026-08-28T11:13:51:  {
+2026-08-28T11:13:51:   "accept": "application/json",
+2026-08-28T11:13:51:   "content-type": "application/json",
+2026-08-28T11:13:51:   "x-publishable-api-key": "pk_dd31e38530c0a1d97b912730a102a487ac92bc5fead6d627b708a58c2b36beb3",
+2026-08-28T11:13:51:   "authorization": "<REDACTED>"
+2026-08-28T11:13:51: }
+2026-08-28T11:13:51: 
+2026-08-28T11:13:52:  GET /no 200 in 135ms
+2026-08-28T11:13:53:  POST /no 200 in 48ms
+2026-08-28T11:13:53: Initiating Medusa client with default headers:
+2026-08-28T11:13:53:  {
+2026-08-28T11:13:53:   "accept": "application/json",
+2026-08-28T11:13:53:   "content-type": "application/json",
+2026-08-28T11:13:53:   "x-publishable-api-key": "pk_dd31e38530c0a1d97b912730a102a487ac92bc5fead6d627b708a58c2b36beb3",
+2026-08-28T11:13:53:   "authorization": "<REDACTED>"
+2026-08-28T11:13:53: }
+2026-08-28T11:13:53: 
+2026-08-28T11:15:26:  ✓ Compiled /[countryCode] in 22ms
+2026-08-28T11:15:26: Initiating Medusa client with default headers:
+2026-08-28T11:15:26:  {
+2026-08-28T11:15:26:   "accept": "application/json",
+2026-08-28T11:15:26:   "content-type": "application/json",
+2026-08-28T11:15:26:   "x-publishable-api-key": "pk_dd31e38530c0a1d97b912730a102a487ac92bc5fead6d627b708a58c2b36beb3",
+2026-08-28T11:15:26:   "authorization": "<REDACTED>"
+2026-08-28T11:15:26: }
+2026-08-28T11:15:26: 
+2026-08-28T11:15:26:  GET /no 200 in 167ms
+2026-08-28T11:15:26: Initiating Medusa client with default headers:
+2026-08-28T11:15:26:  {
+2026-08-28T11:15:26:   "accept": "application/json",
+2026-08-28T11:15:26:   "content-type": "application/json",
+2026-08-28T11:15:26:   "x-publishable-api-key": "pk_dd31e38530c0a1d97b912730a102a487ac92bc5fead6d627b708a58c2b36beb3",
+2026-08-28T11:15:26:   "authorization": "<REDACTED>"
+2026-08-28T11:15:26: }
+2026-08-28T11:15:26: 
+2026-08-28T11:15:35:  ✓ Compiled middleware in 2ms
+2026-08-28T11:15:35: Failed to fetch regions from backend. Using default regions.
+2026-08-28T11:15:35: Initiating Medusa client with default headers:
+2026-08-28T11:15:35:  {
+2026-08-28T11:15:35:   "accept": "application/json",
+2026-08-28T11:15:35:   "content-type": "application/json",
+2026-08-28T11:15:35:   "x-publishable-api-key": "pk_dd31e38530c0a1d97b912730a102a487ac92bc5fead6d627b708a58c2b36beb3",
+2026-08-28T11:15:35:   "authorization": "<REDACTED>"
+2026-08-28T11:15:35: }
+2026-08-28T11:15:35: 
+2026-08-28T11:15:36:  GET /no 200 in 125ms
+2026-08-28T11:15:36:  GET /no 200 in 37ms
+2026-08-28T11:15:36: Initiating Medusa client with default headers:
+2026-08-28T11:15:36:  {
+2026-08-28T11:15:36:   "accept": "application/json",
+2026-08-28T11:15:36:   "content-type": "application/json",
+2026-08-28T11:15:36:   "x-publishable-api-key": "pk_dd31e38530c0a1d97b912730a102a487ac92bc5fead6d627b708a58c2b36beb3",
+2026-08-28T11:15:36:   "authorization": "<REDACTED>"
+2026-08-28T11:15:36: }
+2026-08-28T11:15:36: 
+2026-08-28T11:15:40:  ✓ Compiled middleware in 2ms
+2026-08-28T11:15:40: Failed to fetch regions from backend. Using default regions.
+2026-08-28T11:15:40: Initiating Medusa client with default headers:
+2026-08-28T11:15:40:  {
+2026-08-28T11:15:40:   "accept": "application/json",
+2026-08-28T11:15:40:   "content-type": "application/json",
+2026-08-28T11:15:40:   "x-publishable-api-key": "pk_dd31e38530c0a1d97b912730a102a487ac92bc5fead6d627b708a58c2b36beb3",
+2026-08-28T11:15:40:   "authorization": "<REDACTED>"
+2026-08-28T11:15:40: }
+2026-08-28T11:15:40: 
+2026-08-28T11:15:40:  GET /no 200 in 113ms
+2026-08-28T11:15:40:  GET /no 200 in 43ms
+2026-08-28T11:15:41: Initiating Medusa client with default headers:
+2026-08-28T11:15:41:  {
+2026-08-28T11:15:41:   "accept": "application/json",
+2026-08-28T11:15:41:   "content-type": "application/json",
+2026-08-28T11:15:41:   "x-publishable-api-key": "pk_dd31e38530c0a1d97b912730a102a487ac92bc5fead6d627b708a58c2b36beb3",
+2026-08-28T11:15:41:   "authorization": "<REDACTED>"
+2026-08-28T11:15:41: }
+2026-08-28T11:15:41: 
+2026-08-28T11:15:47:  ✓ Compiled /[countryCode] in 25ms
+2026-08-28T11:15:48:  GET /no 200 in 268ms
+2026-08-28T11:15:48:  GET /no 200 in 346ms
+2026-08-28T11:15:52:  ✓ Compiled in 56ms
+2026-08-28T11:15:58:  ✓ Compiled /[countryCode] in 14ms
+2026-08-28T11:15:58:  GET /no 200 in 80ms
+2026-08-28T11:16:03: [?25h
+2026-08-28T11:16:03: 
+2026-08-28T11:16:03: npm warn Unknown project config "auto-install-peers". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-08-28T11:16:03: 
+2026-08-28T11:16:03: > @dtc/storefront@1.0.3 dev
+2026-08-28T11:16:03: > next dev --turbopack -p 8000
+2026-08-28T11:16:03: 
+2026-08-28T11:16:04:    ▲ Next.js 15.5.21 (Turbopack)
+2026-08-28T11:16:04:    - Local:        http://localhost:8000
+2026-08-28T11:16:04:    - Network:      http://10.90.90.197:8000
+2026-08-28T11:16:04:    - Environments: .env.local
+2026-08-28T11:16:04: 
+2026-08-28T11:16:04:  ✓ Starting...
+2026-08-28T11:16:04:  ✓ Compiled middleware in 97ms
+2026-08-28T11:16:05:  ✓ Ready in 890ms
+2026-08-28T11:16:09: Failed to fetch regions from backend. Using default regions.
+2026-08-28T11:16:10:  ○ Compiling /[countryCode] ...
+2026-08-28T11:16:11:  ✓ Compiled /[countryCode] in 1839ms
+2026-08-28T11:16:12:  GET /no 200 in 2364ms
+2026-08-28T11:25:34:  ✓ Compiled in 113ms
+2026-08-28T11:25:46:    Reload env: .env.local
+2026-08-28T11:25:56:    Reload env: .env.local
+2026-08-28T11:25:56:  ✓ Compiled middleware in 2ms
+2026-08-28T11:25:56:  ✓ Compiled in 6ms
+2026-08-28T11:26:01: [?25h
+2026-08-28T11:26:01: 
+2026-08-28T11:26:01: npm warn Unknown project config "auto-install-peers". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-08-28T11:26:01: 
+2026-08-28T11:26:01: > @dtc/storefront@1.0.3 dev
+2026-08-28T11:26:01: > next dev --turbopack -p 8000
+2026-08-28T11:26:01: 
+2026-08-28T11:26:02:    ▲ Next.js 15.5.21 (Turbopack)
+2026-08-28T11:26:02:    - Local:        http://localhost:8000
+2026-08-28T11:26:02:    - Network:      http://10.90.90.197:8000
+2026-08-28T11:26:02:    - Environments: .env.local
+2026-08-28T11:26:02: 
+2026-08-28T11:26:02:  ✓ Starting...
+2026-08-28T11:26:03:  ✓ Compiled middleware in 96ms
+2026-08-28T11:26:03:  ✓ Ready in 936ms
+2026-08-28T11:26:09: Failed to fetch regions from backend. Using default regions.
+2026-08-28T11:26:10:  ○ Compiling /[countryCode] ...
+2026-08-28T11:26:11:  ✓ Compiled /[countryCode] in 1996ms
+2026-08-28T11:26:12:  GET /no 200 in 2625ms
+2026-08-28T11:26:12:  │ GET http://localhost:9000/store/product-categories 400 in 141ms (cache skip)
+2026-08-28T11:26:12:  │ │ Cache skipped reason: (auto no cache)
