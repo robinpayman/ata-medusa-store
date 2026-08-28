@@ -94,3 +94,858 @@
 2026-08-28T11:37:11: Failed to fetch regions from backend. Using default regions.
 2026-08-28T11:37:13: API returned 400: Bad Request
 2026-08-28T11:37:23: API returned 400: Bad Request
+2026-08-28T11:38:15: API returned 400: Bad Request
+2026-08-28T11:38:41:  ⨯ Error: A valid publishable key is required to proceed with the request
+2026-08-28T11:38:41:     at <unknown> (../../src/client.ts:101:11)
+2026-08-28T11:38:41:     at Generator.next (<anonymous>) {
+2026-08-28T11:38:41:   statusText: 'Bad Request',
+2026-08-28T11:38:41:   status: 400,
+2026-08-28T11:38:41:   digest: '4205950091'
+2026-08-28T11:38:41: }
+2026-08-28T11:38:45:  ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+2026-08-28T11:38:45: API returned 400: Bad Request
+2026-08-28T11:38:45:  ⨯ Error: A valid publishable key is required to proceed with the request
+2026-08-28T11:38:45:     at <unknown> (../../src/client.ts:101:11)
+2026-08-28T11:38:45:     at Generator.next (<anonymous>) {
+2026-08-28T11:38:45:   statusText: 'Bad Request',
+2026-08-28T11:38:45:   status: 400,
+2026-08-28T11:38:45:   digest: '4205950091'
+2026-08-28T11:38:45: }
+2026-08-28T11:38:52:  ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+2026-08-28T11:38:52:  ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+2026-08-28T11:38:52: API returned 400: Bad Request
+2026-08-28T11:38:52: API returned 400: Bad Request
+2026-08-28T11:38:54: Error fetching categories: Error: A valid publishable key is required to proceed with the request
+2026-08-28T11:38:54:     at <unknown> (../../src/client.ts:101:11)
+2026-08-28T11:38:54:     at Generator.next (<anonymous>) {
+2026-08-28T11:38:54:   statusText: 'Bad Request',
+2026-08-28T11:38:54:   status: 400
+2026-08-28T11:38:54: }
+2026-08-28T11:38:54: Error fetching products: Error: A valid publishable key is required to proceed with the request
+2026-08-28T11:38:54:     at <unknown> (../../src/client.ts:101:11)
+2026-08-28T11:38:54:     at Generator.next (<anonymous>) {
+2026-08-28T11:38:54:   statusText: 'Bad Request',
+2026-08-28T11:38:54:   status: 400
+2026-08-28T11:38:54: }
+2026-08-28T11:38:54: Error loading products: Error: A valid publishable key is required to proceed with the request
+2026-08-28T11:38:54:     at <unknown> (../../src/client.ts:101:11)
+2026-08-28T11:38:54:     at Generator.next (<anonymous>) {
+2026-08-28T11:38:54:   statusText: 'Bad Request',
+2026-08-28T11:38:54:   status: 400
+2026-08-28T11:38:54: }
+2026-08-28T11:38:54: Error fetching categories: Error: A valid publishable key is required to proceed with the request
+2026-08-28T11:38:54:     at <unknown> (../../src/client.ts:101:11)
+2026-08-28T11:38:54:     at Generator.next (<anonymous>) {
+2026-08-28T11:38:54:   statusText: 'Bad Request',
+2026-08-28T11:38:54:   status: 400
+2026-08-28T11:38:54: }
+2026-08-28T11:38:54: Error fetching products: Error: A valid publishable key is required to proceed with the request
+2026-08-28T11:38:54:     at <unknown> (../../src/client.ts:101:11)
+2026-08-28T11:38:54:     at Generator.next (<anonymous>) {
+2026-08-28T11:38:54:   statusText: 'Bad Request',
+2026-08-28T11:38:54:   status: 400
+2026-08-28T11:38:54: }
+2026-08-28T11:38:54: Error loading products: Error: A valid publishable key is required to proceed with the request
+2026-08-28T11:38:54:     at <unknown> (../../src/client.ts:101:11)
+2026-08-28T11:38:54:     at Generator.next (<anonymous>) {
+2026-08-28T11:38:54:   statusText: 'Bad Request',
+2026-08-28T11:38:54:   status: 400
+2026-08-28T11:38:54: }
+2026-08-28T11:38:55: Error fetching categories: Error: A valid publishable key is required to proceed with the request
+2026-08-28T11:38:55:     at <unknown> (../../src/client.ts:101:11)
+2026-08-28T11:38:55:     at Generator.next (<anonymous>) {
+2026-08-28T11:38:55:   statusText: 'Bad Request',
+2026-08-28T11:38:55:   status: 400
+2026-08-28T11:38:55: }
+2026-08-28T11:38:55: Error fetching products: Error: A valid publishable key is required to proceed with the request
+2026-08-28T11:38:55:     at <unknown> (../../src/client.ts:101:11)
+2026-08-28T11:38:55:     at Generator.next (<anonymous>) {
+2026-08-28T11:38:55:   statusText: 'Bad Request',
+2026-08-28T11:38:55:   status: 400
+2026-08-28T11:38:55: }
+2026-08-28T11:38:55: Error loading products: Error: A valid publishable key is required to proceed with the request
+2026-08-28T11:38:55:     at <unknown> (../../src/client.ts:101:11)
+2026-08-28T11:38:55:     at Generator.next (<anonymous>) {
+2026-08-28T11:38:55:   statusText: 'Bad Request',
+2026-08-28T11:38:55:   status: 400
+2026-08-28T11:38:55: }
+2026-08-28T11:38:56: API returned 400: Bad Request
+2026-08-28T11:38:56: Error fetching categories: Error: A valid publishable key is required to proceed with the request
+2026-08-28T11:38:56:     at <unknown> (../../src/client.ts:101:11)
+2026-08-28T11:38:56:     at Generator.next (<anonymous>) {
+2026-08-28T11:38:56:   statusText: 'Bad Request',
+2026-08-28T11:38:56:   status: 400
+2026-08-28T11:38:56: }
+2026-08-28T11:38:56: Error fetching products: Error: A valid publishable key is required to proceed with the request
+2026-08-28T11:38:56:     at <unknown> (../../src/client.ts:101:11)
+2026-08-28T11:38:56:     at Generator.next (<anonymous>) {
+2026-08-28T11:38:56:   statusText: 'Bad Request',
+2026-08-28T11:38:56:   status: 400
+2026-08-28T11:38:56: }
+2026-08-28T11:38:56: Error loading products: Error: A valid publishable key is required to proceed with the request
+2026-08-28T11:38:56:     at <unknown> (../../src/client.ts:101:11)
+2026-08-28T11:38:56:     at Generator.next (<anonymous>) {
+2026-08-28T11:38:56:   statusText: 'Bad Request',
+2026-08-28T11:38:56:   status: 400
+2026-08-28T11:38:56: }
+2026-08-28T11:38:58: API returned 400: Bad Request
+2026-08-28T11:38:58: Error fetching categories: Error: A valid publishable key is required to proceed with the request
+2026-08-28T11:38:58:     at <unknown> (../../src/client.ts:101:11)
+2026-08-28T11:38:58:     at Generator.next (<anonymous>) {
+2026-08-28T11:38:58:   statusText: 'Bad Request',
+2026-08-28T11:38:58:   status: 400
+2026-08-28T11:38:58: }
+2026-08-28T11:38:58: Error fetching products: Error: A valid publishable key is required to proceed with the request
+2026-08-28T11:38:58:     at <unknown> (../../src/client.ts:101:11)
+2026-08-28T11:38:58:     at Generator.next (<anonymous>) {
+2026-08-28T11:38:58:   statusText: 'Bad Request',
+2026-08-28T11:38:58:   status: 400
+2026-08-28T11:38:58: }
+2026-08-28T11:38:58: Error loading products: Error: A valid publishable key is required to proceed with the request
+2026-08-28T11:38:58:     at <unknown> (../../src/client.ts:101:11)
+2026-08-28T11:38:58:     at Generator.next (<anonymous>) {
+2026-08-28T11:38:58:   statusText: 'Bad Request',
+2026-08-28T11:38:58:   status: 400
+2026-08-28T11:38:58: }
+2026-08-28T11:38:58:  ⨯ ./apps/storefront/src/app/[countryCode]/(main)/layout.tsx:3:1
+2026-08-28T11:38:58: Module not found: Can't resolve '@/components/CategoryMenuWrapper'
+2026-08-28T11:38:58: [0m [90m 1 |[39m [36mimport[39m { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m
+2026-08-28T11:38:58:  [90m 2 |[39m [36mimport[39m [33mHeaderWrapper[39m [36mfrom[39m [32m"@/components/HeaderWrapper"[39m
+2026-08-28T11:38:58: [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mCategoryMenuWrapper[39m [36mfrom[39m [32m"@/components/CategoryMenuWrapper"[39m
+2026-08-28T11:38:58:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+2026-08-28T11:38:58:  [90m 4 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m"@/components/Footer"[39m
+2026-08-28T11:38:58:  [90m 5 |[39m
+2026-08-28T11:38:58:  [90m 6 |[39m [36mexport[39m [36mconst[39m metadata[33m:[39m [33mMetadata[39m [33m=[39m {[0m
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: Import map: aliased to relative './components/CategoryMenuWrapper' inside of [project]/apps/storefront/src
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: https://nextjs.org/docs/messages/module-not-found
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58:  ⨯ ./apps/storefront/src/app/[countryCode]/(main)/layout.tsx:3:1
+2026-08-28T11:38:58: Module not found: Can't resolve '@/components/CategoryMenuWrapper'
+2026-08-28T11:38:58: [0m [90m 1 |[39m [36mimport[39m { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m
+2026-08-28T11:38:58:  [90m 2 |[39m [36mimport[39m [33mHeaderWrapper[39m [36mfrom[39m [32m"@/components/HeaderWrapper"[39m
+2026-08-28T11:38:58: [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mCategoryMenuWrapper[39m [36mfrom[39m [32m"@/components/CategoryMenuWrapper"[39m
+2026-08-28T11:38:58:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+2026-08-28T11:38:58:  [90m 4 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m"@/components/Footer"[39m
+2026-08-28T11:38:58:  [90m 5 |[39m
+2026-08-28T11:38:58:  [90m 6 |[39m [36mexport[39m [36mconst[39m metadata[33m:[39m [33mMetadata[39m [33m=[39m {[0m
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: Import map: aliased to relative './components/CategoryMenuWrapper' inside of [project]/apps/storefront/src
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: https://nextjs.org/docs/messages/module-not-found
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58:  ⨯ ./apps/storefront/src/app/[countryCode]/(main)/layout.tsx:3:1
+2026-08-28T11:38:58: Module not found: Can't resolve '@/components/CategoryMenuWrapper'
+2026-08-28T11:38:58: [0m [90m 1 |[39m [36mimport[39m { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m
+2026-08-28T11:38:58:  [90m 2 |[39m [36mimport[39m [33mHeaderWrapper[39m [36mfrom[39m [32m"@/components/HeaderWrapper"[39m
+2026-08-28T11:38:58: [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mCategoryMenuWrapper[39m [36mfrom[39m [32m"@/components/CategoryMenuWrapper"[39m
+2026-08-28T11:38:58:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+2026-08-28T11:38:58:  [90m 4 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m"@/components/Footer"[39m
+2026-08-28T11:38:58:  [90m 5 |[39m
+2026-08-28T11:38:58:  [90m 6 |[39m [36mexport[39m [36mconst[39m metadata[33m:[39m [33mMetadata[39m [33m=[39m {[0m
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: Import map: aliased to relative './components/CategoryMenuWrapper' inside of [project]/apps/storefront/src
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: https://nextjs.org/docs/messages/module-not-found
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58:  ⨯ ./apps/storefront/src/app/[countryCode]/(main)/layout.tsx:3:1
+2026-08-28T11:38:58: Module not found: Can't resolve '@/components/CategoryMenuWrapper'
+2026-08-28T11:38:58: [0m [90m 1 |[39m [36mimport[39m { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m
+2026-08-28T11:38:58:  [90m 2 |[39m [36mimport[39m [33mHeaderWrapper[39m [36mfrom[39m [32m"@/components/HeaderWrapper"[39m
+2026-08-28T11:38:58: [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mCategoryMenuWrapper[39m [36mfrom[39m [32m"@/components/CategoryMenuWrapper"[39m
+2026-08-28T11:38:58:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+2026-08-28T11:38:58:  [90m 4 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m"@/components/Footer"[39m
+2026-08-28T11:38:58:  [90m 5 |[39m
+2026-08-28T11:38:58:  [90m 6 |[39m [36mexport[39m [36mconst[39m metadata[33m:[39m [33mMetadata[39m [33m=[39m {[0m
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: Import map: aliased to relative './components/CategoryMenuWrapper' inside of [project]/apps/storefront/src
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: https://nextjs.org/docs/messages/module-not-found
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58:  ⨯ ./apps/storefront/src/app/[countryCode]/(main)/layout.tsx:3:1
+2026-08-28T11:38:58: Module not found: Can't resolve '@/components/CategoryMenuWrapper'
+2026-08-28T11:38:58: [0m [90m 1 |[39m [36mimport[39m { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m
+2026-08-28T11:38:58:  [90m 2 |[39m [36mimport[39m [33mHeaderWrapper[39m [36mfrom[39m [32m"@/components/HeaderWrapper"[39m
+2026-08-28T11:38:58: [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mCategoryMenuWrapper[39m [36mfrom[39m [32m"@/components/CategoryMenuWrapper"[39m
+2026-08-28T11:38:58:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+2026-08-28T11:38:58:  [90m 4 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m"@/components/Footer"[39m
+2026-08-28T11:38:58:  [90m 5 |[39m
+2026-08-28T11:38:58:  [90m 6 |[39m [36mexport[39m [36mconst[39m metadata[33m:[39m [33mMetadata[39m [33m=[39m {[0m
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: Import map: aliased to relative './components/CategoryMenuWrapper' inside of [project]/apps/storefront/src
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: https://nextjs.org/docs/messages/module-not-found
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58:  ⨯ ./apps/storefront/src/app/[countryCode]/(main)/layout.tsx:3:1
+2026-08-28T11:38:58: Module not found: Can't resolve '@/components/CategoryMenuWrapper'
+2026-08-28T11:38:58: [0m [90m 1 |[39m [36mimport[39m { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m
+2026-08-28T11:38:58:  [90m 2 |[39m [36mimport[39m [33mHeaderWrapper[39m [36mfrom[39m [32m"@/components/HeaderWrapper"[39m
+2026-08-28T11:38:58: [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mCategoryMenuWrapper[39m [36mfrom[39m [32m"@/components/CategoryMenuWrapper"[39m
+2026-08-28T11:38:58:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+2026-08-28T11:38:58:  [90m 4 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m"@/components/Footer"[39m
+2026-08-28T11:38:58:  [90m 5 |[39m
+2026-08-28T11:38:58:  [90m 6 |[39m [36mexport[39m [36mconst[39m metadata[33m:[39m [33mMetadata[39m [33m=[39m {[0m
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: Import map: aliased to relative './components/CategoryMenuWrapper' inside of [project]/apps/storefront/src
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: https://nextjs.org/docs/messages/module-not-found
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58:  ⨯ ./apps/storefront/src/app/[countryCode]/(main)/layout.tsx:3:1
+2026-08-28T11:38:58: Module not found: Can't resolve '@/components/CategoryMenuWrapper'
+2026-08-28T11:38:58: [0m [90m 1 |[39m [36mimport[39m { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m
+2026-08-28T11:38:58:  [90m 2 |[39m [36mimport[39m [33mHeaderWrapper[39m [36mfrom[39m [32m"@/components/HeaderWrapper"[39m
+2026-08-28T11:38:58: [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mCategoryMenuWrapper[39m [36mfrom[39m [32m"@/components/CategoryMenuWrapper"[39m
+2026-08-28T11:38:58:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+2026-08-28T11:38:58:  [90m 4 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m"@/components/Footer"[39m
+2026-08-28T11:38:58:  [90m 5 |[39m
+2026-08-28T11:38:58:  [90m 6 |[39m [36mexport[39m [36mconst[39m metadata[33m:[39m [33mMetadata[39m [33m=[39m {[0m
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: Import map: aliased to relative './components/CategoryMenuWrapper' inside of [project]/apps/storefront/src
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: https://nextjs.org/docs/messages/module-not-found
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58:  ⨯ ./apps/storefront/src/app/[countryCode]/(main)/layout.tsx:3:1
+2026-08-28T11:38:58: Module not found: Can't resolve '@/components/CategoryMenuWrapper'
+2026-08-28T11:38:58: [0m [90m 1 |[39m [36mimport[39m { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m
+2026-08-28T11:38:58:  [90m 2 |[39m [36mimport[39m [33mHeaderWrapper[39m [36mfrom[39m [32m"@/components/HeaderWrapper"[39m
+2026-08-28T11:38:58: [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mCategoryMenuWrapper[39m [36mfrom[39m [32m"@/components/CategoryMenuWrapper"[39m
+2026-08-28T11:38:58:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+2026-08-28T11:38:58:  [90m 4 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m"@/components/Footer"[39m
+2026-08-28T11:38:58:  [90m 5 |[39m
+2026-08-28T11:38:58:  [90m 6 |[39m [36mexport[39m [36mconst[39m metadata[33m:[39m [33mMetadata[39m [33m=[39m {[0m
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: Import map: aliased to relative './components/CategoryMenuWrapper' inside of [project]/apps/storefront/src
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: https://nextjs.org/docs/messages/module-not-found
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58:  ⨯ ./apps/storefront/src/app/[countryCode]/(main)/layout.tsx:3:1
+2026-08-28T11:38:58: Module not found: Can't resolve '@/components/CategoryMenuWrapper'
+2026-08-28T11:38:58: [0m [90m 1 |[39m [36mimport[39m { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m
+2026-08-28T11:38:58:  [90m 2 |[39m [36mimport[39m [33mHeaderWrapper[39m [36mfrom[39m [32m"@/components/HeaderWrapper"[39m
+2026-08-28T11:38:58: [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mCategoryMenuWrapper[39m [36mfrom[39m [32m"@/components/CategoryMenuWrapper"[39m
+2026-08-28T11:38:58:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+2026-08-28T11:38:58:  [90m 4 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m"@/components/Footer"[39m
+2026-08-28T11:38:58:  [90m 5 |[39m
+2026-08-28T11:38:58:  [90m 6 |[39m [36mexport[39m [36mconst[39m metadata[33m:[39m [33mMetadata[39m [33m=[39m {[0m
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: Import map: aliased to relative './components/CategoryMenuWrapper' inside of [project]/apps/storefront/src
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: https://nextjs.org/docs/messages/module-not-found
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58:  ⨯ ./apps/storefront/src/app/[countryCode]/(main)/layout.tsx:3:1
+2026-08-28T11:38:58: Module not found: Can't resolve '@/components/CategoryMenuWrapper'
+2026-08-28T11:38:58: [0m [90m 1 |[39m [36mimport[39m { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m
+2026-08-28T11:38:58:  [90m 2 |[39m [36mimport[39m [33mHeaderWrapper[39m [36mfrom[39m [32m"@/components/HeaderWrapper"[39m
+2026-08-28T11:38:58: [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mCategoryMenuWrapper[39m [36mfrom[39m [32m"@/components/CategoryMenuWrapper"[39m
+2026-08-28T11:38:58:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+2026-08-28T11:38:58:  [90m 4 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m"@/components/Footer"[39m
+2026-08-28T11:38:58:  [90m 5 |[39m
+2026-08-28T11:38:58:  [90m 6 |[39m [36mexport[39m [36mconst[39m metadata[33m:[39m [33mMetadata[39m [33m=[39m {[0m
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: Import map: aliased to relative './components/CategoryMenuWrapper' inside of [project]/apps/storefront/src
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: https://nextjs.org/docs/messages/module-not-found
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58:  ⨯ ./apps/storefront/src/app/[countryCode]/(main)/layout.tsx:3:1
+2026-08-28T11:38:58: Module not found: Can't resolve '@/components/CategoryMenuWrapper'
+2026-08-28T11:38:58: [0m [90m 1 |[39m [36mimport[39m { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m
+2026-08-28T11:38:58:  [90m 2 |[39m [36mimport[39m [33mHeaderWrapper[39m [36mfrom[39m [32m"@/components/HeaderWrapper"[39m
+2026-08-28T11:38:58: [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mCategoryMenuWrapper[39m [36mfrom[39m [32m"@/components/CategoryMenuWrapper"[39m
+2026-08-28T11:38:58:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+2026-08-28T11:38:58:  [90m 4 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m"@/components/Footer"[39m
+2026-08-28T11:38:58:  [90m 5 |[39m
+2026-08-28T11:38:58:  [90m 6 |[39m [36mexport[39m [36mconst[39m metadata[33m:[39m [33mMetadata[39m [33m=[39m {[0m
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: Import map: aliased to relative './components/CategoryMenuWrapper' inside of [project]/apps/storefront/src
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: https://nextjs.org/docs/messages/module-not-found
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58:  ⨯ ./apps/storefront/src/app/[countryCode]/(main)/layout.tsx:3:1
+2026-08-28T11:38:58: Module not found: Can't resolve '@/components/CategoryMenuWrapper'
+2026-08-28T11:38:58: [0m [90m 1 |[39m [36mimport[39m { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m
+2026-08-28T11:38:58:  [90m 2 |[39m [36mimport[39m [33mHeaderWrapper[39m [36mfrom[39m [32m"@/components/HeaderWrapper"[39m
+2026-08-28T11:38:58: [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mCategoryMenuWrapper[39m [36mfrom[39m [32m"@/components/CategoryMenuWrapper"[39m
+2026-08-28T11:38:58:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+2026-08-28T11:38:58:  [90m 4 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m"@/components/Footer"[39m
+2026-08-28T11:38:58:  [90m 5 |[39m
+2026-08-28T11:38:58:  [90m 6 |[39m [36mexport[39m [36mconst[39m metadata[33m:[39m [33mMetadata[39m [33m=[39m {[0m
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: Import map: aliased to relative './components/CategoryMenuWrapper' inside of [project]/apps/storefront/src
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: https://nextjs.org/docs/messages/module-not-found
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58:  ⨯ ./apps/storefront/src/app/[countryCode]/(main)/layout.tsx:3:1
+2026-08-28T11:38:58: Module not found: Can't resolve '@/components/CategoryMenuWrapper'
+2026-08-28T11:38:58: [0m [90m 1 |[39m [36mimport[39m { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m
+2026-08-28T11:38:58:  [90m 2 |[39m [36mimport[39m [33mHeaderWrapper[39m [36mfrom[39m [32m"@/components/HeaderWrapper"[39m
+2026-08-28T11:38:58: [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mCategoryMenuWrapper[39m [36mfrom[39m [32m"@/components/CategoryMenuWrapper"[39m
+2026-08-28T11:38:58:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+2026-08-28T11:38:58:  [90m 4 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m"@/components/Footer"[39m
+2026-08-28T11:38:58:  [90m 5 |[39m
+2026-08-28T11:38:58:  [90m 6 |[39m [36mexport[39m [36mconst[39m metadata[33m:[39m [33mMetadata[39m [33m=[39m {[0m
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: Import map: aliased to relative './components/CategoryMenuWrapper' inside of [project]/apps/storefront/src
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: https://nextjs.org/docs/messages/module-not-found
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58:  ⨯ ./apps/storefront/src/app/[countryCode]/(main)/layout.tsx:3:1
+2026-08-28T11:38:58: Module not found: Can't resolve '@/components/CategoryMenuWrapper'
+2026-08-28T11:38:58: [0m [90m 1 |[39m [36mimport[39m { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m
+2026-08-28T11:38:58:  [90m 2 |[39m [36mimport[39m [33mHeaderWrapper[39m [36mfrom[39m [32m"@/components/HeaderWrapper"[39m
+2026-08-28T11:38:58: [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mCategoryMenuWrapper[39m [36mfrom[39m [32m"@/components/CategoryMenuWrapper"[39m
+2026-08-28T11:38:58:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+2026-08-28T11:38:58:  [90m 4 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m"@/components/Footer"[39m
+2026-08-28T11:38:58:  [90m 5 |[39m
+2026-08-28T11:38:58:  [90m 6 |[39m [36mexport[39m [36mconst[39m metadata[33m:[39m [33mMetadata[39m [33m=[39m {[0m
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: Import map: aliased to relative './components/CategoryMenuWrapper' inside of [project]/apps/storefront/src
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: https://nextjs.org/docs/messages/module-not-found
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58:  ⨯ ./apps/storefront/src/app/[countryCode]/(main)/layout.tsx:3:1
+2026-08-28T11:38:58: Module not found: Can't resolve '@/components/CategoryMenuWrapper'
+2026-08-28T11:38:58: [0m [90m 1 |[39m [36mimport[39m { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m
+2026-08-28T11:38:58:  [90m 2 |[39m [36mimport[39m [33mHeaderWrapper[39m [36mfrom[39m [32m"@/components/HeaderWrapper"[39m
+2026-08-28T11:38:58: [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mCategoryMenuWrapper[39m [36mfrom[39m [32m"@/components/CategoryMenuWrapper"[39m
+2026-08-28T11:38:58:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+2026-08-28T11:38:58:  [90m 4 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m"@/components/Footer"[39m
+2026-08-28T11:38:58:  [90m 5 |[39m
+2026-08-28T11:38:58:  [90m 6 |[39m [36mexport[39m [36mconst[39m metadata[33m:[39m [33mMetadata[39m [33m=[39m {[0m
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: Import map: aliased to relative './components/CategoryMenuWrapper' inside of [project]/apps/storefront/src
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: https://nextjs.org/docs/messages/module-not-found
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58:  ⨯ ./apps/storefront/src/app/[countryCode]/(main)/layout.tsx:3:1
+2026-08-28T11:38:58: Module not found: Can't resolve '@/components/CategoryMenuWrapper'
+2026-08-28T11:38:58: [0m [90m 1 |[39m [36mimport[39m { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m
+2026-08-28T11:38:58:  [90m 2 |[39m [36mimport[39m [33mHeaderWrapper[39m [36mfrom[39m [32m"@/components/HeaderWrapper"[39m
+2026-08-28T11:38:58: [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mCategoryMenuWrapper[39m [36mfrom[39m [32m"@/components/CategoryMenuWrapper"[39m
+2026-08-28T11:38:58:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+2026-08-28T11:38:58:  [90m 4 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m"@/components/Footer"[39m
+2026-08-28T11:38:58:  [90m 5 |[39m
+2026-08-28T11:38:58:  [90m 6 |[39m [36mexport[39m [36mconst[39m metadata[33m:[39m [33mMetadata[39m [33m=[39m {[0m
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: Import map: aliased to relative './components/CategoryMenuWrapper' inside of [project]/apps/storefront/src
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: https://nextjs.org/docs/messages/module-not-found
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58:  ⨯ ./apps/storefront/src/app/[countryCode]/(main)/layout.tsx:3:1
+2026-08-28T11:38:58: Module not found: Can't resolve '@/components/CategoryMenuWrapper'
+2026-08-28T11:38:58: [0m [90m 1 |[39m [36mimport[39m { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m
+2026-08-28T11:38:58:  [90m 2 |[39m [36mimport[39m [33mHeaderWrapper[39m [36mfrom[39m [32m"@/components/HeaderWrapper"[39m
+2026-08-28T11:38:58: [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mCategoryMenuWrapper[39m [36mfrom[39m [32m"@/components/CategoryMenuWrapper"[39m
+2026-08-28T11:38:58:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+2026-08-28T11:38:58:  [90m 4 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m"@/components/Footer"[39m
+2026-08-28T11:38:58:  [90m 5 |[39m
+2026-08-28T11:38:58:  [90m 6 |[39m [36mexport[39m [36mconst[39m metadata[33m:[39m [33mMetadata[39m [33m=[39m {[0m
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: Import map: aliased to relative './components/CategoryMenuWrapper' inside of [project]/apps/storefront/src
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: https://nextjs.org/docs/messages/module-not-found
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58:  ⨯ ./apps/storefront/src/app/[countryCode]/(main)/layout.tsx:3:1
+2026-08-28T11:38:58: Module not found: Can't resolve '@/components/CategoryMenuWrapper'
+2026-08-28T11:38:58: [0m [90m 1 |[39m [36mimport[39m { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m
+2026-08-28T11:38:58:  [90m 2 |[39m [36mimport[39m [33mHeaderWrapper[39m [36mfrom[39m [32m"@/components/HeaderWrapper"[39m
+2026-08-28T11:38:58: [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mCategoryMenuWrapper[39m [36mfrom[39m [32m"@/components/CategoryMenuWrapper"[39m
+2026-08-28T11:38:58:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+2026-08-28T11:38:58:  [90m 4 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m"@/components/Footer"[39m
+2026-08-28T11:38:58:  [90m 5 |[39m
+2026-08-28T11:38:58:  [90m 6 |[39m [36mexport[39m [36mconst[39m metadata[33m:[39m [33mMetadata[39m [33m=[39m {[0m
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: Import map: aliased to relative './components/CategoryMenuWrapper' inside of [project]/apps/storefront/src
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: https://nextjs.org/docs/messages/module-not-found
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58:  ⨯ ./apps/storefront/src/app/[countryCode]/(main)/layout.tsx:3:1
+2026-08-28T11:38:58: Module not found: Can't resolve '@/components/CategoryMenuWrapper'
+2026-08-28T11:38:58: [0m [90m 1 |[39m [36mimport[39m { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m
+2026-08-28T11:38:58:  [90m 2 |[39m [36mimport[39m [33mHeaderWrapper[39m [36mfrom[39m [32m"@/components/HeaderWrapper"[39m
+2026-08-28T11:38:58: [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mCategoryMenuWrapper[39m [36mfrom[39m [32m"@/components/CategoryMenuWrapper"[39m
+2026-08-28T11:38:58:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+2026-08-28T11:38:58:  [90m 4 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m"@/components/Footer"[39m
+2026-08-28T11:38:58:  [90m 5 |[39m
+2026-08-28T11:38:58:  [90m 6 |[39m [36mexport[39m [36mconst[39m metadata[33m:[39m [33mMetadata[39m [33m=[39m {[0m
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: Import map: aliased to relative './components/CategoryMenuWrapper' inside of [project]/apps/storefront/src
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: https://nextjs.org/docs/messages/module-not-found
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58:  ⨯ ./apps/storefront/src/app/[countryCode]/(main)/layout.tsx:3:1
+2026-08-28T11:38:58: Module not found: Can't resolve '@/components/CategoryMenuWrapper'
+2026-08-28T11:38:58: [0m [90m 1 |[39m [36mimport[39m { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m
+2026-08-28T11:38:58:  [90m 2 |[39m [36mimport[39m [33mHeaderWrapper[39m [36mfrom[39m [32m"@/components/HeaderWrapper"[39m
+2026-08-28T11:38:58: [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mCategoryMenuWrapper[39m [36mfrom[39m [32m"@/components/CategoryMenuWrapper"[39m
+2026-08-28T11:38:58:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+2026-08-28T11:38:58:  [90m 4 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m"@/components/Footer"[39m
+2026-08-28T11:38:58:  [90m 5 |[39m
+2026-08-28T11:38:58:  [90m 6 |[39m [36mexport[39m [36mconst[39m metadata[33m:[39m [33mMetadata[39m [33m=[39m {[0m
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: Import map: aliased to relative './components/CategoryMenuWrapper' inside of [project]/apps/storefront/src
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: https://nextjs.org/docs/messages/module-not-found
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58:  ⨯ ./apps/storefront/src/app/[countryCode]/(main)/layout.tsx:3:1
+2026-08-28T11:38:58: Module not found: Can't resolve '@/components/CategoryMenuWrapper'
+2026-08-28T11:38:58: [0m [90m 1 |[39m [36mimport[39m { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m
+2026-08-28T11:38:58:  [90m 2 |[39m [36mimport[39m [33mHeaderWrapper[39m [36mfrom[39m [32m"@/components/HeaderWrapper"[39m
+2026-08-28T11:38:58: [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mCategoryMenuWrapper[39m [36mfrom[39m [32m"@/components/CategoryMenuWrapper"[39m
+2026-08-28T11:38:58:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+2026-08-28T11:38:58:  [90m 4 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m"@/components/Footer"[39m
+2026-08-28T11:38:58:  [90m 5 |[39m
+2026-08-28T11:38:58:  [90m 6 |[39m [36mexport[39m [36mconst[39m metadata[33m:[39m [33mMetadata[39m [33m=[39m {[0m
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: Import map: aliased to relative './components/CategoryMenuWrapper' inside of [project]/apps/storefront/src
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: https://nextjs.org/docs/messages/module-not-found
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58:  ⨯ ./apps/storefront/src/app/[countryCode]/(main)/layout.tsx:3:1
+2026-08-28T11:38:58: Module not found: Can't resolve '@/components/CategoryMenuWrapper'
+2026-08-28T11:38:58: [0m [90m 1 |[39m [36mimport[39m { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m
+2026-08-28T11:38:58:  [90m 2 |[39m [36mimport[39m [33mHeaderWrapper[39m [36mfrom[39m [32m"@/components/HeaderWrapper"[39m
+2026-08-28T11:38:58: [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mCategoryMenuWrapper[39m [36mfrom[39m [32m"@/components/CategoryMenuWrapper"[39m
+2026-08-28T11:38:58:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+2026-08-28T11:38:58:  [90m 4 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m"@/components/Footer"[39m
+2026-08-28T11:38:58:  [90m 5 |[39m
+2026-08-28T11:38:58:  [90m 6 |[39m [36mexport[39m [36mconst[39m metadata[33m:[39m [33mMetadata[39m [33m=[39m {[0m
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: Import map: aliased to relative './components/CategoryMenuWrapper' inside of [project]/apps/storefront/src
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: https://nextjs.org/docs/messages/module-not-found
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58:  ⨯ ./apps/storefront/src/app/[countryCode]/(main)/layout.tsx:3:1
+2026-08-28T11:38:58: Module not found: Can't resolve '@/components/CategoryMenuWrapper'
+2026-08-28T11:38:58: [0m [90m 1 |[39m [36mimport[39m { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m
+2026-08-28T11:38:58:  [90m 2 |[39m [36mimport[39m [33mHeaderWrapper[39m [36mfrom[39m [32m"@/components/HeaderWrapper"[39m
+2026-08-28T11:38:58: [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mCategoryMenuWrapper[39m [36mfrom[39m [32m"@/components/CategoryMenuWrapper"[39m
+2026-08-28T11:38:58:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+2026-08-28T11:38:58:  [90m 4 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m"@/components/Footer"[39m
+2026-08-28T11:38:58:  [90m 5 |[39m
+2026-08-28T11:38:58:  [90m 6 |[39m [36mexport[39m [36mconst[39m metadata[33m:[39m [33mMetadata[39m [33m=[39m {[0m
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: Import map: aliased to relative './components/CategoryMenuWrapper' inside of [project]/apps/storefront/src
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: https://nextjs.org/docs/messages/module-not-found
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58:  ⨯ ./apps/storefront/src/app/[countryCode]/(main)/layout.tsx:3:1
+2026-08-28T11:38:58: Module not found: Can't resolve '@/components/CategoryMenuWrapper'
+2026-08-28T11:38:58: [0m [90m 1 |[39m [36mimport[39m { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m
+2026-08-28T11:38:58:  [90m 2 |[39m [36mimport[39m [33mHeaderWrapper[39m [36mfrom[39m [32m"@/components/HeaderWrapper"[39m
+2026-08-28T11:38:58: [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mCategoryMenuWrapper[39m [36mfrom[39m [32m"@/components/CategoryMenuWrapper"[39m
+2026-08-28T11:38:58:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+2026-08-28T11:38:58:  [90m 4 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m"@/components/Footer"[39m
+2026-08-28T11:38:58:  [90m 5 |[39m
+2026-08-28T11:38:58:  [90m 6 |[39m [36mexport[39m [36mconst[39m metadata[33m:[39m [33mMetadata[39m [33m=[39m {[0m
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: Import map: aliased to relative './components/CategoryMenuWrapper' inside of [project]/apps/storefront/src
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: https://nextjs.org/docs/messages/module-not-found
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58:  ⨯ ./apps/storefront/src/app/[countryCode]/(main)/layout.tsx:3:1
+2026-08-28T11:38:58: Module not found: Can't resolve '@/components/CategoryMenuWrapper'
+2026-08-28T11:38:58: [0m [90m 1 |[39m [36mimport[39m { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m
+2026-08-28T11:38:58:  [90m 2 |[39m [36mimport[39m [33mHeaderWrapper[39m [36mfrom[39m [32m"@/components/HeaderWrapper"[39m
+2026-08-28T11:38:58: [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mCategoryMenuWrapper[39m [36mfrom[39m [32m"@/components/CategoryMenuWrapper"[39m
+2026-08-28T11:38:58:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+2026-08-28T11:38:58:  [90m 4 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m"@/components/Footer"[39m
+2026-08-28T11:38:58:  [90m 5 |[39m
+2026-08-28T11:38:58:  [90m 6 |[39m [36mexport[39m [36mconst[39m metadata[33m:[39m [33mMetadata[39m [33m=[39m {[0m
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: Import map: aliased to relative './components/CategoryMenuWrapper' inside of [project]/apps/storefront/src
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: https://nextjs.org/docs/messages/module-not-found
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58:  ⨯ ./apps/storefront/src/app/[countryCode]/(main)/layout.tsx:3:1
+2026-08-28T11:38:58: Module not found: Can't resolve '@/components/CategoryMenuWrapper'
+2026-08-28T11:38:58: [0m [90m 1 |[39m [36mimport[39m { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m
+2026-08-28T11:38:58:  [90m 2 |[39m [36mimport[39m [33mHeaderWrapper[39m [36mfrom[39m [32m"@/components/HeaderWrapper"[39m
+2026-08-28T11:38:58: [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mCategoryMenuWrapper[39m [36mfrom[39m [32m"@/components/CategoryMenuWrapper"[39m
+2026-08-28T11:38:58:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+2026-08-28T11:38:58:  [90m 4 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m"@/components/Footer"[39m
+2026-08-28T11:38:58:  [90m 5 |[39m
+2026-08-28T11:38:58:  [90m 6 |[39m [36mexport[39m [36mconst[39m metadata[33m:[39m [33mMetadata[39m [33m=[39m {[0m
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: Import map: aliased to relative './components/CategoryMenuWrapper' inside of [project]/apps/storefront/src
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: https://nextjs.org/docs/messages/module-not-found
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58:  ⨯ ./apps/storefront/src/app/[countryCode]/(main)/layout.tsx:3:1
+2026-08-28T11:38:58: Module not found: Can't resolve '@/components/CategoryMenuWrapper'
+2026-08-28T11:38:58: [0m [90m 1 |[39m [36mimport[39m { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m
+2026-08-28T11:38:58:  [90m 2 |[39m [36mimport[39m [33mHeaderWrapper[39m [36mfrom[39m [32m"@/components/HeaderWrapper"[39m
+2026-08-28T11:38:58: [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mCategoryMenuWrapper[39m [36mfrom[39m [32m"@/components/CategoryMenuWrapper"[39m
+2026-08-28T11:38:58:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+2026-08-28T11:38:58:  [90m 4 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m"@/components/Footer"[39m
+2026-08-28T11:38:58:  [90m 5 |[39m
+2026-08-28T11:38:58:  [90m 6 |[39m [36mexport[39m [36mconst[39m metadata[33m:[39m [33mMetadata[39m [33m=[39m {[0m
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: Import map: aliased to relative './components/CategoryMenuWrapper' inside of [project]/apps/storefront/src
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: https://nextjs.org/docs/messages/module-not-found
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58:  ⨯ ./apps/storefront/src/app/[countryCode]/(main)/layout.tsx:3:1
+2026-08-28T11:38:58: Module not found: Can't resolve '@/components/CategoryMenuWrapper'
+2026-08-28T11:38:58: [0m [90m 1 |[39m [36mimport[39m { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m
+2026-08-28T11:38:58:  [90m 2 |[39m [36mimport[39m [33mHeaderWrapper[39m [36mfrom[39m [32m"@/components/HeaderWrapper"[39m
+2026-08-28T11:38:58: [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mCategoryMenuWrapper[39m [36mfrom[39m [32m"@/components/CategoryMenuWrapper"[39m
+2026-08-28T11:38:58:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+2026-08-28T11:38:58:  [90m 4 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m"@/components/Footer"[39m
+2026-08-28T11:38:58:  [90m 5 |[39m
+2026-08-28T11:38:58:  [90m 6 |[39m [36mexport[39m [36mconst[39m metadata[33m:[39m [33mMetadata[39m [33m=[39m {[0m
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: Import map: aliased to relative './components/CategoryMenuWrapper' inside of [project]/apps/storefront/src
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: https://nextjs.org/docs/messages/module-not-found
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58:  ⨯ ./apps/storefront/src/app/[countryCode]/(main)/layout.tsx:3:1
+2026-08-28T11:38:58: Module not found: Can't resolve '@/components/CategoryMenuWrapper'
+2026-08-28T11:38:58: [0m [90m 1 |[39m [36mimport[39m { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m
+2026-08-28T11:38:58:  [90m 2 |[39m [36mimport[39m [33mHeaderWrapper[39m [36mfrom[39m [32m"@/components/HeaderWrapper"[39m
+2026-08-28T11:38:58: [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mCategoryMenuWrapper[39m [36mfrom[39m [32m"@/components/CategoryMenuWrapper"[39m
+2026-08-28T11:38:58:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+2026-08-28T11:38:58:  [90m 4 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m"@/components/Footer"[39m
+2026-08-28T11:38:58:  [90m 5 |[39m
+2026-08-28T11:38:58:  [90m 6 |[39m [36mexport[39m [36mconst[39m metadata[33m:[39m [33mMetadata[39m [33m=[39m {[0m
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: Import map: aliased to relative './components/CategoryMenuWrapper' inside of [project]/apps/storefront/src
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: https://nextjs.org/docs/messages/module-not-found
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58:  ⨯ ./apps/storefront/src/app/[countryCode]/(main)/layout.tsx:3:1
+2026-08-28T11:38:58: Module not found: Can't resolve '@/components/CategoryMenuWrapper'
+2026-08-28T11:38:58: [0m [90m 1 |[39m [36mimport[39m { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m
+2026-08-28T11:38:58:  [90m 2 |[39m [36mimport[39m [33mHeaderWrapper[39m [36mfrom[39m [32m"@/components/HeaderWrapper"[39m
+2026-08-28T11:38:58: [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mCategoryMenuWrapper[39m [36mfrom[39m [32m"@/components/CategoryMenuWrapper"[39m
+2026-08-28T11:38:58:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+2026-08-28T11:38:58:  [90m 4 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m"@/components/Footer"[39m
+2026-08-28T11:38:58:  [90m 5 |[39m
+2026-08-28T11:38:58:  [90m 6 |[39m [36mexport[39m [36mconst[39m metadata[33m:[39m [33mMetadata[39m [33m=[39m {[0m
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: Import map: aliased to relative './components/CategoryMenuWrapper' inside of [project]/apps/storefront/src
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: https://nextjs.org/docs/messages/module-not-found
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58:  ⨯ ./apps/storefront/src/app/[countryCode]/(main)/layout.tsx:3:1
+2026-08-28T11:38:58: Module not found: Can't resolve '@/components/CategoryMenuWrapper'
+2026-08-28T11:38:58: [0m [90m 1 |[39m [36mimport[39m { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m
+2026-08-28T11:38:58:  [90m 2 |[39m [36mimport[39m [33mHeaderWrapper[39m [36mfrom[39m [32m"@/components/HeaderWrapper"[39m
+2026-08-28T11:38:58: [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mCategoryMenuWrapper[39m [36mfrom[39m [32m"@/components/CategoryMenuWrapper"[39m
+2026-08-28T11:38:58:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+2026-08-28T11:38:58:  [90m 4 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m"@/components/Footer"[39m
+2026-08-28T11:38:58:  [90m 5 |[39m
+2026-08-28T11:38:58:  [90m 6 |[39m [36mexport[39m [36mconst[39m metadata[33m:[39m [33mMetadata[39m [33m=[39m {[0m
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: Import map: aliased to relative './components/CategoryMenuWrapper' inside of [project]/apps/storefront/src
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: https://nextjs.org/docs/messages/module-not-found
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58:  ⨯ ./apps/storefront/src/app/[countryCode]/(main)/layout.tsx:3:1
+2026-08-28T11:38:58: Module not found: Can't resolve '@/components/CategoryMenuWrapper'
+2026-08-28T11:38:58: [0m [90m 1 |[39m [36mimport[39m { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m
+2026-08-28T11:38:58:  [90m 2 |[39m [36mimport[39m [33mHeaderWrapper[39m [36mfrom[39m [32m"@/components/HeaderWrapper"[39m
+2026-08-28T11:38:58: [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mCategoryMenuWrapper[39m [36mfrom[39m [32m"@/components/CategoryMenuWrapper"[39m
+2026-08-28T11:38:58:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+2026-08-28T11:38:58:  [90m 4 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m"@/components/Footer"[39m
+2026-08-28T11:38:58:  [90m 5 |[39m
+2026-08-28T11:38:58:  [90m 6 |[39m [36mexport[39m [36mconst[39m metadata[33m:[39m [33mMetadata[39m [33m=[39m {[0m
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: Import map: aliased to relative './components/CategoryMenuWrapper' inside of [project]/apps/storefront/src
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: https://nextjs.org/docs/messages/module-not-found
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58:  ⨯ ./apps/storefront/src/app/[countryCode]/(main)/layout.tsx:3:1
+2026-08-28T11:38:58: Module not found: Can't resolve '@/components/CategoryMenuWrapper'
+2026-08-28T11:38:58: [0m [90m 1 |[39m [36mimport[39m { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m
+2026-08-28T11:38:58:  [90m 2 |[39m [36mimport[39m [33mHeaderWrapper[39m [36mfrom[39m [32m"@/components/HeaderWrapper"[39m
+2026-08-28T11:38:58: [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mCategoryMenuWrapper[39m [36mfrom[39m [32m"@/components/CategoryMenuWrapper"[39m
+2026-08-28T11:38:58:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+2026-08-28T11:38:58:  [90m 4 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m"@/components/Footer"[39m
+2026-08-28T11:38:58:  [90m 5 |[39m
+2026-08-28T11:38:58:  [90m 6 |[39m [36mexport[39m [36mconst[39m metadata[33m:[39m [33mMetadata[39m [33m=[39m {[0m
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: Import map: aliased to relative './components/CategoryMenuWrapper' inside of [project]/apps/storefront/src
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: https://nextjs.org/docs/messages/module-not-found
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58:  ⨯ ./apps/storefront/src/app/[countryCode]/(main)/layout.tsx:3:1
+2026-08-28T11:38:58: Module not found: Can't resolve '@/components/CategoryMenuWrapper'
+2026-08-28T11:38:58: [0m [90m 1 |[39m [36mimport[39m { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m
+2026-08-28T11:38:58:  [90m 2 |[39m [36mimport[39m [33mHeaderWrapper[39m [36mfrom[39m [32m"@/components/HeaderWrapper"[39m
+2026-08-28T11:38:58: [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mCategoryMenuWrapper[39m [36mfrom[39m [32m"@/components/CategoryMenuWrapper"[39m
+2026-08-28T11:38:58:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+2026-08-28T11:38:58:  [90m 4 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m"@/components/Footer"[39m
+2026-08-28T11:38:58:  [90m 5 |[39m
+2026-08-28T11:38:58:  [90m 6 |[39m [36mexport[39m [36mconst[39m metadata[33m:[39m [33mMetadata[39m [33m=[39m {[0m
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: Import map: aliased to relative './components/CategoryMenuWrapper' inside of [project]/apps/storefront/src
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: https://nextjs.org/docs/messages/module-not-found
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58:  ⨯ ./apps/storefront/src/app/[countryCode]/(main)/layout.tsx:3:1
+2026-08-28T11:38:58: Module not found: Can't resolve '@/components/CategoryMenuWrapper'
+2026-08-28T11:38:58: [0m [90m 1 |[39m [36mimport[39m { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m
+2026-08-28T11:38:58:  [90m 2 |[39m [36mimport[39m [33mHeaderWrapper[39m [36mfrom[39m [32m"@/components/HeaderWrapper"[39m
+2026-08-28T11:38:58: [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mCategoryMenuWrapper[39m [36mfrom[39m [32m"@/components/CategoryMenuWrapper"[39m
+2026-08-28T11:38:58:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+2026-08-28T11:38:58:  [90m 4 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m"@/components/Footer"[39m
+2026-08-28T11:38:58:  [90m 5 |[39m
+2026-08-28T11:38:58:  [90m 6 |[39m [36mexport[39m [36mconst[39m metadata[33m:[39m [33mMetadata[39m [33m=[39m {[0m
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: Import map: aliased to relative './components/CategoryMenuWrapper' inside of [project]/apps/storefront/src
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: https://nextjs.org/docs/messages/module-not-found
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58:  ⨯ ./apps/storefront/src/app/[countryCode]/(main)/layout.tsx:3:1
+2026-08-28T11:38:58: Module not found: Can't resolve '@/components/CategoryMenuWrapper'
+2026-08-28T11:38:58: [0m [90m 1 |[39m [36mimport[39m { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m
+2026-08-28T11:38:58:  [90m 2 |[39m [36mimport[39m [33mHeaderWrapper[39m [36mfrom[39m [32m"@/components/HeaderWrapper"[39m
+2026-08-28T11:38:58: [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mCategoryMenuWrapper[39m [36mfrom[39m [32m"@/components/CategoryMenuWrapper"[39m
+2026-08-28T11:38:58:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+2026-08-28T11:38:58:  [90m 4 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m"@/components/Footer"[39m
+2026-08-28T11:38:58:  [90m 5 |[39m
+2026-08-28T11:38:58:  [90m 6 |[39m [36mexport[39m [36mconst[39m metadata[33m:[39m [33mMetadata[39m [33m=[39m {[0m
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: Import map: aliased to relative './components/CategoryMenuWrapper' inside of [project]/apps/storefront/src
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: https://nextjs.org/docs/messages/module-not-found
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58:  ⨯ ./apps/storefront/src/app/[countryCode]/(main)/layout.tsx:3:1
+2026-08-28T11:38:58: Module not found: Can't resolve '@/components/CategoryMenuWrapper'
+2026-08-28T11:38:58: [0m [90m 1 |[39m [36mimport[39m { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m
+2026-08-28T11:38:58:  [90m 2 |[39m [36mimport[39m [33mHeaderWrapper[39m [36mfrom[39m [32m"@/components/HeaderWrapper"[39m
+2026-08-28T11:38:58: [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mCategoryMenuWrapper[39m [36mfrom[39m [32m"@/components/CategoryMenuWrapper"[39m
+2026-08-28T11:38:58:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+2026-08-28T11:38:58:  [90m 4 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m"@/components/Footer"[39m
+2026-08-28T11:38:58:  [90m 5 |[39m
+2026-08-28T11:38:58:  [90m 6 |[39m [36mexport[39m [36mconst[39m metadata[33m:[39m [33mMetadata[39m [33m=[39m {[0m
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: Import map: aliased to relative './components/CategoryMenuWrapper' inside of [project]/apps/storefront/src
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: https://nextjs.org/docs/messages/module-not-found
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58:  ⨯ ./apps/storefront/src/app/[countryCode]/(main)/layout.tsx:3:1
+2026-08-28T11:38:58: Module not found: Can't resolve '@/components/CategoryMenuWrapper'
+2026-08-28T11:38:58: [0m [90m 1 |[39m [36mimport[39m { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m
+2026-08-28T11:38:58:  [90m 2 |[39m [36mimport[39m [33mHeaderWrapper[39m [36mfrom[39m [32m"@/components/HeaderWrapper"[39m
+2026-08-28T11:38:58: [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mCategoryMenuWrapper[39m [36mfrom[39m [32m"@/components/CategoryMenuWrapper"[39m
+2026-08-28T11:38:58:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+2026-08-28T11:38:58:  [90m 4 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m"@/components/Footer"[39m
+2026-08-28T11:38:58:  [90m 5 |[39m
+2026-08-28T11:38:58:  [90m 6 |[39m [36mexport[39m [36mconst[39m metadata[33m:[39m [33mMetadata[39m [33m=[39m {[0m
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: Import map: aliased to relative './components/CategoryMenuWrapper' inside of [project]/apps/storefront/src
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: https://nextjs.org/docs/messages/module-not-found
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58:  ⨯ ./apps/storefront/src/app/[countryCode]/(main)/layout.tsx:3:1
+2026-08-28T11:38:58: Module not found: Can't resolve '@/components/CategoryMenuWrapper'
+2026-08-28T11:38:58: [0m [90m 1 |[39m [36mimport[39m { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m
+2026-08-28T11:38:58:  [90m 2 |[39m [36mimport[39m [33mHeaderWrapper[39m [36mfrom[39m [32m"@/components/HeaderWrapper"[39m
+2026-08-28T11:38:58: [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mCategoryMenuWrapper[39m [36mfrom[39m [32m"@/components/CategoryMenuWrapper"[39m
+2026-08-28T11:38:58:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+2026-08-28T11:38:58:  [90m 4 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m"@/components/Footer"[39m
+2026-08-28T11:38:58:  [90m 5 |[39m
+2026-08-28T11:38:58:  [90m 6 |[39m [36mexport[39m [36mconst[39m metadata[33m:[39m [33mMetadata[39m [33m=[39m {[0m
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: Import map: aliased to relative './components/CategoryMenuWrapper' inside of [project]/apps/storefront/src
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: https://nextjs.org/docs/messages/module-not-found
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58:  ⨯ ./apps/storefront/src/app/[countryCode]/(main)/layout.tsx:3:1
+2026-08-28T11:38:58: Module not found: Can't resolve '@/components/CategoryMenuWrapper'
+2026-08-28T11:38:58: [0m [90m 1 |[39m [36mimport[39m { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m
+2026-08-28T11:38:58:  [90m 2 |[39m [36mimport[39m [33mHeaderWrapper[39m [36mfrom[39m [32m"@/components/HeaderWrapper"[39m
+2026-08-28T11:38:58: [31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mCategoryMenuWrapper[39m [36mfrom[39m [32m"@/components/CategoryMenuWrapper"[39m
+2026-08-28T11:38:58:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+2026-08-28T11:38:58:  [90m 4 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m"@/components/Footer"[39m
+2026-08-28T11:38:58:  [90m 5 |[39m
+2026-08-28T11:38:58:  [90m 6 |[39m [36mexport[39m [36mconst[39m metadata[33m:[39m [33mMetadata[39m [33m=[39m {[0m
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: Import map: aliased to relative './components/CategoryMenuWrapper' inside of [project]/apps/storefront/src
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: https://nextjs.org/docs/messages/module-not-found
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58: 
+2026-08-28T11:38:58:  ⨯ Failed to generate static paths for /[countryCode]/products:
+2026-08-28T11:38:58: Error: Cannot find module '@/components/CategoryMenuWrapper'
+2026-08-28T11:38:58:     at <unknown> (.next/server/chunks/ssr/[root-of-the-server]__7503927f._.js:217:15)
+2026-08-28T11:38:58:     at <unknown> (.next/server/chunks/ssr/[root-of-the-server]__7503927f._.js:220:3)
+2026-08-28T11:38:58:     at __TURBOPACK__module__evaluation__ (.next/server/chunks/ssr/[root-of-the-server]__7503927f._.js:206:30)
+2026-08-28T11:38:58:     at __TURBOPACK__module__evaluation__ (.next/server/chunks/ssr/[root-of-the-server]__128ad01a._.js:542:47) {
+2026-08-28T11:38:58:   type: 'Error',
+2026-08-28T11:38:58:   code: 'MODULE_NOT_FOUND'
+2026-08-28T11:38:58: }
+2026-08-28T11:39:03: API returned 400: Bad Request
+2026-08-28T11:39:03: API returned 400: Bad Request
+2026-08-28T11:39:03: API returned 400: Bad Request
+2026-08-28T11:39:03: API returned 400: Bad Request
+2026-08-28T11:39:03: Error fetching categories: Error: A valid publishable key is required to proceed with the request
+2026-08-28T11:39:03:     at <unknown> (../../src/client.ts:101:11)
+2026-08-28T11:39:03:     at Generator.next (<anonymous>) {
+2026-08-28T11:39:03:   statusText: 'Bad Request',
+2026-08-28T11:39:03:   status: 400
+2026-08-28T11:39:03: }
+2026-08-28T11:39:03: Error fetching categories: Error: A valid publishable key is required to proceed with the request
+2026-08-28T11:39:03:     at <unknown> (../../src/client.ts:101:11)
+2026-08-28T11:39:03:     at Generator.next (<anonymous>) {
+2026-08-28T11:39:03:   statusText: 'Bad Request',
+2026-08-28T11:39:03:   status: 400
+2026-08-28T11:39:03: }
+2026-08-28T11:39:03: Error fetching products: Error: A valid publishable key is required to proceed with the request
+2026-08-28T11:39:03:     at <unknown> (../../src/client.ts:101:11)
+2026-08-28T11:39:03:     at Generator.next (<anonymous>) {
+2026-08-28T11:39:03:   statusText: 'Bad Request',
+2026-08-28T11:39:03:   status: 400
+2026-08-28T11:39:03: }
+2026-08-28T11:39:03: Error loading products: Error: A valid publishable key is required to proceed with the request
+2026-08-28T11:39:03:     at <unknown> (../../src/client.ts:101:11)
+2026-08-28T11:39:03:     at Generator.next (<anonymous>) {
+2026-08-28T11:39:03:   statusText: 'Bad Request',
+2026-08-28T11:39:03:   status: 400
+2026-08-28T11:39:03: }
+2026-08-28T11:39:03: Error fetching products: Error: A valid publishable key is required to proceed with the request
+2026-08-28T11:39:03:     at <unknown> (../../src/client.ts:101:11)
+2026-08-28T11:39:03:     at Generator.next (<anonymous>) {
+2026-08-28T11:39:03:   statusText: 'Bad Request',
+2026-08-28T11:39:03:   status: 400
+2026-08-28T11:39:03: }
+2026-08-28T11:39:03: Error loading products: Error: A valid publishable key is required to proceed with the request
+2026-08-28T11:39:03:     at <unknown> (../../src/client.ts:101:11)
+2026-08-28T11:39:03:     at Generator.next (<anonymous>) {
+2026-08-28T11:39:03:   statusText: 'Bad Request',
+2026-08-28T11:39:03:   status: 400
+2026-08-28T11:39:03: }
+2026-08-28T11:39:03: API returned 400: Bad Request
+2026-08-28T11:39:03: API returned 400: Bad Request
+2026-08-28T11:39:03: Error fetching categories: Error: A valid publishable key is required to proceed with the request
+2026-08-28T11:39:03:     at <unknown> (../../src/client.ts:101:11)
+2026-08-28T11:39:03:     at Generator.next (<anonymous>) {
+2026-08-28T11:39:03:   statusText: 'Bad Request',
+2026-08-28T11:39:03:   status: 400
+2026-08-28T11:39:03: }
+2026-08-28T11:39:03: Error fetching products: Error: A valid publishable key is required to proceed with the request
+2026-08-28T11:39:03:     at <unknown> (../../src/client.ts:101:11)
+2026-08-28T11:39:03:     at Generator.next (<anonymous>) {
+2026-08-28T11:39:03:   statusText: 'Bad Request',
+2026-08-28T11:39:03:   status: 400
+2026-08-28T11:39:03: }
+2026-08-28T11:39:03: Error loading products: Error: A valid publishable key is required to proceed with the request
+2026-08-28T11:39:03:     at <unknown> (../../src/client.ts:101:11)
+2026-08-28T11:39:03:     at Generator.next (<anonymous>) {
+2026-08-28T11:39:03:   statusText: 'Bad Request',
+2026-08-28T11:39:03:   status: 400
+2026-08-28T11:39:03: }
+2026-08-28T11:39:07: Error fetching categories: Error: A valid publishable key is required to proceed with the request
+2026-08-28T11:39:07:     at <unknown> (../../src/client.ts:101:11)
+2026-08-28T11:39:07:     at Generator.next (<anonymous>) {
+2026-08-28T11:39:07:   statusText: 'Bad Request',
+2026-08-28T11:39:07:   status: 400
+2026-08-28T11:39:07: }
+2026-08-28T11:39:07: Error fetching products: Error: A valid publishable key is required to proceed with the request
+2026-08-28T11:39:07:     at <unknown> (../../src/client.ts:101:11)
+2026-08-28T11:39:07:     at Generator.next (<anonymous>) {
+2026-08-28T11:39:07:   statusText: 'Bad Request',
+2026-08-28T11:39:07:   status: 400
+2026-08-28T11:39:07: }
+2026-08-28T11:39:07: Error loading products: Error: A valid publishable key is required to proceed with the request
+2026-08-28T11:39:07:     at <unknown> (../../src/client.ts:101:11)
+2026-08-28T11:39:07:     at Generator.next (<anonymous>) {
+2026-08-28T11:39:07:   statusText: 'Bad Request',
+2026-08-28T11:39:07:   status: 400
+2026-08-28T11:39:07: }
+2026-08-28T11:39:08:  ⨯ Error: A valid publishable key is required to proceed with the request
+2026-08-28T11:39:08:     at <unknown> (../../src/client.ts:101:11)
+2026-08-28T11:39:08:     at Generator.next (<anonymous>) {
+2026-08-28T11:39:08:   statusText: 'Bad Request',
+2026-08-28T11:39:08:   status: 400,
+2026-08-28T11:39:08:   digest: '4205950091'
+2026-08-28T11:39:08: }
+2026-08-28T11:39:09: npm warn Unknown project config "auto-install-peers". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-08-28T11:39:15: Failed to fetch regions from backend. Using default regions.
+2026-08-28T11:39:18: API returned 400: Bad Request
+2026-08-28T11:39:18: API returned 400: Bad Request
+2026-08-28T11:39:18: API returned 400: Bad Request
+2026-08-28T11:39:18: API returned 400: Bad Request
+2026-08-28T11:39:18: API returned 400: Bad Request
+2026-08-28T11:39:18: API returned 400: Bad Request

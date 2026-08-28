@@ -4,7 +4,6 @@ import React, { useState } from "react"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
 import { useCart } from "@/context/CartContext"
-import CategoryDropdown from "./CategoryDropdown"
 
 interface HeaderProps {
   categories?: Array<{ id: string; name: string; handle: string }>
@@ -86,10 +85,7 @@ export default function Header({ categories = [] }: HeaderProps) {
             </button>
           </form>
 
-          {/* Desktop Navigation - Category Dropdown */}
-          {displayCategories.length > 0 && (
-            <CategoryDropdown categories={displayCategories} />
-          )}
+          {/* Categories moved to separate menu below */}
 
           {/* Desktop Navigation - Links */}
           <nav className="hidden md:flex items-center gap-8">
