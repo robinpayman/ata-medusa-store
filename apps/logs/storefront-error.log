@@ -86,3 +86,11 @@
 2026-08-28T11:31:30: API returned 400: Bad Request
 2026-08-28T11:31:37: API returned 400: Bad Request
 2026-08-28T11:31:42: API returned 400: Bad Request
+2026-08-28T11:36:06: API returned 400: Bad Request
+2026-08-28T11:36:08: API returned 400: Bad Request
+2026-08-28T11:36:51: Failed to fetch regions from backend. Using default regions.
+2026-08-28T11:36:51: API returned 400: Bad Request
+2026-08-28T11:36:56: npm warn Unknown project config "auto-install-peers". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-08-28T11:37:11: Failed to fetch regions from backend. Using default regions.
+2026-08-28T11:37:13: API returned 400: Bad Request
+2026-08-28T11:37:23: API returned 400: Bad Request

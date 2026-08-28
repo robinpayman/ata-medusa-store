@@ -1322,3 +1322,40 @@
 2026-08-28T11:31:42:  GET /no 200 in 98ms
 2026-08-28T11:31:42:  │ GET http://localhost:9000/store/product-categories 400 in 37ms (cache skip)
 2026-08-28T11:31:42:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:36:06: Fetched 4 categories from database
+2026-08-28T11:36:06:  GET /no 200 in 236ms
+2026-08-28T11:36:06:  │ GET http://localhost:9000/store/product-categories 400 in 56ms (cache skip)
+2026-08-28T11:36:06:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:36:08: Fetched 4 categories from database
+2026-08-28T11:36:08:  GET /no 200 in 186ms
+2026-08-28T11:36:08:  │ GET http://localhost:9000/store/product-categories 400 in 40ms (cache skip)
+2026-08-28T11:36:08:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:36:51:    Reload env: .env.local
+2026-08-28T11:36:51: Fetched 50 categories from database
+2026-08-28T11:36:51:  GET /no 200 in 121ms
+2026-08-28T11:36:51:  │ GET http://localhost:9000/store/product-categories 400 in 24ms (cache skip)
+2026-08-28T11:36:51:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:36:56: [?25h
+2026-08-28T11:36:56: 
+2026-08-28T11:36:56: 
+2026-08-28T11:36:56: > @dtc/storefront@1.0.3 dev
+2026-08-28T11:36:56: > next dev --turbopack -p 8000
+2026-08-28T11:36:56: 
+2026-08-28T11:36:57:    ▲ Next.js 15.5.21 (Turbopack)
+2026-08-28T11:36:57:    - Local:        http://localhost:8000
+2026-08-28T11:36:57:    - Network:      http://10.90.90.197:8000
+2026-08-28T11:36:57:    - Environments: .env.local
+2026-08-28T11:36:57: 
+2026-08-28T11:36:57:  ✓ Starting...
+2026-08-28T11:36:57:  ✓ Compiled middleware in 99ms
+2026-08-28T11:36:58:  ✓ Ready in 896ms
+2026-08-28T11:37:11:  ○ Compiling /[countryCode] ...
+2026-08-28T11:37:13:  ✓ Compiled /[countryCode] in 1858ms
+2026-08-28T11:37:13: Fetched 50 categories from database
+2026-08-28T11:37:13:  GET /no 200 in 2489ms
+2026-08-28T11:37:13:  │ GET http://localhost:9000/store/product-categories 400 in 143ms (cache skip)
+2026-08-28T11:37:13:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:37:23: Fetched 50 categories from database
+2026-08-28T11:37:23:  GET /no 200 in 94ms
+2026-08-28T11:37:23:  │ GET http://localhost:9000/store/product-categories 400 in 38ms (cache skip)
+2026-08-28T11:37:23:  │ │ Cache skipped reason: (cache: no-store)

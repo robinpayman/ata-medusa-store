@@ -626,3 +626,32 @@
 2026-08-28T11:31:37: [32mhttp[39m:    GET /store/product-categories ← - (400) - 1.993 ms
 2026-08-28T11:31:42: [32minfo[39m:    A valid publishable key is required to proceed with the request
 2026-08-28T11:31:42: [32mhttp[39m:    GET /store/product-categories ← - (400) - 1.864 ms
+2026-08-28T11:36:06: [32minfo[39m:    A valid publishable key is required to proceed with the request
+2026-08-28T11:36:06: [32mhttp[39m:    GET /store/product-categories ← - (400) - 14.339 ms
+2026-08-28T11:36:06: [32mhttp[39m:    OPTIONS /store/regions ← http://localhost:8000/ (204) - 0.381 ms
+2026-08-28T11:36:06: [32mhttp[39m:    OPTIONS /store/customers/me ← http://localhost:8000/ (204) - 0.373 ms
+2026-08-28T11:36:06: [32minfo[39m:    A valid publishable key is required to proceed with the request
+2026-08-28T11:36:06: [32mhttp[39m:    GET /store/customers/me ← http://localhost:8000/ (400) - 3.748 ms
+2026-08-28T11:36:06: [32minfo[39m:    A valid publishable key is required to proceed with the request
+2026-08-28T11:36:06: [32mhttp[39m:    GET /store/regions ← http://localhost:8000/ (400) - 3.424 ms
+2026-08-28T11:36:06: [32mhttp[39m:    OPTIONS /store/carts ← http://localhost:8000/ (204) - 0.457 ms
+2026-08-28T11:36:06: [32minfo[39m:    A valid publishable key is required to proceed with the request
+2026-08-28T11:36:06: [32mhttp[39m:    POST /store/carts ← http://localhost:8000/ (400) - 6.374 ms
+2026-08-28T11:36:08: [32minfo[39m:    A valid publishable key is required to proceed with the request
+2026-08-28T11:36:08: [32mhttp[39m:    GET /store/product-categories ← - (400) - 1.948 ms
+2026-08-28T11:36:08: [32minfo[39m:    A valid publishable key is required to proceed with the request
+2026-08-28T11:36:08: [32mhttp[39m:    GET /store/regions ← http://localhost:8000/ (400) - 5.302 ms
+2026-08-28T11:36:08: [32minfo[39m:    A valid publishable key is required to proceed with the request
+2026-08-28T11:36:08: [32mhttp[39m:    GET /store/customers/me ← http://localhost:8000/ (400) - 8.075 ms
+2026-08-28T11:36:08: [32minfo[39m:    A valid publishable key is required to proceed with the request
+2026-08-28T11:36:08: [32mhttp[39m:    POST /store/carts ← http://localhost:8000/ (400) - 3.267 ms
+2026-08-28T11:36:51: [32minfo[39m:    A valid publishable key is required to proceed with the request
+2026-08-28T11:36:51: [32mhttp[39m:    GET /store/regions ← - (400) - 1.936 ms
+2026-08-28T11:36:51: [32minfo[39m:    A valid publishable key is required to proceed with the request
+2026-08-28T11:36:51: [32mhttp[39m:    GET /store/product-categories ← - (400) - 3.698 ms
+2026-08-28T11:37:11: [32minfo[39m:    A valid publishable key is required to proceed with the request
+2026-08-28T11:37:11: [32mhttp[39m:    GET /store/regions ← - (400) - 1.916 ms
+2026-08-28T11:37:13: [32minfo[39m:    A valid publishable key is required to proceed with the request
+2026-08-28T11:37:13: [32mhttp[39m:    GET /store/product-categories ← - (400) - 2.106 ms
+2026-08-28T11:37:23: [32minfo[39m:    A valid publishable key is required to proceed with the request
+2026-08-28T11:37:23: [32mhttp[39m:    GET /store/product-categories ← - (400) - 1.941 ms
