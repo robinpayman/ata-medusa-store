@@ -1290,3 +1290,35 @@
 2026-08-28T11:29:47:  GET /no 200 in 101ms
 2026-08-28T11:29:47:  │ GET http://localhost:9000/store/product-categories 400 in 46ms (cache skip)
 2026-08-28T11:29:47:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:30:44: Fetched 8 categories from database
+2026-08-28T11:30:45:  GET /no 200 in 227ms
+2026-08-28T11:30:45:  │ GET http://localhost:9000/store/product-categories 400 in 67ms (cache skip)
+2026-08-28T11:30:45:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:31:23: [?25h
+2026-08-28T11:31:23: 
+2026-08-28T11:31:23: 
+2026-08-28T11:31:23: > @dtc/storefront@1.0.3 dev
+2026-08-28T11:31:23: > next dev --turbopack -p 8000
+2026-08-28T11:31:23: 
+2026-08-28T11:31:24:    ▲ Next.js 15.5.21 (Turbopack)
+2026-08-28T11:31:24:    - Local:        http://localhost:8000
+2026-08-28T11:31:24:    - Network:      http://10.90.90.197:8000
+2026-08-28T11:31:24:    - Environments: .env.local
+2026-08-28T11:31:24: 
+2026-08-28T11:31:24:  ✓ Starting...
+2026-08-28T11:31:24:  ✓ Compiled middleware in 99ms
+2026-08-28T11:31:24:  ✓ Ready in 925ms
+2026-08-28T11:31:28:  ○ Compiling /[countryCode] ...
+2026-08-28T11:31:30:  ✓ Compiled /[countryCode] in 1956ms
+2026-08-28T11:31:30: Fetched 4 categories from database
+2026-08-28T11:31:30:  GET /no 200 in 2583ms
+2026-08-28T11:31:30:  │ GET http://localhost:9000/store/product-categories 400 in 139ms (cache skip)
+2026-08-28T11:31:30:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:31:37: Fetched 4 categories from database
+2026-08-28T11:31:37:  GET /no 200 in 94ms
+2026-08-28T11:31:37:  │ GET http://localhost:9000/store/product-categories 400 in 37ms (cache skip)
+2026-08-28T11:31:37:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:31:42: Fetched 4 categories from database
+2026-08-28T11:31:42:  GET /no 200 in 98ms
+2026-08-28T11:31:42:  │ GET http://localhost:9000/store/product-categories 400 in 37ms (cache skip)
+2026-08-28T11:31:42:  │ │ Cache skipped reason: (cache: no-store)
