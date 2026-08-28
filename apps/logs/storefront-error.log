@@ -964,3 +964,75 @@
 2026-08-28T11:41:16: Failed to fetch regions from backend. Using default regions.
 2026-08-28T11:41:17: Image with src "https://atatreningsutstyr.no/wp-content/uploads/2022/07/ata-HEX-Pro-Elite.jpg" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
 2026-08-28T11:41:17: Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+2026-08-28T11:44:15: Image with src "https://atatreningsutstyr.no/wp-content/uploads/2023/01/ata-Cable-Cross-Over.jpg" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+2026-08-28T11:44:15: Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+2026-08-28T11:44:15: Image with src "https://atatreningsutstyr.no/wp-content/uploads/2023/01/ata-DAP-Dual-Adjustable-Pulley.jpg" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+2026-08-28T11:44:15: Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+2026-08-28T11:44:15: Image with src "https://atatreningsutstyr.no/wp-content/uploads/2023/01/ata-DUAL-Seated-Leg-ExtensionCurl.jpg" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+2026-08-28T11:44:15: Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+2026-08-28T11:44:15: Image with src "https://atatreningsutstyr.no/wp-content/uploads/2023/01/ata-DUAL-ChestShoulder-Press.jpg" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+2026-08-28T11:44:15: Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+2026-08-28T11:44:15: Image with src "https://atatreningsutstyr.no/wp-content/uploads/2026/05/ata-DUAL-Lat-PulldownSeated-Row.webp" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+2026-08-28T11:44:15: Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+2026-08-28T11:44:15: Image with src "https://atatreningsutstyr.no/wp-content/uploads/2023/01/ata-Multi-Gym-5-Station.jpg" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+2026-08-28T11:44:15: Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+2026-08-28T11:44:15: Image with src "https://atatreningsutstyr.no/wp-content/uploads/2023/06/ata-Multi-Gym-3-station.jpg" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+2026-08-28T11:44:15: Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+2026-08-28T11:44:15: Image with src "https://atatreningsutstyr.no/wp-content/uploads/2024/04/ata-DUAL-Abdominal-Back.jpg" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+2026-08-28T11:44:15: Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+2026-08-28T11:44:15: Image with src "https://atatreningsutstyr.no/wp-content/uploads/2024/03/ata-DUAL-Hip-AbductorAdductor.jpg" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+2026-08-28T11:44:15: Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+2026-08-28T11:44:15: Image with src "https://atatreningsutstyr.no/wp-content/uploads/2025/10/ata-Multi-Pulley.webp" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+2026-08-28T11:44:15: Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+2026-08-28T11:44:15: Image with src "https://atatreningsutstyr.no/wp-content/uploads/2026/05/ata-Smith-Row-Plate-Loaded-8035.webp" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+2026-08-28T11:44:15: Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+2026-08-28T11:44:15: Image with src "https://atatreningsutstyr.no/wp-content/uploads/2025/09/8030-ata-DUAL-Standing-Lateral-Raise_Pec-Fly.webp" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+2026-08-28T11:44:15: Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+2026-08-28T11:45:36: Image with src "https://atatreningsutstyr.no/wp-content/uploads/2024/09/ata-Ankle-Straps-min.jpg" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+2026-08-28T11:45:36: Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+2026-08-28T11:45:36: Image with src "https://atatreningsutstyr.no/wp-content/uploads/2022/07/ata_single_grips.jpg" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+2026-08-28T11:45:36: Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+2026-08-28T11:45:36: Image with src "https://atatreningsutstyr.no/wp-content/uploads/2022/07/ata-Lat-Pulldown-Bar.jpg" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+2026-08-28T11:45:36: Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+2026-08-28T11:45:36: Image with src "https://atatreningsutstyr.no/wp-content/uploads/2022/07/ata-Rotating-Double-D-Row-Handtak-Premium.jpg" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+2026-08-28T11:45:36: Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+2026-08-28T11:45:36: Image with src "https://atatreningsutstyr.no/wp-content/uploads/2022/07/ata-Single-Grips-Metal.jpg" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+2026-08-28T11:45:36: Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+2026-08-28T11:45:36: Image with src "https://atatreningsutstyr.no/wp-content/uploads/2022/07/ata-Lat-Pulldown-Bar-Pro.jpg" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+2026-08-28T11:45:36: Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+2026-08-28T11:45:36: Image with src "https://atatreningsutstyr.no/wp-content/uploads/2022/07/ata-Double-D-Row.jpg" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+2026-08-28T11:45:36: Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+2026-08-28T11:45:36: Image with src "https://atatreningsutstyr.no/wp-content/uploads/2022/07/ata-Bicep-Bar.jpg" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+2026-08-28T11:45:36: Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+2026-08-28T11:45:36: Image with src "https://atatreningsutstyr.no/wp-content/uploads/2022/07/ata-Rotating-Tricep-Extension-Handtak-Premium.jpg" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+2026-08-28T11:45:36: Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+2026-08-28T11:45:36: Image with src "https://atatreningsutstyr.no/wp-content/uploads/2022/07/ata-Revolving-Curl-Bar-Pro.jpg" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+2026-08-28T11:45:36: Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+2026-08-28T11:45:36: Image with src "https://atatreningsutstyr.no/wp-content/uploads/2022/07/ata-Lat-Pulldown-Bar-Straight.jpg" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+2026-08-28T11:45:36: Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+2026-08-28T11:45:36: Image with src "https://atatreningsutstyr.no/wp-content/uploads/2022/07/ata-Lat-Pulldown-Bar-Handles-Pro.jpg" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+2026-08-28T11:45:36: Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+2026-08-28T11:46:31: Image with src "https://atatreningsutstyr.no/wp-content/uploads/2023/01/ata-Cable-Cross-Over.jpg" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+2026-08-28T11:46:31: Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+2026-08-28T11:46:31: Image with src "https://atatreningsutstyr.no/wp-content/uploads/2023/01/ata-DAP-Dual-Adjustable-Pulley.jpg" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+2026-08-28T11:46:31: Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+2026-08-28T11:46:31: Image with src "https://atatreningsutstyr.no/wp-content/uploads/2023/01/ata-DUAL-Seated-Leg-ExtensionCurl.jpg" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+2026-08-28T11:46:31: Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+2026-08-28T11:46:31: Image with src "https://atatreningsutstyr.no/wp-content/uploads/2023/01/ata-DUAL-ChestShoulder-Press.jpg" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+2026-08-28T11:46:31: Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+2026-08-28T11:46:31: Image with src "https://atatreningsutstyr.no/wp-content/uploads/2026/05/ata-DUAL-Lat-PulldownSeated-Row.webp" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+2026-08-28T11:46:31: Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+2026-08-28T11:46:31: Image with src "https://atatreningsutstyr.no/wp-content/uploads/2023/01/ata-Multi-Gym-5-Station.jpg" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+2026-08-28T11:46:31: Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+2026-08-28T11:46:31: Image with src "https://atatreningsutstyr.no/wp-content/uploads/2023/06/ata-Multi-Gym-3-station.jpg" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+2026-08-28T11:46:31: Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+2026-08-28T11:46:31: Image with src "https://atatreningsutstyr.no/wp-content/uploads/2024/04/ata-DUAL-Abdominal-Back.jpg" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+2026-08-28T11:46:31: Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+2026-08-28T11:46:31: Image with src "https://atatreningsutstyr.no/wp-content/uploads/2024/03/ata-DUAL-Hip-AbductorAdductor.jpg" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+2026-08-28T11:46:31: Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+2026-08-28T11:46:31: Image with src "https://atatreningsutstyr.no/wp-content/uploads/2025/10/ata-Multi-Pulley.webp" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+2026-08-28T11:46:31: Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+2026-08-28T11:46:31: Image with src "https://atatreningsutstyr.no/wp-content/uploads/2026/05/ata-Smith-Row-Plate-Loaded-8035.webp" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+2026-08-28T11:46:31: Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+2026-08-28T11:46:31: Image with src "https://atatreningsutstyr.no/wp-content/uploads/2025/09/8030-ata-DUAL-Standing-Lateral-Raise_Pec-Fly.webp" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+2026-08-28T11:46:31: Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities

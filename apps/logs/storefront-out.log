@@ -2325,3 +2325,1218 @@
 2026-08-28T11:41:53: 
 2026-08-28T11:42:36:  ✓ Compiled in 74ms
 2026-08-28T11:42:57:  ✓ Compiled in 66ms
+2026-08-28T11:44:15: Initiating Medusa client with default headers:
+2026-08-28T11:44:15:  {
+2026-08-28T11:44:15:   "accept": "application/json",
+2026-08-28T11:44:15:   "content-type": "application/json",
+2026-08-28T11:44:15:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:44:15:   "authorization": "<REDACTED>"
+2026-08-28T11:44:15: }
+2026-08-28T11:44:15: 
+2026-08-28T11:44:15: Performing request to:
+2026-08-28T11:44:15:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym
+2026-08-28T11:44:15:  Headers: {
+2026-08-28T11:44:15:   "accept": "application/json",
+2026-08-28T11:44:15:   "content-type": "application/json",
+2026-08-28T11:44:15:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:44:15:   "authorization": "<REDACTED>"
+2026-08-28T11:44:15: }
+2026-08-28T11:44:15: 
+2026-08-28T11:44:15: Performing request to:
+2026-08-28T11:44:15:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym
+2026-08-28T11:44:15:  Headers: {
+2026-08-28T11:44:15:   "accept": "application/json",
+2026-08-28T11:44:15:   "content-type": "application/json",
+2026-08-28T11:44:15:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:44:15:   "authorization": "<REDACTED>"
+2026-08-28T11:44:15: }
+2026-08-28T11:44:15: 
+2026-08-28T11:44:15: Received response with status 200
+2026-08-28T11:44:15: 
+2026-08-28T11:44:15: Received response with status 200
+2026-08-28T11:44:15: 
+2026-08-28T11:44:15: Performing request to:
+2026-08-28T11:44:15:  URL: http://localhost:9000/store/regions
+2026-08-28T11:44:15:  Headers: {
+2026-08-28T11:44:15:   "accept": "application/json",
+2026-08-28T11:44:15:   "content-type": "application/json",
+2026-08-28T11:44:15:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:44:15:   "authorization": "<REDACTED>"
+2026-08-28T11:44:15: }
+2026-08-28T11:44:15: 
+2026-08-28T11:44:15: Received response with status 200
+2026-08-28T11:44:15: 
+2026-08-28T11:44:15: Performing request to:
+2026-08-28T11:44:15:  URL: http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3QP87KBCQG7JA35RPM&order=created_at
+2026-08-28T11:44:15:  Headers: {
+2026-08-28T11:44:15:   "accept": "application/json",
+2026-08-28T11:44:15:   "content-type": "application/json",
+2026-08-28T11:44:15:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:44:15:   "authorization": "<REDACTED>"
+2026-08-28T11:44:15: }
+2026-08-28T11:44:15: 
+2026-08-28T11:44:15: Received response with status 200
+2026-08-28T11:44:15: 
+2026-08-28T11:44:15: Initiating Medusa client with default headers:
+2026-08-28T11:44:15:  {
+2026-08-28T11:44:15:   "accept": "application/json",
+2026-08-28T11:44:15:   "content-type": "application/json",
+2026-08-28T11:44:15:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:44:15:   "authorization": "<REDACTED>"
+2026-08-28T11:44:15: }
+2026-08-28T11:44:15: 
+2026-08-28T11:44:15: Fetched 50 categories from Medusa API
+2026-08-28T11:44:15: Fetched 50 categories from Medusa API
+2026-08-28T11:44:15:  GET /no/categories/multigym 200 in 499ms
+2026-08-28T11:44:15:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym 200 in 1ms (cache hit)
+2026-08-28T11:44:15:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym 200 in 1ms (cache hit)
+2026-08-28T11:44:15:  │ GET http://localhost:9000/store/regions 200 in 1ms (cache hit)
+2026-08-28T11:44:15:  │ GET http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3QP87KBCQG7JA35RPM&order=created_at 200 in 1ms (cache hit)
+2026-08-28T11:44:15:  │ GET http://localhost:9000/store/product-categories 200 in 238ms (cache skip)
+2026-08-28T11:44:15:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:44:15:  │ GET http://localhost:9000/store/product-categories 200 in 237ms (cache skip)
+2026-08-28T11:44:15:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:44:16: Initiating Medusa client with default headers:
+2026-08-28T11:44:16:  {
+2026-08-28T11:44:16:   "accept": "application/json",
+2026-08-28T11:44:16:   "content-type": "application/json",
+2026-08-28T11:44:16:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:44:16:   "authorization": "<REDACTED>"
+2026-08-28T11:44:16: }
+2026-08-28T11:44:16: 
+2026-08-28T11:45:27: Performing request to:
+2026-08-28T11:45:27:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym
+2026-08-28T11:45:27:  Headers: {
+2026-08-28T11:45:27:   "accept": "application/json",
+2026-08-28T11:45:27:   "content-type": "application/json",
+2026-08-28T11:45:27:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:27:   "authorization": "<REDACTED>"
+2026-08-28T11:45:27: }
+2026-08-28T11:45:27: 
+2026-08-28T11:45:27: Performing request to:
+2026-08-28T11:45:27:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym
+2026-08-28T11:45:27:  Headers: {
+2026-08-28T11:45:27:   "accept": "application/json",
+2026-08-28T11:45:27:   "content-type": "application/json",
+2026-08-28T11:45:27:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:27:   "authorization": "<REDACTED>"
+2026-08-28T11:45:27: }
+2026-08-28T11:45:27: 
+2026-08-28T11:45:27: Received response with status 200
+2026-08-28T11:45:27: 
+2026-08-28T11:45:27: Received response with status 200
+2026-08-28T11:45:27: 
+2026-08-28T11:45:27: Performing request to:
+2026-08-28T11:45:27:  URL: http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3QP87KBCQG7JA35RPM&order=created_at
+2026-08-28T11:45:27:  Headers: {
+2026-08-28T11:45:27:   "accept": "application/json",
+2026-08-28T11:45:27:   "content-type": "application/json",
+2026-08-28T11:45:27:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:27:   "authorization": "<REDACTED>"
+2026-08-28T11:45:27: }
+2026-08-28T11:45:27: 
+2026-08-28T11:45:27: Received response with status 200
+2026-08-28T11:45:27: 
+2026-08-28T11:45:28: Fetched 50 categories from Medusa API
+2026-08-28T11:45:28: Fetched 50 categories from Medusa API
+2026-08-28T11:45:28:  GET /no/categories/multigym 200 in 304ms
+2026-08-28T11:45:28:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym 200 in 1ms (cache hit)
+2026-08-28T11:45:28:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym 200 in 1ms (cache hit)
+2026-08-28T11:45:28:  │ GET http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3QP87KBCQG7JA35RPM&order=created_at 200 in 1ms (cache hit)
+2026-08-28T11:45:28:  │ GET http://localhost:9000/store/product-categories 200 in 108ms (cache skip)
+2026-08-28T11:45:28:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:45:28:  │ GET http://localhost:9000/store/product-categories 200 in 107ms (cache skip)
+2026-08-28T11:45:28:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:45:28: Initiating Medusa client with default headers:
+2026-08-28T11:45:28:  {
+2026-08-28T11:45:28:   "accept": "application/json",
+2026-08-28T11:45:28:   "content-type": "application/json",
+2026-08-28T11:45:28:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:28:   "authorization": "<REDACTED>"
+2026-08-28T11:45:28: }
+2026-08-28T11:45:28: 
+2026-08-28T11:45:28: Performing request to:
+2026-08-28T11:45:28:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym
+2026-08-28T11:45:28:  Headers: {
+2026-08-28T11:45:28:   "accept": "application/json",
+2026-08-28T11:45:28:   "content-type": "application/json",
+2026-08-28T11:45:28:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:28:   "authorization": "<REDACTED>"
+2026-08-28T11:45:28: }
+2026-08-28T11:45:28: 
+2026-08-28T11:45:28: Performing request to:
+2026-08-28T11:45:28:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym
+2026-08-28T11:45:28:  Headers: {
+2026-08-28T11:45:28:   "accept": "application/json",
+2026-08-28T11:45:28:   "content-type": "application/json",
+2026-08-28T11:45:28:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:28:   "authorization": "<REDACTED>"
+2026-08-28T11:45:28: }
+2026-08-28T11:45:28: 
+2026-08-28T11:45:28: Received response with status 200
+2026-08-28T11:45:28: 
+2026-08-28T11:45:28: Received response with status 200
+2026-08-28T11:45:28: 
+2026-08-28T11:45:28: Fetched 50 categories from Medusa API
+2026-08-28T11:45:28: Fetched 50 categories from Medusa API
+2026-08-28T11:45:28: Performing request to:
+2026-08-28T11:45:28:  URL: http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3QP87KBCQG7JA35RPM&order=created_at
+2026-08-28T11:45:28:  Headers: {
+2026-08-28T11:45:28:   "accept": "application/json",
+2026-08-28T11:45:28:   "content-type": "application/json",
+2026-08-28T11:45:28:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:28:   "authorization": "<REDACTED>"
+2026-08-28T11:45:28: }
+2026-08-28T11:45:28: 
+2026-08-28T11:45:28: Received response with status 200
+2026-08-28T11:45:28: 
+2026-08-28T11:45:29:  GET /no/categories/multigym 200 in 245ms
+2026-08-28T11:45:29:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym 200 in 1ms (cache hit)
+2026-08-28T11:45:29:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym 200 in 1ms (cache hit)
+2026-08-28T11:45:29:  │ GET http://localhost:9000/store/product-categories 200 in 52ms (cache skip)
+2026-08-28T11:45:29:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:45:29:  │ GET http://localhost:9000/store/product-categories 200 in 51ms (cache skip)
+2026-08-28T11:45:29:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:45:29:  │ GET http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3QP87KBCQG7JA35RPM&order=created_at 200 in 1ms (cache hit)
+2026-08-28T11:45:29: Initiating Medusa client with default headers:
+2026-08-28T11:45:29:  {
+2026-08-28T11:45:29:   "accept": "application/json",
+2026-08-28T11:45:29:   "content-type": "application/json",
+2026-08-28T11:45:29:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:29:   "authorization": "<REDACTED>"
+2026-08-28T11:45:29: }
+2026-08-28T11:45:29: 
+2026-08-28T11:45:32: Performing request to:
+2026-08-28T11:45:32:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym
+2026-08-28T11:45:32:  Headers: {
+2026-08-28T11:45:32:   "accept": "application/json",
+2026-08-28T11:45:32:   "content-type": "application/json",
+2026-08-28T11:45:32:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:32:   "authorization": "<REDACTED>"
+2026-08-28T11:45:32: }
+2026-08-28T11:45:32: 
+2026-08-28T11:45:32: Performing request to:
+2026-08-28T11:45:32:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym
+2026-08-28T11:45:32:  Headers: {
+2026-08-28T11:45:32:   "accept": "application/json",
+2026-08-28T11:45:32:   "content-type": "application/json",
+2026-08-28T11:45:32:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:32:   "authorization": "<REDACTED>"
+2026-08-28T11:45:32: }
+2026-08-28T11:45:32: 
+2026-08-28T11:45:32: Received response with status 200
+2026-08-28T11:45:32: 
+2026-08-28T11:45:32: Received response with status 200
+2026-08-28T11:45:32: 
+2026-08-28T11:45:32: Performing request to:
+2026-08-28T11:45:32:  URL: http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3QP87KBCQG7JA35RPM&order=created_at
+2026-08-28T11:45:32:  Headers: {
+2026-08-28T11:45:32:   "accept": "application/json",
+2026-08-28T11:45:32:   "content-type": "application/json",
+2026-08-28T11:45:32:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:32:   "authorization": "<REDACTED>"
+2026-08-28T11:45:32: }
+2026-08-28T11:45:32: 
+2026-08-28T11:45:32: Received response with status 200
+2026-08-28T11:45:32: 
+2026-08-28T11:45:32: Fetched 50 categories from Medusa API
+2026-08-28T11:45:32: Fetched 50 categories from Medusa API
+2026-08-28T11:45:32:  GET /no/categories/multigym 200 in 258ms
+2026-08-28T11:45:32:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym 200 in 1ms (cache hit)
+2026-08-28T11:45:32:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym 200 in 1ms (cache hit)
+2026-08-28T11:45:32:  │ GET http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3QP87KBCQG7JA35RPM&order=created_at 200 in 1ms (cache hit)
+2026-08-28T11:45:32:  │ GET http://localhost:9000/store/product-categories 200 in 73ms (cache skip)
+2026-08-28T11:45:32:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:45:32:  │ GET http://localhost:9000/store/product-categories 200 in 73ms (cache skip)
+2026-08-28T11:45:32:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:45:32: Initiating Medusa client with default headers:
+2026-08-28T11:45:32:  {
+2026-08-28T11:45:32:   "accept": "application/json",
+2026-08-28T11:45:32:   "content-type": "application/json",
+2026-08-28T11:45:32:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:32:   "authorization": "<REDACTED>"
+2026-08-28T11:45:32: }
+2026-08-28T11:45:32: 
+2026-08-28T11:45:34: Performing request to:
+2026-08-28T11:45:34:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym
+2026-08-28T11:45:34:  Headers: {
+2026-08-28T11:45:34:   "accept": "application/json",
+2026-08-28T11:45:34:   "content-type": "application/json",
+2026-08-28T11:45:34:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:34:   "authorization": "<REDACTED>"
+2026-08-28T11:45:34: }
+2026-08-28T11:45:34: 
+2026-08-28T11:45:34: Performing request to:
+2026-08-28T11:45:34:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym
+2026-08-28T11:45:34:  Headers: {
+2026-08-28T11:45:34:   "accept": "application/json",
+2026-08-28T11:45:34:   "content-type": "application/json",
+2026-08-28T11:45:34:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:34:   "authorization": "<REDACTED>"
+2026-08-28T11:45:34: }
+2026-08-28T11:45:34: 
+2026-08-28T11:45:34: Received response with status 200
+2026-08-28T11:45:34: 
+2026-08-28T11:45:34: Received response with status 200
+2026-08-28T11:45:34: 
+2026-08-28T11:45:34: Fetched 50 categories from Medusa API
+2026-08-28T11:45:34: Fetched 50 categories from Medusa API
+2026-08-28T11:45:34: Performing request to:
+2026-08-28T11:45:34:  URL: http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3QP87KBCQG7JA35RPM&order=created_at
+2026-08-28T11:45:34:  Headers: {
+2026-08-28T11:45:34:   "accept": "application/json",
+2026-08-28T11:45:34:   "content-type": "application/json",
+2026-08-28T11:45:34:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:34:   "authorization": "<REDACTED>"
+2026-08-28T11:45:34: }
+2026-08-28T11:45:34: 
+2026-08-28T11:45:34: Received response with status 200
+2026-08-28T11:45:34: 
+2026-08-28T11:45:34:  GET /no/categories/multigym 200 in 251ms
+2026-08-28T11:45:34:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym 200 in 1ms (cache hit)
+2026-08-28T11:45:34:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym 200 in 1ms (cache hit)
+2026-08-28T11:45:34:  │ GET http://localhost:9000/store/product-categories 200 in 46ms (cache skip)
+2026-08-28T11:45:34:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:45:34:  │ GET http://localhost:9000/store/product-categories 200 in 45ms (cache skip)
+2026-08-28T11:45:34:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:45:34:  │ GET http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3QP87KBCQG7JA35RPM&order=created_at 200 in 1ms (cache hit)
+2026-08-28T11:45:34: Initiating Medusa client with default headers:
+2026-08-28T11:45:34:  {
+2026-08-28T11:45:34:   "accept": "application/json",
+2026-08-28T11:45:34:   "content-type": "application/json",
+2026-08-28T11:45:34:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:34:   "authorization": "<REDACTED>"
+2026-08-28T11:45:34: }
+2026-08-28T11:45:34: 
+2026-08-28T11:45:34: Performing request to:
+2026-08-28T11:45:34:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak
+2026-08-28T11:45:34:  Headers: {
+2026-08-28T11:45:34:   "accept": "application/json",
+2026-08-28T11:45:34:   "content-type": "application/json",
+2026-08-28T11:45:34:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:34:   "authorization": "<REDACTED>"
+2026-08-28T11:45:34: }
+2026-08-28T11:45:34: 
+2026-08-28T11:45:34: Performing request to:
+2026-08-28T11:45:34:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak
+2026-08-28T11:45:34:  Headers: {
+2026-08-28T11:45:34:   "accept": "application/json",
+2026-08-28T11:45:34:   "content-type": "application/json",
+2026-08-28T11:45:34:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:34:   "authorization": "<REDACTED>"
+2026-08-28T11:45:34: }
+2026-08-28T11:45:34: 
+2026-08-28T11:45:34: Received response with status 200
+2026-08-28T11:45:34: 
+2026-08-28T11:45:34: Received response with status 200
+2026-08-28T11:45:34: 
+2026-08-28T11:45:34: Performing request to:
+2026-08-28T11:45:34:  URL: http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3PA0EG3MRK57KJ32ZQ&order=created_at
+2026-08-28T11:45:34:  Headers: {
+2026-08-28T11:45:34:   "accept": "application/json",
+2026-08-28T11:45:34:   "content-type": "application/json",
+2026-08-28T11:45:34:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:34:   "authorization": "<REDACTED>"
+2026-08-28T11:45:34: }
+2026-08-28T11:45:34: 
+2026-08-28T11:45:34: Received response with status 200
+2026-08-28T11:45:34: 
+2026-08-28T11:45:34:  GET /no/categories/kabelhandtak 200 in 133ms
+2026-08-28T11:45:34:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak 200 in 1ms (cache hit)
+2026-08-28T11:45:34:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak 200 in 1ms (cache hit)
+2026-08-28T11:45:34:  │ GET http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3PA0EG3MRK57KJ32ZQ&order=created_at 200 in 1ms (cache hit)
+2026-08-28T11:45:35: Initiating Medusa client with default headers:
+2026-08-28T11:45:35:  {
+2026-08-28T11:45:35:   "accept": "application/json",
+2026-08-28T11:45:35:   "content-type": "application/json",
+2026-08-28T11:45:35:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:35:   "authorization": "<REDACTED>"
+2026-08-28T11:45:35: }
+2026-08-28T11:45:35: 
+2026-08-28T11:45:35: Performing request to:
+2026-08-28T11:45:35:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak
+2026-08-28T11:45:35:  Headers: {
+2026-08-28T11:45:35:   "accept": "application/json",
+2026-08-28T11:45:35:   "content-type": "application/json",
+2026-08-28T11:45:35:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:35:   "authorization": "<REDACTED>"
+2026-08-28T11:45:35: }
+2026-08-28T11:45:35: 
+2026-08-28T11:45:35: Performing request to:
+2026-08-28T11:45:35:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak
+2026-08-28T11:45:35:  Headers: {
+2026-08-28T11:45:35:   "accept": "application/json",
+2026-08-28T11:45:35:   "content-type": "application/json",
+2026-08-28T11:45:35:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:35:   "authorization": "<REDACTED>"
+2026-08-28T11:45:35: }
+2026-08-28T11:45:35: 
+2026-08-28T11:45:35: Received response with status 200
+2026-08-28T11:45:35: 
+2026-08-28T11:45:35: Received response with status 200
+2026-08-28T11:45:35: 
+2026-08-28T11:45:35: Fetched 50 categories from Medusa API
+2026-08-28T11:45:35: Fetched 50 categories from Medusa API
+2026-08-28T11:45:35: Performing request to:
+2026-08-28T11:45:35:  URL: http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3PA0EG3MRK57KJ32ZQ&order=created_at
+2026-08-28T11:45:35:  Headers: {
+2026-08-28T11:45:35:   "accept": "application/json",
+2026-08-28T11:45:35:   "content-type": "application/json",
+2026-08-28T11:45:35:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:35:   "authorization": "<REDACTED>"
+2026-08-28T11:45:35: }
+2026-08-28T11:45:35: 
+2026-08-28T11:45:35: Received response with status 200
+2026-08-28T11:45:35: 
+2026-08-28T11:45:36:  GET /no/categories/kabelhandtak 200 in 252ms
+2026-08-28T11:45:36:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak 200 in 1ms (cache hit)
+2026-08-28T11:45:36:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak 200 in 1ms (cache hit)
+2026-08-28T11:45:36:  │ GET http://localhost:9000/store/product-categories 200 in 44ms (cache skip)
+2026-08-28T11:45:36:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:45:36:  │ GET http://localhost:9000/store/product-categories 200 in 44ms (cache skip)
+2026-08-28T11:45:36:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:45:36:  │ GET http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3PA0EG3MRK57KJ32ZQ&order=created_at 200 in 2ms (cache hit)
+2026-08-28T11:45:36: Initiating Medusa client with default headers:
+2026-08-28T11:45:36:  {
+2026-08-28T11:45:36:   "accept": "application/json",
+2026-08-28T11:45:36:   "content-type": "application/json",
+2026-08-28T11:45:36:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:36:   "authorization": "<REDACTED>"
+2026-08-28T11:45:36: }
+2026-08-28T11:45:36: 
+2026-08-28T11:45:36: Performing request to:
+2026-08-28T11:45:36:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak
+2026-08-28T11:45:36:  Headers: {
+2026-08-28T11:45:36:   "accept": "application/json",
+2026-08-28T11:45:36:   "content-type": "application/json",
+2026-08-28T11:45:36:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:36:   "authorization": "<REDACTED>"
+2026-08-28T11:45:36: }
+2026-08-28T11:45:36: 
+2026-08-28T11:45:36: Performing request to:
+2026-08-28T11:45:36:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak
+2026-08-28T11:45:36:  Headers: {
+2026-08-28T11:45:36:   "accept": "application/json",
+2026-08-28T11:45:36:   "content-type": "application/json",
+2026-08-28T11:45:36:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:36:   "authorization": "<REDACTED>"
+2026-08-28T11:45:36: }
+2026-08-28T11:45:36: 
+2026-08-28T11:45:36: Received response with status 200
+2026-08-28T11:45:36: 
+2026-08-28T11:45:36: Received response with status 200
+2026-08-28T11:45:36: 
+2026-08-28T11:45:36: Fetched 50 categories from Medusa API
+2026-08-28T11:45:36: Fetched 50 categories from Medusa API
+2026-08-28T11:45:36: Performing request to:
+2026-08-28T11:45:36:  URL: http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3PA0EG3MRK57KJ32ZQ&order=created_at
+2026-08-28T11:45:36:  Headers: {
+2026-08-28T11:45:36:   "accept": "application/json",
+2026-08-28T11:45:36:   "content-type": "application/json",
+2026-08-28T11:45:36:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:36:   "authorization": "<REDACTED>"
+2026-08-28T11:45:36: }
+2026-08-28T11:45:36: 
+2026-08-28T11:45:36: Received response with status 200
+2026-08-28T11:45:36: 
+2026-08-28T11:45:36:  GET /no/categories/kabelhandtak 200 in 221ms
+2026-08-28T11:45:36:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak 200 in 1ms (cache hit)
+2026-08-28T11:45:36:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak 200 in 1ms (cache hit)
+2026-08-28T11:45:36:  │ GET http://localhost:9000/store/product-categories 200 in 43ms (cache skip)
+2026-08-28T11:45:36:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:45:36:  │ GET http://localhost:9000/store/product-categories 200 in 42ms (cache skip)
+2026-08-28T11:45:36:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:45:36:  │ GET http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3PA0EG3MRK57KJ32ZQ&order=created_at 200 in 1ms (cache hit)
+2026-08-28T11:45:37: Initiating Medusa client with default headers:
+2026-08-28T11:45:37:  {
+2026-08-28T11:45:37:   "accept": "application/json",
+2026-08-28T11:45:37:   "content-type": "application/json",
+2026-08-28T11:45:37:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:37:   "authorization": "<REDACTED>"
+2026-08-28T11:45:37: }
+2026-08-28T11:45:37: 
+2026-08-28T11:45:37: Performing request to:
+2026-08-28T11:45:37:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak
+2026-08-28T11:45:37:  Headers: {
+2026-08-28T11:45:37:   "accept": "application/json",
+2026-08-28T11:45:37:   "content-type": "application/json",
+2026-08-28T11:45:37:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:37:   "authorization": "<REDACTED>"
+2026-08-28T11:45:37: }
+2026-08-28T11:45:37: 
+2026-08-28T11:45:37: Performing request to:
+2026-08-28T11:45:37:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak
+2026-08-28T11:45:37:  Headers: {
+2026-08-28T11:45:37:   "accept": "application/json",
+2026-08-28T11:45:37:   "content-type": "application/json",
+2026-08-28T11:45:37:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:37:   "authorization": "<REDACTED>"
+2026-08-28T11:45:37: }
+2026-08-28T11:45:37: 
+2026-08-28T11:45:37: Received response with status 200
+2026-08-28T11:45:37: 
+2026-08-28T11:45:37: Received response with status 200
+2026-08-28T11:45:37: 
+2026-08-28T11:45:37: Fetched 50 categories from Medusa API
+2026-08-28T11:45:37: Fetched 50 categories from Medusa API
+2026-08-28T11:45:37: Performing request to:
+2026-08-28T11:45:37:  URL: http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3PA0EG3MRK57KJ32ZQ&order=created_at
+2026-08-28T11:45:37:  Headers: {
+2026-08-28T11:45:37:   "accept": "application/json",
+2026-08-28T11:45:37:   "content-type": "application/json",
+2026-08-28T11:45:37:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:37:   "authorization": "<REDACTED>"
+2026-08-28T11:45:37: }
+2026-08-28T11:45:37: 
+2026-08-28T11:45:37: Received response with status 200
+2026-08-28T11:45:37: 
+2026-08-28T11:45:37:  GET /no/categories/kabelhandtak 200 in 239ms
+2026-08-28T11:45:37:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak 200 in 1ms (cache hit)
+2026-08-28T11:45:37:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak 200 in 1ms (cache hit)
+2026-08-28T11:45:37:  │ GET http://localhost:9000/store/product-categories 200 in 42ms (cache skip)
+2026-08-28T11:45:37:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:45:37:  │ GET http://localhost:9000/store/product-categories 200 in 41ms (cache skip)
+2026-08-28T11:45:37:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:45:37:  │ GET http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3PA0EG3MRK57KJ32ZQ&order=created_at 200 in 1ms (cache hit)
+2026-08-28T11:45:37: Initiating Medusa client with default headers:
+2026-08-28T11:45:37:  {
+2026-08-28T11:45:37:   "accept": "application/json",
+2026-08-28T11:45:37:   "content-type": "application/json",
+2026-08-28T11:45:37:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:37:   "authorization": "<REDACTED>"
+2026-08-28T11:45:37: }
+2026-08-28T11:45:37: 
+2026-08-28T11:45:38: Performing request to:
+2026-08-28T11:45:38:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak
+2026-08-28T11:45:38:  Headers: {
+2026-08-28T11:45:38:   "accept": "application/json",
+2026-08-28T11:45:38:   "content-type": "application/json",
+2026-08-28T11:45:38:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:38:   "authorization": "<REDACTED>"
+2026-08-28T11:45:38: }
+2026-08-28T11:45:38: 
+2026-08-28T11:45:38: Performing request to:
+2026-08-28T11:45:38:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak
+2026-08-28T11:45:38:  Headers: {
+2026-08-28T11:45:38:   "accept": "application/json",
+2026-08-28T11:45:38:   "content-type": "application/json",
+2026-08-28T11:45:38:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:38:   "authorization": "<REDACTED>"
+2026-08-28T11:45:38: }
+2026-08-28T11:45:38: 
+2026-08-28T11:45:38: Received response with status 200
+2026-08-28T11:45:38: 
+2026-08-28T11:45:38: Received response with status 200
+2026-08-28T11:45:38: 
+2026-08-28T11:45:38: Fetched 50 categories from Medusa API
+2026-08-28T11:45:38: Fetched 50 categories from Medusa API
+2026-08-28T11:45:38: Performing request to:
+2026-08-28T11:45:38:  URL: http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3PA0EG3MRK57KJ32ZQ&order=created_at
+2026-08-28T11:45:38:  Headers: {
+2026-08-28T11:45:38:   "accept": "application/json",
+2026-08-28T11:45:38:   "content-type": "application/json",
+2026-08-28T11:45:38:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:38:   "authorization": "<REDACTED>"
+2026-08-28T11:45:38: }
+2026-08-28T11:45:38: 
+2026-08-28T11:45:38: Received response with status 200
+2026-08-28T11:45:38: 
+2026-08-28T11:45:38:  GET /no/categories/kabelhandtak 200 in 245ms
+2026-08-28T11:45:38:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak 200 in 1ms (cache hit)
+2026-08-28T11:45:38:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak 200 in 1ms (cache hit)
+2026-08-28T11:45:38:  │ GET http://localhost:9000/store/product-categories 200 in 53ms (cache skip)
+2026-08-28T11:45:38:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:45:38:  │ GET http://localhost:9000/store/product-categories 200 in 52ms (cache skip)
+2026-08-28T11:45:38:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:45:38:  │ GET http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3PA0EG3MRK57KJ32ZQ&order=created_at 200 in 1ms (cache hit)
+2026-08-28T11:45:38: Initiating Medusa client with default headers:
+2026-08-28T11:45:38:  {
+2026-08-28T11:45:38:   "accept": "application/json",
+2026-08-28T11:45:38:   "content-type": "application/json",
+2026-08-28T11:45:38:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:38:   "authorization": "<REDACTED>"
+2026-08-28T11:45:38: }
+2026-08-28T11:45:38: 
+2026-08-28T11:45:38: Performing request to:
+2026-08-28T11:45:38:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak
+2026-08-28T11:45:38:  Headers: {
+2026-08-28T11:45:38:   "accept": "application/json",
+2026-08-28T11:45:38:   "content-type": "application/json",
+2026-08-28T11:45:38:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:38:   "authorization": "<REDACTED>"
+2026-08-28T11:45:38: }
+2026-08-28T11:45:38: 
+2026-08-28T11:45:38: Performing request to:
+2026-08-28T11:45:38:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak
+2026-08-28T11:45:38:  Headers: {
+2026-08-28T11:45:38:   "accept": "application/json",
+2026-08-28T11:45:38:   "content-type": "application/json",
+2026-08-28T11:45:38:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:38:   "authorization": "<REDACTED>"
+2026-08-28T11:45:38: }
+2026-08-28T11:45:38: 
+2026-08-28T11:45:38: Received response with status 200
+2026-08-28T11:45:38: 
+2026-08-28T11:45:38: Received response with status 200
+2026-08-28T11:45:38: 
+2026-08-28T11:45:38: Fetched 50 categories from Medusa API
+2026-08-28T11:45:38: Fetched 50 categories from Medusa API
+2026-08-28T11:45:38: Performing request to:
+2026-08-28T11:45:38:  URL: http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3PA0EG3MRK57KJ32ZQ&order=created_at
+2026-08-28T11:45:38:  Headers: {
+2026-08-28T11:45:38:   "accept": "application/json",
+2026-08-28T11:45:38:   "content-type": "application/json",
+2026-08-28T11:45:38:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:38:   "authorization": "<REDACTED>"
+2026-08-28T11:45:38: }
+2026-08-28T11:45:38: 
+2026-08-28T11:45:38: Received response with status 200
+2026-08-28T11:45:38: 
+2026-08-28T11:45:38:  GET /no/categories/kabelhandtak 200 in 241ms
+2026-08-28T11:45:38:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak 200 in 1ms (cache hit)
+2026-08-28T11:45:38:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak 200 in 1ms (cache hit)
+2026-08-28T11:45:38:  │ GET http://localhost:9000/store/product-categories 200 in 48ms (cache skip)
+2026-08-28T11:45:38:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:45:38:  │ GET http://localhost:9000/store/product-categories 200 in 48ms (cache skip)
+2026-08-28T11:45:38:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:45:38:  │ GET http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3PA0EG3MRK57KJ32ZQ&order=created_at 200 in 1ms (cache hit)
+2026-08-28T11:45:38: Initiating Medusa client with default headers:
+2026-08-28T11:45:38:  {
+2026-08-28T11:45:38:   "accept": "application/json",
+2026-08-28T11:45:38:   "content-type": "application/json",
+2026-08-28T11:45:38:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:38:   "authorization": "<REDACTED>"
+2026-08-28T11:45:38: }
+2026-08-28T11:45:38: 
+2026-08-28T11:45:39: Performing request to:
+2026-08-28T11:45:39:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak
+2026-08-28T11:45:39:  Headers: {
+2026-08-28T11:45:39:   "accept": "application/json",
+2026-08-28T11:45:39:   "content-type": "application/json",
+2026-08-28T11:45:39:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:39:   "authorization": "<REDACTED>"
+2026-08-28T11:45:39: }
+2026-08-28T11:45:39: 
+2026-08-28T11:45:39: Performing request to:
+2026-08-28T11:45:39:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak
+2026-08-28T11:45:39:  Headers: {
+2026-08-28T11:45:39:   "accept": "application/json",
+2026-08-28T11:45:39:   "content-type": "application/json",
+2026-08-28T11:45:39:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:39:   "authorization": "<REDACTED>"
+2026-08-28T11:45:39: }
+2026-08-28T11:45:39: 
+2026-08-28T11:45:39: Received response with status 200
+2026-08-28T11:45:39: 
+2026-08-28T11:45:39: Received response with status 200
+2026-08-28T11:45:39: 
+2026-08-28T11:45:39: Fetched 50 categories from Medusa API
+2026-08-28T11:45:39: Fetched 50 categories from Medusa API
+2026-08-28T11:45:39: Performing request to:
+2026-08-28T11:45:39:  URL: http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3PA0EG3MRK57KJ32ZQ&order=created_at
+2026-08-28T11:45:39:  Headers: {
+2026-08-28T11:45:39:   "accept": "application/json",
+2026-08-28T11:45:39:   "content-type": "application/json",
+2026-08-28T11:45:39:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:39:   "authorization": "<REDACTED>"
+2026-08-28T11:45:39: }
+2026-08-28T11:45:39: 
+2026-08-28T11:45:39: Received response with status 200
+2026-08-28T11:45:39: 
+2026-08-28T11:45:39:  GET /no/categories/kabelhandtak 200 in 233ms
+2026-08-28T11:45:39:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak 200 in 1ms (cache hit)
+2026-08-28T11:45:39:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak 200 in 1ms (cache hit)
+2026-08-28T11:45:39:  │ GET http://localhost:9000/store/product-categories 200 in 42ms (cache skip)
+2026-08-28T11:45:39:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:45:39:  │ GET http://localhost:9000/store/product-categories 200 in 42ms (cache skip)
+2026-08-28T11:45:39:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:45:39:  │ GET http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3PA0EG3MRK57KJ32ZQ&order=created_at 200 in 1ms (cache hit)
+2026-08-28T11:45:39: Initiating Medusa client with default headers:
+2026-08-28T11:45:39:  {
+2026-08-28T11:45:39:   "accept": "application/json",
+2026-08-28T11:45:39:   "content-type": "application/json",
+2026-08-28T11:45:39:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:39:   "authorization": "<REDACTED>"
+2026-08-28T11:45:39: }
+2026-08-28T11:45:39: 
+2026-08-28T11:45:39: Performing request to:
+2026-08-28T11:45:39:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak
+2026-08-28T11:45:39:  Headers: {
+2026-08-28T11:45:39:   "accept": "application/json",
+2026-08-28T11:45:39:   "content-type": "application/json",
+2026-08-28T11:45:39:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:39:   "authorization": "<REDACTED>"
+2026-08-28T11:45:39: }
+2026-08-28T11:45:39: 
+2026-08-28T11:45:39: Performing request to:
+2026-08-28T11:45:39:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak
+2026-08-28T11:45:39:  Headers: {
+2026-08-28T11:45:39:   "accept": "application/json",
+2026-08-28T11:45:39:   "content-type": "application/json",
+2026-08-28T11:45:39:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:39:   "authorization": "<REDACTED>"
+2026-08-28T11:45:39: }
+2026-08-28T11:45:39: 
+2026-08-28T11:45:39: Received response with status 200
+2026-08-28T11:45:39: 
+2026-08-28T11:45:39: Received response with status 200
+2026-08-28T11:45:39: 
+2026-08-28T11:45:39: Fetched 50 categories from Medusa API
+2026-08-28T11:45:39: Fetched 50 categories from Medusa API
+2026-08-28T11:45:39: Performing request to:
+2026-08-28T11:45:39:  URL: http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3PA0EG3MRK57KJ32ZQ&order=created_at
+2026-08-28T11:45:39:  Headers: {
+2026-08-28T11:45:39:   "accept": "application/json",
+2026-08-28T11:45:39:   "content-type": "application/json",
+2026-08-28T11:45:39:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:39:   "authorization": "<REDACTED>"
+2026-08-28T11:45:39: }
+2026-08-28T11:45:39: 
+2026-08-28T11:45:39: Received response with status 200
+2026-08-28T11:45:39: 
+2026-08-28T11:45:39:  GET /no/categories/kabelhandtak 200 in 267ms
+2026-08-28T11:45:39:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak 200 in 2ms (cache hit)
+2026-08-28T11:45:39:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak 200 in 1ms (cache hit)
+2026-08-28T11:45:39:  │ GET http://localhost:9000/store/product-categories 200 in 56ms (cache skip)
+2026-08-28T11:45:39:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:45:39:  │ GET http://localhost:9000/store/product-categories 200 in 56ms (cache skip)
+2026-08-28T11:45:39:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:45:39:  │ GET http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3PA0EG3MRK57KJ32ZQ&order=created_at 200 in 1ms (cache hit)
+2026-08-28T11:45:39: Performing request to:
+2026-08-28T11:45:39:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak
+2026-08-28T11:45:39:  Headers: {
+2026-08-28T11:45:39:   "accept": "application/json",
+2026-08-28T11:45:39:   "content-type": "application/json",
+2026-08-28T11:45:39:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:39:   "authorization": "<REDACTED>"
+2026-08-28T11:45:39: }
+2026-08-28T11:45:39: 
+2026-08-28T11:45:39: Performing request to:
+2026-08-28T11:45:39:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak
+2026-08-28T11:45:39:  Headers: {
+2026-08-28T11:45:39:   "accept": "application/json",
+2026-08-28T11:45:39:   "content-type": "application/json",
+2026-08-28T11:45:39:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:39:   "authorization": "<REDACTED>"
+2026-08-28T11:45:39: }
+2026-08-28T11:45:39: 
+2026-08-28T11:45:39: Received response with status 200
+2026-08-28T11:45:39: 
+2026-08-28T11:45:39: Received response with status 200
+2026-08-28T11:45:39: 
+2026-08-28T11:45:40: Fetched 50 categories from Medusa API
+2026-08-28T11:45:40: Fetched 50 categories from Medusa API
+2026-08-28T11:45:40: Performing request to:
+2026-08-28T11:45:40:  URL: http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3PA0EG3MRK57KJ32ZQ&order=created_at
+2026-08-28T11:45:40:  Headers: {
+2026-08-28T11:45:40:   "accept": "application/json",
+2026-08-28T11:45:40:   "content-type": "application/json",
+2026-08-28T11:45:40:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:40:   "authorization": "<REDACTED>"
+2026-08-28T11:45:40: }
+2026-08-28T11:45:40: 
+2026-08-28T11:45:40: Received response with status 200
+2026-08-28T11:45:40: 
+2026-08-28T11:45:40: Initiating Medusa client with default headers:
+2026-08-28T11:45:40:  {
+2026-08-28T11:45:40:   "accept": "application/json",
+2026-08-28T11:45:40:   "content-type": "application/json",
+2026-08-28T11:45:40:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:40:   "authorization": "<REDACTED>"
+2026-08-28T11:45:40: }
+2026-08-28T11:45:40: 
+2026-08-28T11:45:40:  GET /no/categories/kabelhandtak 200 in 288ms
+2026-08-28T11:45:40:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak 200 in 1ms (cache hit)
+2026-08-28T11:45:40:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak 200 in 1ms (cache hit)
+2026-08-28T11:45:40:  │ GET http://localhost:9000/store/product-categories 200 in 64ms (cache skip)
+2026-08-28T11:45:40:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:45:40:  │ GET http://localhost:9000/store/product-categories 200 in 61ms (cache skip)
+2026-08-28T11:45:40:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:45:40:  │ GET http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3PA0EG3MRK57KJ32ZQ&order=created_at 200 in 1ms (cache hit)
+2026-08-28T11:45:46: Performing request to:
+2026-08-28T11:45:46:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak
+2026-08-28T11:45:46:  Headers: {
+2026-08-28T11:45:46:   "accept": "application/json",
+2026-08-28T11:45:46:   "content-type": "application/json",
+2026-08-28T11:45:46:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:46:   "authorization": "<REDACTED>"
+2026-08-28T11:45:46: }
+2026-08-28T11:45:46: 
+2026-08-28T11:45:46: Performing request to:
+2026-08-28T11:45:46:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak
+2026-08-28T11:45:46:  Headers: {
+2026-08-28T11:45:46:   "accept": "application/json",
+2026-08-28T11:45:46:   "content-type": "application/json",
+2026-08-28T11:45:46:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:46:   "authorization": "<REDACTED>"
+2026-08-28T11:45:46: }
+2026-08-28T11:45:46: 
+2026-08-28T11:45:46: Received response with status 200
+2026-08-28T11:45:46: 
+2026-08-28T11:45:46: Received response with status 200
+2026-08-28T11:45:46: 
+2026-08-28T11:45:46: Performing request to:
+2026-08-28T11:45:46:  URL: http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3PA0EG3MRK57KJ32ZQ&order=created_at
+2026-08-28T11:45:46:  Headers: {
+2026-08-28T11:45:46:   "accept": "application/json",
+2026-08-28T11:45:46:   "content-type": "application/json",
+2026-08-28T11:45:46:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:46:   "authorization": "<REDACTED>"
+2026-08-28T11:45:46: }
+2026-08-28T11:45:46: 
+2026-08-28T11:45:46: Received response with status 200
+2026-08-28T11:45:46: 
+2026-08-28T11:45:46: Fetched 50 categories from Medusa API
+2026-08-28T11:45:46: Fetched 50 categories from Medusa API
+2026-08-28T11:45:46:  GET /no/categories/kabelhandtak 200 in 277ms
+2026-08-28T11:45:46:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak 200 in 1ms (cache hit)
+2026-08-28T11:45:46:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak 200 in 1ms (cache hit)
+2026-08-28T11:45:46:  │ GET http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3PA0EG3MRK57KJ32ZQ&order=created_at 200 in 1ms (cache hit)
+2026-08-28T11:45:46:  │ GET http://localhost:9000/store/product-categories 200 in 88ms (cache skip)
+2026-08-28T11:45:46:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:45:46:  │ GET http://localhost:9000/store/product-categories 200 in 86ms (cache skip)
+2026-08-28T11:45:46:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:45:46: Initiating Medusa client with default headers:
+2026-08-28T11:45:46:  {
+2026-08-28T11:45:46:   "accept": "application/json",
+2026-08-28T11:45:46:   "content-type": "application/json",
+2026-08-28T11:45:46:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:46:   "authorization": "<REDACTED>"
+2026-08-28T11:45:46: }
+2026-08-28T11:45:46: 
+2026-08-28T11:45:47: Performing request to:
+2026-08-28T11:45:47:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak
+2026-08-28T11:45:47:  Headers: {
+2026-08-28T11:45:47:   "accept": "application/json",
+2026-08-28T11:45:47:   "content-type": "application/json",
+2026-08-28T11:45:47:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:47:   "authorization": "<REDACTED>"
+2026-08-28T11:45:47: }
+2026-08-28T11:45:47: 
+2026-08-28T11:45:47: Performing request to:
+2026-08-28T11:45:47:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak
+2026-08-28T11:45:47:  Headers: {
+2026-08-28T11:45:47:   "accept": "application/json",
+2026-08-28T11:45:47:   "content-type": "application/json",
+2026-08-28T11:45:47:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:47:   "authorization": "<REDACTED>"
+2026-08-28T11:45:47: }
+2026-08-28T11:45:47: 
+2026-08-28T11:45:47: Received response with status 200
+2026-08-28T11:45:47: 
+2026-08-28T11:45:47: Received response with status 200
+2026-08-28T11:45:47: 
+2026-08-28T11:45:47: Fetched 50 categories from Medusa API
+2026-08-28T11:45:47: Fetched 50 categories from Medusa API
+2026-08-28T11:45:47: Performing request to:
+2026-08-28T11:45:47:  URL: http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3PA0EG3MRK57KJ32ZQ&order=created_at
+2026-08-28T11:45:47:  Headers: {
+2026-08-28T11:45:47:   "accept": "application/json",
+2026-08-28T11:45:47:   "content-type": "application/json",
+2026-08-28T11:45:47:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:47:   "authorization": "<REDACTED>"
+2026-08-28T11:45:47: }
+2026-08-28T11:45:47: 
+2026-08-28T11:45:47: Received response with status 200
+2026-08-28T11:45:47: 
+2026-08-28T11:45:47:  GET /no/categories/kabelhandtak 200 in 256ms
+2026-08-28T11:45:47:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak 200 in 1ms (cache hit)
+2026-08-28T11:45:47:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak 200 in 1ms (cache hit)
+2026-08-28T11:45:47:  │ GET http://localhost:9000/store/product-categories 200 in 44ms (cache skip)
+2026-08-28T11:45:47:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:45:47:  │ GET http://localhost:9000/store/product-categories 200 in 44ms (cache skip)
+2026-08-28T11:45:47:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:45:47:  │ GET http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3PA0EG3MRK57KJ32ZQ&order=created_at 200 in 1ms (cache hit)
+2026-08-28T11:45:47: Initiating Medusa client with default headers:
+2026-08-28T11:45:47:  {
+2026-08-28T11:45:47:   "accept": "application/json",
+2026-08-28T11:45:47:   "content-type": "application/json",
+2026-08-28T11:45:47:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:47:   "authorization": "<REDACTED>"
+2026-08-28T11:45:47: }
+2026-08-28T11:45:47: 
+2026-08-28T11:45:48: Performing request to:
+2026-08-28T11:45:48:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak
+2026-08-28T11:45:48:  Headers: {
+2026-08-28T11:45:48:   "accept": "application/json",
+2026-08-28T11:45:48:   "content-type": "application/json",
+2026-08-28T11:45:48:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:48:   "authorization": "<REDACTED>"
+2026-08-28T11:45:48: }
+2026-08-28T11:45:48: 
+2026-08-28T11:45:48: Performing request to:
+2026-08-28T11:45:48:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak
+2026-08-28T11:45:48:  Headers: {
+2026-08-28T11:45:48:   "accept": "application/json",
+2026-08-28T11:45:48:   "content-type": "application/json",
+2026-08-28T11:45:48:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:48:   "authorization": "<REDACTED>"
+2026-08-28T11:45:48: }
+2026-08-28T11:45:48: 
+2026-08-28T11:45:48: Received response with status 200
+2026-08-28T11:45:48: 
+2026-08-28T11:45:48: Received response with status 200
+2026-08-28T11:45:48: 
+2026-08-28T11:45:48: Fetched 50 categories from Medusa API
+2026-08-28T11:45:48: Fetched 50 categories from Medusa API
+2026-08-28T11:45:48: Performing request to:
+2026-08-28T11:45:48:  URL: http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3PA0EG3MRK57KJ32ZQ&order=created_at
+2026-08-28T11:45:48:  Headers: {
+2026-08-28T11:45:48:   "accept": "application/json",
+2026-08-28T11:45:48:   "content-type": "application/json",
+2026-08-28T11:45:48:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:48:   "authorization": "<REDACTED>"
+2026-08-28T11:45:48: }
+2026-08-28T11:45:48: 
+2026-08-28T11:45:48: Received response with status 200
+2026-08-28T11:45:48: 
+2026-08-28T11:45:48:  GET /no/categories/kabelhandtak 200 in 227ms
+2026-08-28T11:45:48:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak 200 in 1ms (cache hit)
+2026-08-28T11:45:48:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak 200 in 1ms (cache hit)
+2026-08-28T11:45:48:  │ GET http://localhost:9000/store/product-categories 200 in 38ms (cache skip)
+2026-08-28T11:45:48:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:45:48:  │ GET http://localhost:9000/store/product-categories 200 in 38ms (cache skip)
+2026-08-28T11:45:48:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:45:48:  │ GET http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3PA0EG3MRK57KJ32ZQ&order=created_at 200 in 1ms (cache hit)
+2026-08-28T11:45:48: Initiating Medusa client with default headers:
+2026-08-28T11:45:48:  {
+2026-08-28T11:45:48:   "accept": "application/json",
+2026-08-28T11:45:48:   "content-type": "application/json",
+2026-08-28T11:45:48:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:48:   "authorization": "<REDACTED>"
+2026-08-28T11:45:48: }
+2026-08-28T11:45:48: 
+2026-08-28T11:45:53:  ✓ Compiled /[countryCode] in 15ms
+2026-08-28T11:45:53:  GET /no 200 in 55ms
+2026-08-28T11:45:55: Performing request to:
+2026-08-28T11:45:55:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym
+2026-08-28T11:45:55:  Headers: {
+2026-08-28T11:45:55:   "accept": "application/json",
+2026-08-28T11:45:55:   "content-type": "application/json",
+2026-08-28T11:45:55:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:55:   "authorization": "<REDACTED>"
+2026-08-28T11:45:55: }
+2026-08-28T11:45:55: 
+2026-08-28T11:45:55: Performing request to:
+2026-08-28T11:45:55:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym
+2026-08-28T11:45:55:  Headers: {
+2026-08-28T11:45:55:   "accept": "application/json",
+2026-08-28T11:45:55:   "content-type": "application/json",
+2026-08-28T11:45:55:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:55:   "authorization": "<REDACTED>"
+2026-08-28T11:45:55: }
+2026-08-28T11:45:55: 
+2026-08-28T11:45:55: Received response with status 200
+2026-08-28T11:45:55: 
+2026-08-28T11:45:55: Received response with status 200
+2026-08-28T11:45:55: 
+2026-08-28T11:45:55: Performing request to:
+2026-08-28T11:45:55:  URL: http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3QP87KBCQG7JA35RPM&order=created_at
+2026-08-28T11:45:55:  Headers: {
+2026-08-28T11:45:55:   "accept": "application/json",
+2026-08-28T11:45:55:   "content-type": "application/json",
+2026-08-28T11:45:55:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:55:   "authorization": "<REDACTED>"
+2026-08-28T11:45:55: }
+2026-08-28T11:45:55: 
+2026-08-28T11:45:55: Received response with status 200
+2026-08-28T11:45:55: 
+2026-08-28T11:45:55:  GET /no/categories/multigym 200 in 79ms
+2026-08-28T11:45:55:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym 200 in 1ms (cache hit)
+2026-08-28T11:45:55:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym 200 in 1ms (cache hit)
+2026-08-28T11:45:55:  │ GET http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3QP87KBCQG7JA35RPM&order=created_at 200 in 1ms (cache hit)
+2026-08-28T11:45:56: Initiating Medusa client with default headers:
+2026-08-28T11:45:56:  {
+2026-08-28T11:45:56:   "accept": "application/json",
+2026-08-28T11:45:56:   "content-type": "application/json",
+2026-08-28T11:45:56:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:45:56:   "authorization": "<REDACTED>"
+2026-08-28T11:45:56: }
+2026-08-28T11:45:56: 
+2026-08-28T11:46:03:  ✓ Compiled in 119ms
+2026-08-28T11:46:16:  ✓ Compiled /[countryCode]/categories/[...category] in 24ms
+2026-08-28T11:46:16: Initiating Medusa client with default headers:
+2026-08-28T11:46:16:  {
+2026-08-28T11:46:16:   "accept": "application/json",
+2026-08-28T11:46:16:   "content-type": "application/json",
+2026-08-28T11:46:16:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:46:16:   "authorization": "<REDACTED>"
+2026-08-28T11:46:16: }
+2026-08-28T11:46:16: 
+2026-08-28T11:46:16: Fetched 50 categories from Medusa API
+2026-08-28T11:46:16: Fetched 50 categories from Medusa API
+2026-08-28T11:46:16: Performing request to:
+2026-08-28T11:46:16:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym
+2026-08-28T11:46:16:  Headers: {
+2026-08-28T11:46:16:   "accept": "application/json",
+2026-08-28T11:46:16:   "content-type": "application/json",
+2026-08-28T11:46:16:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:46:16:   "authorization": "<REDACTED>"
+2026-08-28T11:46:16: }
+2026-08-28T11:46:16: 
+2026-08-28T11:46:16: Performing request to:
+2026-08-28T11:46:16:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym
+2026-08-28T11:46:16:  Headers: {
+2026-08-28T11:46:16:   "accept": "application/json",
+2026-08-28T11:46:16:   "content-type": "application/json",
+2026-08-28T11:46:16:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:46:16:   "authorization": "<REDACTED>"
+2026-08-28T11:46:16: }
+2026-08-28T11:46:16: 
+2026-08-28T11:46:16: Received response with status 200
+2026-08-28T11:46:16: 
+2026-08-28T11:46:16: Received response with status 200
+2026-08-28T11:46:16: 
+2026-08-28T11:46:16: Performing request to:
+2026-08-28T11:46:16:  URL: http://localhost:9000/store/regions
+2026-08-28T11:46:16:  Headers: {
+2026-08-28T11:46:16:   "accept": "application/json",
+2026-08-28T11:46:16:   "content-type": "application/json",
+2026-08-28T11:46:16:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:46:16:   "authorization": "<REDACTED>"
+2026-08-28T11:46:16: }
+2026-08-28T11:46:16: 
+2026-08-28T11:46:16: Received response with status 200
+2026-08-28T11:46:16: 
+2026-08-28T11:46:16: Performing request to:
+2026-08-28T11:46:16:  URL: http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3QP87KBCQG7JA35RPM&order=created_at
+2026-08-28T11:46:16:  Headers: {
+2026-08-28T11:46:16:   "accept": "application/json",
+2026-08-28T11:46:16:   "content-type": "application/json",
+2026-08-28T11:46:16:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:46:16:   "authorization": "<REDACTED>"
+2026-08-28T11:46:16: }
+2026-08-28T11:46:16: 
+2026-08-28T11:46:16: Received response with status 200
+2026-08-28T11:46:16: 
+2026-08-28T11:46:16:  GET /no/categories/multigym 200 in 195ms
+2026-08-28T11:46:16: Fetched 50 categories from Medusa API
+2026-08-28T11:46:16: Fetched 50 categories from Medusa API
+2026-08-28T11:46:16: Performing request to:
+2026-08-28T11:46:16:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym
+2026-08-28T11:46:16:  Headers: {
+2026-08-28T11:46:16:   "accept": "application/json",
+2026-08-28T11:46:16:   "content-type": "application/json",
+2026-08-28T11:46:16:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:46:16:   "authorization": "<REDACTED>"
+2026-08-28T11:46:16: }
+2026-08-28T11:46:16: 
+2026-08-28T11:46:16: Performing request to:
+2026-08-28T11:46:16:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym
+2026-08-28T11:46:16:  Headers: {
+2026-08-28T11:46:16:   "accept": "application/json",
+2026-08-28T11:46:16:   "content-type": "application/json",
+2026-08-28T11:46:16:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:46:16:   "authorization": "<REDACTED>"
+2026-08-28T11:46:16: }
+2026-08-28T11:46:16: 
+2026-08-28T11:46:16: Received response with status 200
+2026-08-28T11:46:16: 
+2026-08-28T11:46:16: Received response with status 200
+2026-08-28T11:46:16: 
+2026-08-28T11:46:16: Performing request to:
+2026-08-28T11:46:16:  URL: http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3QP87KBCQG7JA35RPM&order=created_at
+2026-08-28T11:46:16:  Headers: {
+2026-08-28T11:46:16:   "accept": "application/json",
+2026-08-28T11:46:16:   "content-type": "application/json",
+2026-08-28T11:46:16:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:46:16:   "authorization": "<REDACTED>"
+2026-08-28T11:46:16: }
+2026-08-28T11:46:16: 
+2026-08-28T11:46:16: Received response with status 200
+2026-08-28T11:46:16: 
+2026-08-28T11:46:16:  GET /no/categories/multigym 200 in 75ms
+2026-08-28T11:46:16: Fetched 50 categories from Medusa API
+2026-08-28T11:46:16: Fetched 50 categories from Medusa API
+2026-08-28T11:46:16: Performing request to:
+2026-08-28T11:46:16:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym
+2026-08-28T11:46:16:  Headers: {
+2026-08-28T11:46:16:   "accept": "application/json",
+2026-08-28T11:46:16:   "content-type": "application/json",
+2026-08-28T11:46:16:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:46:16:   "authorization": "<REDACTED>"
+2026-08-28T11:46:16: }
+2026-08-28T11:46:16: 
+2026-08-28T11:46:16: Performing request to:
+2026-08-28T11:46:16:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym
+2026-08-28T11:46:16:  Headers: {
+2026-08-28T11:46:16:   "accept": "application/json",
+2026-08-28T11:46:16:   "content-type": "application/json",
+2026-08-28T11:46:16:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:46:16:   "authorization": "<REDACTED>"
+2026-08-28T11:46:16: }
+2026-08-28T11:46:16: 
+2026-08-28T11:46:16: Received response with status 200
+2026-08-28T11:46:16: 
+2026-08-28T11:46:16: Received response with status 200
+2026-08-28T11:46:16: 
+2026-08-28T11:46:16: Performing request to:
+2026-08-28T11:46:16:  URL: http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3QP87KBCQG7JA35RPM&order=created_at
+2026-08-28T11:46:16:  Headers: {
+2026-08-28T11:46:16:   "accept": "application/json",
+2026-08-28T11:46:16:   "content-type": "application/json",
+2026-08-28T11:46:16:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:46:16:   "authorization": "<REDACTED>"
+2026-08-28T11:46:16: }
+2026-08-28T11:46:16: 
+2026-08-28T11:46:16: Received response with status 200
+2026-08-28T11:46:16: 
+2026-08-28T11:46:16:  GET /no/categories/multigym 200 in 71ms
+2026-08-28T11:46:16: Initiating Medusa client with default headers:
+2026-08-28T11:46:16:  {
+2026-08-28T11:46:16:   "accept": "application/json",
+2026-08-28T11:46:16:   "content-type": "application/json",
+2026-08-28T11:46:16:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:46:16:   "authorization": "<REDACTED>"
+2026-08-28T11:46:16: }
+2026-08-28T11:46:16: 
+2026-08-28T11:46:30:  ✓ Compiled /[countryCode]/categories/[...category] in 19ms
+2026-08-28T11:46:30: Initiating Medusa client with default headers:
+2026-08-28T11:46:30:  {
+2026-08-28T11:46:30:   "accept": "application/json",
+2026-08-28T11:46:30:   "content-type": "application/json",
+2026-08-28T11:46:30:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:46:30:   "authorization": "<REDACTED>"
+2026-08-28T11:46:30: }
+2026-08-28T11:46:30: 
+2026-08-28T11:46:30: Fetched 50 categories from Medusa API
+2026-08-28T11:46:30: Fetched 50 categories from Medusa API
+2026-08-28T11:46:30: Performing request to:
+2026-08-28T11:46:30:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym
+2026-08-28T11:46:30:  Headers: {
+2026-08-28T11:46:30:   "accept": "application/json",
+2026-08-28T11:46:30:   "content-type": "application/json",
+2026-08-28T11:46:30:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:46:30:   "authorization": "<REDACTED>"
+2026-08-28T11:46:30: }
+2026-08-28T11:46:30: 
+2026-08-28T11:46:30: Performing request to:
+2026-08-28T11:46:30:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym
+2026-08-28T11:46:30:  Headers: {
+2026-08-28T11:46:30:   "accept": "application/json",
+2026-08-28T11:46:30:   "content-type": "application/json",
+2026-08-28T11:46:30:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:46:30:   "authorization": "<REDACTED>"
+2026-08-28T11:46:30: }
+2026-08-28T11:46:30: 
+2026-08-28T11:46:30: Received response with status 200
+2026-08-28T11:46:30: 
+2026-08-28T11:46:30: Received response with status 200
+2026-08-28T11:46:30: 
+2026-08-28T11:46:30: Performing request to:
+2026-08-28T11:46:30:  URL: http://localhost:9000/store/regions
+2026-08-28T11:46:30:  Headers: {
+2026-08-28T11:46:30:   "accept": "application/json",
+2026-08-28T11:46:30:   "content-type": "application/json",
+2026-08-28T11:46:30:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:46:30:   "authorization": "<REDACTED>"
+2026-08-28T11:46:30: }
+2026-08-28T11:46:30: 
+2026-08-28T11:46:30: Received response with status 200
+2026-08-28T11:46:30: 
+2026-08-28T11:46:31: Performing request to:
+2026-08-28T11:46:31:  URL: http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3QP87KBCQG7JA35RPM&order=created_at
+2026-08-28T11:46:31:  Headers: {
+2026-08-28T11:46:31:   "accept": "application/json",
+2026-08-28T11:46:31:   "content-type": "application/json",
+2026-08-28T11:46:31:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:46:31:   "authorization": "<REDACTED>"
+2026-08-28T11:46:31: }
+2026-08-28T11:46:31: 
+2026-08-28T11:46:31: Received response with status 200
+2026-08-28T11:46:31: 
+2026-08-28T11:46:31: Performing request to:
+2026-08-28T11:46:31:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym
+2026-08-28T11:46:31:  Headers: {
+2026-08-28T11:46:31:   "accept": "application/json",
+2026-08-28T11:46:31:   "content-type": "application/json",
+2026-08-28T11:46:31:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:46:31:   "authorization": "<REDACTED>"
+2026-08-28T11:46:31: }
+2026-08-28T11:46:31: 
+2026-08-28T11:46:31: Performing request to:
+2026-08-28T11:46:31:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym
+2026-08-28T11:46:31:  Headers: {
+2026-08-28T11:46:31:   "accept": "application/json",
+2026-08-28T11:46:31:   "content-type": "application/json",
+2026-08-28T11:46:31:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:46:31:   "authorization": "<REDACTED>"
+2026-08-28T11:46:31: }
+2026-08-28T11:46:31: 
+2026-08-28T11:46:31: Received response with status 200
+2026-08-28T11:46:31: 
+2026-08-28T11:46:31: Received response with status 200
+2026-08-28T11:46:31: 
+2026-08-28T11:46:31: Performing request to:
+2026-08-28T11:46:31:  URL: http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3QP87KBCQG7JA35RPM&order=created_at
+2026-08-28T11:46:31:  Headers: {
+2026-08-28T11:46:31:   "accept": "application/json",
+2026-08-28T11:46:31:   "content-type": "application/json",
+2026-08-28T11:46:31:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:46:31:   "authorization": "<REDACTED>"
+2026-08-28T11:46:31: }
+2026-08-28T11:46:31: 
+2026-08-28T11:46:31: Received response with status 200
+2026-08-28T11:46:31: 
+2026-08-28T11:46:31: Initiating Medusa client with default headers:
+2026-08-28T11:46:31:  {
+2026-08-28T11:46:31:   "accept": "application/json",
+2026-08-28T11:46:31:   "content-type": "application/json",
+2026-08-28T11:46:31:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:46:31:   "authorization": "<REDACTED>"
+2026-08-28T11:46:31: }
+2026-08-28T11:46:31: 
+2026-08-28T11:46:31: Fetched 50 categories from Medusa API
+2026-08-28T11:46:31: Fetched 50 categories from Medusa API
+2026-08-28T11:46:31:  GET /no/categories/multigym 200 in 531ms
+2026-08-28T11:46:31: Fetched 50 categories from Medusa API
+2026-08-28T11:46:31: Fetched 50 categories from Medusa API
+2026-08-28T11:46:31: Performing request to:
+2026-08-28T11:46:31:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym
+2026-08-28T11:46:31:  Headers: {
+2026-08-28T11:46:31:   "accept": "application/json",
+2026-08-28T11:46:31:   "content-type": "application/json",
+2026-08-28T11:46:31:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:46:31:   "authorization": "<REDACTED>"
+2026-08-28T11:46:31: }
+2026-08-28T11:46:31: 
+2026-08-28T11:46:31: Performing request to:
+2026-08-28T11:46:31:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym
+2026-08-28T11:46:31:  Headers: {
+2026-08-28T11:46:31:   "accept": "application/json",
+2026-08-28T11:46:31:   "content-type": "application/json",
+2026-08-28T11:46:31:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:46:31:   "authorization": "<REDACTED>"
+2026-08-28T11:46:31: }
+2026-08-28T11:46:31: 
+2026-08-28T11:46:31: Received response with status 200
+2026-08-28T11:46:31: 
+2026-08-28T11:46:31: Received response with status 200
+2026-08-28T11:46:31: 
+2026-08-28T11:46:31: Performing request to:
+2026-08-28T11:46:31:  URL: http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3QP87KBCQG7JA35RPM&order=created_at
+2026-08-28T11:46:31:  Headers: {
+2026-08-28T11:46:31:   "accept": "application/json",
+2026-08-28T11:46:31:   "content-type": "application/json",
+2026-08-28T11:46:31:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:46:31:   "authorization": "<REDACTED>"
+2026-08-28T11:46:31: }
+2026-08-28T11:46:31: 
+2026-08-28T11:46:31: Received response with status 200
+2026-08-28T11:46:31: 
+2026-08-28T11:46:31: Initiating Medusa client with default headers:
+2026-08-28T11:46:31:  {
+2026-08-28T11:46:31:   "accept": "application/json",
+2026-08-28T11:46:31:   "content-type": "application/json",
+2026-08-28T11:46:31:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:46:31:   "authorization": "<REDACTED>"
+2026-08-28T11:46:31: }
+2026-08-28T11:46:31: 
+2026-08-28T11:46:31:  GET /no/categories/multigym 200 in 597ms
+2026-08-28T11:46:31:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym 200 in 1ms (cache hit)
+2026-08-28T11:46:31:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym 200 in 1ms (cache hit)
+2026-08-28T11:46:31:  │ GET http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3QP87KBCQG7JA35RPM&order=created_at 200 in 1ms (cache hit)
+2026-08-28T11:46:31:  │ GET http://localhost:9000/store/product-categories 200 in 228ms (cache skip)
+2026-08-28T11:46:31:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:46:31:  │ GET http://localhost:9000/store/product-categories 200 in 228ms (cache skip)
+2026-08-28T11:46:31:  │ │ Cache skipped reason: (cache: no-store)

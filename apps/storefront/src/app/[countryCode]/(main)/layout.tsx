@@ -1,6 +1,6 @@
 import { Metadata } from "next"
 import HeaderWrapper from "@/components/HeaderWrapper"
-import CategoryMenuWrapper from "@/components/CategoryMenuWrapper"
+import MegaMenuWrapper from "@/components/MegaMenuWrapper"
 import Footer from "@/components/Footer"
 
 export const metadata: Metadata = {
@@ -12,7 +12,7 @@ export default function PageLayout(props: { children: React.ReactNode }) {
   return (
     <>
       <HeaderWrapper />
-      <CategoryMenuWrapper />
+      <MegaMenuWrapper />
       {props.children}
       <Footer />
     </>

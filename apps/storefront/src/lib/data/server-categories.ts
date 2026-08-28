@@ -11,6 +11,8 @@ interface Category {
   name: string
   handle: string
   is_active?: boolean
+  image?: string
+  productCount?: number
 }
 
 /**
@@ -67,15 +69,34 @@ async function fetchCategoriesFromDB(): Promise<Category[]> {
     await client.connect()
 
     const result = await client.query<Category>(
-      `SELECT id, name, handle FROM product_category 
-       WHERE is_active = true AND is_internal = false 
-       ORDER BY name 
+      `SELECT 
+        pc.id, 
+        pc.name, 
+        pc.handle,
+        COUNT(pcp.product_id) as product_count,
+        (SELECT url FROM image WHERE product_id IN (
+          SELECT product_id FROM product_category_product WHERE product_category_id = pc.id
+        ) LIMIT 1) as image
+       FROM product_category pc
+       LEFT JOIN product_category_product pcp ON pcp.product_category_id = pc.id
+       WHERE pc.is_active = true AND pc.is_internal = false 
+       GROUP BY pc.id, pc.name, pc.handle
+       ORDER BY CASE 
+         WHEN pc.name IN ('Shirts', 'Sweatshirts', 'Pants', 'Merch') THEN 0
+         ELSE 1
+       END, pc.name
        LIMIT 50`
     )
 
     await client.end()
-    const categories = result.rows || []
-    console.log(`Fetched ${categories.length} categories from database`)
+    const categories = result.rows.map(row => ({
+      id: row.id,
+      name: row.name,
+      handle: row.handle,
+      productCount: parseInt(row.product_count as unknown as string) || 0,
+      image: row.image as string | undefined
+    })) || []
+    console.log(`Fetched ${categories.length} categories from database with images`)
     return categories
   } catch (error) {
     console.error('Failed to fetch categories from database:', error)
