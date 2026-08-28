@@ -949,3 +949,18 @@
 2026-08-28T11:39:18: API returned 400: Bad Request
 2026-08-28T11:39:18: API returned 400: Bad Request
 2026-08-28T11:39:18: API returned 400: Bad Request
+2026-08-28T11:40:10: API returned 400: Bad Request
+2026-08-28T11:40:10: API returned 400: Bad Request
+2026-08-28T11:40:12:  ⨯ Error: A valid publishable key is required to proceed with the request
+2026-08-28T11:40:12:     at <unknown> (../../src/client.ts:101:11)
+2026-08-28T11:40:12:     at Generator.next (<anonymous>) {
+2026-08-28T11:40:12:   statusText: 'Bad Request',
+2026-08-28T11:40:12:   status: 400,
+2026-08-28T11:40:12:   digest: '4205950091'
+2026-08-28T11:40:12: }
+2026-08-28T11:41:16:  ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+2026-08-28T11:41:16:  ⚠ Fast Refresh had to perform a full reload when ./apps/storefront/src/lib/medusa-client.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+2026-08-28T11:41:16:  ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+2026-08-28T11:41:16: Failed to fetch regions from backend. Using default regions.
+2026-08-28T11:41:17: Image with src "https://atatreningsutstyr.no/wp-content/uploads/2022/07/ata-HEX-Pro-Elite.jpg" is using quality "50" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+2026-08-28T11:41:17: Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities

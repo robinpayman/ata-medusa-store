@@ -16,21 +16,32 @@ interface CategoryMenuProps {
 export default function CategoryMenu({ categories }: CategoryMenuProps) {
   const [canScrollLeft, setCanScrollLeft] = useState(false)
   const [canScrollRight, setCanScrollRight] = useState(true)
+  const [isMobile, setIsMobile] = useState(false)
   const containerRef = useRef<HTMLDivElement>(null)
 
   const checkScroll = () => {
     if (containerRef.current) {
-      setCanScrollLeft(containerRef.current.scrollLeft > 0)
+      const isScrollable = containerRef.current.scrollWidth > containerRef.current.clientWidth
+      setCanScrollLeft(isScrollable && containerRef.current.scrollLeft > 0)
       setCanScrollRight(
+        isScrollable &&
         containerRef.current.scrollLeft <
           containerRef.current.scrollWidth - containerRef.current.clientWidth - 10
       )
     }
   }
 
+  const checkMobile = () => {
+    setIsMobile(window.innerWidth < 768)
+  }
+
   useEffect(() => {
     checkScroll()
-    window.addEventListener("resize", checkScroll)
+    checkMobile()
+    window.addEventListener("resize", () => {
+      checkScroll()
+      checkMobile()
+    })
     return () => window.removeEventListener("resize", checkScroll)
   }, [])
 
@@ -62,14 +73,14 @@ export default function CategoryMenu({ categories }: CategoryMenuProps) {
 
   return (
     <div className="w-full bg-white border-b border-gray-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Category Menu */}
-        <div className="relative flex items-center">
-          {/* Left Scroll Button */}
-          {canScrollLeft && (
+      <div className="w-full">
+        {/* Category Menu - Mobile optimized */}
+        <div className="relative flex items-center group">
+          {/* Left Scroll Button - Hidden on mobile, visible on desktop when needed */}
+          {canScrollLeft && !isMobile && (
             <button
               onClick={() => scroll("left")}
-              className="absolute left-0 z-10 bg-white p-2 rounded-full shadow-md hover:shadow-lg transition-shadow"
+              className="hidden md:flex absolute left-0 z-10 bg-gradient-to-r from-white to-transparent p-2 rounded-full transition-opacity opacity-0 group-hover:opacity-100 duration-200"
               aria-label="Scroll categories left"
             >
               <svg
@@ -92,24 +103,24 @@ export default function CategoryMenu({ categories }: CategoryMenuProps) {
           <div
             ref={containerRef}
             onScroll={checkScroll}
-            className="flex gap-2 overflow-x-auto scrollbar-hide py-4 px-8"
+            className="flex gap-2 overflow-x-auto scrollbar-hide py-3 px-4 sm:px-6 md:px-8 w-full"
           >
             {sortedCategories.map((category) => (
               <Link
                 key={category.id}
                 href={`/categories/${category.handle}`}
-                className="flex-shrink-0 px-4 py-2 rounded-full text-sm font-medium text-gray-700 bg-gray-100 hover:bg-gray-900 hover:text-white transition-all duration-200 whitespace-nowrap border border-gray-200 hover:border-gray-900"
+                className="flex-shrink-0 px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-medium text-gray-700 bg-gray-100 hover:bg-gray-900 hover:text-white transition-all duration-200 whitespace-nowrap border border-gray-200 hover:border-gray-900"
               >
                 {category.name}
               </Link>
             ))}
           </div>
 
-          {/* Right Scroll Button */}
-          {canScrollRight && (
+          {/* Right Scroll Button - Hidden on mobile, visible on desktop when needed */}
+          {canScrollRight && !isMobile && (
             <button
               onClick={() => scroll("right")}
-              className="absolute right-0 z-10 bg-white p-2 rounded-full shadow-md hover:shadow-lg transition-shadow"
+              className="hidden md:flex absolute right-0 z-10 bg-gradient-to-l from-white to-transparent p-2 rounded-full transition-opacity opacity-0 group-hover:opacity-100 duration-200"
               aria-label="Scroll categories right"
             >
               <svg

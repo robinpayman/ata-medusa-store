@@ -776,3 +776,42 @@
 2026-08-28T11:39:18: [32mhttp[39m:    OPTIONS /store/carts ← http://localhost:8000/ (204) - 0.627 ms
 2026-08-28T11:39:18: [32minfo[39m:    A valid publishable key is required to proceed with the request
 2026-08-28T11:39:18: [32mhttp[39m:    POST /store/carts ← http://localhost:8000/ (400) - 6.756 ms
+2026-08-28T11:40:10: [32minfo[39m:    A valid publishable key is required to proceed with the request
+2026-08-28T11:40:10: [32mhttp[39m:    GET /store/product-categories ← - (400) - 2.471 ms
+2026-08-28T11:40:10: [32mhttp[39m:    OPTIONS /store/regions ← http://localhost:8000/ (204) - 0.352 ms
+2026-08-28T11:40:10: [32mhttp[39m:    OPTIONS /store/customers/me ← http://localhost:8000/ (204) - 0.120 ms
+2026-08-28T11:40:10: [32minfo[39m:    A valid publishable key is required to proceed with the request
+2026-08-28T11:40:10: [32mhttp[39m:    GET /store/customers/me ← http://localhost:8000/ (400) - 4.061 ms
+2026-08-28T11:40:10: [32minfo[39m:    A valid publishable key is required to proceed with the request
+2026-08-28T11:40:10: [32mhttp[39m:    GET /store/regions ← http://localhost:8000/ (400) - 4.693 ms
+2026-08-28T11:40:10: [32mhttp[39m:    OPTIONS /store/carts ← http://localhost:8000/ (204) - 0.291 ms
+2026-08-28T11:40:10: [32minfo[39m:    A valid publishable key is required to proceed with the request
+2026-08-28T11:40:10: [32mhttp[39m:    POST /store/carts ← http://localhost:8000/ (400) - 4.830 ms
+2026-08-28T11:40:12: [32minfo[39m:    A valid publishable key is required to proceed with the request
+2026-08-28T11:40:12: [32mhttp[39m:    GET /store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=ata-hex-pro-elite ← - (400) - 7.684 ms
+2026-08-28T11:40:33: [32mhttp[39m:    GET /admin/publishable-api-keys ← - (401) - 2.503 ms
+2026-08-28T11:40:41: [32minfo[39m:    Publishable API key required in the request header: x-publishable-api-key. You can manage your keys in settings in the dashboard.
+2026-08-28T11:40:41: [32mhttp[39m:    GET /store/products ← - (400) - 0.836 ms
+2026-08-28T11:40:51: [32mhttp[39m:    GET /admin/publishable-api-keys ← - (401) - 2.790 ms
+2026-08-28T11:41:16: [32minfo[39m:    A valid publishable key is required to proceed with the request
+2026-08-28T11:41:16: [32mhttp[39m:    GET /store/regions ← - (400) - 9.846 ms
+2026-08-28T11:41:16: [32mhttp[39m:    GET /store/regions ← - (200) - 28.823 ms
+2026-08-28T11:41:16: [32mhttp[39m:    GET /store/product-categories ← - (200) - 28.675 ms
+2026-08-28T11:41:16: [32mhttp[39m:    GET /store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=ata-hex-pro-elite ← - (200) - 77.595 ms
+2026-08-28T11:41:17: [32mhttp[39m:    OPTIONS /store/regions ← http://localhost:8000/ (204) - 0.226 ms
+2026-08-28T11:41:17: [32mhttp[39m:    OPTIONS /store/customers/me ← http://localhost:8000/ (204) - 0.215 ms
+2026-08-28T11:41:17: [32mhttp[39m:    GET /store/customers/me ← http://localhost:8000/ (401) - 7.996 ms
+2026-08-28T11:41:17: [32mhttp[39m:    GET /store/regions ← http://localhost:8000/ (200) - 19.634 ms
+2026-08-28T11:41:17: [32mhttp[39m:    OPTIONS /store/carts ← http://localhost:8000/ (204) - 0.185 ms
+2026-08-28T11:41:17: [32mhttp[39m:    GET /store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3S6N0TDQCJRW32NYNA&order=created_at ← - (200) - 231.312 ms
+2026-08-28T11:41:17: [32mhttp[39m:    POST /store/carts ← http://localhost:8000/ (200) - 125.911 ms
+2026-08-28T11:41:20: [32mhttp[39m:    GET /store/products ← - (200) - 79.230 ms
+2026-08-28T11:41:21: [32mhttp[39m:    GET /store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=treningsapparat-bein ← - (200) - 14.120 ms
+2026-08-28T11:41:21: [32mhttp[39m:    GET /store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3PH5Y6J8H45SMSW732&order=created_at ← - (200) - 55.717 ms
+2026-08-28T11:41:24: [32mhttp[39m:    GET /store/products?limit=1&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&handle=ata-dual-hip-abductor-adductor-150kg ← - (200) - 31.757 ms
+2026-08-28T11:41:27: [32mhttp[39m:    GET /store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak ← - (200) - 12.395 ms
+2026-08-28T11:41:27: [32mhttp[39m:    GET /store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3PA0EG3MRK57KJ32ZQ&order=created_at ← - (200) - 61.714 ms
+2026-08-28T11:41:30: [32mhttp[39m:    GET /store/products?limit=1&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&handle=ata-single-grips ← - (200) - 176.067 ms
+2026-08-28T11:41:46: [32mhttp[39m:    GET /store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3PA0EG3MRK57KJ32ZQ ← - (200) - 54.898 ms
+2026-08-28T11:41:53: [32mhttp[39m:    GET /store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym ← - (200) - 10.796 ms
+2026-08-28T11:41:53: [32mhttp[39m:    GET /store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3QP87KBCQG7JA35RPM&order=created_at ← - (200) - 46.549 ms

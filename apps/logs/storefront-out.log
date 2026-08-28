@@ -1776,3 +1776,552 @@
 2026-08-28T11:39:18:  │ │ Cache skipped reason: (cache: no-store)
 2026-08-28T11:39:18:  │ GET http://localhost:9000/store/product-categories 400 in 215ms (cache skip)
 2026-08-28T11:39:18:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:40:10: Fetched 50 categories from database
+2026-08-28T11:40:10: Fetched 50 categories from database
+2026-08-28T11:40:10:  GET /no 200 in 225ms
+2026-08-28T11:40:10:  │ GET http://localhost:9000/store/product-categories 400 in 46ms (cache skip)
+2026-08-28T11:40:10:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:40:10:  │ GET http://localhost:9000/store/product-categories 400 in 46ms (cache skip)
+2026-08-28T11:40:10:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:40:12:  ✓ Compiled /[countryCode]/categories/[...category] in 451ms
+2026-08-28T11:40:12: Initiating Medusa client with default headers:
+2026-08-28T11:40:12:  {
+2026-08-28T11:40:12:   "accept": "application/json",
+2026-08-28T11:40:12:   "content-type": "application/json",
+2026-08-28T11:40:12:   "x-publishable-api-key": "pk_test_pubkey_f8a7b5c9d2e4f1a6b9c2d5e8f1a4b7c0",
+2026-08-28T11:40:12:   "authorization": "<REDACTED>"
+2026-08-28T11:40:12: }
+2026-08-28T11:40:12: 
+2026-08-28T11:40:12: Initiating Medusa client with default headers:
+2026-08-28T11:40:12:  {
+2026-08-28T11:40:12:   "accept": "application/json",
+2026-08-28T11:40:12:   "content-type": "application/json",
+2026-08-28T11:40:12:   "x-publishable-api-key": "pk_test_pubkey_f8a7b5c9d2e4f1a6b9c2d5e8f1a4b7c0",
+2026-08-28T11:40:12:   "authorization": "<REDACTED>"
+2026-08-28T11:40:12: }
+2026-08-28T11:40:12: 
+2026-08-28T11:40:12: Performing request to:
+2026-08-28T11:40:12:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=ata-hex-pro-elite
+2026-08-28T11:40:12:  Headers: {
+2026-08-28T11:40:12:   "accept": "application/json",
+2026-08-28T11:40:12:   "content-type": "application/json",
+2026-08-28T11:40:12:   "x-publishable-api-key": "pk_test_pubkey_f8a7b5c9d2e4f1a6b9c2d5e8f1a4b7c0",
+2026-08-28T11:40:12:   "authorization": "<REDACTED>"
+2026-08-28T11:40:12: }
+2026-08-28T11:40:12: 
+2026-08-28T11:40:12: Performing request to:
+2026-08-28T11:40:12:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=ata-hex-pro-elite
+2026-08-28T11:40:12:  Headers: {
+2026-08-28T11:40:12:   "accept": "application/json",
+2026-08-28T11:40:12:   "content-type": "application/json",
+2026-08-28T11:40:12:   "x-publishable-api-key": "pk_test_pubkey_f8a7b5c9d2e4f1a6b9c2d5e8f1a4b7c0",
+2026-08-28T11:40:12:   "authorization": "<REDACTED>"
+2026-08-28T11:40:12: }
+2026-08-28T11:40:12: 
+2026-08-28T11:40:12: Received response with status 400
+2026-08-28T11:40:12: 
+2026-08-28T11:40:12: Received response with status 400
+2026-08-28T11:40:12: 
+2026-08-28T11:40:12:  GET /no/categories/ata-hex-pro-elite 200 in 835ms
+2026-08-28T11:40:12:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=ata-hex-pro-elite 400 in 14ms (cache skip)
+2026-08-28T11:40:12:  │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+2026-08-28T11:40:12:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=ata-hex-pro-elite 400 in 22ms (cache skip)
+2026-08-28T11:40:12:  │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+2026-08-28T11:41:16:    Reload env: .env.local
+2026-08-28T11:41:16:  ✓ Compiled middleware in 14ms
+2026-08-28T11:41:16:  ✓ Compiled /[countryCode]/categories/[...category] in 13ms
+2026-08-28T11:41:16: Initiating Medusa client with default headers:
+2026-08-28T11:41:16:  {
+2026-08-28T11:41:16:   "accept": "application/json",
+2026-08-28T11:41:16:   "content-type": "application/json",
+2026-08-28T11:41:16:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:16:   "authorization": "<REDACTED>"
+2026-08-28T11:41:16: }
+2026-08-28T11:41:16: 
+2026-08-28T11:41:16: Performing request to:
+2026-08-28T11:41:16:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=ata-hex-pro-elite
+2026-08-28T11:41:16:  Headers: {
+2026-08-28T11:41:16:   "accept": "application/json",
+2026-08-28T11:41:16:   "content-type": "application/json",
+2026-08-28T11:41:16:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:16:   "authorization": "<REDACTED>"
+2026-08-28T11:41:16: }
+2026-08-28T11:41:16: 
+2026-08-28T11:41:16: Performing request to:
+2026-08-28T11:41:16:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=ata-hex-pro-elite
+2026-08-28T11:41:16:  Headers: {
+2026-08-28T11:41:16:   "accept": "application/json",
+2026-08-28T11:41:16:   "content-type": "application/json",
+2026-08-28T11:41:16:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:16:   "authorization": "<REDACTED>"
+2026-08-28T11:41:16: }
+2026-08-28T11:41:16: 
+2026-08-28T11:41:16: Fetched 50 categories from Medusa API
+2026-08-28T11:41:16: Fetched 50 categories from Medusa API
+2026-08-28T11:41:16: Received response with status 200
+2026-08-28T11:41:16: 
+2026-08-28T11:41:16: Received response with status 200
+2026-08-28T11:41:16: 
+2026-08-28T11:41:16: Performing request to:
+2026-08-28T11:41:16:  URL: http://localhost:9000/store/regions
+2026-08-28T11:41:16:  Headers: {
+2026-08-28T11:41:16:   "accept": "application/json",
+2026-08-28T11:41:16:   "content-type": "application/json",
+2026-08-28T11:41:16:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:16:   "authorization": "<REDACTED>"
+2026-08-28T11:41:16: }
+2026-08-28T11:41:16: 
+2026-08-28T11:41:17: Initiating Medusa client with default headers:
+2026-08-28T11:41:17:  {
+2026-08-28T11:41:17:   "accept": "application/json",
+2026-08-28T11:41:17:   "content-type": "application/json",
+2026-08-28T11:41:17:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:17:   "authorization": "<REDACTED>"
+2026-08-28T11:41:17: }
+2026-08-28T11:41:17: 
+2026-08-28T11:41:17: Received response with status 200
+2026-08-28T11:41:17: 
+2026-08-28T11:41:17: Performing request to:
+2026-08-28T11:41:17:  URL: http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3S6N0TDQCJRW32NYNA&order=created_at
+2026-08-28T11:41:17:  Headers: {
+2026-08-28T11:41:17:   "accept": "application/json",
+2026-08-28T11:41:17:   "content-type": "application/json",
+2026-08-28T11:41:17:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:17:   "authorization": "<REDACTED>"
+2026-08-28T11:41:17: }
+2026-08-28T11:41:17: 
+2026-08-28T11:41:17: Initiating Medusa client with default headers:
+2026-08-28T11:41:17:  {
+2026-08-28T11:41:17:   "accept": "application/json",
+2026-08-28T11:41:17:   "content-type": "application/json",
+2026-08-28T11:41:17:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:17:   "authorization": "<REDACTED>"
+2026-08-28T11:41:17: }
+2026-08-28T11:41:17: 
+2026-08-28T11:41:17: Received response with status 200
+2026-08-28T11:41:17: 
+2026-08-28T11:41:17:  GET /no/categories/ata-hex-pro-elite 200 in 736ms
+2026-08-28T11:41:17:  │ GET http://localhost:9000/store/product-categories 200 in 132ms (cache skip)
+2026-08-28T11:41:17:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:41:17:  │ GET http://localhost:9000/store/product-categories 200 in 132ms (cache skip)
+2026-08-28T11:41:17:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:41:17:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=ata-hex-pro-elite 200 in 86ms (cache skip)
+2026-08-28T11:41:17:  │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+2026-08-28T11:41:17:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=ata-hex-pro-elite 200 in 105ms (cache hit)
+2026-08-28T11:41:17:  │ GET http://localhost:9000/store/regions 200 in 44ms (cache hit)
+2026-08-28T11:41:17:  │ GET http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3S6N0TDQCJRW32NYNA&order=created_at 200 in 234ms (cache skip)
+2026-08-28T11:41:17:  │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+2026-08-28T11:41:20: Performing request to:
+2026-08-28T11:41:20:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=treningsapparat-bein
+2026-08-28T11:41:20:  Headers: {
+2026-08-28T11:41:20:   "accept": "application/json",
+2026-08-28T11:41:20:   "content-type": "application/json",
+2026-08-28T11:41:20:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:20:   "authorization": "<REDACTED>"
+2026-08-28T11:41:20: }
+2026-08-28T11:41:20: 
+2026-08-28T11:41:20: Performing request to:
+2026-08-28T11:41:20:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=treningsapparat-bein
+2026-08-28T11:41:20:  Headers: {
+2026-08-28T11:41:20:   "accept": "application/json",
+2026-08-28T11:41:20:   "content-type": "application/json",
+2026-08-28T11:41:20:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:20:   "authorization": "<REDACTED>"
+2026-08-28T11:41:20: }
+2026-08-28T11:41:20: 
+2026-08-28T11:41:21: Received response with status 200
+2026-08-28T11:41:21: 
+2026-08-28T11:41:21: Received response with status 200
+2026-08-28T11:41:21: 
+2026-08-28T11:41:21: Performing request to:
+2026-08-28T11:41:21:  URL: http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3PH5Y6J8H45SMSW732&order=created_at
+2026-08-28T11:41:21:  Headers: {
+2026-08-28T11:41:21:   "accept": "application/json",
+2026-08-28T11:41:21:   "content-type": "application/json",
+2026-08-28T11:41:21:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:21:   "authorization": "<REDACTED>"
+2026-08-28T11:41:21: }
+2026-08-28T11:41:21: 
+2026-08-28T11:41:21: Received response with status 200
+2026-08-28T11:41:21: 
+2026-08-28T11:41:21:  GET /no/categories/treningsapparat-bein 200 in 172ms
+2026-08-28T11:41:21:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=treningsapparat-bein 200 in 19ms (cache skip)
+2026-08-28T11:41:21:  │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+2026-08-28T11:41:21:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=treningsapparat-bein 200 in 24ms (cache hit)
+2026-08-28T11:41:21:  │ GET http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3PH5Y6J8H45SMSW732&order=created_at 200 in 59ms (cache skip)
+2026-08-28T11:41:21:  │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+2026-08-28T11:41:21: Initiating Medusa client with default headers:
+2026-08-28T11:41:21:  {
+2026-08-28T11:41:21:   "accept": "application/json",
+2026-08-28T11:41:21:   "content-type": "application/json",
+2026-08-28T11:41:21:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:21:   "authorization": "<REDACTED>"
+2026-08-28T11:41:21: }
+2026-08-28T11:41:21: 
+2026-08-28T11:41:24:  ✓ Compiled /[countryCode]/products/[handle] in 247ms
+2026-08-28T11:41:24: Initiating Medusa client with default headers:
+2026-08-28T11:41:24:  {
+2026-08-28T11:41:24:   "accept": "application/json",
+2026-08-28T11:41:24:   "content-type": "application/json",
+2026-08-28T11:41:24:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:24:   "authorization": "<REDACTED>"
+2026-08-28T11:41:24: }
+2026-08-28T11:41:24: 
+2026-08-28T11:41:24: Performing request to:
+2026-08-28T11:41:24:  URL: http://localhost:9000/store/products?limit=1&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&handle=ata-dual-hip-abductor-adductor-150kg
+2026-08-28T11:41:24:  Headers: {
+2026-08-28T11:41:24:   "accept": "application/json",
+2026-08-28T11:41:24:   "content-type": "application/json",
+2026-08-28T11:41:24:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:24:   "authorization": "<REDACTED>"
+2026-08-28T11:41:24: }
+2026-08-28T11:41:24: 
+2026-08-28T11:41:24: Performing request to:
+2026-08-28T11:41:24:  URL: http://localhost:9000/store/products?limit=1&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&handle=ata-dual-hip-abductor-adductor-150kg
+2026-08-28T11:41:24:  Headers: {
+2026-08-28T11:41:24:   "accept": "application/json",
+2026-08-28T11:41:24:   "content-type": "application/json",
+2026-08-28T11:41:24:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:24:   "authorization": "<REDACTED>"
+2026-08-28T11:41:24: }
+2026-08-28T11:41:24: 
+2026-08-28T11:41:24: Received response with status 200
+2026-08-28T11:41:24: 
+2026-08-28T11:41:24: Received response with status 200
+2026-08-28T11:41:24: 
+2026-08-28T11:41:24:  GET /no/products/ata-dual-hip-abductor-adductor-150kg 200 in 605ms
+2026-08-28T11:41:24:  │ GET http://localhost:9000/store/products?limit=1&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&handle=ata-dual-hip-abductor-adductor-150kg 200 in 35ms (cache skip)
+2026-08-28T11:41:24:  │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+2026-08-28T11:41:24:  │ GET http://localhost:9000/store/products?limit=1&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&handle=ata-dual-hip-abductor-adductor-150kg 200 in 38ms (cache hit)
+2026-08-28T11:41:27: Performing request to:
+2026-08-28T11:41:27:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak
+2026-08-28T11:41:27:  Headers: {
+2026-08-28T11:41:27:   "accept": "application/json",
+2026-08-28T11:41:27:   "content-type": "application/json",
+2026-08-28T11:41:27:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:27:   "authorization": "<REDACTED>"
+2026-08-28T11:41:27: }
+2026-08-28T11:41:27: 
+2026-08-28T11:41:27: Performing request to:
+2026-08-28T11:41:27:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak
+2026-08-28T11:41:27:  Headers: {
+2026-08-28T11:41:27:   "accept": "application/json",
+2026-08-28T11:41:27:   "content-type": "application/json",
+2026-08-28T11:41:27:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:27:   "authorization": "<REDACTED>"
+2026-08-28T11:41:27: }
+2026-08-28T11:41:27: 
+2026-08-28T11:41:27: Received response with status 200
+2026-08-28T11:41:27: 
+2026-08-28T11:41:27: Received response with status 200
+2026-08-28T11:41:27: 
+2026-08-28T11:41:27: Performing request to:
+2026-08-28T11:41:27:  URL: http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3PA0EG3MRK57KJ32ZQ&order=created_at
+2026-08-28T11:41:27:  Headers: {
+2026-08-28T11:41:27:   "accept": "application/json",
+2026-08-28T11:41:27:   "content-type": "application/json",
+2026-08-28T11:41:27:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:27:   "authorization": "<REDACTED>"
+2026-08-28T11:41:27: }
+2026-08-28T11:41:27: 
+2026-08-28T11:41:27: Received response with status 200
+2026-08-28T11:41:27: 
+2026-08-28T11:41:27:  GET /no/categories/kabelhandtak 200 in 172ms
+2026-08-28T11:41:27:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak 200 in 15ms (cache skip)
+2026-08-28T11:41:27:  │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+2026-08-28T11:41:27:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak 200 in 19ms (cache hit)
+2026-08-28T11:41:27:  │ GET http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3PA0EG3MRK57KJ32ZQ&order=created_at 200 in 64ms (cache skip)
+2026-08-28T11:41:27:  │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+2026-08-28T11:41:27: Initiating Medusa client with default headers:
+2026-08-28T11:41:27:  {
+2026-08-28T11:41:27:   "accept": "application/json",
+2026-08-28T11:41:27:   "content-type": "application/json",
+2026-08-28T11:41:27:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:27:   "authorization": "<REDACTED>"
+2026-08-28T11:41:27: }
+2026-08-28T11:41:27: 
+2026-08-28T11:41:29: Performing request to:
+2026-08-28T11:41:29:  URL: http://localhost:9000/store/products?limit=1&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&handle=ata-single-grips
+2026-08-28T11:41:29:  Headers: {
+2026-08-28T11:41:29:   "accept": "application/json",
+2026-08-28T11:41:29:   "content-type": "application/json",
+2026-08-28T11:41:29:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:29:   "authorization": "<REDACTED>"
+2026-08-28T11:41:29: }
+2026-08-28T11:41:29: 
+2026-08-28T11:41:29: Performing request to:
+2026-08-28T11:41:29:  URL: http://localhost:9000/store/products?limit=1&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&handle=ata-single-grips
+2026-08-28T11:41:29:  Headers: {
+2026-08-28T11:41:29:   "accept": "application/json",
+2026-08-28T11:41:29:   "content-type": "application/json",
+2026-08-28T11:41:29:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:29:   "authorization": "<REDACTED>"
+2026-08-28T11:41:29: }
+2026-08-28T11:41:29: 
+2026-08-28T11:41:30: Received response with status 200
+2026-08-28T11:41:30: 
+2026-08-28T11:41:30: Received response with status 200
+2026-08-28T11:41:30: 
+2026-08-28T11:41:30:  GET /no/products/ata-single-grips 200 in 225ms
+2026-08-28T11:41:30:  │ GET http://localhost:9000/store/products?limit=1&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&handle=ata-single-grips 200 in 179ms (cache skip)
+2026-08-28T11:41:30:  │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+2026-08-28T11:41:30:  │ GET http://localhost:9000/store/products?limit=1&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&handle=ata-single-grips 200 in 182ms (cache hit)
+2026-08-28T11:41:30: Initiating Medusa client with default headers:
+2026-08-28T11:41:30:  {
+2026-08-28T11:41:30:   "accept": "application/json",
+2026-08-28T11:41:30:   "content-type": "application/json",
+2026-08-28T11:41:30:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:30:   "authorization": "<REDACTED>"
+2026-08-28T11:41:30: }
+2026-08-28T11:41:30: 
+2026-08-28T11:41:32: Performing request to:
+2026-08-28T11:41:32:  URL: http://localhost:9000/store/products?limit=1&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&handle=ata-single-grips
+2026-08-28T11:41:32:  Headers: {
+2026-08-28T11:41:32:   "accept": "application/json",
+2026-08-28T11:41:32:   "content-type": "application/json",
+2026-08-28T11:41:32:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:32:   "authorization": "<REDACTED>"
+2026-08-28T11:41:32: }
+2026-08-28T11:41:32: 
+2026-08-28T11:41:32: Performing request to:
+2026-08-28T11:41:32:  URL: http://localhost:9000/store/products?limit=1&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&handle=ata-single-grips
+2026-08-28T11:41:32:  Headers: {
+2026-08-28T11:41:32:   "accept": "application/json",
+2026-08-28T11:41:32:   "content-type": "application/json",
+2026-08-28T11:41:32:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:32:   "authorization": "<REDACTED>"
+2026-08-28T11:41:32: }
+2026-08-28T11:41:32: 
+2026-08-28T11:41:32: Received response with status 200
+2026-08-28T11:41:32: 
+2026-08-28T11:41:32: Received response with status 200
+2026-08-28T11:41:32: 
+2026-08-28T11:41:32:  GET /no/products/ata-single-grips 200 in 53ms
+2026-08-28T11:41:32:  │ GET http://localhost:9000/store/products?limit=1&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&handle=ata-single-grips 200 in 1ms (cache hit)
+2026-08-28T11:41:32:  │ GET http://localhost:9000/store/products?limit=1&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&handle=ata-single-grips 200 in 1ms (cache hit)
+2026-08-28T11:41:32: Initiating Medusa client with default headers:
+2026-08-28T11:41:32:  {
+2026-08-28T11:41:32:   "accept": "application/json",
+2026-08-28T11:41:32:   "content-type": "application/json",
+2026-08-28T11:41:32:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:32:   "authorization": "<REDACTED>"
+2026-08-28T11:41:32: }
+2026-08-28T11:41:32: 
+2026-08-28T11:41:37: Performing request to:
+2026-08-28T11:41:37:  URL: http://localhost:9000/store/products?limit=1&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&handle=ata-single-grips
+2026-08-28T11:41:37:  Headers: {
+2026-08-28T11:41:37:   "accept": "application/json",
+2026-08-28T11:41:37:   "content-type": "application/json",
+2026-08-28T11:41:37:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:37:   "authorization": "<REDACTED>"
+2026-08-28T11:41:37: }
+2026-08-28T11:41:37: 
+2026-08-28T11:41:37: Performing request to:
+2026-08-28T11:41:37:  URL: http://localhost:9000/store/products?limit=1&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&handle=ata-single-grips
+2026-08-28T11:41:37:  Headers: {
+2026-08-28T11:41:37:   "accept": "application/json",
+2026-08-28T11:41:37:   "content-type": "application/json",
+2026-08-28T11:41:37:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:37:   "authorization": "<REDACTED>"
+2026-08-28T11:41:37: }
+2026-08-28T11:41:37: 
+2026-08-28T11:41:37: Received response with status 200
+2026-08-28T11:41:37: 
+2026-08-28T11:41:37: Received response with status 200
+2026-08-28T11:41:37: 
+2026-08-28T11:41:37:  GET /no/products/ata-single-grips 200 in 54ms
+2026-08-28T11:41:37:  │ GET http://localhost:9000/store/products?limit=1&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&handle=ata-single-grips 200 in 1ms (cache hit)
+2026-08-28T11:41:37:  │ GET http://localhost:9000/store/products?limit=1&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&handle=ata-single-grips 200 in 1ms (cache hit)
+2026-08-28T11:41:37: Initiating Medusa client with default headers:
+2026-08-28T11:41:37:  {
+2026-08-28T11:41:37:   "accept": "application/json",
+2026-08-28T11:41:37:   "content-type": "application/json",
+2026-08-28T11:41:37:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:37:   "authorization": "<REDACTED>"
+2026-08-28T11:41:37: }
+2026-08-28T11:41:37: 
+2026-08-28T11:41:44: Performing request to:
+2026-08-28T11:41:44:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak
+2026-08-28T11:41:44:  Headers: {
+2026-08-28T11:41:44:   "accept": "application/json",
+2026-08-28T11:41:44:   "content-type": "application/json",
+2026-08-28T11:41:44:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:44:   "authorization": "<REDACTED>"
+2026-08-28T11:41:44: }
+2026-08-28T11:41:44: 
+2026-08-28T11:41:44: Performing request to:
+2026-08-28T11:41:44:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak
+2026-08-28T11:41:44:  Headers: {
+2026-08-28T11:41:44:   "accept": "application/json",
+2026-08-28T11:41:44:   "content-type": "application/json",
+2026-08-28T11:41:44:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:44:   "authorization": "<REDACTED>"
+2026-08-28T11:41:44: }
+2026-08-28T11:41:44: 
+2026-08-28T11:41:44: Received response with status 200
+2026-08-28T11:41:44: 
+2026-08-28T11:41:44: Received response with status 200
+2026-08-28T11:41:44: 
+2026-08-28T11:41:44: Performing request to:
+2026-08-28T11:41:44:  URL: http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3PA0EG3MRK57KJ32ZQ&order=created_at
+2026-08-28T11:41:44:  Headers: {
+2026-08-28T11:41:44:   "accept": "application/json",
+2026-08-28T11:41:44:   "content-type": "application/json",
+2026-08-28T11:41:44:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:44:   "authorization": "<REDACTED>"
+2026-08-28T11:41:44: }
+2026-08-28T11:41:44: 
+2026-08-28T11:41:44: Received response with status 200
+2026-08-28T11:41:44: 
+2026-08-28T11:41:44:  GET /no/categories/kabelhandtak 200 in 83ms
+2026-08-28T11:41:44:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak 200 in 1ms (cache hit)
+2026-08-28T11:41:44:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak 200 in 1ms (cache hit)
+2026-08-28T11:41:44:  │ GET http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3PA0EG3MRK57KJ32ZQ&order=created_at 200 in 1ms (cache hit)
+2026-08-28T11:41:44: Initiating Medusa client with default headers:
+2026-08-28T11:41:44:  {
+2026-08-28T11:41:44:   "accept": "application/json",
+2026-08-28T11:41:44:   "content-type": "application/json",
+2026-08-28T11:41:44:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:44:   "authorization": "<REDACTED>"
+2026-08-28T11:41:44: }
+2026-08-28T11:41:44: 
+2026-08-28T11:41:46: Performing request to:
+2026-08-28T11:41:46:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak
+2026-08-28T11:41:46:  Headers: {
+2026-08-28T11:41:46:   "accept": "application/json",
+2026-08-28T11:41:46:   "content-type": "application/json",
+2026-08-28T11:41:46:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:46:   "authorization": "<REDACTED>"
+2026-08-28T11:41:46: }
+2026-08-28T11:41:46: 
+2026-08-28T11:41:46: Performing request to:
+2026-08-28T11:41:46:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak
+2026-08-28T11:41:46:  Headers: {
+2026-08-28T11:41:46:   "accept": "application/json",
+2026-08-28T11:41:46:   "content-type": "application/json",
+2026-08-28T11:41:46:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:46:   "authorization": "<REDACTED>"
+2026-08-28T11:41:46: }
+2026-08-28T11:41:46: 
+2026-08-28T11:41:46: Received response with status 200
+2026-08-28T11:41:46: 
+2026-08-28T11:41:46: Received response with status 200
+2026-08-28T11:41:46: 
+2026-08-28T11:41:46: Performing request to:
+2026-08-28T11:41:46:  URL: http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3PA0EG3MRK57KJ32ZQ
+2026-08-28T11:41:46:  Headers: {
+2026-08-28T11:41:46:   "accept": "application/json",
+2026-08-28T11:41:46:   "content-type": "application/json",
+2026-08-28T11:41:46:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:46:   "authorization": "<REDACTED>"
+2026-08-28T11:41:46: }
+2026-08-28T11:41:46: 
+2026-08-28T11:41:46: Received response with status 200
+2026-08-28T11:41:46: 
+2026-08-28T11:41:46:  GET /no/categories/kabelhandtak?sortBy=price_desc 200 in 163ms
+2026-08-28T11:41:46:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak 200 in 1ms (cache hit)
+2026-08-28T11:41:46:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak 200 in 1ms (cache hit)
+2026-08-28T11:41:46:  │ GET http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3PA0EG3MRK57KJ32ZQ 200 in 59ms (cache skip)
+2026-08-28T11:41:46:  │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+2026-08-28T11:41:46: Initiating Medusa client with default headers:
+2026-08-28T11:41:46:  {
+2026-08-28T11:41:46:   "accept": "application/json",
+2026-08-28T11:41:46:   "content-type": "application/json",
+2026-08-28T11:41:46:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:46:   "authorization": "<REDACTED>"
+2026-08-28T11:41:46: }
+2026-08-28T11:41:46: 
+2026-08-28T11:41:48: Performing request to:
+2026-08-28T11:41:48:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak
+2026-08-28T11:41:48:  Headers: {
+2026-08-28T11:41:48:   "accept": "application/json",
+2026-08-28T11:41:48:   "content-type": "application/json",
+2026-08-28T11:41:48:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:48:   "authorization": "<REDACTED>"
+2026-08-28T11:41:48: }
+2026-08-28T11:41:48: 
+2026-08-28T11:41:48: Performing request to:
+2026-08-28T11:41:48:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak
+2026-08-28T11:41:48:  Headers: {
+2026-08-28T11:41:48:   "accept": "application/json",
+2026-08-28T11:41:48:   "content-type": "application/json",
+2026-08-28T11:41:48:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:48:   "authorization": "<REDACTED>"
+2026-08-28T11:41:48: }
+2026-08-28T11:41:48: 
+2026-08-28T11:41:48: Received response with status 200
+2026-08-28T11:41:48: 
+2026-08-28T11:41:48: Received response with status 200
+2026-08-28T11:41:48: 
+2026-08-28T11:41:48: Performing request to:
+2026-08-28T11:41:48:  URL: http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3PA0EG3MRK57KJ32ZQ
+2026-08-28T11:41:48:  Headers: {
+2026-08-28T11:41:48:   "accept": "application/json",
+2026-08-28T11:41:48:   "content-type": "application/json",
+2026-08-28T11:41:48:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:48:   "authorization": "<REDACTED>"
+2026-08-28T11:41:48: }
+2026-08-28T11:41:48: 
+2026-08-28T11:41:48: Received response with status 200
+2026-08-28T11:41:48: 
+2026-08-28T11:41:48:  GET /no/categories/kabelhandtak?sortBy=price_asc 200 in 93ms
+2026-08-28T11:41:48:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak 200 in 1ms (cache hit)
+2026-08-28T11:41:48:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=kabelhandtak 200 in 1ms (cache hit)
+2026-08-28T11:41:48:  │ GET http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3PA0EG3MRK57KJ32ZQ 200 in 1ms (cache hit)
+2026-08-28T11:41:48: Initiating Medusa client with default headers:
+2026-08-28T11:41:48:  {
+2026-08-28T11:41:48:   "accept": "application/json",
+2026-08-28T11:41:48:   "content-type": "application/json",
+2026-08-28T11:41:48:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:48:   "authorization": "<REDACTED>"
+2026-08-28T11:41:48: }
+2026-08-28T11:41:48: 
+2026-08-28T11:41:53: Performing request to:
+2026-08-28T11:41:53:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym
+2026-08-28T11:41:53:  Headers: {
+2026-08-28T11:41:53:   "accept": "application/json",
+2026-08-28T11:41:53:   "content-type": "application/json",
+2026-08-28T11:41:53:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:53:   "authorization": "<REDACTED>"
+2026-08-28T11:41:53: }
+2026-08-28T11:41:53: 
+2026-08-28T11:41:53: Performing request to:
+2026-08-28T11:41:53:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym
+2026-08-28T11:41:53:  Headers: {
+2026-08-28T11:41:53:   "accept": "application/json",
+2026-08-28T11:41:53:   "content-type": "application/json",
+2026-08-28T11:41:53:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:53:   "authorization": "<REDACTED>"
+2026-08-28T11:41:53: }
+2026-08-28T11:41:53: 
+2026-08-28T11:41:53: Received response with status 200
+2026-08-28T11:41:53: 
+2026-08-28T11:41:53: Received response with status 200
+2026-08-28T11:41:53: 
+2026-08-28T11:41:53: Performing request to:
+2026-08-28T11:41:53:  URL: http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3QP87KBCQG7JA35RPM&order=created_at
+2026-08-28T11:41:53:  Headers: {
+2026-08-28T11:41:53:   "accept": "application/json",
+2026-08-28T11:41:53:   "content-type": "application/json",
+2026-08-28T11:41:53:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:53:   "authorization": "<REDACTED>"
+2026-08-28T11:41:53: }
+2026-08-28T11:41:53: 
+2026-08-28T11:41:53: Received response with status 200
+2026-08-28T11:41:53: 
+2026-08-28T11:41:53:  GET /no/categories/multigym 200 in 145ms
+2026-08-28T11:41:53:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym 200 in 14ms (cache skip)
+2026-08-28T11:41:53:  │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+2026-08-28T11:41:53:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=multigym 200 in 20ms (cache hit)
+2026-08-28T11:41:53:  │ GET http://localhost:9000/store/products?limit=100&offset=0&region_id=reg_01M03JZFG68XDQJ825TTA75PVD&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Avariants.images%2C%2Avariants.options%2C%2Bmetadata%2C%2Btags%2C&category_id%5B0%5D=pcat_01M05TBA3QP87KBCQG7JA35RPM&order=created_at 200 in 49ms (cache skip)
+2026-08-28T11:41:53:  │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+2026-08-28T11:41:53: Initiating Medusa client with default headers:
+2026-08-28T11:41:53:  {
+2026-08-28T11:41:53:   "accept": "application/json",
+2026-08-28T11:41:53:   "content-type": "application/json",
+2026-08-28T11:41:53:   "x-publishable-api-key": "pk_da78ce86ca4ceb8e09721d714398fc96104486fd9a0057f1fcaf2002b8611625",
+2026-08-28T11:41:53:   "authorization": "<REDACTED>"
+2026-08-28T11:41:53: }
+2026-08-28T11:41:53: 
+2026-08-28T11:42:36:  ✓ Compiled in 74ms
+2026-08-28T11:42:57:  ✓ Compiled in 66ms
