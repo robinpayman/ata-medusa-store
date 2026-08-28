@@ -534,3 +534,7 @@
 2026-08-28T11:26:09: [32mhttp[39m:    GET /store/regions ← - (400) - 8.877 ms
 2026-08-28T11:26:12: [32minfo[39m:    A valid publishable key is required to proceed with the request
 2026-08-28T11:26:12: [32mhttp[39m:    GET /store/product-categories ← - (400) - 2.385 ms
+2026-08-28T11:26:57: [32minfo[39m:    A valid publishable key is required to proceed with the request
+2026-08-28T11:26:57: [32mhttp[39m:    GET /store/regions ← - (400) - 9.085 ms
+2026-08-28T11:26:59: [32minfo[39m:    A valid publishable key is required to proceed with the request
+2026-08-28T11:26:59: [32mhttp[39m:    GET /store/product-categories ← - (400) - 1.776 ms

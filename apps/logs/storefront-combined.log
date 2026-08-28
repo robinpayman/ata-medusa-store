@@ -1135,3 +1135,27 @@
 2026-08-28T11:26:12:  GET /no 200 in 2625ms
 2026-08-28T11:26:12:  │ GET http://localhost:9000/store/product-categories 400 in 141ms (cache skip)
 2026-08-28T11:26:12:  │ │ Cache skipped reason: (auto no cache)
+2026-08-28T11:26:35:  ✓ Compiled in 5ms
+2026-08-28T11:26:45: [?25h
+2026-08-28T11:26:45: 
+2026-08-28T11:26:45: npm warn Unknown project config "auto-install-peers". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-08-28T11:26:45: 
+2026-08-28T11:26:45: > @dtc/storefront@1.0.3 dev
+2026-08-28T11:26:45: > next dev --turbopack -p 8000
+2026-08-28T11:26:45: 
+2026-08-28T11:26:46:    ▲ Next.js 15.5.21 (Turbopack)
+2026-08-28T11:26:46:    - Local:        http://localhost:8000
+2026-08-28T11:26:46:    - Network:      http://10.90.90.197:8000
+2026-08-28T11:26:46:    - Environments: .env.local
+2026-08-28T11:26:46: 
+2026-08-28T11:26:46:  ✓ Starting...
+2026-08-28T11:26:47:  ✓ Compiled middleware in 105ms
+2026-08-28T11:26:47:  ✓ Ready in 949ms
+2026-08-28T11:26:57: Failed to fetch regions from backend. Using default regions.
+2026-08-28T11:26:58:  ○ Compiling /[countryCode] ...
+2026-08-28T11:26:59:  ✓ Compiled /[countryCode] in 1883ms
+2026-08-28T11:27:00: API returned 400: Bad Request
+2026-08-28T11:27:00: Fetched 4 categories from database
+2026-08-28T11:27:00:  GET /no 200 in 2508ms
+2026-08-28T11:27:00:  │ GET http://localhost:9000/store/product-categories 400 in 140ms (cache skip)
+2026-08-28T11:27:00:  │ │ Cache skipped reason: (cache: no-store)
