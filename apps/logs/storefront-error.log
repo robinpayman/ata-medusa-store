@@ -23,3 +23,60 @@
 2026-08-28T11:26:45: npm warn Unknown project config "auto-install-peers". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
 2026-08-28T11:26:57: Failed to fetch regions from backend. Using default regions.
 2026-08-28T11:27:00: API returned 400: Bad Request
+2026-08-28T11:27:46: API returned 400: Bad Request
+2026-08-28T11:27:56: API returned 400: Bad Request
+2026-08-28T11:27:58: API returned 400: Bad Request
+2026-08-28T11:28:00:  ⨯ Error: A valid publishable key is required to proceed with the request
+2026-08-28T11:28:00:     at <unknown> (../../src/client.ts:101:11)
+2026-08-28T11:28:00:     at Generator.next (<anonymous>) {
+2026-08-28T11:28:00:   statusText: 'Bad Request',
+2026-08-28T11:28:00:   status: 400,
+2026-08-28T11:28:00:   digest: '4205950091'
+2026-08-28T11:28:00: }
+2026-08-28T11:28:37: API returned 400: Bad Request
+2026-08-28T11:29:05: API returned 400: Bad Request
+2026-08-28T11:29:09: Error fetching categories: Error: A valid publishable key is required to proceed with the request
+2026-08-28T11:29:09:     at <unknown> (../../src/client.ts:101:11)
+2026-08-28T11:29:09:     at Generator.next (<anonymous>) {
+2026-08-28T11:29:09:   statusText: 'Bad Request',
+2026-08-28T11:29:09:   status: 400
+2026-08-28T11:29:09: }
+2026-08-28T11:29:09: Error fetching products: Error: A valid publishable key is required to proceed with the request
+2026-08-28T11:29:09:     at <unknown> (../../src/client.ts:101:11)
+2026-08-28T11:29:09:     at Generator.next (<anonymous>) {
+2026-08-28T11:29:09:   statusText: 'Bad Request',
+2026-08-28T11:29:09:   status: 400
+2026-08-28T11:29:09: }
+2026-08-28T11:29:09: Error loading products: Error: A valid publishable key is required to proceed with the request
+2026-08-28T11:29:09:     at <unknown> (../../src/client.ts:101:11)
+2026-08-28T11:29:09:     at Generator.next (<anonymous>) {
+2026-08-28T11:29:09:   statusText: 'Bad Request',
+2026-08-28T11:29:09:   status: 400
+2026-08-28T11:29:09: }
+2026-08-28T11:29:11: Error fetching categories: Error: A valid publishable key is required to proceed with the request
+2026-08-28T11:29:11:     at <unknown> (../../src/client.ts:101:11)
+2026-08-28T11:29:11:     at Generator.next (<anonymous>) {
+2026-08-28T11:29:11:   statusText: 'Bad Request',
+2026-08-28T11:29:11:   status: 400
+2026-08-28T11:29:11: }
+2026-08-28T11:29:11: Error fetching products: Error: A valid publishable key is required to proceed with the request
+2026-08-28T11:29:11:     at <unknown> (../../src/client.ts:101:11)
+2026-08-28T11:29:11:     at Generator.next (<anonymous>) {
+2026-08-28T11:29:11:   statusText: 'Bad Request',
+2026-08-28T11:29:11:   status: 400
+2026-08-28T11:29:11: }
+2026-08-28T11:29:11: Error loading products: Error: A valid publishable key is required to proceed with the request
+2026-08-28T11:29:11:     at <unknown> (../../src/client.ts:101:11)
+2026-08-28T11:29:11:     at Generator.next (<anonymous>) {
+2026-08-28T11:29:11:   statusText: 'Bad Request',
+2026-08-28T11:29:11:   status: 400
+2026-08-28T11:29:11: }
+2026-08-28T11:29:20: API returned 400: Bad Request
+2026-08-28T11:29:20: API returned 400: Bad Request
+2026-08-28T11:29:20: API returned 400: Bad Request
+2026-08-28T11:29:20: API returned 400: Bad Request
+2026-08-28T11:29:26: npm warn Unknown project config "auto-install-peers". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-08-28T11:29:34: Failed to fetch regions from backend. Using default regions.
+2026-08-28T11:29:37: API returned 400: Bad Request
+2026-08-28T11:29:43: API returned 400: Bad Request
+2026-08-28T11:29:47: API returned 400: Bad Request

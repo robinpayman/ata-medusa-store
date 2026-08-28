@@ -4,6 +4,7 @@ import React, { useState } from "react"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
 import { useCart } from "@/context/CartContext"
+import CategoryDropdown from "./CategoryDropdown"
 
 interface HeaderProps {
   categories?: Array<{ id: string; name: string; handle: string }>
@@ -85,19 +86,9 @@ export default function Header({ categories = [] }: HeaderProps) {
             </button>
           </form>
 
-          {/* Desktop Navigation - Categories */}
+          {/* Desktop Navigation - Category Dropdown */}
           {displayCategories.length > 0 && (
-            <nav className="hidden lg:flex items-center gap-1">
-              {displayCategories.map((category) => (
-                <Link
-                  key={category.id}
-                  href={`/categories/${category.handle}`}
-                  className="px-3 py-2 text-xs font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded transition-colors whitespace-nowrap"
-                >
-                  {category.name}
-                </Link>
-              ))}
-            </nav>
+            <CategoryDropdown categories={displayCategories} />
           )}
 
           {/* Desktop Navigation - Links */}

@@ -1134,3 +1134,159 @@
 2026-08-28T11:27:00:  GET /no 200 in 2508ms
 2026-08-28T11:27:00:  │ GET http://localhost:9000/store/product-categories 400 in 140ms (cache skip)
 2026-08-28T11:27:00:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:27:46: Fetched 4 categories from database
+2026-08-28T11:27:46:  GET /no 200 in 117ms
+2026-08-28T11:27:46:  │ GET http://localhost:9000/store/product-categories 400 in 47ms (cache skip)
+2026-08-28T11:27:46:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:27:56: Fetched 4 categories from database
+2026-08-28T11:27:56:  GET /no 200 in 185ms
+2026-08-28T11:27:56:  │ GET http://localhost:9000/store/product-categories 400 in 38ms (cache skip)
+2026-08-28T11:27:56:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:27:58: Fetched 4 categories from database
+2026-08-28T11:27:58:  GET /no 200 in 177ms
+2026-08-28T11:27:58:  │ GET http://localhost:9000/store/product-categories 400 in 40ms (cache skip)
+2026-08-28T11:27:58:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:27:59:  ✓ Compiled /[countryCode]/categories/[...category] in 427ms
+2026-08-28T11:27:59: Initiating Medusa client with default headers:
+2026-08-28T11:27:59:  {
+2026-08-28T11:27:59:   "accept": "application/json",
+2026-08-28T11:27:59:   "content-type": "application/json",
+2026-08-28T11:27:59:   "x-publishable-api-key": "pk_test_pubkey_f8a7b5c9d2e4f1a6b9c2d5e8f1a4b7c0",
+2026-08-28T11:27:59:   "authorization": "<REDACTED>"
+2026-08-28T11:27:59: }
+2026-08-28T11:27:59: 
+2026-08-28T11:28:00: Initiating Medusa client with default headers:
+2026-08-28T11:28:00:  {
+2026-08-28T11:28:00:   "accept": "application/json",
+2026-08-28T11:28:00:   "content-type": "application/json",
+2026-08-28T11:28:00:   "x-publishable-api-key": "pk_test_pubkey_f8a7b5c9d2e4f1a6b9c2d5e8f1a4b7c0",
+2026-08-28T11:28:00:   "authorization": "<REDACTED>"
+2026-08-28T11:28:00: }
+2026-08-28T11:28:00: 
+2026-08-28T11:28:00: Performing request to:
+2026-08-28T11:28:00:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=merch
+2026-08-28T11:28:00:  Headers: {
+2026-08-28T11:28:00:   "accept": "application/json",
+2026-08-28T11:28:00:   "content-type": "application/json",
+2026-08-28T11:28:00:   "x-publishable-api-key": "pk_test_pubkey_f8a7b5c9d2e4f1a6b9c2d5e8f1a4b7c0",
+2026-08-28T11:28:00:   "authorization": "<REDACTED>"
+2026-08-28T11:28:00: }
+2026-08-28T11:28:00: 
+2026-08-28T11:28:00: Performing request to:
+2026-08-28T11:28:00:  URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=merch
+2026-08-28T11:28:00:  Headers: {
+2026-08-28T11:28:00:   "accept": "application/json",
+2026-08-28T11:28:00:   "content-type": "application/json",
+2026-08-28T11:28:00:   "x-publishable-api-key": "pk_test_pubkey_f8a7b5c9d2e4f1a6b9c2d5e8f1a4b7c0",
+2026-08-28T11:28:00:   "authorization": "<REDACTED>"
+2026-08-28T11:28:00: }
+2026-08-28T11:28:00: 
+2026-08-28T11:28:00: Received response with status 400
+2026-08-28T11:28:00: 
+2026-08-28T11:28:00: Received response with status 400
+2026-08-28T11:28:00: 
+2026-08-28T11:28:00:  GET /no/categories/merch 200 in 795ms
+2026-08-28T11:28:00:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=merch 400 in 8ms (cache skip)
+2026-08-28T11:28:00:  │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+2026-08-28T11:28:00:  │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children%2C%20%2Aproducts&handle=merch 400 in 14ms (cache skip)
+2026-08-28T11:28:00:  │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+2026-08-28T11:28:37: Fetched 4 categories from database
+2026-08-28T11:28:37:  GET /no 200 in 97ms
+2026-08-28T11:28:37:  │ GET http://localhost:9000/store/product-categories 400 in 37ms (cache skip)
+2026-08-28T11:28:37:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:29:05: Fetched 8 categories from database
+2026-08-28T11:29:05:  GET /no 200 in 193ms
+2026-08-28T11:29:05:  │ GET http://localhost:9000/store/product-categories 400 in 47ms (cache skip)
+2026-08-28T11:29:05:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:29:09:  ✓ Compiled /[countryCode]/products in 214ms
+2026-08-28T11:29:09: Initiating Medusa client with default headers:
+2026-08-28T11:29:09:  {
+2026-08-28T11:29:09:   "accept": "application/json",
+2026-08-28T11:29:09:   "content-type": "application/json",
+2026-08-28T11:29:09:   "x-publishable-api-key": "pk_test_pubkey_f8a7b5c9d2e4f1a6b9c2d5e8f1a4b7c0",
+2026-08-28T11:29:09:   "authorization": "<REDACTED>"
+2026-08-28T11:29:09: }
+2026-08-28T11:29:09: 
+2026-08-28T11:29:09: Performing request to:
+2026-08-28T11:29:09:  URL: http://localhost:9000/store/regions
+2026-08-28T11:29:09:  Headers: {
+2026-08-28T11:29:09:   "accept": "application/json",
+2026-08-28T11:29:09:   "content-type": "application/json",
+2026-08-28T11:29:09:   "x-publishable-api-key": "pk_test_pubkey_f8a7b5c9d2e4f1a6b9c2d5e8f1a4b7c0",
+2026-08-28T11:29:09:   "authorization": "<REDACTED>"
+2026-08-28T11:29:09: }
+2026-08-28T11:29:09: 
+2026-08-28T11:29:09: Received response with status 400
+2026-08-28T11:29:09: 
+2026-08-28T11:29:09:  GET /no/products 200 in 568ms
+2026-08-28T11:29:09:  │ GET http://localhost:9000/store/product-categories?limit=100&fields=id%2Cname%2Chandle 400 in 12ms (cache skip)
+2026-08-28T11:29:09:  │ │ Cache skipped reason: (auto no cache)
+2026-08-28T11:29:09:  │ GET http://localhost:9000/store/regions 400 in 18ms (cache skip)
+2026-08-28T11:29:09:  │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+2026-08-28T11:29:11: Performing request to:
+2026-08-28T11:29:11:  URL: http://localhost:9000/store/regions
+2026-08-28T11:29:11:  Headers: {
+2026-08-28T11:29:11:   "accept": "application/json",
+2026-08-28T11:29:11:   "content-type": "application/json",
+2026-08-28T11:29:11:   "x-publishable-api-key": "pk_test_pubkey_f8a7b5c9d2e4f1a6b9c2d5e8f1a4b7c0",
+2026-08-28T11:29:11:   "authorization": "<REDACTED>"
+2026-08-28T11:29:11: }
+2026-08-28T11:29:11: 
+2026-08-28T11:29:11: Received response with status 400
+2026-08-28T11:29:11: 
+2026-08-28T11:29:11:  GET /no/products 200 in 57ms
+2026-08-28T11:29:11:  │ GET http://localhost:9000/store/product-categories?limit=100&fields=id%2Cname%2Chandle 400 in 5ms (cache skip)
+2026-08-28T11:29:11:  │ │ Cache skipped reason: (auto no cache)
+2026-08-28T11:29:11:  │ GET http://localhost:9000/store/regions 400 in 7ms (cache skip)
+2026-08-28T11:29:11:  │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+2026-08-28T11:29:11: Initiating Medusa client with default headers:
+2026-08-28T11:29:11:  {
+2026-08-28T11:29:11:   "accept": "application/json",
+2026-08-28T11:29:11:   "content-type": "application/json",
+2026-08-28T11:29:11:   "x-publishable-api-key": "pk_test_pubkey_f8a7b5c9d2e4f1a6b9c2d5e8f1a4b7c0",
+2026-08-28T11:29:11:   "authorization": "<REDACTED>"
+2026-08-28T11:29:11: }
+2026-08-28T11:29:11: 
+2026-08-28T11:29:12:  GET /no 200 in 59ms
+2026-08-28T11:29:13:  ✓ Compiled in 109ms
+2026-08-28T11:29:14:  GET /no 200 in 48ms
+2026-08-28T11:29:20:  ✓ Compiled in 235ms
+2026-08-28T11:29:20:  ✓ Compiled /[countryCode] in 79ms
+2026-08-28T11:29:20: Fetched 8 categories from database
+2026-08-28T11:29:20: Fetched 8 categories from database
+2026-08-28T11:29:20: Fetched 8 categories from database
+2026-08-28T11:29:20:  GET /no 200 in 428ms
+2026-08-28T11:29:20:  │ GET http://localhost:9000/store/product-categories 400 in 58ms (cache skip)
+2026-08-28T11:29:20:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:29:20:  GET /no 200 in 423ms
+2026-08-28T11:29:20:  │ GET http://localhost:9000/store/product-categories 400 in 40ms (cache skip)
+2026-08-28T11:29:20:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:29:20: Fetched 8 categories from database
+2026-08-28T11:29:26: [?25h
+2026-08-28T11:29:26: 
+2026-08-28T11:29:26: 
+2026-08-28T11:29:26: > @dtc/storefront@1.0.3 dev
+2026-08-28T11:29:26: > next dev --turbopack -p 8000
+2026-08-28T11:29:26: 
+2026-08-28T11:29:27:    ▲ Next.js 15.5.21 (Turbopack)
+2026-08-28T11:29:27:    - Local:        http://localhost:8000
+2026-08-28T11:29:27:    - Network:      http://10.90.90.197:8000
+2026-08-28T11:29:27:    - Environments: .env.local
+2026-08-28T11:29:27: 
+2026-08-28T11:29:27:  ✓ Starting...
+2026-08-28T11:29:27:  ✓ Compiled middleware in 117ms
+2026-08-28T11:29:27:  ✓ Ready in 978ms
+2026-08-28T11:29:34:  ○ Compiling /[countryCode] ...
+2026-08-28T11:29:36:  ✓ Compiled /[countryCode] in 2.3s
+2026-08-28T11:29:37: Fetched 8 categories from database
+2026-08-28T11:29:37:  GET /no 200 in 3008ms
+2026-08-28T11:29:37:  │ GET http://localhost:9000/store/product-categories 400 in 146ms (cache skip)
+2026-08-28T11:29:37:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:29:43: Fetched 8 categories from database
+2026-08-28T11:29:43:  GET /no 200 in 125ms
+2026-08-28T11:29:43:  │ GET http://localhost:9000/store/product-categories 400 in 43ms (cache skip)
+2026-08-28T11:29:43:  │ │ Cache skipped reason: (cache: no-store)
+2026-08-28T11:29:47: Fetched 8 categories from database
+2026-08-28T11:29:47:  GET /no 200 in 101ms
+2026-08-28T11:29:47:  │ GET http://localhost:9000/store/product-categories 400 in 46ms (cache skip)
+2026-08-28T11:29:47:  │ │ Cache skipped reason: (cache: no-store)
